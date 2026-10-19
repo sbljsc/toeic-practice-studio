@@ -4,7 +4,7 @@ import type { PoolQuestionStatus, QuestionPoolQuestionDetail, QuestionPoolStatus
 import { PART_LABEL } from '../../domain/format';
 import { Banner, EmptyBlock, ErrorBlock, Loading, Tag } from '../components';
 import { navigate } from '../router';
-import { MaterialContent } from '../MaterialContent';
+import { MaterialContent, MarkdownText, MarkdownInline } from '../MaterialContent';
 import { pageSlice } from './poolPagination';
 import { PoolDetailModal } from './PoolDetailModal';
 import { ReviewAudioBar } from './ReviewAudioBar';
@@ -127,14 +127,14 @@ export function PoolScreen({ questionId }: { questionId?: string }) {
               <Tag tone={detail!.status === 'wrong' ? 'bad' : detail!.status === 'answered' ? 'good' : 'neutral'}>{STATUS_LABEL[detail!.status]}</Tag>
             </div>
             {detailLoading && <Loading label={includeSolution ? '正在读取完整解析…' : '正在隐藏完整解析…'} />}
-            {!includeSolution && protectedPart ? <Banner tone="info" title="听力作答内容已保护">Part 1 和 Part 2 的题干与选项文本仅在你主动显示完整解析时展开。</Banner> : <p className="pool-question-stem">{question.stem || '题干内容暂不可用。'}</p>}
+            {!includeSolution && protectedPart ? <Banner tone="info" title="听力作答内容已保护">Part 1 和 Part 2 的题干与选项文本仅在你主动显示完整解析时展开。</Banner> : <MarkdownText className="pool-question-stem" text={question.stem || '题干内容暂不可用。'} flow="prose" />}
             {!includeSolution && protectedPart ? <p className="pool-masked">题干与选项文本已隐藏</p> : <ol className="option-review pool-options">
-              {question.options.map((option) => <li key={option.id}><span className="option-key">{option.id}</span><span className="option-text">{option.text || `选项 ${option.id}`}</span>
+              {question.options.map((option) => <li key={option.id}><span className="option-key">{option.id}</span><MarkdownInline className="option-text" text={option.text || `选项 ${option.id}`} />
                 {includeSolution && question.answer === option.id ? <Tag tone="good">正确答案</Tag> : null}</li>)}
             </ol>}
             <MaterialContent materials={group.materials} />
-            {includeSolution && question.explanation ? <section className="explanation"><h3>解析</h3><p>{question.explanation.text}</p></section> : null}
-            {includeSolution && group.review_text ? <section className="explanation"><h3>补充说明</h3><p>{group.review_text}</p></section> : null}
+            {includeSolution && question.explanation ? <section className="explanation"><h3>解析</h3><MarkdownText text={question.explanation.text} /></section> : null}
+            {includeSolution && group.review_text ? <section className="explanation"><h3>补充说明</h3><MarkdownText text={group.review_text} /></section> : null}
             {includeSolution && group.review_audio ? <ReviewAudioBar queue={[group.review_audio]} label="本组听力" replayLabel="重放本组" renderTranscript={(audio, clip) => group.listening_script ? <TranscriptPanel script={group.listening_script} clip={clip} sourceTime={(clip?.start_seconds ?? 0) + audio.state.positionSeconds} onSentence={(sourceTime) => void audio.playSentence(sourceTime)} /> : null} /> : null}
             {includeSolution && group.listening_script && !group.review_audio ? <TranscriptPanel script={group.listening_script} /> : null}
             {detail!.solution_available && <button type="button" className="btn btn-primary" disabled={detailLoading} onClick={() => void toggleSolution()} data-testid="pool-solution-toggle">{includeSolution ? '隐藏完整解析' : '显示完整解析'}</button>}

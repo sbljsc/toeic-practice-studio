@@ -9,11 +9,13 @@ import type { Attempt } from '../domain/types.ts';
 let server: ViteDevServer;
 let parts: Awaited<ReturnType<ViteDevServer['ssrLoadModule']>>;
 let statistics: Awaited<ReturnType<ViteDevServer['ssrLoadModule']>>;
+let transcript: Awaited<ReturnType<ViteDevServer['ssrLoadModule']>>;
 before(async () => {
   server = await createServer({ root: fileURLToPath(new URL('../../', import.meta.url)), configFile: false,
     server: { middlewareMode: true, hmr: false }, optimizeDeps: { noDiscovery: true } });
   parts = await server.ssrLoadModule('/src/ui/attempt/parts.tsx');
   statistics = await server.ssrLoadModule('/src/ui/ActivityStatistics.tsx');
+  transcript = await server.ssrLoadModule('/src/ui/TranscriptPanel.tsx');
 });
 after(async () => { await server?.close(); });
 
@@ -37,6 +39,24 @@ test('live QuestionPanel refuses correctness decorations even if supplied a solu
   const html = panel(fixture());
   assert.doesNotMatch(html, /正确答案|你的选择|data-correct|data-wrong/);
   assert.match(html, /标记本题/); assert.doesNotMatch(html, /清空本题/);
+});
+
+test('question stems and options share safe Markdown reflow inside their real controls', () => {
+  const value = fixture();
+  value.questions[0].stem = 'Which **service** will the company\nprovide?\n\nChoose one.';
+  value.questions[0].options[0].text = 'A **new** service that will\nopen soon.';
+  const html = panel(value);
+  assert.match(html, /<p>Which <strong>service<\/strong> will the company provide\?<\/p><p>Choose one\.<\/p>/);
+  assert.match(html, /class="markdown-inline option-text">A <strong>new<\/strong> service that will open soon\.<\/span>/);
+  assert.doesNotMatch(html, /<span[^>]*option-text[^>]*>[^]*?<(?:p|table|div)\b/);
+});
+
+test('fallback listening text gains paragraph reflow while Chinese stays hidden by default', () => {
+  const html = renderToStaticMarkup(createElement(transcript.TranscriptPanel, { script: {
+    english: 'M: Shall we meet at the\nstation?\nW: Yes, at noon.', chinese: '中文默认隐藏', sentences: [],
+  } }));
+  assert.match(html, /<p>M: Shall we meet at the station\?<\/p><p>W: Yes, at noon\.<\/p>/);
+  assert.doesNotMatch(html, /中文默认隐藏|data-testid="chinese-subtitles"/);
 });
 test('closed review reuses disabled options with correct and selected labels', () => {
   const value = fixture(); value.status = 'submitted'; value.timing.phase = 'finished';

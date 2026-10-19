@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import type { AudioQueueItem, ListeningScript } from '../domain/types';
 import { formatClock } from '../domain/format';
 import { activeSentenceId, followScrollTop, selectionTouchesSentence, validSentences } from './subtitleSync';
+import { MarkdownText, MarkdownInline } from './MaterialContent';
 
 export function TranscriptPanel({ script, clip, sourceTime, onSentence, disabled = false }: {
   script: ListeningScript;
@@ -68,16 +69,16 @@ export function TranscriptPanel({ script, clip, sourceTime, onSentence, disabled
                     data-start={sentence.start_seconds} data-end={sentence.end_seconds}
                     title="从本句开始播放">
                     <span className="subtitle-time" aria-hidden="true">{formatClock(sentence.start_seconds - (clip?.start_seconds ?? 0))}</span>
-                    <span className="subtitle-text">{sentence.text}</span>
+                    <MarkdownInline className="subtitle-text" text={sentence.text} />
                   </button>
                 </li>
               ))}
             </ol>
-          ) : script.english}
+          ) : <MarkdownText text={script.english} />}
         </div>
         {showChinese ? (
           <div className="script-chinese" lang="zh-CN" id={panelId} data-testid="chinese-subtitles">
-            <h5>中文对照</h5>{script.chinese}
+            <h5>中文对照</h5><MarkdownText text={script.chinese} />
           </div>
         ) : null}
       </div>

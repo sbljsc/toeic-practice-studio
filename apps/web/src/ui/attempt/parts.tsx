@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { MaterialContent } from '../MaterialContent';
+import { MaterialContent, MarkdownText, MarkdownInline } from '../MaterialContent';
 import { WorkspaceViewToggle, type WorkspaceView } from '../WorkspaceViewToggle';
 import type { Attempt, AttemptQuestion } from '../../domain/types';
 import { MODE_LABEL, PART_LABEL, SCOPE_LABEL, formatClock, practiceTitle } from '../../domain/format';
@@ -460,7 +460,7 @@ export function QuestionPanel({
 
       <MaterialContent materials={sharedMaterials} />
 
-      {question.stem ? <p className="question-stem">{question.stem}</p> : null}
+      {question.stem ? <MarkdownText className="question-stem" text={question.stem} flow="prose" /> : null}
 
       <div className="options" role="radiogroup" aria-label={`第 ${displayNumber} 题选项`}>
         {question.options.map((option) => {
@@ -487,7 +487,7 @@ export function QuestionPanel({
               data-testid={`option-${question.id}-${option.id}`}
             >
               <span className="option-key">{option.id}</span>
-              <span className="option-text">{labelOnly ? `选项 ${option.id}` : option.text}</span>
+              <MarkdownInline className="option-text" text={labelOnly ? `选项 ${option.id}` : option.text} />
               {review && option.id === review.answer ? <Tag tone="good">正确答案</Tag> : null}
               {selected ? <span className="option-mark">{review ? '你的选择' : '已选'}</span> : null}
             </button>

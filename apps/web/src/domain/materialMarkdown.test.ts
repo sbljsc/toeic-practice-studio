@@ -16,7 +16,107 @@ const source = readFileSync(componentUrl, 'utf8').replace("import './MaterialCon
 const code = (await transformWithOxc(source, 'MaterialContent.tsx', {})).code.replace(
   /from (["'])([^"']+)\1/g, (_match, _quote, name) => `from ${JSON.stringify(name.startsWith('.')
     ? new URL(name + '.ts', componentUrl).href : pathToFileURL(componentRequire.resolve(name)).href)}`);
-const { MaterialContent } = await import('data:text/javascript;base64,' + Buffer.from(code).toString('base64'));
+const { MaterialContent, MarkdownText, MarkdownInline } = await import('data:text/javascript;base64,' + Buffer.from(code).toString('base64'));
+
+test('soft PDF line wraps reflow without breaking English words, Chinese or compound hyphens', () => {
+  assert.deepEqual(parseMaterialMarkdown('We have a 200-\nsquare-foot room with the latest\nexercise equipment.', 'prose'), [
+    { kind: 'paragraph', text: 'We have a 200-square-foot room with the latest exercise equipment.' },
+  ]);
+  assert.deepEqual(parseMaterialMarkdown('照看\n10\n岁以下的孩子。\n请选\n(B)\n。', 'prose'), [
+    { kind: 'paragraph', text: '照看10岁以下的孩子。请选(B)。' },
+  ]);
+});
+
+test('Markdown paragraphs and explicit hard breaks are retained while ordinary newlines soften', () => {
+  assert.deepEqual(parseMaterialMarkdown('First line wraps\nhere.\n\nLine one  \nLine two\\\nLine three.', 'prose'), [
+    { kind: 'paragraph', text: 'First line wraps here.' },
+    { kind: 'paragraph', text: 'Line one\nLine two\nLine three.' },
+  ]);
+});
+
+test('document structure retains mail fields, address lines, salutations and signatures', () => {
+  assert.deepEqual(parseMaterialMarkdown('From: A\nTo: B\nSubject: Visit\nDear Mr. Cooper,\nPlease attend the annual meeting at our head office next week,\nwhere the team will present the schedule.\nBest regards,\nNed Urschel\n55 Canton Road\nDetroit, Michigan 70456'), [
+    { kind: 'paragraph', text: 'From: A\nTo: B\nSubject: Visit' },
+    { kind: 'paragraph', text: 'Dear Mr. Cooper,' },
+    { kind: 'paragraph', text: 'Please attend the annual meeting at our head office next week, where the team will present the schedule.' },
+    { kind: 'paragraph', text: 'Best regards,\nNed Urschel\n55 Canton Road\nDetroit, Michigan 70456' },
+  ]);
+});
+
+test('letterhead with corporate punctuation, a separator, postal address and date stays structured', () => {
+  const blocks = parseMaterialMarkdown('G&G INC\n_______________________\nGeneral and Green, Inc.\nOne Security Drive\nNicholasville, Kentucky 40356\nNed R. Urschel, Vice President and\nManaging Director\nOctober 29, 2018\nUnisys Ltd.\n2F, Bay Center Building\nDetroit, Michigan 70456\nAttention: Mr. Stanley Cooper, Vice President\nDear Mr. Cooper,\nThe annual class will take place at our head office next month, and\nwe would like you to attend.');
+  assert.deepEqual(blocks.map(b => b.text), [
+    'G&G INC', '_______________________',
+    'General and Green, Inc.\nOne Security Drive\nNicholasville, Kentucky 40356\nNed R. Urschel, Vice President and Managing Director\nOctober 29, 2018\nUnisys Ltd.\n2F, Bay Center Building\nDetroit, Michigan 70456\nAttention: Mr. Stanley Cooper, Vice President',
+    'Dear Mr. Cooper,', 'The annual class will take place at our head office next month, and we would like you to attend.',
+  ]);
+});
+
+test('legacy document titles and paragraph endings become spaced paragraphs, not PDF-length rows', () => {
+  const blocks = parseMaterialMarkdown('Fitness Club\nAre you tired of waiting for exercise equipment in a crowded room? Our\nnew club has everything you need.\nRead what our members have to say:\n“We now enjoy a workout with the trainers who are always ready to help\nwhen we need them!”');
+  assert.deepEqual(blocks, [
+    { kind: 'paragraph', text: 'Fitness Club' },
+    { kind: 'paragraph', text: 'Are you tired of waiting for exercise equipment in a crowded room? Our new club has everything you need.' },
+    { kind: 'paragraph', text: 'Read what our members have to say:' },
+    { kind: 'paragraph', text: '“We now enjoy a workout with the trainers who are always ready to help when we need them!”' },
+  ]);
+});
+
+test('chat turns and English/Chinese speaker turns keep their boundaries and reflow each turn', () => {
+  const blocks = parseMaterialMarkdown('Amy Wilson [11:05 A.M.]\nMy plane landed, and I am waiting in the baggage claim area for\nmy suitcase.\nJacob Vance [11:08 A.M.]\nI am glad to hear it.\n\nM:\nDo you know why the meeting\nwas postponed?\nW: The manager is away.\n\nM: 你知道为什么会议\n延期了吗？\nW: 经理出差了。');
+  assert.deepEqual(blocks.map(b => b.text), [
+    'Amy Wilson [11:05 A.M.]\nMy plane landed, and I am waiting in the baggage claim area for my suitcase.',
+    'Jacob Vance [11:08 A.M.]\nI am glad to hear it.',
+    'M: Do you know why the meeting was postponed?', 'W: The manager is away.',
+    'M: 你知道为什么会议延期了吗？', 'W: 经理出差了。',
+  ]);
+});
+
+test('split option markers and explanation sections remain legible without splitting letters and brackets', () => {
+  const blocks = parseMaterialMarkdown('Why was the trip postponed?\n（\nA\n）\nShe had to attend to other\nbusiness.\n（\nB\n）她错过了早班\n飞机。\n▶\n解析\n横线处需要填入形容词，与\nrespectful词性相同。');
+  assert.deepEqual(blocks.map(b => b.text), [
+    'Why was the trip postponed?', '（A） She had to attend to other business.',
+    '（B）她错过了早班飞机。', '▶ 解析', '横线处需要填入形容词，与respectful词性相同。',
+  ]);
+});
+
+test('bilingual choices separate translation prompts and preserve Chinese numbers after punctuation', () => {
+  const blocks = parseMaterialMarkdown('(C) A room with private saunas\n(D) Free swimming lessons for regulars\n以下哪项服务没有在广告中提到？\n(A)\n专业人员指导的个人锻炼\n→他们拥有专业队伍，\n10\n多个专家。');
+  assert.deepEqual(blocks.map(b => b.text), [
+    '(C) A room with private saunas', '(D) Free swimming lessons for regulars',
+    '以下哪项服务没有在广告中提到？', '(A)专业人员指导的个人锻炼', '→他们拥有专业队伍，10多个专家。',
+  ]);
+});
+
+test('standalone introductions have paragraph spacing, and isolated Chinese quotation marks do not fragment a quote', () => {
+  const blocks = parseMaterialMarkdown('Our trainers provide a service designed to meet every member’s individual needs.\nRead what our members have to say:\n“\n他们拥有专业的队伍，\n10\n多个专家帮助会员。我原以为无法锻炼了\n…\n现在每天锻炼！\n”\n来自纽约的会员');
+  assert.deepEqual(blocks.map(b => b.text), [
+    'Our trainers provide a service designed to meet every member’s individual needs.',
+    'Read what our members have to say:', '“他们拥有专业的队伍，10多个专家帮助会员。我原以为无法锻炼了…现在每天锻炼！”', '来自纽约的会员',
+  ]);
+});
+
+test('short Chinese continuations and supplementary listening examples are not mistaken for headings or swallowed by choices', () => {
+  assert.deepEqual(parseMaterialMarkdown('我也想要一些\n东西。'), [{ kind: 'paragraph', text: '我也想要一些东西。' }]);
+  assert.deepEqual(parseMaterialMarkdown('（D）一位男士正在指挥另一个人。\n·A man is operating heavy machinery.\n一位男士正在操作笨重的\n机器。\n·Heavy machinery is being used.\n笨重的机器正在被使用。').map(b => b.text), [
+    '（D）一位男士正在指挥另一个人。', '·A man is operating heavy machinery.', '一位男士正在操作笨重的机器。',
+    '·Heavy machinery is being used.', '笨重的机器正在被使用。',
+  ]);
+});
+
+test('a source line break around a middle dot in a Chinese name does not create an example paragraph', () => {
+  assert.deepEqual(parseMaterialMarkdown('戴维\n·\n韦尔斯今天的演讲做得很好，是吧？'), [
+    { kind: 'paragraph', text: '戴维·韦尔斯今天的演讲做得很好，是吧？' },
+  ]);
+});
+
+test('shared block and inline renderers support Markdown without introducing active content or invalid button descendants', () => {
+  const block = renderToStaticMarkup(createElement(MarkdownText, { text: '**First** line\nwraps.\n\nSecond paragraph.', flow: 'prose' }));
+  assert.match(block, /<p><strong>First<\/strong> line wraps\.<\/p><p>Second paragraph\.<\/p>/);
+  const option = renderToStaticMarkup(createElement('button', null, createElement(MarkdownInline, { text: '**The** company will\nreopen on Monday. <img src=x>' })));
+  assert.match(option, /<strong>The<\/strong> company will reopen on Monday\. &lt;img src=x&gt;/);
+  assert.doesNotMatch(option, /<(?:p|div|table|img)\b/);
+});
 
 test('prose, headings, both list kinds and starting number retain content', () => {
   assert.deepEqual(parseMaterialMarkdown('# Heading\r\n\r\nFrom: A\r\nTo: B\n\n- First\n- Second\n\n3. Third\n4. Fourth'), [

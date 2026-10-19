@@ -4,6 +4,7 @@ import { VOCAB_STATUS_LABEL } from '../../domain/format';
 import type { VocabEntry, VocabStatus } from '../../domain/types';
 import { Banner, EmptyBlock, ErrorBlock, Loading, Tag } from '../components';
 import { navigate } from '../router';
+import { MarkdownText, MarkdownInline } from '../MaterialContent';
 
 type StatusFilter = 'all' | VocabStatus;
 
@@ -117,7 +118,7 @@ export function VocabScreen() {
                 </Tag>
                 {entry.manual_required ? <Tag tone="warn">手动必背</Tag> : null}
               </div>
-              {entry.sense ? <p className="vocab-sense">{entry.sense}</p> : <p className="vocab-sense muted">未填写词义/用法</p>}
+              {entry.sense ? <MarkdownText className="vocab-sense" text={entry.sense} flow="prose" /> : <p className="vocab-sense muted">未填写词义/用法</p>}
               <p className="vocab-counts">
                 不同题目 {entry.question_count}/{entry.threshold} · 材料 {entry.material_count} · 历史复发{' '}
                 {entry.lifetime_question_count}
@@ -140,7 +141,7 @@ export function VocabScreen() {
                         >
                           查看这条练习记录
                         </button>
-                        {item.context ? <span className="evidence-context">{item.context}</span> : null}
+                        {item.context ? <MarkdownInline className="evidence-context" text={item.context} /> : null}
                       </li>
                     ))}
                   </ul>

@@ -5,6 +5,7 @@ import type { AttemptReport } from '../../domain/types';
 import { Banner, EmptyBlock, ErrorBlock, Loading, Tag } from '../components';
 import { navigate } from '../router';
 import { aggregateWrongAnswers } from './wrongAggregate';
+import { MarkdownText } from '../MaterialContent';
 
 // The wrong book spans ALL graded history, not just the latest report. A
 // question leaves the book only when a later graded attempt answers it
@@ -124,7 +125,7 @@ export function WrongScreen() {
                 {entry.wrongCount > 1 ? <Tag tone="warn">错 {entry.wrongCount} 次</Tag> : null}
                 {entry.fixedCount > 0 ? <Tag tone="good">曾做对 {entry.fixedCount} 次</Tag> : null}
               </div>
-              <p className="wrong-stem">{entry.question.stem || '题目'}</p>
+              <MarkdownText className="wrong-stem" text={entry.question.stem || '题目'} flow="prose" />
               <p className="wrong-answer">
                 上次你的答案 {entry.question.selected_option_id ?? '未做'} · 正确答案 {entry.question.answer}
               </p>

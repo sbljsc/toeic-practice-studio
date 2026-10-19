@@ -36,8 +36,92 @@ function tableAt(lines: string[], at: number): Extract<MaterialBlock, { kind: 't
 const heading = /^(#{1,6})\s+(.+)$/;
 const bullet = /^\s*(?:([-+*])\s+|(\d+)[.)]\s+)(.+)$/;
 
-export function parseMaterialMarkdown(source: string): MaterialBlock[] {
+export type MaterialFlow = 'document' | 'prose';
+const han = /\p{Script=Han}/u;
+const mailField = /^(?:From|To|Cc|Bcc|Sent|Date|Subject|Re|E-?mail|Tel|Phone|Fax|收件人|发件人|主题|日期)\s*[:：]/i;
+const speaker = /^(?:M\d?|W\d?|Man|Woman|Q|A)\s*[:：](?:\s|$)|^[MW]\d?$/i;
+const chat = /^.{1,60}\[\d{1,2}:\d{2}\s*(?:[AP]\.?M\.?)?\]$/i;
+const choice = /^[（(][A-D][）)](?:\s|[^a-z]|$)/i;
+const salutation = /^(?:Dear\b.+[,，:]|尊敬的.+[：:]|您好[！!：:]?)$/i;
+const closing = /^(?:Best regards|Kind regards|Regards|Sincerely(?: yours)?|Yours (?:truly|sincerely|faithfully)|Thank you|Thanks)[,!，！]?$/i;
+const annotation = /^(?:[▶→➤]|[·•]\s*[A-Za-z])/;
+const sentenceEnd = /[.!?。！？][”’"'）)]?$/;
+const short = (line: string) => Array.from(line).reduce((n, ch) => n + (han.test(ch) ? 2 : 1), 0) < 60;
+const hardBreak = (line: string) => / {2,}$/.test(line) || /(?<!\\)(?:\\\\)*\\$/.test(line);
+const trimLine = (line: string) => line.replace(/ {2,}$|(?<!\\)(?:\\\\)*\\$/, match => match.startsWith(' ') ? '' : match.slice(0, -1)).trim();
+
+/** A source newline is a Markdown soft break, unless explicitly marked hard.
+ * Joining only whitespace retains every word, number, hyphen and blank label. */
+export function reflowSoftLines(source: string): string {
   const lines = source.replace(/\r\n?/g, '\n').split('\n');
+  let result = trimLine(lines[0] ?? '');
+  for (let i = 1; i < lines.length; i++) {
+    const next = trimLine(lines[i]);
+    if (!next) continue;
+    const last = result.at(-1) ?? '', first = next[0];
+    const gap = hardBreak(lines[i - 1]) ? '\n' : /^[（(][A-D][）)]$/.test(lines[i - 1].trim()) && /^[a-z]/i.test(first) ? ' ' :
+      !last || han.test(last) || han.test(first) || /[-‐‑([{“‘（【「『《，。！？；：、）】》」』]/.test(last) || /[,.;:!?%)}\]”’，。！？；：、）》」』】]/.test(first) ? '' : ' ';
+    result += gap + next;
+  }
+  return result;
+}
+
+/** Legacy extracts have no blank lines around many genuine document fields.
+ * Recognize those visible boundaries, rather than treating every PDF row as a
+ * paragraph. This is display-only; frozen source and answer data stay intact. */
+function documentParagraphs(lines: string[], flow: MaterialFlow): string[] {
+  if (flow === 'prose') return [reflowSoftLines(lines.join('\n'))];
+  // Malformed tables must remain literal, including every row/cell.
+  if (lines.filter(line => line.includes('|')).length >= 2) return [lines.join('\n')];
+  const paragraphs: string[] = [];
+  let current: string[] = [];
+  let signature = false;
+  const flush = () => { if (current.length) paragraphs.push(reflowSoftLines(current.join('\n'))); current = []; signature = false; };
+  const title = (line: string) => short(line) && !sentenceEnd.test(line) &&
+    /^(?:[A-Z0-9][\w&’'.,()-]*)(?:[ \t]+(?:[A-Z0-9][\w&’'.,()-]*|for|of|the|and|to|in|a|&))*$/.test(line) &&
+    (line.includes(' ') || /^[A-Z\d&]{2,}$/.test(line));
+  const address = (line: string) => short(line) &&
+    (/^\d+[A-Za-z]?(?:F,)?\s+/.test(line) || /,\s*[A-Z][a-zA-Z ]+\s+\d{4,6}$/.test(line) || /^Attention:/i.test(line) || /\b(?:Inc|Ltd|Co|Corp)\.$/.test(line));
+  for (let i = 0; i < lines.length; i++) {
+    const raw = lines[i], line = raw.trim(), previous = lines[i - 1]?.trim() ?? '';
+    if (/^[_=-]{3,}$/.test(line)) { flush(); paragraphs.push(line); continue; }
+    if (mailField.test(line)) {
+      flush(); const fields = [raw];
+      while (i + 1 < lines.length && mailField.test(lines[i + 1].trim())) fields.push(lines[++i]);
+      paragraphs.push(fields.map(trimLine).join('\n')); continue;
+    }
+    if (salutation.test(line)) { flush(); paragraphs.push(line); continue; }
+    if (closing.test(line)) { flush(); signature = true; current.push(raw); continue; }
+    if (signature) { current[current.length - 1] += '  '; current.push(raw); continue; }
+    if (chat.test(line)) {
+      flush(); current.push(line + '  '); continue;
+    }
+    if (speaker.test(line) || choice.test(line) || annotation.test(line) || /^来自\S/.test(line)) flush();
+    if (/^[▶→➤]\s*解析\s*$/.test(line)) { paragraphs.push(line.replace(/^([▶→➤])\s*/, '$1 ')); continue; }
+    // A block of short title/address lines is layout, not wrapped running prose.
+    const chineseTitle = i === 0 && /^[\p{Script=Han}·]{2,16}$/u.test(line) && (lines[i + 1]?.match(/\p{Script=Han}/gu)?.length ?? 0) >= 20;
+    if (!current.length && (title(line) || address(line) || chineseTitle) && !speaker.test(line) && !choice.test(line)) {
+      const fields = [raw];
+      while (i + 1 < lines.length && !salutation.test(lines[i + 1].trim()) && !closing.test(lines[i + 1].trim()) &&
+          (title(lines[i + 1].trim()) || address(lines[i + 1].trim()))) fields.push(lines[++i]);
+      paragraphs.push(fields.map(trimLine).join('\n').replace(/\b(and|or|of|the|to|&)\n/g, '$1 ')); continue;
+    }
+    if (current.length && !hardBreak(lines[i - 1]) && !chat.test(previous) &&
+        ((short(previous) && sentenceEnd.test(previous) && /^(?:[A-Z“‘"'\p{Script=Han}]|[（(][A-D][）)])/u.test(line)) ||
+          (sentenceEnd.test(previous) && !han.test(previous) && /^\p{Script=Han}/u.test(line)) ||
+          (choice.test(current[0].trim()) && /[a-z]{3}/i.test(previous.replace(/^[（(][A-D][）)]/, '')) && !han.test(previous) && /^\p{Script=Han}/u.test(line)) ||
+          (sentenceEnd.test(previous) && short(line) && /[:：]$/.test(line)) ||
+          (/[:：]$/.test(previous) && !speaker.test(previous) && !mailField.test(previous)))) flush();
+    current.push(raw);
+  }
+  flush(); return paragraphs;
+}
+
+export function parseMaterialMarkdown(source: string, flow: MaterialFlow = 'document'): MaterialBlock[] {
+  const lines = source.replace(/\r\n?/g, '\n')
+    .replace(/([（(])\s*\n\s*([A-D])\s*\n\s*([）)])/g, '$1$2$3')
+    .replace(/^[▶→➤]\s*\n\s*解析\s*$/gm, match => match.replace(/\s+/g, ' '))
+    .split('\n');
   const blocks: MaterialBlock[] = [];
   let at = 0;
   while (at < lines.length) {
@@ -66,7 +150,7 @@ export function parseMaterialMarkdown(source: string): MaterialBlock[] {
     while (at < lines.length && lines[at].trim() && !heading.test(lines[at]) && !bullet.test(lines[at]) && !tableAt(lines, at)) {
       prose.push(lines[at++]);
     }
-    blocks.push({ kind: 'paragraph', text: prose.join('\n') });
+    blocks.push(...documentParagraphs(prose, flow).map(text => ({ kind: 'paragraph' as const, text })));
   }
   return blocks;
 }

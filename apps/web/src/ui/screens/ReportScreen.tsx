@@ -21,6 +21,7 @@ import { Banner, ErrorBlock, Loading, Stat, Tag } from '../components';
 import { erratumNote } from '../attempt/erratum';
 import { ReviewAudioBar } from './ReviewAudioBar';
 import { ListeningReview } from './ListeningReview';
+import { MarkdownText } from '../MaterialContent';
 import { UnscoredDrafts } from './UnscoredDrafts';
 import { pendingInterruptionCount } from '../attempt/interruptionDelivery';
 import { reviewEligibility } from './reviewEligibility';
@@ -293,20 +294,20 @@ function ReviewDetails({ question, group, attemptId, integrity, status, onReview
           {question.explanation && question.section === 'listening' ? (
             <details className="explanation source-explanation" data-testid="original-explanation">
               <summary>查看解析与补充表达</summary>
-              <p>{question.explanation.text}</p>
-              {group?.review_text ? <p>{group.review_text}</p> : null}
+              <MarkdownText text={question.explanation.text} />
+              {group?.review_text ? <MarkdownText text={group.review_text} /> : null}
             </details>
           ) : question.explanation ? (
             <div className="explanation">
               <h4>解析</h4>
-              <p>{question.explanation.text}</p>
+              <MarkdownText text={question.explanation.text} />
             </div>
           ) : null}
 
           {group?.review_text && question.section !== 'listening' ? (
             <div className="explanation">
               <h4>原文 / 译文</h4>
-              <p>{group.review_text}</p>
+              <MarkdownText text={group.review_text} />
             </div>
           ) : null}
 
