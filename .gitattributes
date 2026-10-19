@@ -1,0 +1,7 @@
+* text=auto
+*.cmd text eol=crlf
+*.flac binary
+*.png binary
+*.jpg binary
+content/question-pool/*.json -text whitespace=cr-at-eol
+THIRD-PARTY-NOTICES.txt -text whitespace=-blank-at-eol,cr-at-eol

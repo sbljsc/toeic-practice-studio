@@ -1,0 +1,14 @@
+.venv/
+.venv-*/
+node_modules/
+apps/web/dist/
+.data/
+.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.studio-distribution
+*.sqlite3*
+*.db
+*.log
