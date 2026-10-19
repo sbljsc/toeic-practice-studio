@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { api, ApiError } from '../../domain/http';
 import {
   CAUSES,
@@ -10,13 +10,14 @@ import {
   practiceTitle,
 } from '../../domain/format';
 import type {
+  Attempt,
   AttemptReport,
   Candidate,
   ReportQuestion,
   ReviewCause,
   ReviewWord,
 } from '../../domain/types';
-import { Banner, EmptyBlock, ErrorBlock, Loading, Stat, Tag } from '../components';
+import { Banner, ErrorBlock, Loading, Stat, Tag } from '../components';
 import { erratumNote } from '../attempt/erratum';
 import { ReviewAudioBar } from './ReviewAudioBar';
 import { ListeningReview } from './ListeningReview';
@@ -24,7 +25,10 @@ import { UnscoredDrafts } from './UnscoredDrafts';
 import { pendingInterruptionCount } from '../attempt/interruptionDelivery';
 import { reviewEligibility } from './reviewEligibility';
 import { ReportRequestGate } from './reportState';
-import type { AudioQueueItem } from '../../domain/types';
+import { ActivityStatistics } from '../ActivityStatistics';
+import { WorkspaceViewToggle, type WorkspaceView } from '../WorkspaceViewToggle';
+import { AnswerCard, QuestionPanel } from '../attempt/parts';
+import { reviewFocusIndex, reviewWorkspace } from './reviewWorkspace';
 
 interface Props {
   attemptId: string;
@@ -37,14 +41,13 @@ interface Props {
 export function ReportScreen({ attemptId, focusQuestionId, onBack, onRetake, onOpenAttempt }: Props) {
   const [report, setReport] = useState<AttemptReport | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [filter, setFilter] = useState<'all' | 'wrong' | 'unanswered' | 'correct'>('all');
+  const [view, setView] = useState<WorkspaceView>(focusQuestionId ? 'answer' : 'statistics');
   const [expanded, setExpanded] = useState<string | null>(null);
   const [retaking, setRetaking] = useState(false);
   const [retakeError, setRetakeError] = useState<string | null>(null);
-  const focusedQuestionId = focusQuestionId;
   // Review replay: the report DTO has no audio queue, so read it from the
   // closed attempt, which still exposes audio_queue after grading.
-  const [reviewQueue, setReviewQueue] = useState<AudioQueueItem[]>([]);
+  const [snapshot, setSnapshot] = useState<Attempt | null>(null);
   const [pendingInterruptions, setPendingInterruptions] = useState(0);
   const requestGate = useRef(new ReportRequestGate()).current;
   requestGate.select(attemptId);
@@ -63,11 +66,11 @@ export function ReportScreen({ attemptId, focusQuestionId, onBack, onRetake, onO
 
   useEffect(() => {
     let active = true;
-    setReviewQueue([]);
+    setSnapshot(null);
     api
       .getAttempt(attemptId)
       .then((attempt) => {
-        if (active) setReviewQueue(attempt.audio_queue ?? []);
+        if (active) setSnapshot(attempt);
       })
       .catch(() => {
         // Replay is optional; a failure must not break the report.
@@ -94,7 +97,7 @@ export function ReportScreen({ attemptId, focusQuestionId, onBack, onRetake, onO
 
   useEffect(() => {
     requestGate.activate(attemptId);
-    setReport(null); setExpanded(null); setFilter('all'); load();
+    setReport(null); setExpanded(null); setView(focusQuestionId ? 'answer' : 'statistics'); load();
     return () => requestGate.invalidate();
   }, [load, requestGate]);
 
@@ -115,20 +118,15 @@ export function ReportScreen({ attemptId, focusQuestionId, onBack, onRetake, onO
     return () => window.removeEventListener('toeic:interruption-updated', onUpdated);
   }, [attemptId, load, refreshPending]);
 
-  // Deep link from a vocabulary/wrong-answer entry: open the exact question
-  // instead of leaving every row collapsed.
+  // Explicit deep links select the immutable question, independent of its number.
   useEffect(() => {
-    if (!report || !focusQuestionId) return;
-    setFilter('all');
-    setExpanded(focusQuestionId);
-  }, [report, focusQuestionId]);
+    if (!report || report.attempt.id !== attemptId || !focusQuestionId) return;
+    setView('answer'); setExpanded(focusQuestionId);
+  }, [loadedAttemptId, focusQuestionId, attemptId]);
 
-  // Scroll after the expanded row is rendered.
-  useEffect(() => {
-    if (!expanded) return;
-    const node = document.querySelector(`[data-review-id="${CSS.escape(expanded)}"]`);
-    node?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  }, [expanded]);
+  const workspace = useMemo(() => report ? reviewWorkspace(report, snapshot) : null, [report, snapshot]);
+  const answers = useMemo(() => Object.fromEntries(Object.entries(workspace?.answers ?? {})
+    .map(([id, answer]) => [id, { ...answer, dirty: false }])), [workspace]);
 
   if (error) {
     return (
@@ -149,9 +147,11 @@ export function ReportScreen({ attemptId, focusQuestionId, onBack, onRetake, onO
     );
   }
 
-  const questions = report.questions.filter((question) =>
-    filter === 'all' ? true : filter === 'correct' ? question.result === 'correct' : question.result === filter,
-  );
+  const currentIndex = reviewFocusIndex(report, expanded);
+  const question = report.questions[currentIndex];
+  const group = report.groups.find((item) => item.id === question?.group_id);
+  const reviewQueue = workspace?.audio_queue ?? [];
+  const jumpTo = (index: number) => setExpanded(report.questions[index]?.id ?? null);
 
   // A retake rebuilds THIS report's scope, never an unrelated last selection.
   const handleExactRetake = async () => {
@@ -189,6 +189,8 @@ export function ReportScreen({ attemptId, focusQuestionId, onBack, onRetake, onO
           </p>
         </div>
         <div className="page-actions">
+          <div className="workspace-view-count"><WorkspaceViewToggle view={view} onChange={setView} />
+            <span className="sticky-stat">已答 {report.summary.total - report.summary.unanswered}/{report.summary.total}</span></div>
           <button type="button" className="btn btn-secondary" onClick={onBack}>
             返回练习
           </button>
@@ -202,6 +204,7 @@ export function ReportScreen({ attemptId, focusQuestionId, onBack, onRetake, onO
       </header>
       {retakeError ? <Banner tone="error" title="精确重做失败">{retakeError}</Banner> : null}
 
+      <div hidden={view !== 'statistics'} className="report-statistics">
       <section className="summary-grid" aria-label="成绩摘要">
         <Stat label="正确率" value={percent(report.summary.correct_percent)} note={`${report.summary.correct} / ${report.summary.total} 题`} />
         <Stat label="正确" value={report.summary.correct} note={percent(report.summary.correct_percent)} />
@@ -213,14 +216,7 @@ export function ReportScreen({ attemptId, focusQuestionId, onBack, onRetake, onO
           note="正确 /（正确 + 错误）"
         />
       </section>
-
-      <UnscoredDrafts attemptId={attemptId} questions={report.questions} />
-
-      {pendingInterruptions > 0 ? (
-        <Banner tone="warn" title="中断记录待确认，暂不视为有效模拟" data-testid="pending-interruption-banner">
-          还有 {pendingInterruptions} 条中断记录正在保存。保存完成后会显示最终结果，成绩不会因此改变。
-        </Banner>
-      ) : null}
+      <ActivityStatistics activity={report.activity} />
 
       {report.summary.by_part.length > 0 ? (
         <section className="part-table" aria-label="分区统计">
@@ -252,149 +248,48 @@ export function ReportScreen({ attemptId, focusQuestionId, onBack, onRetake, onO
         </section>
       ) : null}
 
-      <section className="review-section" aria-label="逐题复盘">
-        <div className="section-head">
-          <h2>逐题复盘</h2>
-          <div className="filter-row" role="radiogroup" aria-label="筛选题目">
-            {(
-              [
-                { key: 'all', label: '全部' },
-                { key: 'wrong', label: '错题' },
-                { key: 'unanswered', label: '未做' },
-                { key: 'correct', label: '正确' },
-              ] as const
-            ).map((item) => (
-              <button
-                key={item.key}
-                type="button"
-                role="radio"
-                aria-checked={filter === item.key}
-                className="chip chip-compact"
-                data-active={filter === item.key}
-                onClick={() => setFilter(item.key)}
-              >
-                {item.label}
-              </button>
-            ))}
+      </div>
+      {pendingInterruptions > 0 ? (
+        <Banner tone="warn" title="中断记录待确认，暂不视为有效模拟" data-testid="pending-interruption-banner">
+          还有 {pendingInterruptions} 条中断记录正在保存。保存完成后会显示最终结果，成绩不会因此改变。
+        </Banner>
+      ) : null}
+      <UnscoredDrafts attemptId={attemptId} questions={report.questions} />
+      <section className="workspace-body review-workspace" hidden={view !== 'answer'} aria-label="逐题复盘">
+        <main className="workspace-main">
+          {reviewQueue.length > 0 && !report.groups.some((item) => item.review_audio) ? (
+            <details className="legacy-audio"><summary>历史记录的整段音轨</summary>
+              <ReviewAudioBar queue={reviewQueue} focusQuestionId={question?.id} />
+            </details>
+          ) : null}
+          {question && group && workspace ? <div data-review-id={question.id} data-testid={`review-${question.id}`}>
+            {group.section === 'listening' ? <ListeningReview key={`${attemptId}:${group.id}`} group={group} /> : null}
+            <QuestionPanel question={question} group={group} answer={answers[question.id]} readOnly attempt={workspace}
+              onSelect={() => undefined} onFlag={() => undefined} solution={{ answer: question.answer, selected: question.selected_option_id }} />
+            <ReviewDetails key={`${attemptId}:${question.id}`} question={question} group={group} attemptId={attemptId}
+              integrity={report.attempt.integrity} status={report.attempt.status} onReviewed={load} />
+          </div> : <p className="answer-empty">本轮没有可复盘的题目。</p>}
+          <div className="nav-row">
+            <button type="button" className="btn btn-secondary" disabled={currentIndex === 0} onClick={() => jumpTo(currentIndex - 1)}>上一题</button>
+            <span className="nav-position">本轮第 {question ? currentIndex + 1 : 0} / {report.questions.length} 题 · 只读复盘</span>
+            <button type="button" className="btn btn-secondary" disabled={currentIndex >= report.questions.length - 1} onClick={() => jumpTo(currentIndex + 1)}>下一题</button>
           </div>
-        </div>
-
-        {reviewQueue.length > 0 && !report.groups.some((group) => group.review_audio) ? (
-          <details className="legacy-audio">
-            <summary>历史记录的整段音轨</summary>
-            <ReviewAudioBar queue={reviewQueue} focusQuestionId={focusQuestionId} />
-          </details>
-        ) : null}
-
-        {questions.length === 0 ? <EmptyBlock title="没有符合条件的题目" /> : null}
-
-        <ul className="review-list">
-          {questions.map((question) => (
-            <ReviewRow
-              key={question.id}
-              question={question}
-              displayNumber={report.questions.findIndex((item) => item.id === question.id) + 1}
-              attemptId={attemptId}
-              group={report.groups.find((item) => item.id === question.group_id)}
-              expanded={expanded === question.id}
-              focused={focusedQuestionId === question.id}
-              integrity={report.attempt.integrity}
-              status={report.attempt.status}
-              onToggle={() => setExpanded(expanded === question.id ? null : question.id)}
-              onReviewed={load}
-            />
-          ))}
-        </ul>
+        </main>
+        {workspace ? <AnswerCard attempt={workspace} answers={answers} currentIndex={currentIndex} onJump={jumpTo}
+          results={Object.fromEntries(report.questions.map((item) => [item.id, item.result]))} /> : null}
       </section>
     </div>
   );
 }
 
-function ReviewRow({
-  question,
-  displayNumber,
-  attemptId,
-  group,
-  expanded,
-  focused,
-  integrity,
-  status,
-  onToggle,
-  onReviewed,
-}: {
-  question: ReportQuestion;
-  displayNumber: number;
-  attemptId: string;
-  group: AttemptReport['groups'][number] | undefined;
-  expanded: boolean;
-  focused?: boolean;
-  integrity?: 'valid' | 'interrupted';
-  status: string;
-  onToggle: () => void;
-  onReviewed: () => void;
+function ReviewDetails({ question, group, attemptId, integrity, status, onReviewed }: {
+  question: ReportQuestion; group: AttemptReport['groups'][number]; attemptId: string;
+  integrity?: 'valid' | 'interrupted'; status: string; onReviewed: () => void;
 }) {
-  return (
-    <li
-      className="review-row"
-      data-result={question.result}
-      data-focused={focused ? 'true' : undefined}
-      data-review-id={question.id}
-      data-testid={`review-${question.id}`}
-    >
-      <button type="button" className="review-row-head" onClick={onToggle} aria-expanded={expanded}>
-        <span className="review-index">{displayNumber}</span>
-        <span className="review-stem">{question.stem || '题目'}</span>
-        <ResultTag result={question.result} />
-      </button>
-      {expanded ? (
-        <div className="review-body">
-          {(() => {
-            const note = erratumNote(question);
-            if (!note) return null;
-            return (
-              <div className="erratum-note" data-testid={`erratum-${question.id}`} role="note">
-                <span className="erratum-title">{note.text}</span>
-              </div>
-            );
-          })()}
-          {group?.section === 'listening' ? <ListeningReview key={group.id} group={group} /> : null}
-          {group && group.materials.length > 0 ? (
-            <div className="review-materials">
-              {group.materials.map((material, index) => (
-                <div key={index}>
-                  {material.kind === 'text' ? (
-                    <p className="material-text">{material.text}</p>
-                  ) : (
-                    <figure className="material-figure">
-                    <img src={material.url ?? `/api/assets/${material.asset_id}`} alt={material.alt ?? '题目图表'} />
-                      {material.text ? (
-                        <details className="ocr-details">
-                          <summary>显示图中文字</summary>
-                          <p>{material.text}</p>
-                        </details>
-                      ) : null}
-                    </figure>
-                  )}
-                </div>
-              ))}
-            </div>
-          ) : null}
-
-          <ol className="option-review">
-            {question.options.map((option) => {
-              const isCorrect = option.id === question.answer;
-              const isChosen = option.id === question.selected_option_id;
-              return (
-                <li key={option.id} data-correct={isCorrect} data-chosen={isChosen}>
-                  <span className="option-key">{option.id}</span>
-                  <span className="option-text">{option.text || `选项 ${option.id}`}</span>
-                  {isCorrect ? <Tag tone="good">正确答案</Tag> : null}
-                  {isChosen ? <Tag tone={isCorrect ? 'good' : 'bad'}>你的选择</Tag> : null}
-                </li>
-              );
-            })}
-          </ol>
-
+  const note = erratumNote(question);
+  return <div className="review-details">
+    <ResultTag result={question.result} />
+    {note ? <div className="erratum-note" data-testid={`erratum-${question.id}`} role="note">{note.text}</div> : null}
           {question.explanation && question.section === 'listening' ? (
             <details className="explanation source-explanation" data-testid="original-explanation">
               <summary>查看解析与补充表达</summary>
@@ -433,10 +328,7 @@ function ReviewRow({
             }
             return null;
           })()}
-        </div>
-      ) : null}
-    </li>
-  );
+  </div>;
 }
 
 function ResultTag({ result }: { result: ReportQuestion['result'] }) {
@@ -577,6 +469,7 @@ function ErrorReview({
               type="text"
               value={freeform}
               placeholder="或手动输入词/短语"
+              aria-label="添加造成错误的词或短语"
               onChange={(event) => setFreeform(event.target.value)}
               onKeyDown={(event) => {
                 if (event.key === 'Enter') {
@@ -600,6 +493,7 @@ function ErrorReview({
                     type="text"
                     value={word.sense}
                     placeholder="补充词义/用法"
+                    aria-label={`${word.term} 的词义或用法`}
                     onChange={(event) => updateWord(word.term, { sense: event.target.value })}
                     data-testid={`word-sense-${question.id}-${word.term}`}
                   />

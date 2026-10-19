@@ -8,6 +8,7 @@ state map used by question filters from all valid closed attempts.
 from .clock import now_iso
 from .library import READING_PARTS, LISTENING_PARTS
 from .store import dumps, loads
+from .activity import summary as activity_summary
 
 
 def grade(record: dict) -> dict:
@@ -95,6 +96,7 @@ def build_report(record: dict) -> dict:
         "questions": questions,
         "groups": groups,
         "reviews": {},
+        "activity": activity_summary(record),
     }
 
 

@@ -53,6 +53,12 @@ class PositionRequest(BaseModel):
     current_index: int = 0
 
 
+class ActivityRequest(BaseModel):
+    session_id: str = Field(min_length=1, max_length=128)
+    sequence: int = Field(ge=0)
+    question_id: str | None = Field(default=None, max_length=128)
+
+
 class AnswerRequest(BaseModel):
     option_id: str | None = None
     flagged: bool | None = None
@@ -161,6 +167,13 @@ def put_answer(attempt_id: str, qid: str, body: AnswerRequest, request: Request,
     return services(request).attempts.put_answer(
         attempt_id, qid, x_tab_id, body.model_dump(exclude_none=True)
     )
+
+
+@router.put("/attempts/{attempt_id}/activity")
+def put_activity(attempt_id: str, body: ActivityRequest, request: Request,
+                 x_tab_id: str | None = Header(default=None)) -> dict:
+    validate_write_request(request)
+    return services(request).attempts.set_activity(attempt_id, x_tab_id, body.model_dump())
 
 
 @router.post("/attempts/{attempt_id}/submit")

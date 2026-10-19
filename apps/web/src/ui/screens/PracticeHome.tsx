@@ -143,7 +143,25 @@ export function PracticeHome({ resumable, onOpenAttempt, onStarted, onOpenHistor
       {scope === 'custom' && <div className="composer-block"><Field label="自选题组目标数" hint="逐 Part 设置题数；每个目标都必须由该 Part 的完整题组组成，留空或填 0 表示不选。"><div className="pool-part-counts">{PARTS.map((p) => <label key={p}>{PART_LABEL[p]}<input aria-label={`${PART_LABEL[p]}目标题数`} type="number" min={0} value={customCounts[p] ?? 0} onChange={(e) => setCustomCounts((old) => ({ ...old, [p]: Number(e.target.value) || 0 }))} /><span>{catalog.parts.find((item) => item.part === p)?.group_count ?? 0} 组可选</span></label>)}</div></Field></div>}
       <div className="composer-block"><Field label="选题偏好" hint="这是排序偏好，不是硬性筛除；候选不足时会从其余题组补足目标数量。"><div className="chip-row" role="radiogroup" aria-label="选题偏好">{PREFERENCES.map(([key, label]) => <button key={key} type="button" role="radio" aria-checked={preference === key} className="chip chip-compact" data-active={preference === key} onClick={() => setPreference(key)}>{label}</button>)}</div></Field></div>
       <div className="composer-block"><Field label="模式与计时"><div className="chip-row" role="group" aria-label="模式"><button className="chip" data-active={mode === 'practice'} onClick={() => setMode('practice')}>练习</button><button className="chip" data-active={mode === 'exam'} onClick={() => setMode('exam')}>模拟</button></div>
-        {mode === 'exam' && ['full', 'listening', 'reading'].includes(scope) ? <p className="field-note">固定时长：{scope === 'full' ? 120 : scope === 'listening' ? 45 : 75} 分钟。完整模拟听力播放结束后仍按听力截止时间等待。</p> : <div className="field-row"><select aria-label="计时方式" value={timerKind} onChange={(e) => setTimerKind(e.target.value as TimerKind)}>{(['countdown', 'countup', 'none'] as TimerKind[]).map((v) => <option value={v} key={v}>{TIMER_LABEL[v]}</option>)}</select>{timerKind === 'countdown' && <label>分钟 <input aria-label="计时分钟" type="number" min={1} max={300} value={minutes} onChange={(e) => changeMinutes(Number(e.target.value) || 0)} /></label>}</div>}
+        {mode === 'exam' && ['full', 'listening', 'reading'].includes(scope) ? <p className="field-note">固定时长：{scope === 'full' ? 120 : scope === 'listening' ? 45 : 75} 分钟。完整模拟听力播放结束后仍按听力截止时间等待。</p> : (
+          <div className="timer-fields" role="group" aria-label="计时设置">
+            <label className="timer-field">
+              <span className="timer-field-label">计时方式</span>
+              <select aria-label="计时方式" value={timerKind} onChange={(e) => setTimerKind(e.target.value as TimerKind)}>
+                {(['countdown', 'countup', 'none'] as TimerKind[]).map((v) => <option value={v} key={v}>{TIMER_LABEL[v]}</option>)}
+              </select>
+            </label>
+            {timerKind === 'countdown' && <label className="timer-field timer-duration-field">
+              <span className="timer-field-label">倒计时时长</span>
+              <span className="timer-duration-control">
+                <input aria-label="计时分钟" aria-describedby="timer-duration-hint" type="number" inputMode="numeric"
+                  min={1} max={300} value={minutes} onChange={(e) => changeMinutes(Number(e.target.value) || 0)} />
+                <span className="timer-unit" aria-hidden="true">分钟</span>
+              </span>
+              <span id="timer-duration-hint" className="timer-field-hint">可设置 1–300 分钟</span>
+            </label>}
+          </div>
+        )}
       </Field></div>
       <div className="composer-summary"><p>{scope === 'part' ? `目标 ${target} 题` : scope === 'custom' ? `自选目标 ${Object.values(customCounts).reduce((sum, count) => sum + count, 0)} 题` : `题库 ${catalog.question_count} 题`} · {scope === 'full' && mode === 'exam' ? '听力 45 分钟，阅读 75 分钟' : scope === 'listening' && mode === 'exam' ? '听力 45 分钟' : scope === 'reading' && mode === 'exam' ? '阅读 75 分钟' : '随机抽取完整题组'}</p>
         {!feasible && <p className="summary-warn">当前题库无法按完整题组满足此范围和目标数，请调整目标或稍后重试。</p>}{error && <Banner tone="error" title="无法创建">{error}</Banner>}

@@ -1,9 +1,11 @@
 import { useMemo, useState } from 'react';
+import { MaterialContent } from '../MaterialContent';
+import { WorkspaceViewToggle, type WorkspaceView } from '../WorkspaceViewToggle';
 import type { Attempt, AttemptQuestion } from '../../domain/types';
 import { MODE_LABEL, PART_LABEL, SCOPE_LABEL, formatClock, practiceTitle } from '../../domain/format';
 import { Banner, Tag } from '../components';
 import type { useAudioController } from './media';
-import { stageLock } from './stageLock';
+import { stageLock, isCurrentPhaseQuestion } from './stageLock';
 import {
   headerContext,
   headerTimerText,
@@ -33,6 +35,8 @@ export function StickyHeader({
   onSubmit,
   onTogglePause,
   submitting,
+  view,
+  onView,
 }: {
   attempt: Attempt;
   clockDisplay: string;
@@ -45,6 +49,8 @@ export function StickyHeader({
   onSubmit: () => void;
   onTogglePause: () => void;
   submitting: boolean;
+  view: WorkspaceView;
+  onView: (view: WorkspaceView) => void;
 }) {
   return (
     <header className="sticky-header" data-testid="sticky-header">
@@ -65,9 +71,10 @@ export function StickyHeader({
         </div>
       </div>
       <div className="sticky-right">
-        <span className="sticky-stat" data-testid="answered-count">
-          已答 {answered}/{attempt.question_count}
-        </span>
+        <div className="workspace-view-count">
+          <WorkspaceViewToggle view={view} onChange={onView} />
+          <span className="sticky-stat" data-testid="answered-count">已答 {answered}/{attempt.question_count}</span>
+        </div>
         {flagged > 0 ? <span className="sticky-stat">标记 {flagged}</span> : null}
         <span
           className="timer"
@@ -402,7 +409,7 @@ export function QuestionPanel({
   attempt,
   onSelect,
   onFlag,
-  onClear,
+  solution,
 }: {
   question: AttemptQuestion;
   group: Attempt['groups'][number];
@@ -411,8 +418,7 @@ export function QuestionPanel({
   attempt: Attempt;
   onSelect: (optionId: 'A' | 'B' | 'C' | 'D') => void;
   onFlag: () => void;
-  /** Writes an explicit empty answer (option_id: null) through the pipeline. */
-  onClear: () => void;
+  solution?: { answer: string; selected: string | null };
 }) {
   // (P0 fix) Listening questions are editable WHILE listening runs; they lock
   // only when the exam enters reading. This used to disable every option.
@@ -426,8 +432,8 @@ export function QuestionPanel({
     isPaused: attempt.timing.is_paused,
     mode: attempt.mode,
   });
-  const locked = !lock.editable;
-  const hasAnswer = Boolean(answer?.option_id);
+  const locked = !lock.editable || !isCurrentPhaseQuestion({ phaseQuestionIds: attempt.timing.phase_question_ids, questionId: question.id });
+  const review = ['submitted', 'expired'].includes(attempt.status) ? solution : undefined;
   const sharedMaterials = group.materials;
   const displayNumber = attempt.questions.findIndex((item) => item.id === question.id) + 1;
 
@@ -439,57 +445,20 @@ export function QuestionPanel({
           <span className="question-number">
             第 {displayNumber} 题 · {question.section === 'listening' ? '听力' : '阅读'}
           </span>
-          {answer?.flagged ? <Tag tone="warn">已标记</Tag> : null}
         </div>
-        <button
+        {!review && <button
           type="button"
-          className="btn btn-ghost"
+          className="btn btn-ghost question-flag"
           onClick={onFlag}
           disabled={readOnly || locked}
           aria-pressed={answer?.flagged ?? false}
           data-testid="flag-button"
         >
-          {answer?.flagged ? '取消标记' : '标记本题'}
-        </button>
-        {hasAnswer ? (
-          <button
-            type="button"
-            className="btn btn-ghost"
-            onClick={onClear}
-            // Clearing writes an answer change, so it obeys the same stage lock.
-            disabled={readOnly || locked}
-            data-testid="clear-answer"
-          >
-            清空本题
-          </button>
-        ) : null}
+          <span aria-hidden="true">⚑</span> 标记本题
+        </button>}
       </div>
 
-      {sharedMaterials.length > 0 ? (
-        <div className="materials" data-testid="group-materials">
-          {sharedMaterials.map((material, index) => (
-            <div key={`${material.kind}-${index}`} className="material">
-              {material.kind === 'text' ? (
-                <p className="material-text">{material.text}</p>
-              ) : (
-                <figure className="material-figure">
-                  <img
-                    src={material.url ?? `/api/assets/${material.asset_id}`}
-                    alt={material.alt ?? '原题图表'}
-                    loading="lazy"
-                  />
-                  {material.text ? (
-                    <details className="ocr-details">
-                      <summary>显示图中文字（可选中）</summary>
-                      <p>{material.text}</p>
-                    </details>
-                  ) : null}
-                </figure>
-              )}
-            </div>
-          ))}
-        </div>
-      ) : null}
+      <MaterialContent materials={sharedMaterials} />
 
       {question.stem ? <p className="question-stem">{question.stem}</p> : null}
 
@@ -505,6 +474,8 @@ export function QuestionPanel({
               aria-checked={selected}
               className="option"
               data-selected={selected}
+              data-correct={review ? option.id === review.answer : undefined}
+              data-wrong={review ? selected && option.id !== review.answer : undefined}
               disabled={readOnly || locked}
               data-locked={locked}
               title={lock.reason ?? undefined}
@@ -517,7 +488,8 @@ export function QuestionPanel({
             >
               <span className="option-key">{option.id}</span>
               <span className="option-text">{labelOnly ? `选项 ${option.id}` : option.text}</span>
-              {selected ? <span className="option-mark">已选</span> : null}
+              {review && option.id === review.answer ? <Tag tone="good">正确答案</Tag> : null}
+              {selected ? <span className="option-mark">{review ? '你的选择' : '已选'}</span> : null}
             </button>
           );
         })}
@@ -548,11 +520,13 @@ export function AnswerCard({
   answers,
   currentIndex,
   onJump,
+  results,
 }: {
   attempt: Attempt;
   answers: Record<string, { option_id: string | null; flagged: boolean; visited: boolean; dirty: boolean }>;
   currentIndex: number;
   onJump: (index: number) => void;
+  results?: Record<string, string>;
 }) {
   // Display-only filter. It never changes the scope or the jump target.
   const [filter, setFilter] = useState<AnswerCardFilter>('all');
@@ -641,16 +615,17 @@ export function AnswerCard({
               data-state={state}
               data-current={isCurrent}
               data-flagged={flagged}
-              data-locked={!lock.editable}
+              data-locked={results ? undefined : !lock.editable}
+              data-result={results?.[question.id]}
+              aria-current={isCurrent ? 'step' : undefined}
               aria-label={`第 ${index + 1} 题，${
                 answered ? '已答' : visited ? '已访问未答' : '未访问'
-              }${flagged ? '，已标记' : ''}${!lock.editable ? `，${lock.reason ?? '不可作答'}` : ''}`}
+              }${flagged ? '，已标记' : ''}${results?.[question.id] === 'wrong' ? '，错误' : results?.[question.id] === 'correct' ? '，正确' : ''}${!results && !lock.editable ? `，${lock.reason ?? '不可作答'}` : ''}`}
               title={`第 ${index + 1} 题`}
               onClick={() => onJump(index)}
               data-testid={`answer-cell-${question.id}`}
             >
               <span className="cell-index">{index + 1}</span>
-              <span className="cell-number">{index + 1}</span>
               {flagged ? (
                 <span className="cell-flag" aria-hidden="true">
                   ●

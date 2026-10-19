@@ -133,6 +133,10 @@ class Store:
             columns = {r[1] for r in self._conn.execute("PRAGMA table_info(mutations)")}
             if "request_json" not in columns:
                 self._conn.execute("ALTER TABLE mutations ADD COLUMN request_json TEXT")
+            columns = {r[1] for r in self._conn.execute("PRAGMA table_info(attempts)")}
+            if "activity" not in columns:
+                # Additive v1 migration: old attempts remain explicitly unknown.
+                self._conn.execute("ALTER TABLE attempts ADD COLUMN activity TEXT")
             row = self._conn.execute("SELECT value FROM meta WHERE key='schema_version'").fetchone()
             if row is None:
                 self._conn.execute(

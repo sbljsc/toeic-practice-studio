@@ -4,6 +4,9 @@ import type { PoolQuestionStatus, QuestionPoolQuestionDetail, QuestionPoolStatus
 import { PART_LABEL } from '../../domain/format';
 import { Banner, EmptyBlock, ErrorBlock, Loading, Tag } from '../components';
 import { navigate } from '../router';
+import { MaterialContent } from '../MaterialContent';
+import { pageSlice } from './poolPagination';
+import { PoolDetailModal } from './PoolDetailModal';
 import { ReviewAudioBar } from './ReviewAudioBar';
 import { TranscriptPanel } from '../TranscriptPanel';
 import { matchesPoolFilter, type PoolQuestionFilter } from './poolQuestionFilter';
@@ -21,6 +24,8 @@ export function PoolScreen({ questionId }: { questionId?: string }) {
   const [includeSolution, setIncludeSolution] = useState(false);
   const [listFilter, setListFilter] = useState<PoolQuestionFilter>('all');
   const detailRequestId = useRef(0);
+  const [page, setPage] = useState(1);
+  const [pageSize, setPageSize] = useState(100);
 
   useEffect(() => {
     let active = true;
@@ -32,16 +37,28 @@ export function PoolScreen({ questionId }: { questionId?: string }) {
   }, [statusRetry]);
 
   useEffect(() => {
-    const requestId = ++detailRequestId.current;
-    setIncludeSolution(false); setDetail(null); setDetailError(null);
-    if (!questionId) { setDetailLoading(false); return; }
     let active = true;
-    setDetailLoading(true);
-    api.questionPoolQuestion(questionId, false)
-      .then((result) => { if (active && requestId === detailRequestId.current) setDetail(result); })
-      .catch((cause: unknown) => { if (active && requestId === detailRequestId.current) setDetailError(detailMessage(cause)); })
-      .finally(() => { if (active && requestId === detailRequestId.current) setDetailLoading(false); });
-    return () => { active = false; };
+    const loadMasked = () => {
+      const requestId = ++detailRequestId.current;
+      // Re-entering this tab always discards previously revealed content before
+      // checking the server's current strict-exam lock.
+      setIncludeSolution(false); setDetail(null); setDetailError(null);
+      if (!questionId) { setDetailLoading(false); return; }
+      setDetailLoading(true);
+      api.questionPoolQuestion(questionId, false)
+        .then((result) => { if (active && requestId === detailRequestId.current) setDetail(result); })
+        .catch((cause: unknown) => { if (active && requestId === detailRequestId.current) setDetailError(detailMessage(cause)); })
+        .finally(() => { if (active && requestId === detailRequestId.current) setDetailLoading(false); });
+    };
+    const onVisible = () => { if (document.visibilityState === 'visible') loadMasked(); };
+    loadMasked();
+    window.addEventListener('focus', loadMasked);
+    document.addEventListener('visibilitychange', onVisible);
+    return () => {
+      active = false; detailRequestId.current++;
+      window.removeEventListener('focus', loadMasked);
+      document.removeEventListener('visibilitychange', onVisible);
+    };
   }, [questionId]);
 
   async function toggleSolution() {
@@ -54,7 +71,7 @@ export function PoolScreen({ questionId }: { questionId?: string }) {
       const result = await api.questionPoolQuestion(questionId, next);
       if (requestId === detailRequestId.current) { setDetail(result); setIncludeSolution(next); }
     } catch (cause) {
-      if (requestId === detailRequestId.current) setDetailError(detailMessage(cause));
+      if (requestId === detailRequestId.current) { setIncludeSolution(false); setDetail(null); setDetailError(detailMessage(cause)); }
     } finally { if (requestId === detailRequestId.current) setDetailLoading(false); }
   }
 
@@ -62,6 +79,7 @@ export function PoolScreen({ questionId }: { questionId?: string }) {
   const group = detail?.question.id === questionId ? detail?.group : undefined;
   const protectedPart = question?.part === 1 || question?.part === 2;
   const visibleQuestions = summary?.questions.filter((item) => matchesPoolFilter(item.status, listFilter)) ?? [];
+  const pagination = pageSlice(visibleQuestions, page, pageSize);
 
   return <div className="page page-pool" data-testid="pool-screen">
     <header className="page-head"><div><p className="eyebrow">题库</p><h1>题目总览</h1>
@@ -77,26 +95,35 @@ export function PoolScreen({ questionId }: { questionId?: string }) {
       </section>
       <div className="pool-layout">
         <section className="pool-list-panel" aria-label="题库题目列表">
-          <div className="section-head"><h2>{listFilter === 'all' ? '全部题目' : listFilter === 'unanswered' ? '未作答' : listFilter === 'answered' ? '已做' : '错题'}（{visibleQuestions.length} / {summary.total}）</h2></div>
+          <div className="section-head"><h2 tabIndex={-1}>{listFilter === 'all' ? '全部题目' : listFilter === 'unanswered' ? '未作答' : listFilter === 'answered' ? '已做' : '错题'}（{visibleQuestions.length} / {summary.total}）</h2></div>
           <div className="chip-row pool-filters" role="group" aria-label="题库状态筛选">{([
             ['all', '全部'], ['unanswered', '未作答'], ['answered', '已做'], ['wrong', '错题'],
-          ] as Array<[PoolQuestionFilter, string]>).map(([filter, label]) => <button key={filter} type="button" className="chip chip-compact" data-active={listFilter === filter} aria-pressed={listFilter === filter} onClick={() => setListFilter(filter)}>{label}</button>)}</div>
-          {summary.questions.length === 0 ? <EmptyBlock title="题库为空" /> : <div className="pool-table-wrap">
-            {visibleQuestions.length === 0 ? <EmptyBlock title="没有符合条件的题目" /> : <table className="pool-table"><thead><tr><th scope="col">题库序号</th><th scope="col">Part</th><th scope="col">状态</th><th scope="col">题干摘要</th></tr></thead>
-              <tbody>{visibleQuestions.map((item) => <tr key={item.id} data-selected={item.id === questionId}>
-                <td><button type="button" className="pool-question-link" aria-label={`打开题库第 ${item.number} 题详情`} onClick={() => navigate({ name: 'pool', questionId: item.id })}>{item.number}</button></td>
-                <td>{PART_LABEL[item.part]}</td><td><Tag tone={item.status === 'wrong' ? 'bad' : item.status === 'answered' ? 'good' : 'neutral'}>{STATUS_LABEL[item.status]}</Tag></td>
-                <td>{item.part <= 2 ? '听力题干已隐藏' : item.stem || '（题干内容已隐藏）'}</td>
-              </tr>)}</tbody>
-            </table>}
+          ] as Array<[PoolQuestionFilter, string]>).map(([filter, label]) => <button key={filter} type="button" className="chip chip-compact" data-active={listFilter === filter} aria-pressed={listFilter === filter} onClick={() => { setListFilter(filter); setPage(1); }}>{label}</button>)}</div>
+          <div className="pool-pagination">
+            <span role="status">第 {pagination.page} / {pagination.pages} 页 · {visibleQuestions.length} 题</span>
+            <label>每页 <select value={pageSize} onChange={(event) => { setPageSize(Number(event.target.value)); setPage(1); }}>
+              <option value={50}>50 题</option><option value={100}>100 题</option><option value={200}>200 题</option>
+            </select></label>
+            <button type="button" className="btn btn-secondary" disabled={pagination.page <= 1} onClick={() => setPage(pagination.page - 1)}>上一页</button>
+            <button type="button" className="btn btn-secondary" disabled={pagination.page >= pagination.pages} onClick={() => setPage(pagination.page + 1)}>下一页</button>
+          </div>
+          {visibleQuestions.length === 0 ? <EmptyBlock title="没有符合条件的题目" /> : <div className="pool-card-grid">
+            {pagination.items.map((item) => <button key={item.id} type="button" className="answer-cell pool-cell"
+              data-state={item.status === 'unanswered' ? 'untouched' : 'answered'} data-result={item.status}
+              data-current={item.id === questionId} aria-haspopup="dialog"
+              aria-label={`打开题库第 ${item.number} 题，Part ${item.part}，${STATUS_LABEL[item.status]}`}
+              onClick={() => navigate({ name: 'pool', questionId: item.id })}>
+              <span className="cell-index">{item.number}</span>
+            </button>)}
           </div>}
         </section>
-        <aside className="pool-detail-panel" aria-label="题目详情" aria-live="polite">
-          {!questionId && <EmptyBlock title="选择一道题查看详情" hint="答案、解析和听力原文默认隐藏。" />}
+      </div>
+    </>}
+    {questionId ? <PoolDetailModal key={questionId} onClose={() => navigate({ name: 'pool' })}>
           {questionId && detailLoading && (!detail || detail.question.id !== questionId) && <Loading label="正在读取题目详情…" />}
           {questionId && detailError && <Banner tone="warn" title="暂时无法显示详情">{detailError}</Banner>}
           {question && group && <>
-            <div className="pool-detail-head"><div><p className="eyebrow">{PART_LABEL[question.part]} · 题库序号 {question.number}</p><h2>题目详情</h2></div>
+            <div className="pool-detail-head"><div><p className="eyebrow">{PART_LABEL[question.part]} · 题库序号 {question.number}</p><h3>题目内容</h3></div>
               <Tag tone={detail!.status === 'wrong' ? 'bad' : detail!.status === 'answered' ? 'good' : 'neutral'}>{STATUS_LABEL[detail!.status]}</Tag>
             </div>
             {detailLoading && <Loading label={includeSolution ? '正在读取完整解析…' : '正在隐藏完整解析…'} />}
@@ -105,18 +132,15 @@ export function PoolScreen({ questionId }: { questionId?: string }) {
               {question.options.map((option) => <li key={option.id}><span className="option-key">{option.id}</span><span className="option-text">{option.text || `选项 ${option.id}`}</span>
                 {includeSolution && question.answer === option.id ? <Tag tone="good">正确答案</Tag> : null}</li>)}
             </ol>}
-            {group.materials.map((material, index) => <div className="pool-material" key={`${material.kind}-${index}`}>
-              {material.kind === 'text' ? <p>{material.text}</p> : <figure className="material-figure"><img src={material.url ?? `/api/assets/${material.asset_id}`} alt={material.alt ?? '题目材料'} />{material.text ? <details><summary>显示材料文字</summary><p>{material.text}</p></details> : null}</figure>}
-            </div>)}
+            <MaterialContent materials={group.materials} />
             {includeSolution && question.explanation ? <section className="explanation"><h3>解析</h3><p>{question.explanation.text}</p></section> : null}
             {includeSolution && group.review_text ? <section className="explanation"><h3>补充说明</h3><p>{group.review_text}</p></section> : null}
             {includeSolution && group.review_audio ? <ReviewAudioBar queue={[group.review_audio]} label="本组听力" replayLabel="重放本组" renderTranscript={(audio, clip) => group.listening_script ? <TranscriptPanel script={group.listening_script} clip={clip} sourceTime={(clip?.start_seconds ?? 0) + audio.state.positionSeconds} onSentence={(sourceTime) => void audio.playSentence(sourceTime)} /> : null} /> : null}
             {includeSolution && group.listening_script && !group.review_audio ? <TranscriptPanel script={group.listening_script} /> : null}
             {detail!.solution_available && <button type="button" className="btn btn-primary" disabled={detailLoading} onClick={() => void toggleSolution()} data-testid="pool-solution-toggle">{includeSolution ? '隐藏完整解析' : '显示完整解析'}</button>}
+            {!detail!.solution_available && <p className="phase-note">模拟进行中，交卷后可查看完整解析</p>}
           </>}
-        </aside>
-      </div>
-    </>}
+    </PoolDetailModal> : null}
   </div>;
 }
 

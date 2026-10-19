@@ -9,7 +9,7 @@ import uuid
 from copy import deepcopy
 from math import isfinite
 
-from . import timing
+from . import activity, timing
 from .clock import now_iso
 from .errors import bad_request, conflict, gone, not_found
 from .grading import build_report, refresh_history_summary
@@ -121,14 +121,14 @@ class AttemptService:
             conn.execute(
                 "INSERT INTO attempts(id,title,scope,mode,original_mode,status,phase,integrity,"
                 "created_at,exam_ids,parts,question_count,current_index,timer,questions,groups,"
-                "question_exam,audio_queue,media_state,owner_tab_id,interruptions,library_version) "
-                "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                "question_exam,audio_queue,media_state,owner_tab_id,interruptions,library_version,activity) "
+                "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                 (
                     record['id'], record['title'], record['scope'], record['mode'], record['mode'], 'ready', record['phase'], 'valid',
                     record["created_at"], dumps(record["exam_ids"]), dumps(record['parts']),
                     len(questions), 0, dumps(record["timer"]), dumps(questions), dumps(groups),
                     dumps(question_exam), dumps(record['audio_queue']), None, None, "[]",
-                    record["library_version"],
+                    record["library_version"], dumps(activity.new_state()),
                 ),
             )
         return self.get(record['id'])
@@ -467,6 +467,7 @@ class AttemptService:
             "interruptions": loads(row["interruptions"]),
             "library_version": row["library_version"],
             "report": loads(row["report"]) if row["report"] else None,
+            "activity": loads(row["activity"]) if row["activity"] else None,
         }
         rows = conn.execute(
             "SELECT question_id, option_id, flagged, visited, revision FROM answers WHERE attempt_id=?",
@@ -487,7 +488,7 @@ class AttemptService:
         timing.checkpoint(record, self.clock)
         conn.execute(
             "UPDATE attempts SET mode=?, original_mode=?, status=?, phase=?, integrity=?, current_index=?, timer=?, "
-            "media_state=?, owner_tab_id=?, interruptions=?, closed_at=?, close_reason=?, report=? "
+            "media_state=?, owner_tab_id=?, interruptions=?, closed_at=?, close_reason=?, report=?, activity=? "
             "WHERE id=?",
             (
                 record["mode"], record["original_mode"],
@@ -497,13 +498,18 @@ class AttemptService:
                 record["owner_tab_id"], dumps(record["interruptions"]),
                 record.get("closed_at"), record.get("close_reason"),
                 dumps(record["report"]) if record.get("report") else None,
+                dumps(record["activity"]) if record.get("activity") is not None else None,
                 record["id"],
             ),
         )
 
     def _close_if_expired(self, conn, record: dict) -> None:
         timing.recover(record, self.clock)
+        activity.checkpoint(record, self.clock)
+        old_phase = record["phase"]
         transition = timing.advance(record, self.clock)
+        if old_phase != record["phase"] or record["status"] != "running":
+            activity.stop(record)
         if transition == "expired":
             record["closed_at"] = now_iso(self.clock)
             record["close_reason"] = "expired"
@@ -620,6 +626,7 @@ class AttemptService:
                 raise conflict("该练习正由另一个窗口使用。", "tab_held")
             self._remember_owners(conn, record["id"], owner, tab_id)
             record["owner_tab_id"] = tab_id
+            activity.claim(record)
             self._save_record(conn, record)
             return self._dto(record)
 
@@ -654,6 +661,7 @@ class AttemptService:
                 raise conflict("模拟考不能暂停。", "pause_not_allowed")
             if record["status"] == "running":
                 timing.pause(record, self.clock)
+                activity.stop(record)
                 self._save_record(conn, record)
             return self._dto(record)
 
@@ -694,6 +702,7 @@ class AttemptService:
             record["mode"] = "practice"
             if record["status"] == "running":
                 timing.pause(record, self.clock)
+                activity.stop(record)
             self._save_record(conn, record)
             return self._dto(record)
 
@@ -731,6 +740,28 @@ class AttemptService:
             record["current_index"] = current_index
             self._save_record(conn, record)
             return self._dto(record)
+
+    def set_activity(self, attempt_id: str, tab_id: str | None, body: dict) -> dict:
+        with self.store.transaction() as conn:
+            record = self._load_record(conn, attempt_id)
+            self._require_owner(record, tab_id)
+            self._close_if_expired(conn, record)
+            if record["status"] in ("submitted", "expired"):
+                raise gone("本轮已结束，用时记录已冻结。", "attempt_closed")
+            state = record.get("activity")
+            if state is None or body["session_id"] != state.get("session_id"):
+                raise conflict("用时会话已更新，请重新认领本轮。", "activity_session_conflict")
+            qid = body.get("question_id")
+            question = next((q for q in record["questions"] if q["id"] == qid), None)
+            if qid is not None:
+                if question is None:
+                    raise not_found("该题不在本轮范围内。", "question_not_in_attempt")
+                if (record["mode"] == "exam" and record["phase"] in ("reading", "listening")
+                        and question["section"] != record["phase"]):
+                    raise conflict("当前阶段不开放该题。", "section_locked")
+            activity.target(record, self.clock, qid, body["sequence"])
+            self._save_record(conn, record)
+            return {"activity": activity.summary(record, self.clock)}
 
     def put_answer(self, attempt_id: str, qid: str, tab_id: str | None, body: dict) -> dict:
         with self.store.transaction() as conn:
@@ -790,6 +821,8 @@ class AttemptService:
                 "VALUES(?,?,?,?,?)",
                 (mutation_id, attempt_id, qid, now_iso(self.clock), request_identity),
             )
+            activity.first_answer(record, qid, existing["option_id"], option_id)
+            self._save_record(conn, record)
             record = self._load_record(conn, attempt_id)
             return self._dto(record)
 
@@ -808,6 +841,7 @@ class AttemptService:
             if record["status"] in ("submitted", "expired"):
                 return self._enrich_report(record)
             timing._accumulate(record, self.clock)
+            activity.stop(record)
             record["status"] = "submitted"
             record["phase"] = "finished"
             record["closed_at"] = now_iso(self.clock)
@@ -874,11 +908,17 @@ class AttemptService:
             "owner_tab_id": record["owner_tab_id"],
             "interruptions": record["interruptions"],
             "integrity": record["integrity"],
+            "activity_session_id": record["activity"].get("session_id") if record.get("activity") else None,
+            "activity": activity.summary(record, self.clock),
         }
 
     def _enrich_report(self, record: dict) -> dict:
         """Add reviews and group review_text from the attempt's own snapshot."""
         report = deepcopy(record["report"])
+        # Old closed reports predate activity. Expose an honest unavailable DTO,
+        # without rewriting their stored grade snapshots.
+        if "activity" not in report:
+            report["activity"] = activity.summary({**record, "activity": None})
         # Scores/questions remain the frozen grade snapshot. Reliability may
         # subsequently be downgraded by a delayed offline media event.
         report["attempt"] = {**report["attempt"], "integrity": record["integrity"],

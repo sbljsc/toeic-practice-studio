@@ -9,6 +9,10 @@ import { useAudioController } from './media';
 import { queueInterruption } from './interruptionDelivery';
 import { AnswerCard, AudioBar, ClosedNotice, Preflight, QuestionPanel, StickyHeader, saveBadgeFor } from './parts';
 import { TranscriptPanel } from '../TranscriptPanel';
+import { ActivityStatistics } from '../ActivityStatistics';
+import { useActivity } from './useActivity';
+import { nextEligibleIndex, questionEligible } from './workspaceNavigation';
+import type { WorkspaceView } from '../WorkspaceViewToggle';
 import { practiceSubtitleContext } from '../subtitleSync';
 
 interface Props { attemptId: string; onSubmitted: (id: string) => void; onExit: () => void }
@@ -32,6 +36,8 @@ export function AttemptWorkspace({ attemptId, onSubmitted, onExit }: Props) {
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [canSubmitSavedOnly, setCanSubmitSavedOnly] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [view, setView] = useState<WorkspaceView>('answer');
+  const [autoNext, setAutoNext] = useState(true);
   const [showUnscored] = useState(true);
   const [mediaNotice, setMediaNotice] = useState<string | null>(null);
   const loseOwnership = useCallback(() => {
@@ -73,7 +79,7 @@ export function AttemptWorkspace({ attemptId, onSubmitted, onExit }: Props) {
     let live = true;
     currentAttempt.current = null; ownershipLost.current = false; ended.current = false;
     setAttempt(null); setLoadError(null); setReadOnly(true);
-    setSubmitError(null); setMediaNotice(null); setClockNotice(null);
+    setSubmitError(null); setMediaNotice(null); setClockNotice(null); setView('answer');
     void api.getAttempt(attemptId).then(async (loaded) => {
       if (!live) return;
       applyAttempt(loaded); setCurrentIndex(loaded.current_index);
@@ -107,6 +113,7 @@ export function AttemptWorkspace({ attemptId, onSubmitted, onExit }: Props) {
   const pipeline = useAnswerPipeline({ attempt: attempt ?? EMPTY_ATTEMPT, readOnly,
     onAttempt: applyAttempt, onBanner: setBanner, onOwnershipLost: loseOwnership,
     ownershipEpoch: () => ownershipEpoch.current });
+  const activity = useActivity(attempt, currentIndex, view === 'answer', !readOnly && !isClosed);
   const clock = useProjectedClock(attempt?.timing ?? null, attempt?.status);
   useEffect(() => {
     if (canSubmitSavedOnly && pipeline.saveState === 'saved') {
@@ -167,13 +174,13 @@ export function AttemptWorkspace({ attemptId, onSubmitted, onExit }: Props) {
     return () => clearTimeout(boundary);
   }, [clock.expired, attempt?.status, attempt?.timing.phase, syncClock]);
 
-  const jumpTo = useCallback((index: number) => {
+  const jumpTo = useCallback((index: number, preserveAudio = false) => {
     const current = currentAttempt.current;
     if (!current) return;
     const bounded = Math.max(0, Math.min(current.questions.length - 1, index));
     setCurrentIndex(bounded);
     const target = current.questions[bounded];
-    if (target) { pipeline.markVisited(target.id); audio.selectQuestion(target.id); }
+    if (target) { pipeline.markVisited(target.id); if (!preserveAudio) audio.selectQuestion(target.id); }
     if (!readOnly && !submitting)
       void api.setPosition(current.id, bounded).catch(() => undefined);
   }, [audio, pipeline, readOnly, submitting]);
@@ -288,6 +295,8 @@ export function AttemptWorkspace({ attemptId, onSubmitted, onExit }: Props) {
         onSubmit={() => void submitAttempt()}
         onTogglePause={() => void togglePause()}
         submitting={submitting}
+        view={view}
+        onView={setView}
       />
 
       {banner ? (
@@ -429,7 +438,7 @@ export function AttemptWorkspace({ attemptId, onSubmitted, onExit }: Props) {
       ) : isClosed ? (
         <ClosedNotice attempt={attempt} onOpenReport={() => onSubmitted(attempt.id)} />
       ) : (
-        <div className="workspace-body">
+        <div className="workspace-body" data-view={view}>
           <main className="workspace-main">
             {attempt.audio_queue.length > 0 && (attempt.mode === 'practice' || attempt.timing.phase === 'listening' ||
               (attempt.timing.phase === 'practice' && (attempt.scope === 'part' || attempt.scope === 'custom'))) ? (
@@ -442,6 +451,10 @@ export function AttemptWorkspace({ attemptId, onSubmitted, onExit }: Props) {
               />
             ) : null}
 
+            {activity.notice && view === 'statistics' ? <p className="phase-note" role="status">{activity.notice}</p> : null}
+            {view === 'statistics' ? <ActivityStatistics activity={activity.activity} live /> : null}
+            <div className="answer-workspace-content" hidden={view !== 'answer'}>
+            <label className="auto-next-control"><input type="checkbox" checked={autoNext} onChange={(event) => setAutoNext(event.target.checked)} />选择答案后自动下一题</label>
             {subtitle ? (
               <TranscriptPanel key={`${attempt.id}:${subtitle.group.id}`} script={subtitle.script} clip={subtitle.clip}
                 sourceTime={subtitle.clip.start_seconds + audio.state.positionSeconds}
@@ -456,8 +469,13 @@ export function AttemptWorkspace({ attemptId, onSubmitted, onExit }: Props) {
                 answer={pipeline.answers[question.id]}
                 readOnly={readOnly || submitting || clock.expired}
                 attempt={attempt}
-                onSelect={(optionId) => pipeline.selectOption(question.id, optionId)}
-                onClear={() => pipeline.clearOption(question.id)}
+                onSelect={(optionId) => {
+                  const latest = currentAttempt.current;
+                  if (!latest || ownershipLost.current || readOnly || submitting || clock.expired || !questionEligible(latest, question)) return;
+                  if (!pipeline.selectOption(question.id, optionId)) return;
+                  const next = autoNext ? nextEligibleIndex(latest, currentIndex) : null;
+                  if (next !== null) jumpTo(next, true);
+                }}
                 onFlag={() => pipeline.toggleFlag(question.id)}
               />
             ) : (
@@ -491,6 +509,7 @@ export function AttemptWorkspace({ attemptId, onSubmitted, onExit }: Props) {
               </button>
             </div>
 
+            </div>
             {submitError ? (
               <Banner tone="error" title="尚未交卷" action={canSubmitSavedOnly && !readOnly ? (
                 <button type="button" className="btn btn-secondary" disabled={submitting}
@@ -501,7 +520,7 @@ export function AttemptWorkspace({ attemptId, onSubmitted, onExit }: Props) {
             ) : null}
           </main>
 
-          <AnswerCard attempt={attempt} answers={pipeline.answers} currentIndex={currentIndex} onJump={jumpTo} />
+          {view === 'answer' ? <AnswerCard attempt={attempt} answers={pipeline.answers} currentIndex={currentIndex} onJump={jumpTo} /> : null}
         </div>
       )}
     </div>

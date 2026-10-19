@@ -1,4 +1,6 @@
 import type {
+  ActivityEvent,
+  ActivitySummary,
   Attempt,
   AttemptReport,
   AttemptsResponse,
@@ -87,6 +89,10 @@ function body(payload: JsonBody): string {
 }
 
 export const api = {
+  activity: (id: string, payload: ActivityEvent) =>
+    request<{ activity: ActivitySummary }>(`/attempts/${encodeURIComponent(id)}/activity`, {
+      method: 'PUT', keepalive: true, signal: AbortSignal.timeout(10000), body: body(payload),
+    }),
   questionPool: () => request<QuestionPoolCatalog>('/question-pool'),
   questionPoolStatus: () => request<QuestionPoolStatusResponse>('/question-pool/status'),
   questionPoolQuestion: (questionId: string, includeSolution = false) =>

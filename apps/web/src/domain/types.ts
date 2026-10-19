@@ -229,6 +229,8 @@ export interface MediaState {
 }
 
 export interface Attempt {
+  activity_session_id?: string | null;
+  activity?: ActivitySummary;
   id: string;
   title: string;
   scope: AttemptScope;
@@ -390,6 +392,7 @@ export interface ReportGroup extends AttemptGroup {
 }
 
 export interface AttemptReport {
+  activity?: ActivitySummary;
   attempt: {
     id: string;
     title: string;
@@ -487,4 +490,19 @@ export interface CreateBackupResponse extends BackupMeta {
 export interface ApiError {
   detail: string;
   code?: string;
+}
+
+export interface ActivitySummary {
+  coverage: 'from_start' | 'partial' | 'unavailable';
+  total_elapsed_ms: number;
+  tracked_ms: number;
+  unattributed_ms: number;
+  questions: Array<{ question_id: string; number: number; part: number; dwell_ms: number | null; first_answer_ms: number | null }>;
+  parts: Array<{ part: number; dwell_ms: number | null }>;
+}
+
+export interface ActivityEvent {
+  session_id: string;
+  sequence: number;
+  question_id: string | null;
 }

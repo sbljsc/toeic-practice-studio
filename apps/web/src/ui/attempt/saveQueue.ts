@@ -180,11 +180,11 @@ export function useAnswerPipeline(options: Options) {
   const mutate = useCallback((id: string, patch: Partial<LocalAnswer>) => {
     const current = context.current;
     if (current.readOnly || frozen.current || current.attempt.status !== 'running' ||
-        conflicts.current.has(id) || blocked.current.has(id)) return;
+        conflicts.current.has(id) || blocked.current.has(id)) return false;
     if (current.attempt.mode === 'exam' &&
-        !current.attempt.timing.phase_question_ids.includes(id)) return;
+        !current.attempt.timing.phase_question_ids.includes(id)) return false;
     const base = answersRef.current[id];
-    if (!base) return;
+    if (!base) return false;
     const next = { ...base, ...patch, dirty: true };
     publish({ ...answersRef.current, [id]: next });
     const write = queue.enqueue(id, next, newMutationId());
@@ -194,6 +194,7 @@ export function useAnswerPipeline(options: Options) {
     void persist(id, write, current.attempt.id);
     setSaveState('saving');
     void runQueue(id);
+    return true;
   }, [persist, publish, queue, runQueue]);
 
   const mutateMetadata = useCallback((id: string, patch: Partial<LocalAnswer>) => {

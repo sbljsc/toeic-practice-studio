@@ -143,6 +143,8 @@ class BackupService:
                 for table in required:
                     expected = {r[1] for r in self.store.query(f"PRAGMA table_info({table})")}
                     expected.discard("request_json")  # additive v1 migration
+                    if table == "attempts":
+                        expected.discard("activity")  # additive v1 analytics; old backups still restore
                     present = {r[1] for r in db.execute(f"PRAGMA table_info({table})")}
                     if not expected <= present:
                         raise ValueError("columns")
@@ -203,6 +205,25 @@ class BackupService:
         with closing(sqlite3.connect(source_path)) as source, closing(sqlite3.connect(self.store.path)) as target:
             source.backup(target)
 
+    def _invalidate_restored_activity(self, staged_db):
+        """A restored live row needs new foreground evidence, even in this process.
+
+        Normalize only the private staged copy after checksum validation. Keep
+        measured rows and closed reports unchanged, and retain original clock
+        anchors so restore cannot extend an examination budget.
+        """
+        with closing(sqlite3.connect(staged_db)) as db:
+            columns = {row[1] for row in db.execute("PRAGMA table_info(attempts)")}
+            if "activity" not in columns:
+                return  # older backups acquire the nullable column on reconnect
+            for aid, raw in db.execute("SELECT id,activity FROM attempts WHERE "
+                                       "status IN ('ready','running','paused') AND activity IS NOT NULL").fetchall():
+                state = json.loads(raw)
+                state.update(active=None, session_id=None, sequence=-1)
+                db.execute("UPDATE attempts SET activity=? WHERE id=?",
+                           (json.dumps(state, ensure_ascii=False), aid))
+            db.commit()
+
     def restore(self, backup_id, confirm):
         if not confirm:
             raise bad_request("还原需要 confirm=true。", "confirm_required")
@@ -224,6 +245,7 @@ class BackupService:
             except OSError:
                 raise not_found("备份文件缺失。", "backup_file_missing")
             self._validate_database(staged_db, meta)
+            self._invalidate_restored_activity(staged_db)
             staged = work / "library"
             if meta.get("includes_library"):
                 staged.mkdir()
