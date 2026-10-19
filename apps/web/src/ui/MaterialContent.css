@@ -17,8 +17,9 @@
 .material-content > :first-child { margin-top: 0; }
 .material-content > :last-child { margin-bottom: 0; }
 .material-content h1, .material-content h2 { font-size: 1.2em; }
-.material-content h3, .material-content h4, .material-content h5,
-.material-content h6 { font-size: 1.05em; }
+.material-content h3 { font-size: 1.15em; font-weight: 650; }
+.material-content h4, .material-content h5,
+.material-content h6 { font-size: 1.05em; font-weight: 650; }
 .material-content h1, .material-content h2, .material-content h3,
 .material-content h4, .material-content h5, .material-content h6 { margin: 1.15em 0 .5em; line-height: 1.4; }
 .material-content ul, .material-content ol { margin: .5em 0 1em; padding-inline-start: 1.6em; }

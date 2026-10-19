@@ -51,6 +51,12 @@ test('question stems and options share safe Markdown reflow inside their real co
   assert.doesNotMatch(html, /<span[^>]*option-text[^>]*>[^]*?<(?:p|table|div)\b/);
 });
 
+test('the displayed question number is a Markdown heading, separate from the immutable question identity', () => {
+  const html = panel(fixture());
+  assert.match(html, /<h3>第 1 题 · 阅读<\/h3>/);
+  assert.match(html, /data-question-id="q"/);
+});
+
 test('fallback listening text gains paragraph reflow while Chinese stays hidden by default', () => {
   const html = renderToStaticMarkup(createElement(transcript.TranscriptPanel, { script: {
     english: 'M: Shall we meet at the\nstation?\nW: Yes, at noon.', chinese: '中文默认隐藏', sentences: [],

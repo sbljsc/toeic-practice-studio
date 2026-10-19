@@ -151,6 +151,80 @@ test('emphasis, literal markers, identifiers and dynamic labels survive', () => 
   assert.match(html, /\*footnote account_name {{qid:q-abc123}} -------- unmatched\*/);
 });
 
+test('grammar blanks remain literal underscores instead of being consumed as Markdown emphasis', () => {
+  const text = 'will ______ send 是“情态动词+______+谓语动词”的结构。\n\nUse ___ or ______ for the blank; ___emphasis___ remains emphasis.';
+  const html = renderToStaticMarkup(createElement(MarkdownText, { text, flow: 'prose' }));
+  assert.match(html, /will ______ send/);
+  assert.match(html, /情态动词\+______\+谓语动词/);
+  assert.match(html, /Use ___ or ______ for the blank/);
+  assert.match(html, /<strong><em>emphasis<\/em><\/strong>/);
+});
+
+test('split source bullet markers become actual lists without swallowing wrapped item text or literal footnote stars', () => {
+  const text = '《证券\n*\n交易法案》\n\n讨论以下内容：\n* \n在遇到难以相处的人和难以应对的困境时，\n如何高效地工作\n* \n避免和解决冲突\n* \n达到平衡的积极性\n\n在讨论会结束时，会发给大家总结手册。';
+  const blocks = parseMaterialMarkdown(text);
+  assert.deepEqual(blocks, [
+    { kind: 'paragraph', text: '《证券\\*交易法案》' },
+    { kind: 'paragraph', text: '讨论以下内容：' },
+    { kind: 'list', ordered: false, start: 1, items: ['在遇到难以相处的人和难以应对的困境时，如何高效地工作', '避免和解决冲突', '达到平衡的积极性'] },
+    { kind: 'paragraph', text: '在讨论会结束时，会发给大家总结手册。' },
+  ]);
+  const html = renderToStaticMarkup(createElement(MarkdownText, { text }));
+  assert.match(html, /《证券\*交易法案》/);
+  assert.equal((html.match(/<li>/g) ?? []).length, 3);
+  assert.doesNotMatch(html, /<em>/);
+});
+
+test('an isolated hyphen from a wrapped blank is not a bullet and list continuations stop at choices and explanations', () => {
+  assert.deepEqual(parseMaterialMarkdown('It should be proofread ------\n-\nby someone else.\n(A) equally\n(B) thoroughly\n▶\n解析'), [
+    { kind: 'paragraph', text: 'It should be proofread ------- by someone else.' },
+    { kind: 'paragraph', text: '(A) equally' }, { kind: 'paragraph', text: '(B) thoroughly' },
+    { kind: 'paragraph', text: '▶ 解析' },
+  ]);
+  const blocks = parseMaterialMarkdown('* \nItem\n(A) one\n(B) two\n▶\n解析');
+  assert.deepEqual(blocks[0], { kind: 'list', ordered: false, start: 1, items: ['Item'] });
+  assert.equal(blocks.filter(block => block.kind === 'paragraph').length, 3);
+});
+
+test('ordered source numbering restarts at section boundaries and preserves deliberately nonconsecutive numbers', () => {
+  const html = renderToStaticMarkup(createElement(MarkdownText, { text: '1. First item.\nAnswer line.\nResults\n1. Next item.\nAnswer line.' }));
+  assert.equal((html.match(/<ol start="1">/g) ?? []).length, 2);
+  const nonconsecutive = renderToStaticMarkup(createElement(MarkdownText, { text: '2. Second\n4. Fourth' }));
+  assert.match(nonconsecutive, /<li value="4">Fourth<\/li>/);
+});
+
+test('loose consecutive ordered items remain one list while a year ending with a period remains prose', () => {
+  assert.deepEqual(parseMaterialMarkdown('1. First item.\n\n2. Second item.\n\n3. Third item.'), [
+    { kind: 'list', ordered: true, start: 1, items: ['First item.', 'Second item.', 'Third item.'] },
+  ]);
+  const html = renderToStaticMarkup(createElement(MarkdownText, { text: 'Goals for the year\n2019.  \nAttendance is mandatory.' }));
+  assert.doesNotMatch(html, /<ol|<li/);
+  assert.match(html, /2019\./);
+});
+
+test('split dash bullets are recovered in list context without consuming a wrapped grammar blank', () => {
+  assert.deepEqual(parseMaterialMarkdown('- \nfirst item\n- \nsecond item'), [
+    { kind: 'list', ordered: false, start: 1, items: ['first item', 'second item'] },
+  ]);
+  const blocks = parseMaterialMarkdown('优惠如下：\n\n-\n购买五公斤，赠送一公斤。\n\n-\n购买八公斤，赠送两公斤。');
+  assert.equal(blocks.filter(block => block.kind === 'list').length, 1);
+  assert.deepEqual(parseMaterialMarkdown('proofread ------\n-\nby someone else.', 'prose'), [
+    { kind: 'paragraph', text: 'proofread ------- by someone else.' },
+  ]);
+});
+
+test('split short ordered markers retain source list semantics without turning a standalone year into a list', () => {
+  assert.deepEqual(parseMaterialMarkdown('以下任务：\n1. \n识别器械。\n2. \n评估情况。'), [
+    { kind: 'paragraph', text: '以下任务：' },
+    { kind: 'list', ordered: true, start: 1, items: ['识别器械。', '评估情况。'] },
+  ]);
+  assert.doesNotMatch(renderToStaticMarkup(createElement(MarkdownText, { text: '2019.\nAttendance is mandatory.' })), /<ol|<li/);
+  const numericChoices = renderToStaticMarkup(createElement(MarkdownText, { text: 'How many?\n（\nA\n）\n36.\n（\nB\n）\n50.\n（\nC\n）\n100.' }));
+  assert.doesNotMatch(numericChoices, /<ol|<li/);
+  assert.match(numericChoices, /36\./);
+  assert.match(numericChoices, /50\./);
+});
+
 test('raw HTML, Markdown links and embeds never create active elements', () => {
   const payload = '<script>alert(1)</script> <img src=x onerror=alert(1)>\n[click](javascript:alert(1))\n![remote](https://evil.test/a.png)\n<iframe src="https://evil.test"></iframe>';
   const html = renderToStaticMarkup(createElement(MaterialContent, { materials: [{ kind: 'text', text: payload }] }));

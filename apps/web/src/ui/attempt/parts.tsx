@@ -442,9 +442,7 @@ export function QuestionPanel({
       <div className="question-head">
         <div className="question-meta">
           <Tag tone="neutral">{PART_LABEL[question.part] ?? `Part ${question.part}`}</Tag>
-          <span className="question-number">
-            第 {displayNumber} 题 · {question.section === 'listening' ? '听力' : '阅读'}
-          </span>
+          <MarkdownText className="question-number" text={`### 第 ${displayNumber} 题 · ${question.section === 'listening' ? '听力' : '阅读'}`} flow="prose" />
         </div>
         {!review && <button
           type="button"
@@ -458,7 +456,7 @@ export function QuestionPanel({
         </button>}
       </div>
 
-      <MaterialContent materials={sharedMaterials} />
+      <MaterialContent materials={sharedMaterials} questionNumbers={Object.fromEntries(attempt.questions.map((q, index) => [q.id, index + 1]))} />
 
       {question.stem ? <MarkdownText className="question-stem" text={question.stem} flow="prose" /> : null}
 

@@ -132,7 +132,7 @@ export function PoolScreen({ questionId }: { questionId?: string }) {
               {question.options.map((option) => <li key={option.id}><span className="option-key">{option.id}</span><MarkdownInline className="option-text" text={option.text || `选项 ${option.id}`} />
                 {includeSolution && question.answer === option.id ? <Tag tone="good">正确答案</Tag> : null}</li>)}
             </ol>}
-            <MaterialContent materials={group.materials} />
+            <MaterialContent materials={group.materials} questionNumbers={Object.fromEntries((summary?.questions ?? []).map(q => [q.id, q.number]))} />
             {includeSolution && question.explanation ? <section className="explanation"><h3>解析</h3><MarkdownText text={question.explanation.text} /></section> : null}
             {includeSolution && group.review_text ? <section className="explanation"><h3>补充说明</h3><MarkdownText text={group.review_text} /></section> : null}
             {includeSolution && group.review_audio ? <ReviewAudioBar queue={[group.review_audio]} label="本组听力" replayLabel="重放本组" renderTranscript={(audio, clip) => group.listening_script ? <TranscriptPanel script={group.listening_script} clip={clip} sourceTime={(clip?.start_seconds ?? 0) + audio.state.positionSeconds} onSentence={(sourceTime) => void audio.playSentence(sourceTime)} /> : null} /> : null}

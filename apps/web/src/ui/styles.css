@@ -1201,6 +1201,8 @@ button {
   color: var(--muted);
 }
 
+.question-number h3 { margin: 0; font-size: inherit; line-height: inherit; }
+
 .materials {
   margin-bottom: 20px;
   display: flex;
