@@ -78,6 +78,29 @@ def test_payload_uses_registered_content_and_explicit_documentation(builder, tmp
         builder.collect_payload(tmp_path)
 
 
+def test_payload_carries_the_readable_markdown_question_tree(builder, tmp_path):
+    """The bank is a Markdown tree now; the package must ship it."""
+    for name in builder.DOCUMENTS + ['Start.cmd', 'apps/api/src/toeic_practice/main.py',
+                                     'apps/web/dist/index.html', 'apps/web/dist/assets/app.js']:
+        target = tmp_path / name
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text('example', encoding='utf-8')
+    bank = tmp_path / 'content/question-pool'
+    (bank / 'parts/part-3').mkdir(parents=True)
+    (bank / 'manifest.json').write_text(json.dumps({'assets': []}), encoding='utf-8')
+    (bank / 'pool.json').write_text('{}', encoding='utf-8')
+    (bank / 'parts/part-3/g-1.md').write_text('# group', encoding='utf-8')
+    (bank / 'parts/part-3/g-1.srt').write_text('1\n', encoding='utf-8')
+    names = {path.relative_to(tmp_path).as_posix() for path in builder.collect_payload(tmp_path)}
+    assert 'content/question-pool/parts/part-3/g-1.md' in names
+    assert 'content/question-pool/parts/part-3/g-1.srt' in names
+    # A file outside the Markdown tree and outside the registered assets is
+    # still refused, so the package cannot pick up private material.
+    (bank / 'private.bin').write_bytes(b'private')
+    with pytest.raises(ValueError, match='unregistered'):
+        builder.collect_payload(tmp_path)
+
+
 def test_runtime_path_is_isolated_from_user_and_global_packages(builder, tmp_path):
     builder.configure_runtime(tmp_path)
     paths = (tmp_path / 'python314._pth').read_text(encoding='utf-8').splitlines()

@@ -283,8 +283,29 @@ class Library:
         return target, asset.get("media_type", "application/octet-stream")
 
     def library_version(self) -> str:
-        content = json.dumps({"manifest": self.manifest,
-            "exams": {key: {"questions": e.questions, "groups": e.groups,
+        """A version that follows the identity of the content, not its shape.
+
+        Learner progress is keyed by this value, so a change in how the text
+        is written down must not orphan it. The digest therefore covers the
+        question identities, their answers, the group membership and the
+        registered assets, and leaves the wording of a passage out.
+        """
+        manifest = {key: value for key, value in self.manifest.items()
+                    if key not in ("schema_version", "pool")}
+        content = json.dumps({"manifest": manifest,
+            "assets": sorted((asset.get("id"), asset.get("sha256"))
+                             for asset in self.assets.values()),
+            "exams": {key: {"questions": [
+                {"canonical_id": q.get("canonical_id"), "id": q.get("id"),
+                 "answer": q.get("answer"), "part": q.get("part"),
+                 "group_id": q.get("group_id"),
+                 "options": [o.get("id") for o in q.get("options", [])]}
+                for q in e.questions],
+                "groups": [{"id": g.get("id"), "part": g.get("part"),
+                    "question_ids": list(g.get("question_ids", [])),
+                    "passage_type": g.get("passage_type"),
+                    "audio": (g.get("audio") or {}).get("asset_id")}
+                    for g in e.groups],
                 "audio": e.audio} for key, e in self.exams.items()},
             "cues": self._load_cues()}, sort_keys=True, ensure_ascii=False)
         parts = [self.manifest_version, hashlib.sha256(content.encode()).hexdigest()[:16]]

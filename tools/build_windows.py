@@ -82,6 +82,11 @@ def collect_payload(root):
     bank = root / 'content/question-pool'
     manifest = json.loads(checked_file(root, 'content/question-pool/manifest.json').read_text(encoding='utf-8'))
     expected = {'manifest.json', 'pool.json'} | {str(safe_relative(a['path'])) for a in manifest['assets']}
+    # The readable question tree sits beside the shared picture and recording
+    # pools. Its files are the bank itself, so they belong in the payload.
+    parts = bank / 'parts'
+    if parts.is_dir():
+        expected |= {p.relative_to(bank).as_posix() for p in parts.rglob('*') if p.is_file()}
     actual = {p.relative_to(bank).as_posix() for p in bank.rglob('*') if p.is_file()}
     if actual != expected:
         raise ValueError('missing or unregistered content file')

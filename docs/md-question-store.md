@@ -52,24 +52,26 @@ questions:
 
 ## 原文
 
-### Material 1
+##### Material 1
 
 共享材料或图片。Part 1 的图片题写成 `![题目图片](/api/assets/img-xxx)`；
-Part 3/4 的材料用 `### Material K`，Part 7 用 `### Passage K`。
+Part 3/4 的材料用 `##### Material K`，Part 7 用 `##### Passage K`。
+图片若带有文字说明（地图方位、图表数据），紧跟其后写 `###### 图片文字`
+ 与正文，读回时作为该图片材料的 `text`。
 
-### Passage 1
+##### Passage 1
 
 Harold Rimes [10:11 A.M.]
 Great news, everyone. The owner of the building at 465 Washington Avenue
 agreed to rent the space to us.
 
-### Passage 2
+##### Passage 2
 
 ...
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 What are the writers mainly discussing?
 
@@ -78,7 +80,7 @@ What are the writers mainly discussing?
 - C. The contract they need to sign
 - D. The plans for a new business
 
-### 第 2 题
+##### 第 2 题
 
 ...
 
@@ -119,27 +121,29 @@ What are the writers mainly discussing?
 - **原文**：题组共享的材料。Part 1 的图片题用 `![题目图片](/api/assets/img-xxx.png)`
   单行引用；Part 3/4/7 的长文本材料按排版后的段落写入；Part 6 的填空题材料
   使用 `{{blank:N}}` 逻辑空位标记（见 §4）。听力组另有两个固定小节：
-  `### Transcript`（英文原文）与 `### Transcript (zh)`（中文对照）；
-  教材复盘文本写在 `### 教材原文`。
-- **选项**：每个子标题 `### 第 N 题` 下的题干与选项列表（`- A. …`）。
+  `##### Transcript`（英文原文）与 `##### Transcript (zh)`（中文对照）；
+  教材复盘文本写在 `##### Review`。
+- **选项**：每个子标题 `##### 第 N 题` 下的题干与选项列表（`- A. …`）。
   题干为空时（Part 6）只写选项。
-- **答案 / 题解**：每个子标题 `### 第 N 题` 下的 `**答案：X**`、
+- **答案 / 题解**：每个子标题 `##### 第 N 题` 下的 `**答案：X**`、
   中文题干/选项与解析文字。
 
-材料内部的标题会**降一级**写入（`##` 写成 `###`），这样它不会被误读成
-文件结构标记；加载器读回时再升回原级别。
+文件自身的结构标记一律用 `#####` 或更深，**比任何材料内标题都深**，
+因此材料内部的标题可以**保持原级别不变**（`##` 仍是 `##`），读回时不需要
+任何还原，也不存在把内容标题误认成结构标记的可能。加载器按标记的**确切
+文字**（`Material N`、`Passage N`、`第 N 题`）切分，而不是只按级别。
 
-`### 第 N 题` 中的 N 是**组内序号**（1 起），与 frontmatter `questions[].index`
+`##### 第 N 题` 中的 N 是**组内序号**（1 起），与 frontmatter `questions[].index`
 一致；`questions[].id` 是**全局题 ID**，两者共同确定一道题。
 
 ### 2.3 Part 7 多 passage
 
-Part 7 一个题组含 1–5 段材料。`## 原文` 下每个材料用 `### Passage K`
+Part 7 一个题组含 1–5 段材料。`## 原文` 下每个材料用 `##### Passage K`
 分隔（K 从 1 起，按题库中的材料顺序）；`## 选项` 与 `## 答案 / 题解` 的
-`### 第 N 题` 按题目顺序排列，题号即组内序号。
+`##### 第 N 题` 按题目顺序排列，题号即组内序号。
 
 `passage_type` 记录的是题组题型（`single` / `double` / `triple`），**不是**
-passage 数量；材料段数由 `### Passage K` 的实际条数决定。
+passage 数量；材料段数由 `##### Passage K` 的实际条数决定。
 
 ## 3. 听力组
 
@@ -160,9 +164,9 @@ passage 数量；材料段数由 `### Passage K` 的实际条数决定。
   ```
 
   一句可以跨多行（换行用 `\n` 连接）；中文字幕不进 SRT，另存于
-  md 的 `### Transcript (zh)` 之后由前端按需显示。
+  md 的 `##### Transcript (zh)` 之后由前端按需显示。
 
-逐句字幕必须与 `### Transcript` 的英文原文**逐句对应**：加载器会按与
+逐句字幕必须与 `##### Transcript` 的英文原文**逐句对应**：加载器会按与
 `valid_sentences` 相同的规则切分原文并校验时间轴，任何一句对不上，
 整个题库都不可用。
 
