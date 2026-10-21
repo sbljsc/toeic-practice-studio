@@ -12,6 +12,7 @@ import { TranscriptPanel } from '../TranscriptPanel';
 import { ActivityStatistics } from '../ActivityStatistics';
 import { useActivity } from './useActivity';
 import { nextEligibleIndex, questionEligible } from './workspaceNavigation';
+import { keepsSameAudioSegment } from './audioSegment';
 import type { WorkspaceView } from '../WorkspaceViewToggle';
 import { practiceSubtitleContext } from '../subtitleSync';
 
@@ -174,16 +175,24 @@ export function AttemptWorkspace({ attemptId, onSubmitted, onExit }: Props) {
     return () => clearTimeout(boundary);
   }, [clock.expired, attempt?.status, attempt?.timing.phase, syncClock]);
 
-  const jumpTo = useCallback((index: number, preserveAudio = false) => {
+  const jumpTo = useCallback((index: number) => {
     const current = currentAttempt.current;
     if (!current) return;
     const bounded = Math.max(0, Math.min(current.questions.length - 1, index));
+    const previous = current.questions[currentIndex];
     setCurrentIndex(bounded);
     const target = current.questions[bounded];
-    if (target) { pipeline.markVisited(target.id); if (!preserveAudio) audio.selectQuestion(target.id); }
+    if (target) {
+      pipeline.markVisited(target.id);
+      // Moving to a question in another clip must stop the previous clip.
+      // Questions sharing one clip keep playing where they are.
+      if (!keepsSameAudioSegment(current.audio_queue, previous?.id, target.id)) {
+        audio.selectQuestion(target.id);
+      }
+    }
     if (!readOnly && !submitting)
       void api.setPosition(current.id, bounded).catch(() => undefined);
-  }, [audio, pipeline, readOnly, submitting]);
+  }, [audio, currentIndex, pipeline, readOnly, submitting]);
 
   const startAttempt = useCallback(async () => {
     const current = currentAttempt.current;
@@ -474,7 +483,7 @@ export function AttemptWorkspace({ attemptId, onSubmitted, onExit }: Props) {
                   if (!latest || ownershipLost.current || readOnly || submitting || clock.expired || !questionEligible(latest, question)) return;
                   if (!pipeline.selectOption(question.id, optionId)) return;
                   const next = autoNext ? nextEligibleIndex(latest, currentIndex) : null;
-                  if (next !== null) jumpTo(next, true);
+                  if (next !== null) jumpTo(next);
                 }}
                 onFlag={() => pipeline.toggleFlag(question.id)}
               />

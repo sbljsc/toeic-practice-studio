@@ -228,13 +228,25 @@ export class MediaSession {
   selectQuestion(id: string): void {
     if (this.strict()) return;
     const index = this.attempt?.audio_queue.findIndex((item) => item.question_ids.includes(id)) ?? -1;
-    if (index < 0 || index === this.state.queueIndex) return;
+    if (index < 0) {
+      // The new question has no audio of its own. Any clip still playing
+      // belongs to the previous question and must not survive the switch.
+      this.stopCurrentClip();
+      return;
+    }
+    if (index === this.state.queueIndex) return;
     this.replayOnly = false;
     this.state.queueIndex = index; this.state.positionSeconds = 0;
     this.state.durationSeconds = this.plan.segments[index].durationSeconds;
     this.selectSource(); this.persist(true);
     if (this.expected() && !this.userPaused) void this.requestPlay();
     this.emit();
+  }
+  /** Silence the current clip without touching the queue position. */
+  private stopCurrentClip(): void {
+    if (this.element.paused) return;
+    this.generation++; this.playRequest = null;
+    this.element.pause(); this.state.playing = false; this.emit();
   }
   async replayQuestion(id: string): Promise<boolean> {
     if (this.strict() || !this.expected()) return false;

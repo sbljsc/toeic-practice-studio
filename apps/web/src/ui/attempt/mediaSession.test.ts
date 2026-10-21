@@ -173,6 +173,48 @@ test('a full exam never enables audio outside its listening phase', async () => 
   h.session.destroy();
 });
 
+test('selecting a question in another clip stops the previous clip', async () => {
+  const h = setup();
+  const first = { ...item('a', 10, 20), question_ids: ['qa'] };
+  const shared = { ...item('b', 100, 120, '/two.mp3'), question_ids: ['qb1', 'qb2'] };
+  h.session.update(attempt({ status: 'running', audio_queue: [first, shared] }), true);
+  await flush();
+  assert.equal(h.audio.src, '/track.mp3');
+  h.session.selectQuestion('qb1');
+  await flush();
+  assert.equal(h.audio.src, '/two.mp3', 'the next clip must be loaded');
+  assert.equal(h.session.snapshot().queueIndex, 1);
+  assert.equal(h.audio.paused, false);
+  h.session.destroy();
+});
+
+test('selecting a question in the same clip keeps playback running', async () => {
+  const h = setup();
+  const shared = { ...item('b', 100, 120, '/two.mp3'), question_ids: ['qb1', 'qb2'] };
+  h.session.update(attempt({ status: 'running', audio_queue: [shared] }), true);
+  await flush();
+  h.audio.advance(5);
+  const before = { src: h.audio.src, time: h.audio.currentTime, plays: h.audio.plays };
+  h.session.selectQuestion('qb2');
+  await flush();
+  assert.equal(h.audio.src, before.src, 'the same clip must not be reloaded');
+  assert.equal(h.audio.currentTime, before.time, 'the same clip must not be re-seeked');
+  assert.equal(h.audio.paused, false, 'the same clip must keep playing');
+  h.session.destroy();
+});
+
+test('selecting a question without audio stops the running clip', async () => {
+  const h = setup();
+  const first = { ...item('a', 10, 20), question_ids: ['qa'] };
+  h.session.update(attempt({ status: 'running', audio_queue: [first] }), true);
+  await flush();
+  assert.equal(h.audio.paused, false);
+  h.session.selectQuestion('reading-1');
+  await flush();
+  assert.equal(h.audio.paused, true, 'a question without audio must silence the previous clip');
+  h.session.destroy();
+});
+
 test('replay targets the current question or shared material and stops at its own boundary', async () => {
   const h = setup();
   const first = item('a', 10, 20);
