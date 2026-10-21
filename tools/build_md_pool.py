@@ -386,7 +386,8 @@ def assert_no_marker_collision(group: dict, texts: list[str]) -> None:
                     f"{group['id']} 的原文与文件结构标记冲突：{line.strip()!r}")
 
 
-def build(pool_root: Path, out_root: Path, layouts_path: Path) -> dict:
+def build(pool_root: Path, out_root: Path, layouts_path: Path,
+          *, verify_only: bool = False) -> dict:
     pool = json.loads((pool_root / "pool.json").read_text(encoding="utf-8"))
     manifest = json.loads((pool_root / "manifest.json").read_text(encoding="utf-8"))
     assets = {entry["id"]: entry for entry in manifest.get("assets", [])}
@@ -394,13 +395,17 @@ def build(pool_root: Path, out_root: Path, layouts_path: Path) -> dict:
     index = LayoutIndex(load_layouts(layouts_path))
 
     parts = out_root / "parts"
+    resolved = parts.resolve()
+    # Only the "parts" folder of the chosen output root may be replaced, and
+    # the output root has to be the bank folder itself. The check runs even
+    # when the folder does not exist yet, so a wrong target can never be
+    # created in the first place. A verification run writes into a throwaway
+    # folder and never touches the real bank.
+    if resolved.parent != out_root.resolve() or resolved.name != "parts":
+        raise ValueError(f"拒绝清理项目外目录：{resolved}")
+    if not verify_only and out_root.resolve() != pool_root.resolve():
+        raise ValueError(f"输出目录必须是题库目录本身：{out_root}")
     if parts.exists():
-        resolved = parts.resolve()
-        # Only the "parts" folder of the chosen output root may be replaced,
-        # and the output root has to be the bank folder itself.
-        if resolved.parent != out_root.resolve() or resolved.name != "parts" \
-                or out_root.resolve() != pool_root.resolve():
-            raise ValueError(f"拒绝清理项目外目录：{resolved}")
         shutil.rmtree(parts)
 
     stats = {
@@ -516,7 +521,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.check:
         with tempfile.TemporaryDirectory(prefix="md-pool-check-") as tmp:
             fresh = Path(tmp)
-            build(source, fresh, args.layouts)
+            build(source, fresh, args.layouts, verify_only=True)
             problems = compare(out / "parts", fresh / "parts")
         if problems:
             print("题库 Markdown 与源数据不一致：")
