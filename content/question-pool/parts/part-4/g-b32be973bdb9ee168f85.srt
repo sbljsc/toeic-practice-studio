@@ -1,0 +1,27 @@
+1
+00:00:00,200 --> 00:00:01,395
+Attention, all passengers.
+
+2
+00:00:02,095 --> 00:00:05,615
+The City Hall Subway Station is now closed due to flooding.
+
+3
+00:00:05,875 --> 00:00:09,995
+All subway trains on north- and south-bound routes have been halted.
+
+4
+00:00:11,215 --> 00:00:17,755
+Passengers who are in City Hall Station are at present being assisted in leaving the building by emergency teams.
+
+5
+00:00:18,175 --> 00:00:24,695
+We advise all commuters to take buses that will be running along both routes at approximately ten-minute intervals.
+
+6
+00:00:25,155 --> 00:00:29,955
+We estimate that normal operations at City Hall Station will resume in two hours.
+
+7
+00:00:30,735 --> 00:00:32,775
+We apologize for any inconvenience.

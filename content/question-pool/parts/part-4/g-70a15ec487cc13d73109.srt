@@ -1,0 +1,23 @@
+1
+00:00:00,200 --> 00:00:06,860
+I'm pleased to report that tickets are selling rapidly, and we should sell the remaining 450 tickets by the end of the week.
+
+2
+00:00:07,520 --> 00:00:11,240
+It appears as though everyone in town is eager to hear Jennifer Evans sing.
+
+3
+00:00:11,620 --> 00:00:14,700
+Just so you know, the posters haven't arrived yet.
+
+4
+00:00:14,860 --> 00:00:20,560
+Eric happened to notice a mistake as the number 23 was written on the posters instead of 13.
+
+5
+00:00:21,140 --> 00:00:25,900
+So the printer had to make a change and threw away the posters which had already been printed.
+
+6
+00:00:26,380 --> 00:00:33,195
+I've been informed that the posters will arrive tomorrow, so we'll send a few of you out to post them in places around town then.

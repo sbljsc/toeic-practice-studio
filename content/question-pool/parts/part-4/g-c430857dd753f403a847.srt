@@ -1,0 +1,23 @@
+1
+00:00:00,200 --> 00:00:06,605
+The CTV annual speech contest is a prestige competition with a tradition going back twenty-five years.
+
+2
+00:00:07,090 --> 00:00:15,045
+The winner of the first competition, held in 1981, was Brian McAdams, now a well-known television journalist and anchorman for CTV.
+
+3
+00:00:15,965 --> 00:00:20,825
+We'd like to remind you that the highest standards will be expected of all contestants at all times.
+
+4
+00:00:21,205 --> 00:00:26,615
+However, we'd also like to say that the benefits of participating are enormous even if you don't win.
+
+5
+00:00:27,305 --> 00:00:37,845
+A pre-competition round of selections will be held here next Monday—that's June the sixth— beginning at 8:00 p.m. So, please fill in your entry form, and we'll see you back here next Monday.
+
+6
+00:00:38,185 --> 00:00:38,525
+Thanks!

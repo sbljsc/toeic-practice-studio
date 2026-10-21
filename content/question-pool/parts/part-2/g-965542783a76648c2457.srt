@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,765
+Can you give me a hand moving the couch, please?
+
+2
+00:00:03,465 --> 00:00:06,045
+(A) To the second floor.
+
+3
+00:00:07,005 --> 00:00:09,680
+(B) That is a great offer.
+
+4
+00:00:10,845 --> 00:00:14,670
+(C) Sure, give me a second first.

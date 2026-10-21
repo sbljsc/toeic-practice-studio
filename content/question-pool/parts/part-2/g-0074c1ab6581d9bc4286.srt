@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,290
+Hello, I'd like to book a single room for this weekend.
+
+2
+00:00:04,605 --> 00:00:07,245
+(A) The bookstore is down the street.
+
+3
+00:00:08,330 --> 00:00:11,145
+(B) You should have made a reservation.
+
+4
+00:00:12,215 --> 00:00:15,370
+(C) Sure, will this be for one night?

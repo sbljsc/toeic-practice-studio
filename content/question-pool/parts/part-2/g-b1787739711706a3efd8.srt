@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,615
+Where do you keep the sales report?
+
+2
+00:00:03,095 --> 00:00:04,845
+(A) Yes, I will.
+
+3
+00:00:06,055 --> 00:00:07,715
+(B) To the manager.
+
+4
+00:00:08,955 --> 00:00:10,715
+(C) In the filing cabinet.

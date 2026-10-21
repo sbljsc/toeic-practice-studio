@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:01,040
+Hello, Mr. Duvall.
+
+2
+00:00:01,540 --> 00:00:04,500
+This is Tony from the Reservations Department at the National Opera.
+
+3
+00:00:05,340 --> 00:00:10,325
+I received your message, and I want to answer your queries regarding the performance tomorrow.
+
+4
+00:00:10,850 --> 00:00:18,180
+As you know, Thursday is a popular night, so I suggest that you book immediately and pay for your tickets before 5 p.m. this evening.
+
+5
+00:00:19,080 --> 00:00:26,200
+As for a group booking, at present, there are fifteen seats available to your group, but unfortunately they are not all together.
+
+6
+00:00:26,795 --> 00:00:28,340
+I am hoping that this will be okay.
+
+7
+00:00:29,175 --> 00:00:34,580
+Anyway, if you do decide to take these tickets, I can offer you a generous group discount of 20 percent.
+
+8
+00:00:34,620 --> 00:00:41,460
+All you need to do is call me to confirm and then come in to the reservations office to pick up your tickets.
+
+9
+00:00:42,230 --> 00:00:43,240
+I hope you have a nice evening.

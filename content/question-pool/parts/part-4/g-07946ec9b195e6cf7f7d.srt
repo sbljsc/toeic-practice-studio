@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:04,460
+Now that you've checked in, I'd like to let you know about some of the hotel's facilities.
+
+2
+00:00:05,070 --> 00:00:09,220
+First, on the second floor, there are separate gentlemen's and ladies' saunas.
+
+3
+00:00:09,955 --> 00:00:15,420
+These are provided free to our guests and are open from seven o'clock in the morning until ten in the evening.
+
+4
+00:00:16,260 --> 00:00:19,340
+They are a wonderful way of relaxing after a long day.
+
+5
+00:00:20,375 --> 00:00:31,200
+Second, the basement sports center offers a lap swimming pool, two squash courts, a weight room, and a relaxation center where you can enjoy yoga, massages, and aromatherapy.
+
+6
+00:00:31,965 --> 00:00:34,820
+You can buy daily discount entry cards at the reception desk.
+
+7
+00:00:35,865 --> 00:00:42,820
+And finally, on behalf of the hotel, I'd like to offer you a free drink coupon, which can be used at the hotel restaurant.
+
+8
+00:00:43,300 --> 00:00:44,520
+We hope you enjoy your stay!

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,765
+Where do you want me to put these dishes?
+
+2
+00:00:03,195 --> 00:00:06,005
+(A) Just place them next to me.
+
+3
+00:00:07,205 --> 00:00:10,250
+(B) Yes, it is my favorite.
+
+4
+00:00:10,985 --> 00:00:13,485
+(C) We're going to the restaurant.

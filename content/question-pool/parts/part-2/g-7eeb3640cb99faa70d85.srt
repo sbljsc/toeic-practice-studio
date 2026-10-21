@@ -1,0 +1,15 @@
+1
+00:00:00,455 --> 00:00:02,470
+How long is the drive to Tokyo from here?
+
+2
+00:00:03,855 --> 00:00:05,515
+(A) Every other week.
+
+3
+00:00:06,795 --> 00:00:08,950
+(B) It's a great place.
+
+4
+00:00:10,005 --> 00:00:12,095
+(C) Roughly an hour.

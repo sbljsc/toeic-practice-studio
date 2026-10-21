@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:05,110
+W: Craig, I'm driving to Carter Pharmaceuticals to give a product demonstration today.
+
+2
+00:00:05,765 --> 00:00:06,830
+I know you've been there before.
+
+3
+00:00:07,570 --> 00:00:09,190
+Do you happen to know where I can park?
+
+4
+00:00:09,945 --> 00:00:11,650
+M: You'd be better off taking the bus.
+
+5
+00:00:12,050 --> 00:00:13,610
+Parking in that area is hard to find.
+
+6
+00:00:14,230 --> 00:00:20,150
+W: I know, but I'll be bringing a couple of boxes with me, so there's no way I can take them on the bus.
+
+7
+00:00:20,870 --> 00:00:24,330
+M: In that case, you'd better park in the pay lot on Wilson Avenue.
+
+8
+00:00:24,710 --> 00:00:26,010
+It's across from the Murray Building.
+
+9
+00:00:26,910 --> 00:00:29,750
+W: That's sort of far from Carter Pharmaceuticals, isn't it?
+
+10
+00:00:30,725 --> 00:00:33,990
+M: It's two blocks away, but it's the closest lot to where you're heading.

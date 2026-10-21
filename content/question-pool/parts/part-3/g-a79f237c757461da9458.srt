@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:02,905
+W: I'm pleased that we're moving to a bigger office this week.
+
+2
+00:00:03,295 --> 00:00:06,740
+We've been expanding a lot lately, so this office has become a bit cramped.
+
+3
+00:00:07,820 --> 00:00:08,740
+M: I couldn't agree more.
+
+4
+00:00:09,580 --> 00:00:12,740
+By the way, where do you think we should put the employee lounge?
+
+5
+00:00:13,270 --> 00:00:15,800
+W: The room next to the elevator is empty, isn't it?
+
+6
+00:00:16,140 --> 00:00:16,800
+How about it?
+
+7
+00:00:17,940 --> 00:00:20,560
+M: Actually, Ms. Logan intends to use it for her office.
+
+8
+00:00:21,240 --> 00:00:24,700
+Why don't we put the lounge at the end of the hall next to the conference room?
+
+9
+00:00:25,440 --> 00:00:26,860
+W: That's fine with me.
+
+10
+00:00:26,920 --> 00:00:29,200
+Have you packed everything in your office for the move?
+
+11
+00:00:29,960 --> 00:00:30,565
+M: Not yet.
+
+12
+00:00:31,020 --> 00:00:33,040
+I'm planning to take care of that after lunch though.

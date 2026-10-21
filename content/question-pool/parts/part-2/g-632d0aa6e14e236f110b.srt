@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,615
+Has anyone seen Bill today?
+
+2
+00:00:02,620 --> 00:00:04,625
+(A) He called in sick.
+
+3
+00:00:05,800 --> 00:00:08,155
+(B) I saw it many times.
+
+4
+00:00:09,265 --> 00:00:11,835
+(C) Today is not a good day.

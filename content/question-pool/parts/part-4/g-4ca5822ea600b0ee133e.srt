@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:00,605
+Hi, Susan.
+
+2
+00:00:00,985 --> 00:00:02,625
+This is Steve from the Accounting Department.
+
+3
+00:00:03,365 --> 00:00:11,185
+I heard from the receptionist that you are very busy today because of job interviews, but I have to bring some urgent, outstanding financial matters to your attention.
+
+4
+00:00:12,205 --> 00:00:16,725
+Would it be possible for us to get together in my office, say, tomorrow morning at ten?
+
+5
+00:00:16,750 --> 00:00:26,485
+The particular items I would like to discuss with you relate to claims for travel expenses made by members of the Personnel Department after the conference last September.
+
+6
+00:00:27,425 --> 00:00:33,850
+There are no serious problems with these claims, but in many cases the claims forms haven't been completed satisfactorily.
+
+7
+00:00:34,645 --> 00:00:36,345
+I'm sure we can clear this up quickly.
+
+8
+00:00:36,785 --> 00:00:38,685
+Let me know if you can't make it tomorrow.

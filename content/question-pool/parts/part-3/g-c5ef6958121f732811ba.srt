@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:03,225
+W: Hey, I heard you finally landed yourself a job.
+
+2
+00:00:03,700 --> 00:00:05,230
+How did you manage to do that?
+
+3
+00:00:05,550 --> 00:00:07,845
+M: Well, it's a bit funny how I got this job.
+
+4
+00:00:08,135 --> 00:00:16,080
+I mean, I searched all the employment agencies and had been reading the classified ads section of the newspaper every day for the last few weeks without having any luck.
+
+5
+00:00:16,820 --> 00:00:21,900
+Then, I got this phone call from a friend of mine I hadn't talked to since I graduated from college.
+
+6
+00:00:22,560 --> 00:00:25,840
+He told me that he started a company and he wanted me to help him out.
+
+7
+00:00:26,495 --> 00:00:28,600
+W: Wow, that is a bit far-fetched.
+
+8
+00:00:29,340 --> 00:00:31,200
+How long has it been since you graduated?
+
+9
+00:00:31,665 --> 00:00:32,680
+M: It's been four years.
+
+10
+00:00:33,070 --> 00:00:37,360
+I guess I am really lucky to get this chance since the job market is terrible nowadays.

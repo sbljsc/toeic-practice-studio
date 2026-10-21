@@ -1,0 +1,16 @@
+1
+00:00:00,200 --> 00:00:05,860
+Should I get one of my staff members to bring you the papers, or are you
+planning to make a trip out here?
+
+2
+00:00:07,100 --> 00:00:10,320
+(A) No, my plane takes off at nine.
+
+3
+00:00:11,410 --> 00:00:13,520
+(B) I'll drop by this afternoon.
+
+4
+00:00:15,110 --> 00:00:17,940
+(C) I had a great vacation, thanks.

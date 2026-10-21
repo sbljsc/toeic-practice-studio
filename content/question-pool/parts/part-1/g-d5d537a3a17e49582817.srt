@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,515
+(A) A worker is organizing the shelves.
+
+2
+00:00:05,005 --> 00:00:08,935
+(B) The shelves are lined up against one side of the wall.
+
+3
+00:00:10,245 --> 00:00:14,455
+(C) There are books neatly arranged on top of the desk.
+
+4
+00:00:15,975 --> 00:00:19,695
+(D) The map is being taken down at the moment.

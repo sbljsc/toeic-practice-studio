@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,620
+The new guy we hired is going to start Monday.
+
+2
+00:00:03,760 --> 00:00:06,000
+(A) He will be driving here.
+
+3
+00:00:07,140 --> 00:00:09,770
+(B) We could start today too.
+
+4
+00:00:10,820 --> 00:00:13,335
+(C) I can't wait to meet the guy.

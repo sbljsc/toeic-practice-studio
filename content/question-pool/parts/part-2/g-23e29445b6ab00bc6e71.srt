@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,465
+Why don't you invite John to your party?
+
+2
+00:00:03,520 --> 00:00:05,615
+(A) No, he isn't.
+
+3
+00:00:06,880 --> 00:00:09,115
+(B) Sure, I will be there.
+
+4
+00:00:10,200 --> 00:00:12,380
+(C) That's a good idea.

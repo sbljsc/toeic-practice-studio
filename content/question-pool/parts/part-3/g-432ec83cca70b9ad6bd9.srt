@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:01,415
+W: Did you cancel your trip?
+
+2
+00:00:01,975 --> 00:00:03,835
+I thought you were supposed to take off today.
+
+3
+00:00:04,100 --> 00:00:09,295
+M: I was, but I got a great deal on a plane ticket from a friend of mine who works at a travel agency.
+
+4
+00:00:09,975 --> 00:00:12,535
+So I decided to fly to New York next Monday instead.
+
+5
+00:00:13,170 --> 00:00:13,375
+W: Wow!
+
+6
+00:00:13,855 --> 00:00:14,455
+That is great.
+
+7
+00:00:15,290 --> 00:00:16,515
+What about your hotel reservation?
+
+8
+00:00:17,575 --> 00:00:18,750
+Were you able to change it?
+
+9
+00:00:19,255 --> 00:00:23,425
+I heard it's very hard to get any rooms this week because of the film festival there.
+
+10
+00:00:23,955 --> 00:00:25,560
+M: Actually, I ended up canceling it.
+
+11
+00:00:25,995 --> 00:00:31,965
+It turns out that another friend of mine has a condominium there, and he said I could use it while I am staying there.
+
+12
+00:00:32,555 --> 00:00:38,415
+He recently moved out here from New York because of his new job, and he hasn't had enough time to get rid of it yet.

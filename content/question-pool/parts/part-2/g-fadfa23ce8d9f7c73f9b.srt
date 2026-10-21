@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,005
+Why did the president put off the meeting for another day?
+
+2
+00:00:04,120 --> 00:00:07,425
+(A) No, I have not met with him yet.
+
+3
+00:00:08,205 --> 00:00:11,655
+(B) The conference room is on this floor.
+
+4
+00:00:12,780 --> 00:00:15,870
+(C) He had to attend to something urgent.

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,820
+Who takes care of your taxes?
+
+2
+00:00:02,905 --> 00:00:05,730
+(A) My accountant handles them.
+
+3
+00:00:06,840 --> 00:00:09,880
+(B) I'll pay for it with my credit card.
+
+4
+00:00:10,935 --> 00:00:14,440
+(C) No, I can't afford to take a taxi.

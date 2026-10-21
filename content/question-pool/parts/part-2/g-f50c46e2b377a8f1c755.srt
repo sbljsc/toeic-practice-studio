@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,600
+Shall we get together here, or is this room already reserved?
+
+2
+00:00:04,540 --> 00:00:07,835
+(A) There should still be some room.
+
+3
+00:00:08,940 --> 00:00:12,030
+(B) I'll call the restaurant later.
+
+4
+00:00:13,080 --> 00:00:16,635
+(C) It's available as far as I know.

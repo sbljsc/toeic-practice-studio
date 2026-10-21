@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:00,440
+Hello.
+
+2
+00:00:01,020 --> 00:00:02,480
+My name is Richard Armstrong.
+
+3
+00:00:03,140 --> 00:00:06,440
+You may recall that I picked up a few books at your store this afternoon.
+
+4
+00:00:06,440 --> 00:00:09,315
+I need to report a slight problem with one.
+
+5
+00:00:10,100 --> 00:00:15,060
+When I opened the plastic wrapper to read the book, I noticed that several pages in it were torn.
+
+6
+00:00:15,820 --> 00:00:21,660
+Since it cost me $25, I'd really like to have my money refunded or receive a brand-new copy.
+
+7
+00:00:22,460 --> 00:00:29,140
+I'll be visiting the store again tomorrow with the book, but I thought that I ought to call ahead of time so that you'll be expecting me.
+
+8
+00:00:29,200 --> 00:00:29,835
+Thanks a lot.
+
+9
+00:00:30,240 --> 00:00:30,520
+Goodbye.

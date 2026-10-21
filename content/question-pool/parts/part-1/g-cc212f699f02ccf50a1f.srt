@@ -1,0 +1,15 @@
+1
+00:00:00,455 --> 00:00:03,835
+(A) The women are waiting for the bus to arrive.
+
+2
+00:00:04,880 --> 00:00:08,130
+(B) They're lining up to board the bus.
+
+3
+00:00:09,185 --> 00:00:12,870
+(C) Some of them are walking toward the bus.
+
+4
+00:00:14,015 --> 00:00:17,725
+(D) The people have already gotten off the bus.

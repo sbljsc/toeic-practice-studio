@@ -1,0 +1,16 @@
+1
+00:00:00,200 --> 00:00:04,410
+Do you want to proofread this proposal, or would you prefer
+typing up the summary?
+
+2
+00:00:06,210 --> 00:00:08,940
+(A) Thank you. That would be very nice of you.
+
+3
+00:00:10,055 --> 00:00:12,170
+(B) Either is okay with me.
+
+4
+00:00:13,530 --> 00:00:15,890
+(C) Yes, I read it over twice.

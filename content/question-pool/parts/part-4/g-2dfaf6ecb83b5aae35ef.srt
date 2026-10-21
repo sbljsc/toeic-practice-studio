@@ -1,0 +1,27 @@
+1
+00:00:00,200 --> 00:00:05,555
+Welcome, shoppers, to the Landmark Department Store's special year-end sale.
+
+2
+00:00:06,035 --> 00:00:08,970
+Nearly every item here is being offered at a discount.
+
+3
+00:00:09,575 --> 00:00:18,930
+However, if you want to find the best deals in the entire store, drop by the jewelry department, where you can get savings of up to fifty percent.
+
+4
+00:00:19,600 --> 00:00:23,915
+Make sure you sign up for a special shopper's card before you check out, too.
+
+5
+00:00:24,640 --> 00:00:32,460
+Doing that will give you ten percent off on future purchases and make you eligible for all kinds of special offers throughout the year.
+
+6
+00:00:32,990 --> 00:00:36,870
+If you need assistance, speak to one of our customer service representatives.
+
+7
+00:00:38,010 --> 00:00:39,870
+You can find them on every floor.

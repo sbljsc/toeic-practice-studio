@@ -98,6 +98,11 @@ class Library:
             from .pool_library import load_pool
             load_pool(self)
             return
+        if self.manifest.get("schema_version") == 3:
+            self.manifest_version = str(self.manifest.get("version", ""))
+            from .md_pool import load_md_pool
+            load_md_pool(self, self.root)
+            return
         if self.manifest.get("schema_version") != 1:
             self.load_error = "内置题库 schema_version 不受支持"
             return

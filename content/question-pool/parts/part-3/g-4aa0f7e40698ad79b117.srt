@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:02,360
+W: The sale is going to start tomorrow.
+
+2
+00:00:02,880 --> 00:00:06,160
+Has everything that's being discounted been put out on display?
+
+3
+00:00:07,100 --> 00:00:07,580
+M: Not yet.
+
+4
+00:00:08,120 --> 00:00:11,340
+We still need to set up a few racks in the men's clothing section.
+
+5
+00:00:12,020 --> 00:00:13,880
+I can take care of that after my break.
+
+6
+00:00:14,560 --> 00:00:16,820
+W: Do you think you can handle it by yourself?
+
+7
+00:00:17,685 --> 00:00:18,905
+M: You have my word.
+
+8
+00:00:19,100 --> 00:00:20,120
+W: That's good to hear.
+
+9
+00:00:20,700 --> 00:00:26,740
+I'm going to tell Rick and Stephanie to set up the signs so that all of our shoppers know about the sale.
+
+10
+00:00:26,740 --> 00:00:27,860
+M: Excellent.
+
+11
+00:00:28,405 --> 00:00:31,990
+We should also leave flyers by the cash registers for customers to take.

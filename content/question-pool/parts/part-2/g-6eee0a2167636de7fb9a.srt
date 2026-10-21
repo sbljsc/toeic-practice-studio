@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,525
+How long are you thinking of going?
+
+2
+00:00:02,860 --> 00:00:05,530
+(A) For about a year or so.
+
+3
+00:00:06,500 --> 00:00:09,460
+(B) What's with the long face?
+
+4
+00:00:10,480 --> 00:00:13,780
+(C) Yes, I will be going with John.

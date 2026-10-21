@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,265
+Weren't you a bit concerned about Jack being absent today?
+
+2
+00:00:04,475 --> 00:00:06,405
+(A) That's too bad.
+
+3
+00:00:07,690 --> 00:00:09,305
+(B) He is worried.
+
+4
+00:00:10,705 --> 00:00:12,745
+(C) No, he called in.

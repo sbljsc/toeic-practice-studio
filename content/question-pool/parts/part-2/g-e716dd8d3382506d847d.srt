@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,335
+Don't you have to go to your appointment with your lawyer soon?
+
+2
+00:00:04,340 --> 00:00:07,595
+(A) To discuss some legal matters.
+
+3
+00:00:08,520 --> 00:00:12,455
+(B) Yes, right after I am done with this.
+
+4
+00:00:13,500 --> 00:00:17,110
+(C) No, he made a point not to do that.

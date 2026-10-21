@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,040
+Does your store carry blue binders?
+
+2
+00:00:03,480 --> 00:00:05,740
+(A) I'm afraid we are out of that color.
+
+3
+00:00:07,045 --> 00:00:10,040
+(B) No, I will bring it over right now.
+
+4
+00:00:11,280 --> 00:00:14,180
+(C) No, the blue is a bit too dark.

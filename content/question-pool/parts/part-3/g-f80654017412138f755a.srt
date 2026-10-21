@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:04,440
+W: Jonathan, if you have not reserved your flight tickets yet, you'd better do it soon.
+
+2
+00:00:04,760 --> 00:00:09,140
+I was just told by Sarah that it was going to be difficult to get seats from next week.
+
+3
+00:00:09,660 --> 00:00:09,840
+M: Oh?
+
+4
+00:00:10,180 --> 00:00:10,760
+Why is that?
+
+5
+00:00:11,230 --> 00:00:16,300
+W: Well, the International Film Festival is being held in New York during the same week as our conference.
+
+6
+00:00:17,280 --> 00:00:24,340
+This event apparently attracts thousands of people from all walks of life into the city, and all the flights and hotel rooms get booked.
+
+7
+00:00:24,700 --> 00:00:25,450
+M: Is that right?
+
+8
+00:00:25,815 --> 00:00:28,560
+In that case, I'd better call right now and book a seat.
+
+9
+00:00:29,200 --> 00:00:30,400
+I don't want to miss the conference.

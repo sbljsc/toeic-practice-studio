@@ -1,0 +1,47 @@
+1
+00:00:00,440 --> 00:00:00,460
+M: Hello.
+
+2
+00:00:00,890 --> 00:00:01,840
+My name is Eric Farmer.
+
+3
+00:00:02,740 --> 00:00:06,065
+I received a bill in the mail today, but that shouldn't have happened.
+
+4
+00:00:06,620 --> 00:00:11,720
+I signed up for the automatic payment system two months ago, so the bill should have already been paid.
+
+5
+00:00:12,600 --> 00:00:14,260
+W: Let me check on that, Mr. Farmer.
+
+6
+00:00:14,540 --> 00:00:15,680
+May I have your address, please?
+
+7
+00:00:15,680 --> 00:00:19,220
+M: I live at 382 Washington Avenue.
+
+8
+00:00:19,220 --> 00:00:27,540
+W: Hmm...According to the computer, the money was withdrawn from your account yesterday, so you were sent the bill in error.
+
+9
+00:00:27,540 --> 00:00:29,440
+M: I can disregard it, right?
+
+10
+00:00:29,440 --> 00:00:30,480
+W: That's correct.
+
+11
+00:00:30,480 --> 00:00:32,760
+And thanks for bringing this to our attention.
+
+12
+00:00:32,760 --> 00:00:36,900
+We'll check the computer system for other problems like this.

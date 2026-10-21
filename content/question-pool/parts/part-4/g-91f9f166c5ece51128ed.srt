@@ -1,0 +1,23 @@
+1
+00:00:00,200 --> 00:00:06,925
+Hello, Mr. Jackson, this is Jane Erickson from the Port Project Committee at N.P.U. Architectural Services.
+
+2
+00:00:07,745 --> 00:00:08,925
+I hope you remember me.
+
+3
+00:00:09,625 --> 00:00:17,525
+Anyway, the committee was very impressed by your presentation today, and we'd like to encourage you to submit a formal quote as soon as possible.
+
+4
+00:00:17,960 --> 00:00:24,705
+I know that the closing date is in six weeks, but would it be possible for you to submit your documents in three weeks?
+
+5
+00:00:25,040 --> 00:00:30,485
+The committee needs as much time as possible to evaluate each proposal and make a recommendation.
+
+6
+00:00:31,500 --> 00:00:39,205
+Should you have any inquiries at all, please don't hesitate to call me at 781-2213.

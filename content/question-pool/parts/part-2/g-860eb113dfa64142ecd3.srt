@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,610
+Why do you show up to work at such an early hour?
+
+2
+00:00:03,950 --> 00:00:06,230
+(A) I did call her this morning.
+
+3
+00:00:07,330 --> 00:00:10,110
+(B) No, she is working at home today.
+
+4
+00:00:11,405 --> 00:00:14,150
+(C) I hate being caught in traffic.

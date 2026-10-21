@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,620
+Pardon me, but would it be possible for me to use your phone?
+
+2
+00:00:05,000 --> 00:00:08,900
+(A) Sure, but you have to dial 9 to call out.
+
+3
+00:00:10,120 --> 00:00:13,545
+(B) The phone directory is on the lower shelf.
+
+4
+00:00:14,400 --> 00:00:17,830
+(C) There is one on the first floor of this building.

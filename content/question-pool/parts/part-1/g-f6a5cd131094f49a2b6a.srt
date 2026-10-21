@@ -1,0 +1,15 @@
+1
+00:00:00,405 --> 00:00:03,145
+(A) Passengers are waiting at the airport.
+
+2
+00:00:04,305 --> 00:00:06,525
+(B) There are planes flying overhead.
+
+3
+00:00:08,225 --> 00:00:10,785
+(C) The airplanes are parked at the gate.
+
+4
+00:00:12,365 --> 00:00:14,545
+(D) The planes have already landed.

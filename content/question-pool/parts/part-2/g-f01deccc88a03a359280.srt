@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,835
+Would you rather meet over lunch or after two today?
+
+2
+00:00:03,760 --> 00:00:06,740
+(A) That sounds fine by me.
+
+3
+00:00:07,680 --> 00:00:11,000
+(B) I have to meet a client at noon.
+
+4
+00:00:11,825 --> 00:00:14,795
+(C) How is the Italian place?

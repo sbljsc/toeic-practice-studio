@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,040
+Won't we have to use the overhead projector at the meeting?
+
+2
+00:00:04,165 --> 00:00:07,080
+(A) Yes, I will set it up soon.
+
+3
+00:00:08,230 --> 00:00:10,810
+(B) It is a big project.
+
+4
+00:00:12,000 --> 00:00:14,530
+(C) I'll head over right now.

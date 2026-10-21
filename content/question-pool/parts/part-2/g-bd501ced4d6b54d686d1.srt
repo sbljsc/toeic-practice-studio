@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,825
+What did Mr. Smith say about the new project?
+
+2
+00:00:03,930 --> 00:00:06,560
+(A) He made some great comments.
+
+3
+00:00:07,835 --> 00:00:10,740
+(B) The projector is in the meeting room.
+
+4
+00:00:11,930 --> 00:00:14,780
+(C) Yes, he mentioned it to me.

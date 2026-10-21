@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:02,985
+W: Hi, is there anything I can help you with today, sir?
+
+2
+00:00:03,390 --> 00:00:09,220
+M: Yes, I was told by a shopkeeper down the road that you specialize in clothes for big people.
+
+3
+00:00:10,020 --> 00:00:15,520
+I've been looking around this entire area for the last hour, but I have not had any luck yet.
+
+4
+00:00:16,180 --> 00:00:18,505
+I really do hope you have what I am looking for.
+
+5
+00:00:18,915 --> 00:00:21,460
+W: Yes, I think we may be able to help you out.
+
+6
+00:00:22,240 --> 00:00:27,120
+In fact, the entire second floor completely caters to people who are considered big.
+
+7
+00:00:27,440 --> 00:00:33,940
+If you walk up to the second floor, you will see there are many fashionable clothes to choose from at very reasonable prices.
+
+8
+00:00:34,520 --> 00:00:35,760
+M: Wow, this is wonderful.
+
+9
+00:00:36,700 --> 00:00:40,100
+I don't understand why I've never heard of this place before.

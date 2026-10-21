@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,715
+You didn't happen to see a bank machine near this hotel, did you?
+
+2
+00:00:04,785 --> 00:00:07,165
+(A) There is one on the corner.
+
+3
+00:00:08,235 --> 00:00:11,170
+(B) No, it didn't happen that way.
+
+4
+00:00:12,280 --> 00:00:14,545
+(C) The machine is out of order.

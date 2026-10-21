@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:01,445
+W: We are short of staff today.
+
+2
+00:00:02,045 --> 00:00:05,445
+Why don't you call up some of the part-time workers and see if they can work today?
+
+3
+00:00:06,145 --> 00:00:11,645
+We are expecting a massive crowd to swarm us tonight since a great review got printed in today's local paper.
+
+4
+00:00:12,455 --> 00:00:14,185
+M: Is that why we are getting so many calls?
+
+5
+00:00:14,805 --> 00:00:17,465
+I couldn't figure out why the phone was ringing off the hook.
+
+6
+00:00:17,680 --> 00:00:22,665
+W: I didn't know about it either, but one of the customers told me that he came after reading the review.
+
+7
+00:00:23,035 --> 00:00:25,785
+He also complimented us on the great food we serve here.
+
+8
+00:00:26,445 --> 00:00:27,285
+M: That's good to hear.
+
+9
+00:00:27,405 --> 00:00:32,545
+All the renovation work we did here and hiring the new chef we scouted from France are really paying off.

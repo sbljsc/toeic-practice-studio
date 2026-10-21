@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,860
+Why is Suki leaving the company?
+
+2
+00:00:03,090 --> 00:00:06,080
+(A) She decided to go back to school.
+
+3
+00:00:07,235 --> 00:00:10,640
+(B) Sure, just leave it right here.
+
+4
+00:00:11,860 --> 00:00:15,300
+(C) Yes, she doesn't get along with her boss.

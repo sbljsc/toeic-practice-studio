@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,260
+How do you commute to work from your place?
+
+2
+00:00:03,345 --> 00:00:06,220
+(A) Yes, I am doing great.
+
+3
+00:00:07,220 --> 00:00:10,040
+(B) I'm not familiar with the area.
+
+4
+00:00:11,025 --> 00:00:14,070
+(C) I usually drive my car.

@@ -1,0 +1,15 @@
+1
+00:00:00,435 --> 00:00:02,830
+(A) They have gathered in a small group.
+
+2
+00:00:04,015 --> 00:00:06,680
+(B) They are taking a break from work.
+
+3
+00:00:07,795 --> 00:00:11,220
+(C) The people are getting ready to leave for the day.
+
+4
+00:00:12,395 --> 00:00:15,735
+(D) They are waiting to be seated in a restaurant.

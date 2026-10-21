@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,725
+Where in Canada are you from?
+
+2
+00:00:02,915 --> 00:00:05,160
+(A) I was born in Kingston.
+
+3
+00:00:06,540 --> 00:00:09,160
+(B) Early tomorrow morning.
+
+4
+00:00:10,220 --> 00:00:12,705
+(C) No, I don't feel like it.

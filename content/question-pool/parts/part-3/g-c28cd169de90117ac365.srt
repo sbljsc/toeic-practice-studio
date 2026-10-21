@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:03,840
+M: When do you think you will be able to wrap up the deal with the retail shop owners?
+
+2
+00:00:04,320 --> 00:00:08,340
+I hope it will be soon because we have to start the construction work as soon as possible.
+
+3
+00:00:08,340 --> 00:00:12,680
+W: Well, I had a meeting with them this morning, and things went quite smoothly.
+
+4
+00:00:13,220 --> 00:00:17,145
+If everything goes as planned, I should have all of their signatures by the end of this week.
+
+5
+00:00:17,380 --> 00:00:18,300
+M: Well, I hope so.
+
+6
+00:00:18,420 --> 00:00:27,100
+Otherwise, we will not be able to start the construction work on time, and there is a good chance that we will not be able to have the building ready for the exposition next January.
+
+7
+00:00:27,400 --> 00:00:28,140
+W: Don't worry.
+
+8
+00:00:28,280 --> 00:00:30,080
+I will get the approval this week.
+
+9
+00:00:30,080 --> 00:00:33,700
+And I will make sure the construction work gets underway by next Monday.

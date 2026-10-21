@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,415
+Do you want a lift to the bus terminal?
+
+2
+00:00:02,675 --> 00:00:05,315
+(A) It's a bit too heavy for me.
+
+3
+00:00:06,455 --> 00:00:09,135
+(B) That would be very nice of you.
+
+4
+00:00:10,230 --> 00:00:13,195
+(C) To see my in-laws in New York.

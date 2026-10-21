@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,115
+(A) The man is attending to a patient.
+
+2
+00:00:04,350 --> 00:00:07,695
+(B) The patient is getting up from the chair.
+
+3
+00:00:08,910 --> 00:00:11,695
+(C) The man is putting on his gloves.
+
+4
+00:00:13,195 --> 00:00:16,355
+(D) The patient is looking out the window.

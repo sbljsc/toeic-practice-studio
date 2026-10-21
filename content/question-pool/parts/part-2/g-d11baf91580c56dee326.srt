@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:04,215
+I'm quite certain that we've met somewhere, haven't we?
+
+2
+00:00:04,215 --> 00:00:06,615
+(A) I know where it is, too.
+
+3
+00:00:07,680 --> 00:00:10,155
+(B) Yes, you do look familiar.
+
+4
+00:00:11,335 --> 00:00:13,885
+(C) He is sure about it.

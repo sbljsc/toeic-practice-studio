@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:01,210
+Good morning, Mr. Stewart.
+
+2
+00:00:01,970 --> 00:00:04,710
+This is Chuck Pierson from Holloway Housewares calling.
+
+3
+00:00:05,645 --> 00:00:09,530
+We received the order form which you mailed to us and are currently working on filling it.
+
+4
+00:00:09,910 --> 00:00:13,590
+Unfortunately, we no longer stock item number TR394.
+
+5
+00:00:15,270 --> 00:00:19,730
+If you want, we can give you your money back, or we can replace it with a similar item.
+
+6
+00:00:20,170 --> 00:00:25,555
+If you look at page 38 of your catalog, you can see several items which are nearly identical to it.
+
+7
+00:00:26,430 --> 00:00:28,010
+They are roughly the same price, too.
+
+8
+00:00:28,750 --> 00:00:35,170
+Why don't you call me back at 493-9373 to let me know what you decide to do?
+
+9
+00:00:35,190 --> 00:00:35,370
+Thanks.
+
+10
+00:00:35,890 --> 00:00:36,010
+Goodbye.

@@ -1,0 +1,19 @@
+1
+00:00:00,200 --> 00:00:04,660
+Good evening, ladies and gentlemen, and welcome to the biennial Shipbuilding Research Convention.
+
+2
+00:00:05,320 --> 00:00:15,700
+I'm very pleased and proud, as the convener of this convention, to introduce to you one of the world's leading research scientists in the field of shipbuilding, Professor Nathan Davidson.
+
+3
+00:00:15,700 --> 00:00:23,930
+Professor Davidson's speech, entitled “Shipbuilding: the next twenty years”, will form the basis of a book to be published later this year.
+
+4
+00:00:24,400 --> 00:00:32,520
+I'm sure that you're all aware that whatever Professor Davidson has to say is not only fascinating and original, but also extremely pertinent.
+
+5
+00:00:33,140 --> 00:00:35,350
+So, please welcome Professor Davidson.

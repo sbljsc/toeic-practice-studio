@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,655
+Where can I catch a bus to the planetarium?
+
+2
+00:00:03,580 --> 00:00:06,720
+(A) It will arrive in ten minutes.
+
+3
+00:00:07,580 --> 00:00:10,020
+(B) He went there yesterday.
+
+4
+00:00:11,020 --> 00:00:13,660
+(C) At the stop over there.

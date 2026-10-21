@@ -1,0 +1,19 @@
+1
+00:00:00,200 --> 00:00:06,105
+First I want to inform you of the good news that we have doubled our sales over the last 6 months.
+
+2
+00:00:06,455 --> 00:00:15,985
+Yes, we have more than fulfilled our growth target, and it is with great pleasure that I congratulate you for your effort and the care you have taken in making this happen.
+
+3
+00:00:16,900 --> 00:00:27,640
+In order to recognize this achievement and your performance, we have decided to invite all employees and their families to a special thank-you buffet lunch at the Criterion Hotel.
+
+4
+00:00:28,380 --> 00:00:31,795
+Please join us this Saturday for some excellent food and wine.
+
+5
+00:00:32,300 --> 00:00:33,970
+I hope to see you all there!

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,180
+What do you think of our new receptionist?
+
+2
+00:00:03,380 --> 00:00:05,790
+(A) At the reception desk.
+
+3
+00:00:06,910 --> 00:00:09,180
+(B) I'll think it over tonight.
+
+4
+00:00:10,780 --> 00:00:13,310
+(C) I have not met her yet.

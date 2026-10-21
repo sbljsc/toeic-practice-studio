@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:00,920
+M: Hi, Suzie.
+
+2
+00:00:01,345 --> 00:00:03,325
+I'm just ringing to see if you got the job.
+
+3
+00:00:03,960 --> 00:00:04,605
+W: Oh, hi John.
+
+4
+00:00:05,155 --> 00:00:06,585
+Well, actually, I'm not sure.
+
+5
+00:00:07,145 --> 00:00:09,705
+But I do have to go for a second interview this afternoon.
+
+6
+00:00:10,175 --> 00:00:10,705
+M: That's great!
+
+7
+00:00:11,525 --> 00:00:12,725
+I guess you must be excited.
+
+8
+00:00:13,645 --> 00:00:16,265
+Where is your second meeting supposed to happen anyway?
+
+9
+00:00:16,815 --> 00:00:19,185
+W: At the big building next to the art gallery downtown.
+
+10
+00:00:19,485 --> 00:00:24,395
+Hey, do you think we can meet up for lunch today before I go to my interview?
+
+11
+00:00:25,045 --> 00:00:28,245
+I really could use some inside information about your supervisor.
+
+12
+00:00:29,025 --> 00:00:30,345
+He is going to interview me today.

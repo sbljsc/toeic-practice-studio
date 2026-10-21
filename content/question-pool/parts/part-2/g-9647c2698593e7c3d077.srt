@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,785
+Didn't Mr. Newton leave a message?
+
+2
+00:00:03,300 --> 00:00:06,085
+(A) Yes, it's on your desk.
+
+3
+00:00:07,170 --> 00:00:09,705
+(B) He left an hour ago.
+
+4
+00:00:10,825 --> 00:00:13,445
+(C) I will pass it on to him.

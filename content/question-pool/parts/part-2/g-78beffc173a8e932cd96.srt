@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,710
+Do you feel like shopping today, or would you prefer going another time?
+
+2
+00:00:04,950 --> 00:00:07,495
+(A) I bought a T-shirt.
+
+3
+00:00:08,390 --> 00:00:10,910
+(B) I feel quite good.
+
+4
+00:00:12,090 --> 00:00:14,845
+(C) I'm a bit tired today.

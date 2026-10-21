@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:06,560
+I'd like to welcome you all to the annual golf championship, and I hope that you enjoy the week you will be spending with us.
+
+2
+00:00:07,140 --> 00:00:15,040
+I would like to remind you that, due to security arrangements, it is essential to have your press identification cards with you at all times.
+
+3
+00:00:15,440 --> 00:00:19,040
+If you forget your card, you will not be allowed to enter any press area.
+
+4
+00:00:20,280 --> 00:00:23,140
+Press conferences will be held at the end of play every day.
+
+5
+00:00:23,740 --> 00:00:27,775
+All reporters will be able to question the selected competitors in the press room.
+
+6
+00:00:28,335 --> 00:00:31,160
+Please indicate that you have a question by raising your hand.
+
+7
+00:00:31,990 --> 00:00:35,180
+A tournament official will pass you a microphone when it is your turn.
+
+8
+00:00:35,900 --> 00:00:40,250
+And please ensure that your mobile phones are off during question sessions.

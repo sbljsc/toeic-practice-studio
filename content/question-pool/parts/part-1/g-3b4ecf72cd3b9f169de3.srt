@@ -1,0 +1,15 @@
+1
+00:00:00,445 --> 00:00:03,620
+(A) The cars are parked on the road.
+
+2
+00:00:04,545 --> 00:00:07,765
+(B) There are vehicles in the driveway.
+
+3
+00:00:08,825 --> 00:00:12,205
+(C) The windows are being cleaned.
+
+4
+00:00:13,075 --> 00:00:16,670
+(D) A man is getting into the car.

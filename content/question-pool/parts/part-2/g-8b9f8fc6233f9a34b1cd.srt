@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,395
+What kind of car are you thinking of getting?
+
+2
+00:00:03,490 --> 00:00:06,400
+(A) I want something with good mileage.
+
+3
+00:00:07,425 --> 00:00:09,755
+(B) I didn't drive today.
+
+4
+00:00:10,820 --> 00:00:13,710
+(C) No, I take the bus to work.

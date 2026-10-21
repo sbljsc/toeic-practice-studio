@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:04,365
+W: Pardon me, but are you giving any more tours of the gallery this afternoon?
+
+2
+00:00:05,205 --> 00:00:09,355
+M: Yes, there's one more, but it won't start until twenty minutes from now.
+
+3
+00:00:09,685 --> 00:00:10,710
+Would you like to go on it?
+
+4
+00:00:11,105 --> 00:00:11,445
+W: Definitely.
+
+5
+00:00:12,385 --> 00:00:16,025
+I guess I can browse around the gift shop while I wait for it to start.
+
+6
+00:00:16,755 --> 00:00:18,625
+Where do I need to be when the tour begins?
+
+7
+00:00:20,145 --> 00:00:21,645
+M: Come right back here.
+
+8
+00:00:21,685 --> 00:00:25,480
+Would you please sign your name on the sheet so that you can reserve a spot on the tour?
+
+9
+00:00:26,005 --> 00:00:27,280
+W: I need to do that?
+
+10
+00:00:27,425 --> 00:00:27,765
+How come?
+
+11
+00:00:28,825 --> 00:00:32,305
+M: This tour is limited to twenty people since it's being given by the curator.
+
+12
+00:00:33,415 --> 00:00:34,565
+He doesn't often do that.

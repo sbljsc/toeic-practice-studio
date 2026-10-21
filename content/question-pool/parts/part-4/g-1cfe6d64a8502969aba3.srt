@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:00,800
+Hello, Jason.
+
+2
+00:00:01,220 --> 00:00:02,140
+This is Steve Meyers.
+
+3
+00:00:03,000 --> 00:00:06,020
+I'd like to inform you that I'm getting close to where you are right now.
+
+4
+00:00:06,715 --> 00:00:10,740
+I just passed a sign indicating that I need to get off the interstate in six kilometers.
+
+5
+00:00:11,915 --> 00:00:17,640
+I know the restaurant we're meeting at is close to the exit, so I estimate that I'll be there in about ten minutes.
+
+6
+00:00:18,580 --> 00:00:22,660
+If you want to go ahead and order drinks and appetizers, please be my guest.
+
+7
+00:00:23,300 --> 00:00:24,120
+You know what I like.
+
+8
+00:00:24,820 --> 00:00:26,560
+I hope you brought your laptop with you.
+
+9
+00:00:27,080 --> 00:00:31,300
+I need to show you some files, but mine is in the shop, so I wasn't able to bring it.

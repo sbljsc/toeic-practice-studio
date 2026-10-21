@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,615
+What is it about the design that you don't like?
+
+2
+00:00:03,740 --> 00:00:06,775
+(A) Yes, I need your signature.
+
+3
+00:00:07,550 --> 00:00:11,420
+(B) That's very kind of you.
+
+4
+00:00:11,440 --> 00:00:14,540
+(C) The color seems to be a bit off.

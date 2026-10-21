@@ -1,0 +1,51 @@
+1
+00:00:00,200 --> 00:00:01,860
+W: Hello, Mr. Rutherford.
+
+2
+00:00:02,380 --> 00:00:03,780
+I have some good news for you.
+
+3
+00:00:04,440 --> 00:00:08,180
+A house that fits your requirements has just come on the market.
+
+4
+00:00:09,095 --> 00:00:09,340
+M: Really?
+
+5
+00:00:09,910 --> 00:00:11,280
+What is the asking price for it?
+
+6
+00:00:12,140 --> 00:00:18,700
+W: It's got four bedrooms, and the owners are only asking for $165,000.
+
+7
+00:00:19,660 --> 00:00:20,955
+It's quite a good deal.
+
+8
+00:00:21,540 --> 00:00:24,170
+If you'd like to see it, I can show it to you.
+
+9
+00:00:24,680 --> 00:00:28,400
+M: I've got time right now, so if you let me know the address, I can meet you there.
+
+10
+00:00:29,070 --> 00:00:34,240
+W: It's actually one block away from my office, so how about driving here around 4:00?
+
+11
+00:00:35,075 --> 00:00:36,220
+We can walk there together.
+
+12
+00:00:36,780 --> 00:00:38,200
+M: All right, I'll see you then.
+
+13
+00:00:38,620 --> 00:00:38,940
+Thank you.

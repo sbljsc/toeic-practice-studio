@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,665
+Can I tell John that you are here?
+
+2
+00:00:03,605 --> 00:00:05,925
+(A) Sure, that would be okay.
+
+3
+00:00:07,205 --> 00:00:10,180
+(B) Yes, he is here today.
+
+4
+00:00:11,165 --> 00:00:14,140
+(C) No, we are not leaving yet.

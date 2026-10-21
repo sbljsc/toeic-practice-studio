@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,270
+Please give me an answer as soon as you can.
+
+2
+00:00:03,620 --> 00:00:05,670
+(A) I will call you this afternoon.
+
+3
+00:00:06,815 --> 00:00:08,630
+(B) Sorry, I am late.
+
+4
+00:00:10,010 --> 00:00:12,170
+(C) He will give it to me there.

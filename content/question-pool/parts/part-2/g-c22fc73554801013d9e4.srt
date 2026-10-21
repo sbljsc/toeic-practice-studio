@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,880
+Have you had a chance to get the copies ready, or should I get Susan to do it?
+
+2
+00:00:04,900 --> 00:00:07,660
+(A) Sure, I'll bring you a cup.
+
+3
+00:00:08,760 --> 00:00:11,080
+(B) I had many opportunities.
+
+4
+00:00:13,080 --> 00:00:15,060
+(C) I'll make them right away.

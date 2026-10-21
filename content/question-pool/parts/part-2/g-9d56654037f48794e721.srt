@@ -1,0 +1,16 @@
+1
+00:00:00,200 --> 00:00:04,505
+Can you come into the meeting room to give us a hand, or are you too busy
+right now?
+
+2
+00:00:05,625 --> 00:00:08,460
+(A) I could spare a few minutes.
+
+3
+00:00:09,645 --> 00:00:11,965
+(B) I think there is plenty of room.
+
+4
+00:00:13,065 --> 00:00:15,765
+(C) Yes, I can lend you one.

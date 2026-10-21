@@ -1,0 +1,16 @@
+1
+00:00:00,200 --> 00:00:03,940
+Should I go over the material once again before
+showing it to the client?
+
+2
+00:00:05,040 --> 00:00:07,650
+(A) That'd be a wise thing to do.
+
+3
+00:00:08,920 --> 00:00:11,780
+(B) He is expected to show up soon.
+
+4
+00:00:13,040 --> 00:00:15,550
+(C) It's about our new product.

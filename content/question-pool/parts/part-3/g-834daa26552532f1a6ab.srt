@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:02,700
+W1: I can't believe how busy we've been.
+
+2
+00:00:03,160 --> 00:00:06,505
+We've received so many orders in the past few days.
+
+3
+00:00:07,420 --> 00:00:14,710
+W2: Because it's the holiday season, we probably won't get much of a break for the next couple of months.
+
+4
+00:00:16,010 --> 00:00:23,960
+W1: Everyone has been at the office long after normal working hours have finished this week, so I've heard several complaints.
+
+5
+00:00:24,560 --> 00:00:26,400
+Can't we hire any more workers?
+
+6
+00:00:27,140 --> 00:00:30,460
+W2: I'd love to, but I'm not sure if that's possible.
+
+7
+00:00:31,260 --> 00:00:32,780
+What do you think, Greg?
+
+8
+00:00:33,600 --> 00:00:35,540
+M: That's already been taken care of.
+
+9
+00:00:35,980 --> 00:00:40,080
+You'll be training fifteen temporary employees in your department tomorrow.
+
+10
+00:00:40,080 --> 00:00:42,340
+W1: Wow, I'm impressed.
+
+11
+00:00:42,860 --> 00:00:45,885
+I've never seen management work this fast before.

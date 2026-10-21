@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,730
+(A) He's drinking some water.
+
+2
+00:00:03,680 --> 00:00:07,040
+(B) He's checking his reflection in the mirror.
+
+3
+00:00:07,825 --> 00:00:10,800
+(C) He's enjoying a meal at the table.
+
+4
+00:00:12,140 --> 00:00:15,245
+(D) He's reading a paper in a dining area.

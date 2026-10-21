@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,220
+(A) People are looking into the aquarium.
+
+2
+00:00:04,260 --> 00:00:07,920
+(B) People are waiting to go into the pool.
+
+3
+00:00:09,060 --> 00:00:11,380
+(C) People are swimming in a pool.
+
+4
+00:00:12,670 --> 00:00:15,120
+(D) People are watching a movie.

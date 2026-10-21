@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:01,905
+M: I couldn't attend the meeting this morning.
+
+2
+00:00:02,395 --> 00:00:05,805
+Do you know when we are supposed to show up at the restaurant this evening?
+
+3
+00:00:06,465 --> 00:00:09,165
+W: Well, Jack told everyone to be there by 7:00.
+
+4
+00:00:10,385 --> 00:00:14,305
+He also said for any of us to call him if we are going to be late.
+
+5
+00:00:14,510 --> 00:00:15,085
+M: Is that right?
+
+6
+00:00:15,710 --> 00:00:23,445
+I have been asked to drop off some packages at our head office by Mr. Johnson, and I am not sure if I will be able to make it there on time.
+
+7
+00:00:24,115 --> 00:00:27,745
+W: You know, if you are driving out there now, your best bet is to call Jack.
+
+8
+00:00:28,265 --> 00:00:31,365
+Highway 10 usually gets pretty jammed during the time you come back.

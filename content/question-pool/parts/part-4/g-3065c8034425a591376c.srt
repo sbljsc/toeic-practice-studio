@@ -1,0 +1,19 @@
+1
+00:00:00,200 --> 00:00:05,560
+Our Sales Department has a particularly proud record since the founding of the company in 1946.
+
+2
+00:00:06,480 --> 00:00:16,120
+Starting out just after the Second World War, our company employed three traveling salesmen and a national sales manager to expand our operations aggressively throughout North America.
+
+3
+00:00:16,880 --> 00:00:20,270
+Of course, we couldn't have done that without top quality products to sell.
+
+4
+00:00:20,960 --> 00:00:29,820
+On the other hand, without sales and a hungry sales staff, the company would not have been able to survive, let alone expand as it has done in the last sixty years.
+
+5
+00:00:29,820 --> 00:00:41,435
+You have been chosen from a field of sixty applicants to continue that tradition, and we have faith that through your energy and positive attitude we will be able to continue our expansion to markets all over the world.

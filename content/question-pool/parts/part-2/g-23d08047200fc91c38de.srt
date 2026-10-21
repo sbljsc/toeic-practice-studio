@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,810
+What time are we going for lunch?
+
+2
+00:00:02,875 --> 00:00:05,740
+(A) As soon as Jeff gets here.
+
+3
+00:00:06,610 --> 00:00:09,165
+(B) Four of us are going.
+
+4
+00:00:10,040 --> 00:00:13,270
+(C) How about some fast food?

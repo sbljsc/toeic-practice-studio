@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,730
+Aren't the tax sheets ready yet?
+
+2
+00:00:02,810 --> 00:00:05,580
+(A) Yes, they are just about ready.
+
+3
+00:00:06,695 --> 00:00:09,235
+(B) I didn't call a taxi yet.
+
+4
+00:00:10,480 --> 00:00:12,860
+(C) It might be two sheets actually.

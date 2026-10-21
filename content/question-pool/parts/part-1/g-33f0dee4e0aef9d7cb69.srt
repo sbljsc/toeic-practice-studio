@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,695
+(A) Some people are sunbathing near the lake.
+
+2
+00:00:04,575 --> 00:00:08,070
+(B) Some people are ready to go for a swim.
+
+3
+00:00:09,035 --> 00:00:12,390
+(C) Some people are strolling near the water.
+
+4
+00:00:13,340 --> 00:00:16,885
+(D) Some people have put their feet in the water.

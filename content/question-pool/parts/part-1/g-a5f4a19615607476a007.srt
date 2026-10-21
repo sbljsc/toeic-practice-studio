@@ -1,0 +1,15 @@
+1
+00:00:00,415 --> 00:00:03,380
+(A) The paper is being put away.
+
+2
+00:00:04,575 --> 00:00:07,865
+(B) The paper is being cut in half.
+
+3
+00:00:09,115 --> 00:00:12,740
+(C) Someone is stapling the papers together.
+
+4
+00:00:13,815 --> 00:00:17,005
+(D) Someone is looking over the paper.

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,795
+You've already talked to Ms. Williams about the weekly report, haven't you?
+
+2
+00:00:04,835 --> 00:00:07,845
+(A) Yes, I just finished talking to her.
+
+3
+00:00:08,900 --> 00:00:11,880
+(B) No, I can't talk to her this week.
+
+4
+00:00:13,000 --> 00:00:15,460
+(C) Because it's due this Friday.

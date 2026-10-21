@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,725
+Who is the person in charge of our Hong Kong branch?
+
+2
+00:00:03,905 --> 00:00:07,080
+(A) Yes, Ms. Wong was born there.
+
+3
+00:00:08,135 --> 00:00:10,860
+(B) To learn how to speak Chinese.
+
+4
+00:00:12,215 --> 00:00:14,760
+(C) Let me find out for you.

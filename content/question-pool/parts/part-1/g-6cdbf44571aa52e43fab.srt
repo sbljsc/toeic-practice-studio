@@ -1,0 +1,15 @@
+1
+00:00:00,410 --> 00:00:03,410
+(A) He has taken a seat at a workstation.
+
+2
+00:00:04,550 --> 00:00:07,635
+(B) He is tidying up his work area.
+
+3
+00:00:08,650 --> 00:00:11,250
+(C) He's turning on the computer.
+
+4
+00:00:12,185 --> 00:00:15,075
+(D) He's about to sit in the chair.

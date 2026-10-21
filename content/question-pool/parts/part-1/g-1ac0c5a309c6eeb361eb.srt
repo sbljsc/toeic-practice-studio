@@ -1,0 +1,15 @@
+1
+00:00:00,525 --> 00:00:03,495
+(A) Some customers are entering the store.
+
+2
+00:00:04,605 --> 00:00:08,455
+(B) The store clerk is cleaning the store with a broom.
+
+3
+00:00:09,540 --> 00:00:13,950
+(C) Some goods have been hung on a rack outside of the store.
+
+4
+00:00:14,995 --> 00:00:18,205
+(D) The floor of the store is being mopped.

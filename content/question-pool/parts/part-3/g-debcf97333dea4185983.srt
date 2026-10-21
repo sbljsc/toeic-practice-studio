@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:05,240
+M: Ms. Lee, I'm calling to let you know about the results of the interview you had with us on Monday.
+
+2
+00:00:05,820 --> 00:00:09,740
+I've gotten the word from my boss that the position is yours if you're still interested.
+
+3
+00:00:10,320 --> 00:00:11,040
+W: Are you kidding?
+
+4
+00:00:11,600 --> 00:00:13,640
+I mean, of course I am still interested.
+
+5
+00:00:14,000 --> 00:00:14,805
+M: That's great.
+
+6
+00:00:14,840 --> 00:00:17,540
+When do you think you will be able to start your new position?
+
+7
+00:00:18,220 --> 00:00:19,600
+Is next Monday okay?
+
+8
+00:00:19,980 --> 00:00:28,820
+W: I'm sorry, but I have not had a chance to inform my current boss about my quitting here, and I think I have to give him two-week's notice to find a replacement.
+
+9
+00:00:29,340 --> 00:00:30,720
+How about the first of June?

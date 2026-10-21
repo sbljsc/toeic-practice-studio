@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,130
+You took computer classes at the local college, didn't you?
+
+2
+00:00:04,230 --> 00:00:07,240
+(A) Yes, I learned so much.
+
+3
+00:00:08,130 --> 00:00:11,050
+(B) Yes, I know where the college is.
+
+4
+00:00:12,070 --> 00:00:15,550
+(C) No, I don't think I'll have time for that.

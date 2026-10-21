@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,960
+I thought the movie was very moving, didn't you?
+
+2
+00:00:04,185 --> 00:00:07,340
+(A) Yes, it was very touching.
+
+3
+00:00:08,385 --> 00:00:11,275
+(B) Let's go to the theater later.
+
+4
+00:00:12,365 --> 00:00:15,080
+(C) We're moving out next week.

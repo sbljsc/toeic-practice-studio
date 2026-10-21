@@ -1,0 +1,15 @@
+1
+00:00:00,125 --> 00:00:02,085
+Have the boxes been sent out yet?
+
+2
+00:00:03,145 --> 00:00:05,265
+(A) Once a day.
+
+3
+00:00:06,030 --> 00:00:08,865
+(B) Yes, they've been delivered.
+
+4
+00:00:09,985 --> 00:00:12,345
+(C) In the storage room.

@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:04,650
+M: Mr. Venters has granted everyone in our department permission to attend the trade fair this Friday.
+
+2
+00:00:05,660 --> 00:00:06,610
+W: That's wonderful news.
+
+3
+00:00:07,430 --> 00:00:12,410
+I'll be out of town, so I can't make it, but I'm sure many people are eager to go.
+
+4
+00:00:13,470 --> 00:00:14,120
+M: That's right.
+
+5
+00:00:14,530 --> 00:00:17,710
+I already asked around, and seventeen people indicated they'll be going.
+
+6
+00:00:18,455 --> 00:00:20,250
+I'll be registering everyone later today.
+
+7
+00:00:21,110 --> 00:00:24,750
+W: I don't think we've ever had that many people attend a professional event.
+
+8
+00:00:25,590 --> 00:00:30,790
+M: More people are focusing on networking these days, and trade fairs are some of the best places to do that.
+
+9
+00:00:31,370 --> 00:00:32,440
+W: I suppose you're right.
+
+10
+00:00:33,015 --> 00:00:35,710
+In that case, it's a real shame I can't go.

@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:01,020
+Hello, everybody.
+
+2
+00:00:01,540 --> 00:00:06,765
+I'm Wendy Raynford, and I'd like to welcome you to our company's orientation program.
+
+3
+00:00:07,065 --> 00:00:10,320
+Firstly, let me tell you about the schedule for this week's training.
+
+4
+00:00:11,045 --> 00:00:18,260
+One of our personnel officers, Tim O'Brien, will hand out envelopes containing some forms for you as well as company information.
+
+5
+00:00:19,500 --> 00:00:22,760
+We'll look over the forms together, and then you can fill them out.
+
+6
+00:00:23,535 --> 00:00:28,760
+This will be followed by a tea break and a chance to talk informally with members of the personnel staff.
+
+7
+00:00:29,600 --> 00:00:37,585
+At 11:00 a.m. we will break into 3 groups for a tour of the production facilities, with our volunteer guides who are keen to meet you.
+
+8
+00:00:38,245 --> 00:00:40,480
+This will be followed by lunch at 12:30.
+
+9
+00:00:41,295 --> 00:00:52,240
+You will then have free time to visit the grounds before the start of the afternoon program at 1:30 p.m. This will begin with a company promotional and training video, lasting 1 hour.

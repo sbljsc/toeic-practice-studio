@@ -1,0 +1,15 @@
+1
+00:00:00,515 --> 00:00:02,990
+(A) They're clapping their hands.
+
+2
+00:00:03,995 --> 00:00:06,740
+(B) They're facing one another.
+
+3
+00:00:07,590 --> 00:00:10,550
+(C) They're waving their hands.
+
+4
+00:00:11,615 --> 00:00:14,775
+(D) They're pacing around the place.

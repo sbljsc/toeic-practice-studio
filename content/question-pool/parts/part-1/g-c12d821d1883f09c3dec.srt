@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,640
+(A) She has finished talking on the phone.
+
+2
+00:00:04,600 --> 00:00:08,495
+(B) A notice is being posted on the door.
+
+3
+00:00:09,660 --> 00:00:13,720
+(C) She has the receiver held up to her ear.
+
+4
+00:00:14,660 --> 00:00:18,630
+(D) A coin is being placed into the slot.

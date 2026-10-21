@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,895
+You just returned from your overseas trip, didn't you?
+
+2
+00:00:03,960 --> 00:00:06,650
+(A) Yes, I will be leaving today.
+
+3
+00:00:07,655 --> 00:00:10,520
+(B) I had some business to take care of.
+
+4
+00:00:11,680 --> 00:00:14,730
+(C) No, I got back early this morning.

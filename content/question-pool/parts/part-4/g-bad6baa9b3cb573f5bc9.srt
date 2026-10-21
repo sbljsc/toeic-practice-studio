@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:00,760
+Good evening.
+
+2
+00:00:01,120 --> 00:00:02,560
+Perhaps some of you don't know me.
+
+3
+00:00:02,860 --> 00:00:06,420
+I'm Dr. Cummins, the principal of St. Michael's Elementary School.
+
+4
+00:00:07,140 --> 00:00:09,940
+It's a great pleasure to welcome you to tonight's special performance.
+
+5
+00:00:10,820 --> 00:00:16,640
+I hope that you, like me, will be overwhelmed by the sheer talent and enthusiasm of our young break dancers.
+
+6
+00:00:17,460 --> 00:00:27,640
+I have personally attended three of the rehearsals, so I can assure you that they have sacrificed hours of personal time and buckets of sweat to bring you this exciting production.
+
+7
+00:00:28,280 --> 00:00:35,155
+This is a group production, choreographed by the performers themselves, with the help of our wonderful musical arts teacher, Ms. Wang.
+
+8
+00:00:36,080 --> 00:00:40,760
+So, without further ado, sit back, and enjoy our fabulous young dancers.

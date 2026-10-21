@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:01,515
+Attention, all warehouse staff.
+
+2
+00:00:02,315 --> 00:00:05,255
+This is an important notice, so please listen carefully.
+
+3
+00:00:05,995 --> 00:00:08,435
+As you all know, Friday is the day of the big move.
+
+4
+00:00:09,415 --> 00:00:13,795
+Packing will begin on Thursday morning, and the movers will arrive at eight o'clock Friday morning.
+
+5
+00:00:14,415 --> 00:00:18,575
+We strongly advise you to remove your personal belongings no later than Wednesday night.
+
+6
+00:00:19,295 --> 00:00:22,950
+If you don't, there is a good chance they will be lost or damaged in the move.
+
+7
+00:00:23,575 --> 00:00:27,175
+Please arrive by seven o'clock tomorrow morning, dressed in comfortable clothes.
+
+8
+00:00:27,875 --> 00:00:37,535
+I know Thursday and Friday will be long and busy days, but an excellent lunch will be provided for all of you, and there will be a special “housewarming” party on the following Monday night.

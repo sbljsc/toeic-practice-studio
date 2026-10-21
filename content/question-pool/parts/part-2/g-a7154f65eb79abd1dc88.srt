@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,355
+Will that be all, sir?
+
+2
+00:00:02,405 --> 00:00:04,400
+(A) No, I shouldn't.
+
+3
+00:00:05,540 --> 00:00:07,645
+(B) Yes, you can take it.
+
+4
+00:00:08,695 --> 00:00:11,460
+(C) I'd like to see the menu again, please.

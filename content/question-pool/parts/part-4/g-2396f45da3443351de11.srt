@@ -1,0 +1,31 @@
+1
+00:00:00,410 --> 00:00:01,570
+Attention all shoppers.
+
+2
+00:00:01,770 --> 00:00:05,650
+We will be closing in thirty minutes time so please finalize your purchases.
+
+3
+00:00:06,530 --> 00:00:10,170
+We'd also like to advise you about some very special closing time prices.
+
+4
+00:00:11,405 --> 00:00:15,630
+All meat in the fresh meat department must be sold tonight, before we close.
+
+5
+00:00:16,385 --> 00:00:19,250
+Make your way to the meat department for some fabulous specials.
+
+6
+00:00:20,195 --> 00:00:35,190
+Here's just a sample of what's on offer: T-bone and fillet steak, only ten dollars a kilo; 100% beef mince for only four dollars a kilo; a selection of quality Europeanstyle sausages for only five dollars a kilo.
+
+7
+00:00:35,750 --> 00:00:36,670
+Be quick, customers!
+
+8
+00:00:37,130 --> 00:00:39,020
+You'll be able to fill up your freezers.

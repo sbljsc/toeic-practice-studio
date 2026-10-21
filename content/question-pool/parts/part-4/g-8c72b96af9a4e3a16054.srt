@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:01,140
+Attention, all passengers.
+
+2
+00:00:02,000 --> 00:00:05,420
+Love Boat Cruiselines has an important announcement about tonight's entertainment.
+
+3
+00:00:06,540 --> 00:00:08,260
+There will be a slight change of schedule.
+
+4
+00:00:09,360 --> 00:00:13,055
+All of you looking forward to tonight's quiz night will have to be patient.
+
+5
+00:00:13,410 --> 00:00:18,560
+Due to some technical problems with the sound system, quiz night has been postponed until tomorrow.
+
+6
+00:00:19,460 --> 00:00:22,000
+We sincerely apologize for this delay.
+
+7
+00:00:22,540 --> 00:00:25,340
+We are working to remedy the situation as soon as possible.
+
+8
+00:00:26,180 --> 00:00:28,540
+However, we do have a surprise for you.
+
+9
+00:00:29,200 --> 00:00:36,540
+The well-known magician John Sanders and his Magic Bus Revue will join us directly from their successful tour of Hawaii.
+
+10
+00:00:37,200 --> 00:00:41,220
+So please join us this evening: we are sure you won't be disappointed.

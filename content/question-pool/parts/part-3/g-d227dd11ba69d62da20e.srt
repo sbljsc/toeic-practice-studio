@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:03,530
+M: I can't believe this, but I managed to book a ticket to Singapore.
+
+2
+00:00:04,570 --> 00:00:07,110
+I will be on the seven o'clock flight tomorrow morning.
+
+3
+00:00:07,430 --> 00:00:08,490
+W: That's great.
+
+4
+00:00:08,770 --> 00:00:14,530
+Does that mean that you will get to see your friend who moved out there a few years back after you are finished meeting with Mr. Wang?
+
+5
+00:00:15,075 --> 00:00:21,185
+M: I am not sure because Mr. Wang will probably want to take me around the plant site on the day I arrive there.
+
+6
+00:00:21,835 --> 00:00:28,210
+I am hoping that I will be able to see my friend the day after, but he mentioned that he might have to leave town that day.
+
+7
+00:00:28,970 --> 00:00:33,950
+He said he would try to rearrange his trip, but I have not spoken to him for a few days.
+
+8
+00:00:34,660 --> 00:00:37,530
+I will call him tonight to see if he is able to do that.
+
+9
+00:00:38,330 --> 00:00:42,930
+W: You should just take your vacation early and spend a week there after you take care of your business.
+
+10
+00:00:43,400 --> 00:00:46,250
+It's not like you get to travel to the Far East all the time, you know.

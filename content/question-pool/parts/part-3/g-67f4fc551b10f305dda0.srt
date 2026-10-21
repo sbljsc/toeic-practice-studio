@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:05,555
+W: Did you see the list of activities taking place at the community center that was released today?
+
+2
+00:00:06,000 --> 00:00:06,580
+M: Not yet.
+
+3
+00:00:06,900 --> 00:00:08,900
+Is there anything on there that looks interesting?
+
+4
+00:00:09,500 --> 00:00:11,640
+I'd love to do some fun activities this summer.
+
+5
+00:00:11,640 --> 00:00:14,860
+W: I'm thinking of taking part in the fishing contest.
+
+6
+00:00:15,480 --> 00:00:16,940
+Would you like to join me?
+
+7
+00:00:17,140 --> 00:00:18,535
+We can be on the same team.
+
+8
+00:00:19,300 --> 00:00:21,210
+M: Okay, that sounds good to me.
+
+9
+00:00:21,720 --> 00:00:23,360
+Do we have to pay a fee to enter?
+
+10
+00:00:23,760 --> 00:00:31,925
+W: I don't, because I'm a member of the community center, but since you don't belong to it, it will cost you $15 to enter.
+
+11
+00:00:35,660 --> 00:00:38,335
+M: Okay, I don't mind paying that amount of money.

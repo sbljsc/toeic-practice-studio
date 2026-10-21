@@ -1,0 +1,15 @@
+1
+00:00:00,410 --> 00:00:02,505
+Can I tell John that you came by today?
+
+2
+00:00:03,430 --> 00:00:06,405
+(A) Yes, I will drop by at six.
+
+3
+00:00:07,235 --> 00:00:09,370
+(B) That won't be necessary.
+
+4
+00:00:10,730 --> 00:00:13,410
+(C) No, I forgot to call him.

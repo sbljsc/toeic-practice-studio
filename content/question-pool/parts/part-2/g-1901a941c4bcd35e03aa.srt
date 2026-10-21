@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:04,355
+Do you want to work this Saturday, or should I get John to fill in for you?
+
+2
+00:00:05,395 --> 00:00:07,820
+(A) The work is not too bad.
+
+3
+00:00:08,915 --> 00:00:11,180
+(B) This weekend is perfect.
+
+4
+00:00:12,555 --> 00:00:14,890
+(C) I'll come in if you'd like.

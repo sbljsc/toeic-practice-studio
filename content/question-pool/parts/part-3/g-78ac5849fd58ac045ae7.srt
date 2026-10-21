@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:02,795
+M: Do you know how many people are going to show up this evening?
+
+2
+00:00:03,475 --> 00:00:05,375
+I need to call the restaurant to make a reservation.
+
+3
+00:00:06,425 --> 00:00:08,735
+W: There will be about 10, including me and you.
+
+4
+00:00:09,295 --> 00:00:11,435
+Why don't you check with Shirley just to make sure?
+
+5
+00:00:12,015 --> 00:00:14,515
+She is the one who knows exactly who will be showing up.
+
+6
+00:00:14,975 --> 00:00:18,715
+M: All right, but she stepped out for a moment to mail something at the post office.
+
+7
+00:00:19,530 --> 00:00:22,175
+I will drop by her office after I come back from lunch.
+
+8
+00:00:23,015 --> 00:00:24,035
+Do you want to join me in the cafeteria?
+
+9
+00:00:25,335 --> 00:00:26,735
+W: Sure, I will be right with you.
+
+10
+00:00:26,955 --> 00:00:30,250
+Just give me a second to make a call to a client first.

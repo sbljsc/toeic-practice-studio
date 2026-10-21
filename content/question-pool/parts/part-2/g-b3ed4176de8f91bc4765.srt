@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,205
+Would you be interested in joining our entertainment committee?
+
+2
+00:00:04,145 --> 00:00:07,660
+(A) He is a very interesting person.
+
+3
+00:00:08,705 --> 00:00:12,390
+(B) Yes, but I don't have time these days.
+
+4
+00:00:13,505 --> 00:00:16,380
+(C) When I was at the movies.

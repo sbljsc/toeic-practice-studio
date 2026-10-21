@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,250
+Who will draft the letter?
+
+2
+00:00:02,530 --> 00:00:04,970
+(A) He will come by later.
+
+3
+00:00:06,190 --> 00:00:08,590
+(B) Yes, he left it there.
+
+4
+00:00:09,850 --> 00:00:12,430
+(C) Jane is working on it now.

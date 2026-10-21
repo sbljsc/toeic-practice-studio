@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,390
+Could you let me know your decision later today?
+
+2
+00:00:03,690 --> 00:00:06,670
+(A) I will give you a ring by 5 o'clock.
+
+3
+00:00:07,870 --> 00:00:10,150
+(B) I'm sure it will not be too late.
+
+4
+00:00:11,750 --> 00:00:13,650
+(C) It could go either way.

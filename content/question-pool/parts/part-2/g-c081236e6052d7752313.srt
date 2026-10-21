@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,570
+Do you have a spare key to the storage room?
+
+2
+00:00:03,315 --> 00:00:06,000
+(A) He usually keeps it there.
+
+3
+00:00:07,160 --> 00:00:09,800
+(B) There is plenty of room now.
+
+4
+00:00:11,100 --> 00:00:13,700
+(C) Go and ask the caretaker.

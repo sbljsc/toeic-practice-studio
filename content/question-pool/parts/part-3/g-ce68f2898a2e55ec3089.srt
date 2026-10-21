@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:02,960
+M: I am wondering if you carry men's shirts in extra large here.
+
+2
+00:00:03,440 --> 00:00:10,980
+I've been looking through all the stores on this entire block for the last hour, but I haven't had any luck with finding anything that fits me properly.
+
+3
+00:00:11,500 --> 00:00:24,700
+W: You're in luck because we not only carry them but we also have clothes that are fashionable for people who need large-sized clothing here in the back section of the store.Follow me, and I am quite certain that you will be able to find something you like.
+
+4
+00:00:25,240 --> 00:00:25,805
+M: This is great.
+
+5
+00:00:26,095 --> 00:00:29,560
+I am sure that many oversized people would find your store useful.
+
+6
+00:00:29,880 --> 00:00:32,940
+It's not easy for us big people to find clothes that we like.
+
+7
+00:00:33,640 --> 00:00:34,920
+Have you been in business for long?
+
+8
+00:00:35,220 --> 00:00:41,445
+W: Yes, we've been around for a couple of years now, and we have a steady stream of customers coming into the store regularly.

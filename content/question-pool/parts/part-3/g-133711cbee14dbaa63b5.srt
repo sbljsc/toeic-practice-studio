@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:11,835
+M: I just received a call from Larry from our head office, and he said Mr. Wang can't give the presentation tomorrow at our company's annual conference being held at the Prince Hotel because of a sudden illness in his family.
+
+2
+00:00:12,555 --> 00:00:14,435
+He asked me to take his place at the conference.
+
+3
+00:00:15,355 --> 00:00:19,395
+Would you happen to know if there is a bus or subway that goes directly from here?
+
+4
+00:00:19,970 --> 00:00:22,295
+W: I didn't know that you were going to give a speech there.
+
+5
+00:00:22,915 --> 00:00:27,255
+In fact, Mr. Singh and I are going to be in attendance, and we are planning to drive.
+
+6
+00:00:28,035 --> 00:00:29,835
+If you'd like, you can ride along with us.
+
+7
+00:00:30,155 --> 00:00:31,215
+M: That sounds wonderful.
+
+8
+00:00:31,690 --> 00:00:33,035
+What time will you be taking off?
+
+9
+00:00:33,545 --> 00:00:37,095
+W: We will meet here at 7 since it only takes about an hour to get there.
+
+10
+00:00:37,775 --> 00:00:40,365
+We might even have time for breakfast once we get there.

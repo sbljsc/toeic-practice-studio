@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,960
+(A) He is sitting near the corner.
+
+2
+00:00:03,900 --> 00:00:07,340
+(B) He is wearing a long-sleeved shirt.
+
+3
+00:00:07,340 --> 00:00:11,385
+(C) He is riding in his car.
+
+4
+00:00:12,360 --> 00:00:15,630
+(D) He is folding the paper in half.

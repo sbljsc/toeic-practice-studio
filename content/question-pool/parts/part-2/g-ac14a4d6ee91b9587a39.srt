@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,780
+Did you turn in your report?
+
+2
+00:00:02,980 --> 00:00:06,190
+(A) She reports directly to me.
+
+3
+00:00:07,120 --> 00:00:10,105
+(B) No, I am still working on it.
+
+4
+00:00:10,905 --> 00:00:13,960
+(C) I will turn it off when I leave.

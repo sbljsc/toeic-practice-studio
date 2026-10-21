@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:04,710
+M: The boss wants me to change the setting of our office before the president's visit next month.
+
+2
+00:00:05,460 --> 00:00:09,050
+He wants me to utilize the space here by moving the furniture around.
+
+3
+00:00:09,995 --> 00:00:13,250
+I am not very good at this, so I need your expert advice.
+
+4
+00:00:14,075 --> 00:00:16,410
+Can you spare some time to discuss the office layout?
+
+5
+00:00:17,050 --> 00:00:19,130
+W: Well, I am kind of busy today.
+
+6
+00:00:19,490 --> 00:00:23,770
+Let me see... this Thursday or next Monday is good for me.
+
+7
+00:00:23,830 --> 00:00:24,685
+What about you?
+
+8
+00:00:25,150 --> 00:00:27,270
+M: I have to leave town for a week on Friday.
+
+9
+00:00:27,775 --> 00:00:29,910
+I think we'd better get together before I leave.
+
+10
+00:00:30,210 --> 00:00:31,110
+Is that okay with you?
+
+11
+00:00:31,580 --> 00:00:34,090
+W: That will be fine as long as it's in the morning.
+
+12
+00:00:34,370 --> 00:00:36,930
+I have to leave early for a dentist appointment in the afternoon.

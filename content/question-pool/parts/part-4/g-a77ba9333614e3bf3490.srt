@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:03,725
+Hello, this is Michael Kruger from Kruger's Family Delicatessen.
+
+2
+00:00:04,285 --> 00:00:11,925
+We've just received a delivery from your company, but on inspection we have found that an entire pallet of tinned anchovies has been damaged.
+
+3
+00:00:12,695 --> 00:00:15,345
+It looks like they fell at some time during transportation.
+
+4
+00:00:16,390 --> 00:00:18,865
+Some of the tins have broken and are leaking oil.
+
+5
+00:00:19,605 --> 00:00:20,605
+Many others are dented.
+
+6
+00:00:21,185 --> 00:00:23,865
+We can't possibly accept them at the agreed price.
+
+7
+00:00:24,425 --> 00:00:27,525
+We've already spent two hours cleaning up dripping oil.
+
+8
+00:00:27,865 --> 00:00:35,245
+Either we can return them to you and you can deduct the costs from your next invoice, or we'll accept them at a substantial discount.
+
+9
+00:00:36,005 --> 00:00:37,485
+Why don't you send a sales representative?
+
+10
+00:00:38,445 --> 00:00:40,425
+We need to sort this out as soon as possible.
+
+11
+00:00:41,105 --> 00:00:41,245
+Thanks.

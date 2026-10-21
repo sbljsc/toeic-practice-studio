@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,185
+Who put the event together?
+
+2
+00:00:02,665 --> 00:00:05,125
+(A) Larry's the one in charge.
+
+3
+00:00:06,430 --> 00:00:08,925
+(B) I will put it there later.
+
+4
+00:00:10,170 --> 00:00:13,305
+(C) Sorry, I can't go today.

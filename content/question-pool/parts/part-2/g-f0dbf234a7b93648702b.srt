@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,860
+Would you be interested in trying a pair of these sneakers here instead?
+
+2
+00:00:04,895 --> 00:00:07,345
+(A) I saw it on the news, too.
+
+3
+00:00:08,435 --> 00:00:11,615
+(B) Yes, it is quite interesting.
+
+4
+00:00:12,840 --> 00:00:15,550
+(C) Don't you think they're a bit too small?

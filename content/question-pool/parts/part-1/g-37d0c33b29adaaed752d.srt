@@ -1,0 +1,15 @@
+1
+00:00:00,410 --> 00:00:04,245
+(A) A man is escorting the woman into the car.
+
+2
+00:00:05,220 --> 00:00:08,850
+(B) The woman is backing the car out of the driveway.
+
+3
+00:00:10,165 --> 00:00:14,510
+(C) Several passengers are seated in the backseat of the car.
+
+4
+00:00:15,655 --> 00:00:18,450
+(D) The door of the vehicle is open.

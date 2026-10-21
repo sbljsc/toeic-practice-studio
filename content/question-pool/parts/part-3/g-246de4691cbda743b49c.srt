@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:02,130
+W: How is your newest employee working out?
+
+2
+00:00:02,380 --> 00:00:03,240
+M: Do you mean Ted?
+
+3
+00:00:03,720 --> 00:00:04,720
+He's doing really well.
+
+4
+00:00:04,980 --> 00:00:06,840
+Thanks so much for recommending him to me.
+
+5
+00:00:07,200 --> 00:00:13,085
+W: We both worked at Lensman Technology a couple of years ago, so I'm familiar with the quality of the work he does.
+
+6
+00:00:13,510 --> 00:00:16,460
+M: He definitely works harder than anyone else in my department.
+
+7
+00:00:16,940 --> 00:00:19,620
+In fact, he'll probably get a promotion pretty soon.
+
+8
+00:00:19,860 --> 00:00:20,340
+W: Already?
+
+9
+00:00:20,760 --> 00:00:22,315
+That's rather fast, isn't it?
+
+10
+00:00:22,640 --> 00:00:25,455
+M: Somewhat, but he should be rewarded for doing such good work.
+
+11
+00:00:25,840 --> 00:00:29,610
+And it might inspire the others in my department to try a bit harder as well.

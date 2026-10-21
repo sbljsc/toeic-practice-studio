@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,975
+Do you know what time the next shuttle bus leaves from the hotel?
+
+2
+00:00:04,235 --> 00:00:06,895
+(A) The bus stop is around the corner.
+
+3
+00:00:08,375 --> 00:00:11,015
+(B) There is a bus every ten minutes.
+
+4
+00:00:12,440 --> 00:00:15,395
+(C) Yes, to the airport terminal.

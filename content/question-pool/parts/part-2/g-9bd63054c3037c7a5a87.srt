@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:04,275
+Would it be faster to take the subway or bus at this time of the day?
+
+2
+00:00:05,500 --> 00:00:07,885
+(A) I know the way there.
+
+3
+00:00:08,700 --> 00:00:11,200
+(B) I'd say the subway.
+
+4
+00:00:12,120 --> 00:00:14,720
+(C) He's an hour late.

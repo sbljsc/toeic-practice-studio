@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,260
+Didn't you think Peter gave a great presentation?
+
+2
+00:00:03,840 --> 00:00:06,800
+(A) Yes, he was very impressive.
+
+3
+00:00:07,900 --> 00:00:10,820
+(B) Yes, for three hours.
+
+4
+00:00:11,820 --> 00:00:14,480
+(C) I already got the present.

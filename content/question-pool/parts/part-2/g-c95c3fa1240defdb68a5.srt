@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,820
+What is the main reason for your visit?
+
+2
+00:00:02,900 --> 00:00:05,375
+(A) I'm here on business.
+
+3
+00:00:06,540 --> 00:00:09,345
+(B) This is my third time here.
+
+4
+00:00:10,420 --> 00:00:13,245
+(C) To the third floor office.

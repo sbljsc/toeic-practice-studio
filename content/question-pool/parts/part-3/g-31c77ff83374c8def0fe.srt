@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:04,300
+M: I am expected to give a speech in front of all the directors in half an hour.
+
+2
+00:00:04,300 --> 00:00:08,920
+I'd better go upstairs to the conference room and get all the necessary equipment ready.
+
+3
+00:00:09,220 --> 00:00:10,440
+W: Do you need any help?
+
+4
+00:00:10,720 --> 00:00:14,220
+I could probably give you a hand setting up the projector or something.
+
+5
+00:00:14,480 --> 00:00:16,040
+M: That's very nice of you, Jan.
+
+6
+00:00:16,320 --> 00:00:19,140
+In fact, I could use more copies of these figures.
+
+7
+00:00:19,600 --> 00:00:19,980
+Do you mind?
+
+8
+00:00:20,620 --> 00:00:21,740
+W: No, not at all.
+
+9
+00:00:22,060 --> 00:00:25,395
+I will get them ready and bring them up to the conference room right away.

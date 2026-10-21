@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,370
+Could you turn down the music just a notch?
+
+2
+00:00:03,475 --> 00:00:06,705
+(A) I'm sorry. I didn't know it was bothering you.
+
+3
+00:00:07,800 --> 00:00:10,920
+(B) Please turn it in as soon as possible.
+
+4
+00:00:12,125 --> 00:00:15,285
+(C) Yes, right around the corner from here.

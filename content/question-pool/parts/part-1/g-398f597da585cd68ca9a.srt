@@ -1,0 +1,15 @@
+1
+00:00:00,480 --> 00:00:02,780
+(A) They're sitting on a park bench.
+
+2
+00:00:03,940 --> 00:00:07,005
+(B) They're crowding into an outdoor café.
+
+3
+00:00:08,160 --> 00:00:10,850
+(C) They're all pointing toward the man.
+
+4
+00:00:12,000 --> 00:00:14,445
+(D) They're seated in a small group.

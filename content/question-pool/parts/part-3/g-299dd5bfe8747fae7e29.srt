@@ -1,0 +1,55 @@
+1
+00:00:00,200 --> 00:00:00,445
+W: Hello.
+
+2
+00:00:01,005 --> 00:00:03,405
+This is Carol Dunning from Huntington Consulting.
+
+3
+00:00:04,165 --> 00:00:07,105
+I need to talk to someone about the order we placed this morning.
+
+4
+00:00:08,545 --> 00:00:09,625
+M: Good afternoon, Ms. Dunning.
+
+5
+00:00:10,085 --> 00:00:10,845
+I can handle that.
+
+6
+00:00:11,565 --> 00:00:12,925
+Do you want to add something to your order?
+
+7
+00:00:13,555 --> 00:00:14,025
+W: That's correct.
+
+8
+00:00:14,765 --> 00:00:18,245
+Would it be possible to double the amount of copy paper we ordered?
+
+9
+00:00:18,750 --> 00:00:19,105
+M: Totally.
+
+10
+00:00:19,885 --> 00:00:21,845
+Should I send you an updated bill by e-mail?
+
+11
+00:00:22,205 --> 00:00:23,305
+W: That won't be necessary.
+
+12
+00:00:23,805 --> 00:00:26,720
+Just attach it to the invoice you send us every month.
+
+13
+00:00:27,720 --> 00:00:29,145
+M: Okay, I can do that.
+
+14
+00:00:29,865 --> 00:00:32,620
+You can expect to receive everything by Friday morning.

@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:04,375
+W: Max, I received a telephone call from Justin Weathers this morning.
+
+2
+00:00:05,110 --> 00:00:08,415
+He wants to see me next Tuesday instead of next Wednesday.
+
+3
+00:00:09,610 --> 00:00:12,295
+M: I'm pretty sure you have some open space in your sche-dule then.
+
+4
+00:00:13,115 --> 00:00:15,325
+Why don't you request that he visit at 3p.m.?
+
+5
+00:00:15,615 --> 00:00:19,295
+W: Okay, I'll send an e-mail to inform him of that.
+
+6
+00:00:20,015 --> 00:00:22,580
+Would you make the adjustment to my calendar, please?
+
+7
+00:00:23,575 --> 00:00:24,225
+M: Of course.
+
+8
+00:00:24,715 --> 00:00:26,555
+Is there anything else you'd like me to do?
+
+9
+00:00:27,195 --> 00:00:30,975
+W: Three people from Accounting are visiting my office in ten minutes.
+
+10
+00:00:31,615 --> 00:00:34,615
+How about preparing some drinks and snacks for us?
+
+11
+00:00:35,240 --> 00:00:36,075
+M: I'll get right on it.

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,285
+What do I press to get the reception desk?
+
+2
+00:00:03,640 --> 00:00:05,565
+(A) Try extension 34.
+
+3
+00:00:07,185 --> 00:00:09,060
+(B) She's the receptionist.
+
+4
+00:00:10,245 --> 00:00:11,820
+(C) I will get it.

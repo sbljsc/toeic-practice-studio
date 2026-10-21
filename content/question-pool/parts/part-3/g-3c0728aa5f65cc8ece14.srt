@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:03,330
+W: I completely forgot that today is Rick's housewarming party.
+
+2
+00:00:04,150 --> 00:00:08,470
+I forgot to get him a gift, and I don't think I'll have enough time after work to go shopping.
+
+3
+00:00:09,090 --> 00:00:11,490
+I'm going to run over to the mall during lunch.
+
+4
+00:00:11,890 --> 00:00:12,770
+Do you want to go together?
+
+5
+00:00:13,690 --> 00:00:16,660
+M: Sorry, Jean, but I am meeting someone for lunch today.
+
+6
+00:00:17,010 --> 00:00:19,575
+Plus, I already picked up something a couple of nights ago.
+
+7
+00:00:19,930 --> 00:00:20,770
+W: I see.
+
+8
+00:00:20,990 --> 00:00:23,710
+I guess I have no choice but to go alone then.
+
+9
+00:00:24,450 --> 00:00:27,250
+Anyway, will you be taking your car to the party tonight?
+
+10
+00:00:27,595 --> 00:00:29,090
+M: No, I'm getting a lift with Eric.
+
+11
+00:00:29,990 --> 00:00:33,930
+My car conked out on me last night, and it is in the garage today.
+
+12
+00:00:34,200 --> 00:00:35,810
+I had to take the bus to work this morning.

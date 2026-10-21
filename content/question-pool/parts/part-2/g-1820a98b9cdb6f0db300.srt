@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:04,250
+David Wells did a good job delivering his speech today, didn't he?
+
+2
+00:00:04,905 --> 00:00:08,205
+(A) He took it to a wrong address.
+
+3
+00:00:09,095 --> 00:00:12,590
+(B) No, the job is quite interesting.
+
+4
+00:00:13,585 --> 00:00:16,785
+(C) Yes, he did a great job.

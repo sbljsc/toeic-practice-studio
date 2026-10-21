@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:04,480
+W: There is a person here by the name of Steven Harris to see Mr. Williams, John.
+
+2
+00:00:05,200 --> 00:00:07,460
+He says he is a school friend from college.
+
+3
+00:00:07,980 --> 00:00:10,690
+Could you do me a favor and see if he is in his office?
+
+4
+00:00:10,840 --> 00:00:13,080
+M: Mr. Williams stepped out a minute ago, Lisa.
+
+5
+00:00:13,520 --> 00:00:16,280
+He said he was going to talk to Dan about next week's seminar.
+
+6
+00:00:17,080 --> 00:00:18,500
+Do you want me to go and check for you?
+
+7
+00:00:19,140 --> 00:00:22,140
+I was just about to go and make copies of this report anyway.
+
+8
+00:00:22,200 --> 00:00:23,800
+W: Yes, could you do that for me?
+
+9
+00:00:24,460 --> 00:00:27,780
+If he is not there, try the second floor conference room.
+
+10
+00:00:27,985 --> 00:00:32,280
+He is scheduled to give a talk to the sales staff about next week's seminar after lunch today.
+
+11
+00:00:32,900 --> 00:00:36,140
+He might have gone there early to test the equipment he will be using.
+
+12
+00:00:36,620 --> 00:00:38,305
+M: Okay, I will find him for you.

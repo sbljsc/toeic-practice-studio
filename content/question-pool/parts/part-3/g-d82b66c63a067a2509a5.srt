@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:03,745
+W: Television sales have increased dramatically recently.
+
+2
+00:00:04,700 --> 00:00:08,280
+M: All the credit for that goes to our newest TV, the HD5000.
+
+3
+00:00:09,285 --> 00:00:14,540
+TV sales reached their lowest point during the month it came out, but they've been going up ever since.
+
+4
+00:00:15,340 --> 00:00:16,340
+W: I had no idea.
+
+5
+00:00:17,020 --> 00:00:19,140
+Are we running any special ads?
+
+6
+00:00:19,820 --> 00:00:20,490
+M: Not really.
+
+7
+00:00:20,960 --> 00:00:26,220
+We're advertising on TV, radio, and the Internet, but we aren't spending more money than usual.
+
+8
+00:00:26,880 --> 00:00:31,260
+Mostly, people are purchasing the HD5000 because it's so well made.
+
+9
+00:00:31,580 --> 00:00:32,700
+W: That's excellent news.
+
+10
+00:00:33,380 --> 00:00:35,320
+Could you copy that sales report for me?
+
+11
+00:00:36,235 --> 00:00:40,340
+M: No problem, but I'll need to run upstairs because our copier is out of toner.

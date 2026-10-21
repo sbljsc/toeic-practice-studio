@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,920
+Would you rather stay here or go for a walk with me?
+
+2
+00:00:04,760 --> 00:00:07,115
+(A) I've been waiting for an hour.
+
+3
+00:00:08,100 --> 00:00:10,560
+(B) Let me get my jacket.
+
+4
+00:00:11,510 --> 00:00:13,945
+(C) Yes, I think so.

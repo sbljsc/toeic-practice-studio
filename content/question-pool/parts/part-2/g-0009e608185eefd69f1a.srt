@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,430
+Would you be willing to take a trip to Mexico on company expense?
+
+2
+00:00:04,610 --> 00:00:06,870
+(A) Was it that expensive?
+
+3
+00:00:07,950 --> 00:00:10,060
+(B) What's the occasion?
+
+4
+00:00:11,290 --> 00:00:13,285
+(C) He is well trained.

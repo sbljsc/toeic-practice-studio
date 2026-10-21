@@ -1,0 +1,15 @@
+1
+00:00:00,525 --> 00:00:04,060
+Where do you recommend I go to have some good Greek food around here?
+
+2
+00:00:05,165 --> 00:00:08,310
+(A) Yes, the service there is really good.
+
+3
+00:00:09,585 --> 00:00:12,545
+(B) I heard the food is quite tasty there.
+
+4
+00:00:13,725 --> 00:00:16,885
+(C) I always go to George's on Pape Road.

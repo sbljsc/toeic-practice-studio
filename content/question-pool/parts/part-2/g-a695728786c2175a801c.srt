@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,540
+Does this total include sales tax?
+
+2
+00:00:03,720 --> 00:00:06,590
+(A) Yes, we're taking a taxi.
+
+3
+00:00:07,560 --> 00:00:10,210
+(B) No, they don't sell it there.
+
+4
+00:00:11,220 --> 00:00:13,835
+(C) Yes, I believe it does.

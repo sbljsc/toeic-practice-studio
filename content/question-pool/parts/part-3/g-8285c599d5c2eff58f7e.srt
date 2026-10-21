@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:03,425
+W: How did your team make out in the baseball tournament over the weekend?
+
+2
+00:00:04,335 --> 00:00:11,345
+M: You're not going to believe this, but we made it all the way to the finals by beating the marketing team and then played the sales team in the finals.
+
+3
+00:00:12,120 --> 00:00:18,645
+You know, if it weren't for John, our best player, leaving the game because of a sprained ankle, we could've won the whole thing.
+
+4
+00:00:19,485 --> 00:00:21,845
+By the way, why didn't you guys compete?
+
+5
+00:00:22,155 --> 00:00:23,945
+We were expecting to play you guys.
+
+6
+00:00:24,445 --> 00:00:28,185
+W: Oh, our manager Susan is not a very big fan of baseball.
+
+7
+00:00:29,030 --> 00:00:32,585
+She thinks that it's a waste of time spending our weekends playing sports.
+
+8
+00:00:33,270 --> 00:00:34,125
+M: You've got to be kidding.
+
+9
+00:00:34,685 --> 00:00:40,500
+I can understand that she is not a big fan of baseball, but she should be thinking about the employees' morale.
+
+10
+00:00:41,020 --> 00:00:45,285
+I don't know about you guys, but our guys were all pumped up after the weekend game.
+
+11
+00:00:45,875 --> 00:00:49,385
+I guess some of the bosses don't feel that company spirit is all that important.

@@ -1,0 +1,15 @@
+1
+00:00:00,530 --> 00:00:02,990
+(A) The woman is picking out an item.
+
+2
+00:00:04,010 --> 00:00:06,590
+(B) The woman is cleaning the floor.
+
+3
+00:00:07,405 --> 00:00:10,270
+(C) The woman is helping a customer.
+
+4
+00:00:11,115 --> 00:00:14,275
+(D) The woman is trying on a jacket.

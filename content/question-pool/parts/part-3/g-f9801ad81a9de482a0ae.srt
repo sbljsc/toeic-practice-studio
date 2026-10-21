@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:05,900
+M: I've just heard on the radio that all flights from the domestic air terminal will be delayed by two hours.
+
+2
+00:00:06,580 --> 00:00:09,935
+There's been a security alert and they're searching all the bags.
+
+3
+00:00:10,220 --> 00:00:11,280
+W: Oh, no!
+
+4
+00:00:11,420 --> 00:00:13,800
+That's going to cause us a serious problem.
+
+5
+00:00:14,210 --> 00:00:18,140
+Our clients are expecting us and we won't be able to make it for the meeting.
+
+6
+00:00:18,640 --> 00:00:19,880
+M: That shouldn't be a big problem.
+
+7
+00:00:20,400 --> 00:00:24,060
+I am expecting a call from them this afternoon to talk about the seminar.
+
+8
+00:00:24,620 --> 00:00:27,520
+I'll see if I can postpone the meeting until tomorrow morning.

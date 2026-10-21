@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:03,460
+M1: The date of the computer conference has been set for next Tuesday.
+
+2
+00:00:03,980 --> 00:00:08,620
+Could you do me a favor and call the hotel we deal with to make reservations for two rooms?
+
+3
+00:00:09,295 --> 00:00:11,360
+M2: Sure, Paul, I will take care of it right away.
+
+4
+00:00:12,080 --> 00:00:15,140
+But what are you going to do about the meeting you had scheduled with Mr. Nolan?
+
+5
+00:00:15,900 --> 00:00:17,160
+Do you want me to call him and cancel?
+
+6
+00:00:17,900 --> 00:00:19,975
+M1: Oh, I completely forgot all about him.
+
+7
+00:00:20,555 --> 00:00:22,440
+You know, I can't miss this meeting with him.
+
+8
+00:00:22,720 --> 00:00:23,620
+It's too important.
+
+9
+00:00:24,050 --> 00:00:28,420
+On second thought, I think I'd better send Sally to New York to attend the conference with you.
+
+10
+00:00:29,060 --> 00:00:34,210
+She has been working on the presentation, and she should be able to make the presentation in my place.
+
+11
+00:00:34,580 --> 00:00:37,675
+M2: You're right, but Sally might not be too happy to hear about this.
+
+12
+00:00:38,105 --> 00:00:40,940
+I think she has a trip scheduled the week after with Mr. Singh.

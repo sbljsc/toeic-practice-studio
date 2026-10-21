@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:05,740
+W: I must have eaten too much last night at the buffet restaurant because my stomach still feels bloated.
+
+2
+00:00:06,940 --> 00:00:09,200
+I'm just going to settle for coffee this morning.
+
+3
+00:00:09,700 --> 00:00:10,680
+What are you going to have?
+
+4
+00:00:11,040 --> 00:00:11,940
+M: I am starved.
+
+5
+00:00:12,240 --> 00:00:14,300
+I am going to order the continental breakfast.
+
+6
+00:00:14,300 --> 00:00:17,960
+W: Wow, you really do have an appetite, don't you?
+
+7
+00:00:18,200 --> 00:00:23,425
+I mean, I don't understand how you can eat as much as you do yet keep yourself so thin like that.
+
+8
+00:00:23,680 --> 00:00:24,500
+You are so lucky.
+
+9
+00:00:25,140 --> 00:00:28,580
+M: Well, I guess I have always digested my food very fast.
+
+10
+00:00:29,060 --> 00:00:31,060
+I've been thin for as long as I can remember.
+
+11
+00:00:31,200 --> 00:00:34,100
+Actually, when I was younger, my wish was to gain some weight.
+
+12
+00:00:34,700 --> 00:00:41,040
+In fact, I remember eating 5 meals a day during high school just to gain some weight, but I didn't have any luck.

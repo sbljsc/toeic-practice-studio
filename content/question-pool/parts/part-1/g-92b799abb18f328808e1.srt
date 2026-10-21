@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,240
+(A) The man is locking up his bicycle.
+
+2
+00:00:04,365 --> 00:00:07,480
+(B) Some cars are parked near the curb.
+
+3
+00:00:08,640 --> 00:00:12,420
+(C) The man is waiting for the traffic light to change.
+
+4
+00:00:13,800 --> 00:00:16,380
+(D) There are trees along the road.

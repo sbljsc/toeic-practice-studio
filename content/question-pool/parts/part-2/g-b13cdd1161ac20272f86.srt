@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,005
+Would you be interested in having lunch after we are done here?
+
+2
+00:00:04,260 --> 00:00:07,865
+(A) Yes, let's check out a South Korean restaurant.
+
+3
+00:00:09,320 --> 00:00:12,765
+(B) Sorry, I have never been interested in it.
+
+4
+00:00:14,005 --> 00:00:17,085
+(C) Yes, I went there a few days ago.

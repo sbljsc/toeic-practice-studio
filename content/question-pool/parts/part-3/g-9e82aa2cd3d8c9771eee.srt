@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:04,180
+W: I'm getting a lift with Ms. Wilson tonight to go to Steve's housewarming party.
+
+2
+00:00:04,580 --> 00:00:05,740
+How are you getting there?
+
+3
+00:00:05,955 --> 00:00:10,100
+M: I was going to drive there, but my car conked out on me this morning on the way to work.
+
+4
+00:00:10,850 --> 00:00:14,540
+I ended up towing my car into a garage, and I had to take the bus to work.
+
+5
+00:00:15,190 --> 00:00:17,880
+Do you think it's possible for me to get a ride with you tonight?
+
+6
+00:00:18,705 --> 00:00:22,500
+W: I'm sure that it will be fine, but I'll ask Ms. Wilson to make sure.
+
+7
+00:00:23,060 --> 00:00:25,965
+She's in a meeting now, so I'll ask her when she comes out.
+
+8
+00:00:26,480 --> 00:00:27,780
+I'll let you know during lunch.
+
+9
+00:00:28,340 --> 00:00:28,700
+M: All right.
+
+10
+00:00:29,035 --> 00:00:30,760
+I will see you at the cafeteria then.

@@ -1,0 +1,27 @@
+1
+00:00:00,200 --> 00:00:00,385
+Hello.
+
+2
+00:00:01,245 --> 00:00:03,305
+This is Ryan Rogers from the Murdoch Corporation.
+
+3
+00:00:03,940 --> 00:00:08,425
+I'm calling to let you know that you have been selected for an interview for the position you applied for.
+
+4
+00:00:09,105 --> 00:00:12,805
+Your interview has been scheduled for next Tuesday morning at 10:30.
+
+5
+00:00:13,565 --> 00:00:22,810
+If this doesn't work for you, please call me back at 874-8432 no later than this Thursday so that we can reschedule it.
+
+6
+00:00:23,345 --> 00:00:28,765
+In addition, you must bring three letters of recommendation from current or previous employers with you.
+
+7
+00:00:29,945 --> 00:00:35,515
+You failed to include those in the application packet you submitted, and we won't be able to hire you without them.

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,560
+You don't have to make copies today, do you?
+
+2
+00:00:03,530 --> 00:00:06,895
+(A) I already had two cups, thanks.
+
+3
+00:00:07,980 --> 00:00:10,995
+(B) No, I could do it tomorrow morning.
+
+4
+00:00:11,885 --> 00:00:15,020
+(C) I should be able to make it there.

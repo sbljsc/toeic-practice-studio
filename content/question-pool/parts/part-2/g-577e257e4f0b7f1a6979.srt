@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,060
+I'd rather go to the conference next time, wouldn't you?
+
+2
+00:00:04,230 --> 00:00:07,110
+(A) Yes, I am really looking forward to it.
+
+3
+00:00:08,440 --> 00:00:11,090
+(B) There will be so many people there.
+
+4
+00:00:12,330 --> 00:00:15,450
+(C) Yes, I have too many things to do this week.

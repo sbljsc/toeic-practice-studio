@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,450
+Jenny's got to mail this invoice to the head office, doesn't she?
+
+2
+00:00:04,540 --> 00:00:07,545
+(A) Yes, she does have a nice voice.
+
+3
+00:00:08,640 --> 00:00:11,695
+(B) It's not very far from where she lives.
+
+4
+00:00:12,790 --> 00:00:16,060
+(C) I don't think she is required to do that this time.

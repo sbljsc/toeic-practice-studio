@@ -1,0 +1,55 @@
+1
+00:00:00,200 --> 00:00:00,540
+W: Hello.
+
+2
+00:00:01,180 --> 00:00:02,320
+This is Cindy Wells.
+
+3
+00:00:02,800 --> 00:00:08,020
+I've got an appointment with a dentist tomorrow at 3:30 p.m., but I'm in lots of pain.
+
+4
+00:00:08,780 --> 00:00:10,955
+Is it possible to see someone today?
+
+5
+00:00:11,440 --> 00:00:13,100
+M: I'm sorry to hear that, Ms. Wells.
+
+6
+00:00:13,880 --> 00:00:16,520
+According to the schedule, we have one open slot today.
+
+7
+00:00:17,220 --> 00:00:21,160
+It's at 1:00 p.m. However, it won't be with your regular dentist.
+
+8
+00:00:21,985 --> 00:00:22,600
+W: That's fine.
+
+9
+00:00:23,050 --> 00:00:24,860
+I don't believe I can wait until tomorrow.
+
+10
+00:00:25,840 --> 00:00:28,920
+M: Okay, I'll go ahead and cancel your Tuesday appointment then.
+
+11
+00:00:29,560 --> 00:00:31,580
+Oh, could you please bring your insurance card?
+
+12
+00:00:32,275 --> 00:00:33,160
+W: Why do you need it?
+
+13
+00:00:33,585 --> 00:00:35,040
+I thought you already had my records.
+
+14
+00:00:36,440 --> 00:00:40,245
+M: We're upgrading the computer system today, so we can't go online until tomorrow.

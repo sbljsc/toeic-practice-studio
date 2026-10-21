@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,760
+Why don't you ask Mr. Harris to give us a tour of the plant floor?
+
+2
+00:00:04,840 --> 00:00:08,040
+(A) I'll make the necessary arrangements.
+
+3
+00:00:09,200 --> 00:00:12,660
+(B) Yes, he gave me the ticket this morning.
+
+4
+00:00:13,840 --> 00:00:17,100
+(C) The factory supervisor is here now.

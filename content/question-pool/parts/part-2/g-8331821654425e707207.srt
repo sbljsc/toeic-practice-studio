@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,920
+Can you suggest a nice place to eat in this town?
+
+2
+00:00:03,840 --> 00:00:06,610
+(A) He suggested two options.
+
+3
+00:00:07,435 --> 00:00:10,790
+(B) Yes, I need to go there, too.
+
+4
+00:00:11,540 --> 00:00:15,180
+(C) Sorry, I recently moved here myself.

@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:04,575
+M: I picked up a cell phone here the other day, but there is something the matter with the screen.
+
+2
+00:00:05,100 --> 00:00:07,040
+It keeps blinking out all the time.
+
+3
+00:00:07,530 --> 00:00:09,140
+I would like an exchange on it, please.
+
+4
+00:00:09,820 --> 00:00:10,620
+W: Of course, sir.
+
+5
+00:00:11,080 --> 00:00:15,320
+Why don't you give that to me, and I can get you a new one from the back room right away?
+
+6
+00:00:15,715 --> 00:00:19,220
+M: Actually, I was wondering if I could take another model instead?
+
+7
+00:00:20,120 --> 00:00:25,180
+I was told that the new X-100 model has far more functions than the one I got.
+
+8
+00:00:25,755 --> 00:00:26,960
+Do you have it in stock today?
+
+9
+00:00:27,500 --> 00:00:30,460
+W: Yes, we do, and I think you have made a wise choice.
+
+10
+00:00:30,870 --> 00:00:35,300
+This particular model was only released a week ago, and they're selling like hot cakes.
+
+11
+00:00:36,090 --> 00:00:42,340
+Of course it is a bit more expensive, and you will have to pay for the difference, but I think it will be well worth your money.

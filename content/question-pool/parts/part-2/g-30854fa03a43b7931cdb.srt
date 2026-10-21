@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,500
+Didn't you think the speech was a bit slow?
+
+2
+00:00:03,555 --> 00:00:06,300
+(A) No, I found it to be quite stimulating.
+
+3
+00:00:07,935 --> 00:00:10,320
+(B) It's quite a distance from here.
+
+4
+00:00:11,720 --> 00:00:14,520
+(C) All right, I think it's a good idea.

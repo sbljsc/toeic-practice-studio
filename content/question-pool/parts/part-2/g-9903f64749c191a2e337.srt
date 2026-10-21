@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,935
+Could you do me a favor and close the window a little?
+
+2
+00:00:04,035 --> 00:00:06,590
+(A) Next to the window, thanks.
+
+3
+00:00:07,840 --> 00:00:10,065
+(B) Sure, I can do that.
+
+4
+00:00:11,360 --> 00:00:13,770
+(C) Yes, they are very close.

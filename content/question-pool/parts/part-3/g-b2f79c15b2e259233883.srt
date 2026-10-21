@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:02,105
+M: Thank you all for joining today's tour.
+
+2
+00:00:02,380 --> 00:00:08,085
+As you know, there are four floors in the building, so we're going to start at the top floor and head down.
+
+3
+00:00:08,610 --> 00:00:10,310
+Are there any questions before we begin?
+
+4
+00:00:10,670 --> 00:00:13,430
+W: Yes, about how long will the tour last?
+
+5
+00:00:13,810 --> 00:00:19,690
+M: If you stay for the entire tour, it will take approximately one and a half hours to see the entire museum.
+
+6
+00:00:20,370 --> 00:00:27,250
+W: Unfortunately, I have to leave for a doctor's appointment in an hour, so how much of the museum will I see?
+
+7
+00:00:27,570 --> 00:00:30,550
+M: You'll be able to see everything except for the first floor.
+
+8
+00:00:30,550 --> 00:00:32,925
+W: Thank you so much for letting me know.

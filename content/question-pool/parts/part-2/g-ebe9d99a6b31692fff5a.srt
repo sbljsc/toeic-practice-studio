@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,720
+Who placed an order for the box of printing paper?
+
+2
+00:00:03,740 --> 00:00:06,035
+(A) Later this afternoon.
+
+3
+00:00:07,180 --> 00:00:09,220
+(B) Ms. Williams did.
+
+4
+00:00:10,460 --> 00:00:12,720
+(C) Yes, a new printer.

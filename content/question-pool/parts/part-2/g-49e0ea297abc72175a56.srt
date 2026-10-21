@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:04,480
+The new branch office is scheduled to have its grand opening today, isn't it?
+
+2
+00:00:05,600 --> 00:00:09,130
+(A) Yes, and I have to leave soon to get there.
+
+3
+00:00:10,155 --> 00:00:13,905
+(B) You shouldn't worry too much. It'll be all right.
+
+4
+00:00:15,140 --> 00:00:17,915
+(C) They are not as big as we had hoped.

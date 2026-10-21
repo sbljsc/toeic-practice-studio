@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:00,970
+Good morning, everybody.
+
+2
+00:00:01,950 --> 00:00:09,010
+Last night was the annual general meeting of our shareholders, and the topic of discussion was about the future of this enterprise.
+
+3
+00:00:10,130 --> 00:00:12,630
+As you know, our profits have fallen dramatically.
+
+4
+00:00:13,675 --> 00:00:18,350
+However, the good news is that nobody doubts that the company can be turned around.
+
+5
+00:00:19,445 --> 00:00:24,650
+The meeting decided on a course of action aimed at reducing costs and increasing sales.
+
+6
+00:00:25,270 --> 00:00:31,790
+In order to achieve this, a team of consultants will be visiting the company's operations over the next five days.
+
+7
+00:00:32,460 --> 00:00:35,670
+They will then write a report recommending specific actions.
+
+8
+00:00:36,530 --> 00:00:38,590
+We trust that you will give them your full cooperation.
+
+9
+00:00:39,690 --> 00:00:40,010
+Thank You.

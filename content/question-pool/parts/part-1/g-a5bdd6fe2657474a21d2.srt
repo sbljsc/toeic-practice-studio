@@ -1,0 +1,15 @@
+1
+00:00:00,520 --> 00:00:02,935
+(A) The people are moving the seats.
+
+2
+00:00:04,100 --> 00:00:06,500
+(B) They are waiting to board the plane.
+
+3
+00:00:08,120 --> 00:00:11,140
+(C) Most of them are concentrating on reading.
+
+4
+00:00:12,780 --> 00:00:16,295
+(D) The travelers are looking in the same direction.

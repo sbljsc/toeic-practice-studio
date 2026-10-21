@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,365
+Who's responsible for setting up the tables and chairs for the meeting?
+
+2
+00:00:04,905 --> 00:00:07,310
+(A) There are plenty of tables.
+
+3
+00:00:08,565 --> 00:00:11,005
+(B) It is scheduled to start at ten.
+
+4
+00:00:12,525 --> 00:00:15,555
+(C) The Facilities Department, why?

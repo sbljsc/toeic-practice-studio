@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,950
+Would you like to reserve the larger hall for the event?
+
+2
+00:00:04,060 --> 00:00:06,785
+(A) Yes, I've already completed it.
+
+3
+00:00:08,020 --> 00:00:10,325
+(B) It's bigger than the others.
+
+4
+00:00:11,405 --> 00:00:13,930
+(C) Yes, that would be fine.

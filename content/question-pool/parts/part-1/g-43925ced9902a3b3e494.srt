@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,915
+(A) They're entering the gallery.
+
+2
+00:00:02,870 --> 00:00:06,165
+(B) They're hanging up some pictures.
+
+3
+00:00:07,180 --> 00:00:09,905
+(C) They're sketching some art.
+
+4
+00:00:11,185 --> 00:00:14,525
+(D) They're closely examining a picture.

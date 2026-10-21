@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,655
+(A) They're rowing the boat together.
+
+2
+00:00:03,770 --> 00:00:06,285
+(B) They're lifting the rubber boat.
+
+3
+00:00:07,600 --> 00:00:09,810
+(C) They're sitting at the water's edge.
+
+4
+00:00:11,180 --> 00:00:12,950
+(D) They're swimming in the lake.

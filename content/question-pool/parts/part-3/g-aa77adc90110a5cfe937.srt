@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:02,080
+M: I really need to get a new computer.
+
+2
+00:00:02,580 --> 00:00:03,000
+W: Why?
+
+3
+00:00:03,120 --> 00:00:03,900
+What's the problem?
+
+4
+00:00:04,600 --> 00:00:07,305
+M: Well, I've had this computer for eight years.
+
+5
+00:00:07,760 --> 00:00:11,800
+It's so slow to download anything, it drives me crazy.
+
+6
+00:00:12,085 --> 00:00:15,890
+And it often freezes completely, and then I have to restart it.
+
+7
+00:00:16,110 --> 00:00:20,080
+I really need a faster computer, so I can work more efficiently.
+
+8
+00:00:20,660 --> 00:00:22,720
+W: Why don't you go to A&T Computers?
+
+9
+00:00:23,120 --> 00:00:24,285
+I've used them for years.
+
+10
+00:00:24,630 --> 00:00:28,600
+They use quality components, and they really know how to set up systems properly.
+
+11
+00:00:29,005 --> 00:00:31,785
+I've always found their technicians friendly and helpful.

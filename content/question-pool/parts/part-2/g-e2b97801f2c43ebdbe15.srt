@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,540
+Is the new guy on your team doing okay?
+
+2
+00:00:03,625 --> 00:00:06,110
+(A) I might join the team as well.
+
+3
+00:00:07,215 --> 00:00:10,000
+(B) No, I don't know him that well.
+
+4
+00:00:11,280 --> 00:00:14,710
+(C) Yes, he's just becoming used to his job now.

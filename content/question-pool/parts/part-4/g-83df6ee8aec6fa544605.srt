@@ -1,0 +1,27 @@
+1
+00:00:00,040 --> 00:00:05,180
+Hello everyone, and welcome to the tenth Summer Teachers' Training Camp.
+
+2
+00:00:05,740 --> 00:00:11,220
+The tight schedule we have planned for the week may be exhausting, but it will also be very rewarding.
+
+3
+00:00:12,120 --> 00:00:20,140
+In the mornings before breakfast, we have special group activities, such as yoga, calligraphy, journal reading, and jogging.
+
+4
+00:00:20,780 --> 00:00:25,560
+After breakfast, there will be lectures in teaching techniques by some of our guest teachers.
+
+5
+00:00:25,560 --> 00:00:37,000
+Then, we will take a long break for lunch and resume at 3:00 p.m. for the last formal session, which is a short talk followed by a discussion on various topics.
+
+6
+00:00:37,740 --> 00:00:47,830
+Finally, there is dinner, which we will take turns preparing in teams, and this will be followed by informal club activities such as music and chess.
+
+7
+00:00:48,360 --> 00:00:51,440
+As you can see, our days are busy but rewarding.

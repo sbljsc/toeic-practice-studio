@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,115
+(A) They're discussing something serious.
+
+2
+00:00:04,420 --> 00:00:06,585
+(B) They're putting on their hats.
+
+3
+00:00:07,960 --> 00:00:10,520
+(C) They're conversing with one another.
+
+4
+00:00:11,740 --> 00:00:15,080
+(D) They're turning to face in the opposite direction.

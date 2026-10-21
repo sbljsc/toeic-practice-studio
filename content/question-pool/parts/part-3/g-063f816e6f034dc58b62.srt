@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:02,620
+M: Is this the right counter for opening a new account?
+
+2
+00:00:03,070 --> 00:00:05,600
+W: Sure, I can do that for you right here.
+
+3
+00:00:05,840 --> 00:00:07,720
+What kind of account were you thinking of?
+
+4
+00:00:08,090 --> 00:00:09,645
+M: I need to open a checking account.
+
+5
+00:00:09,910 --> 00:00:11,620
+I already have a savings account here.
+
+6
+00:00:12,430 --> 00:00:16,250
+W: Great, in that case we can open a checking account for you very quickly.
+
+7
+00:00:16,950 --> 00:00:19,025
+Would you do me a favor and fill out this form?
+
+8
+00:00:19,470 --> 00:00:22,720
+I will also need your identification card with a picture.

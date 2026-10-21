@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:02,875
+W: Dennis, I'm taking the train to Piedmont tomorrow.
+
+2
+00:00:03,795 --> 00:00:07,365
+Do you happen to know where the taxi stand at the station is?
+
+3
+00:00:08,110 --> 00:00:13,015
+M: It used to be in front of the exit on the northern side of the building, but it's being renovated.
+
+4
+00:00:13,995 --> 00:00:15,375
+So head to the eastern side instead.
+
+5
+00:00:16,190 --> 00:00:16,935
+W: Thanks for the information.
+
+6
+00:00:17,940 --> 00:00:20,535
+I need to catch a cab to get to my client's office.
+
+7
+00:00:21,735 --> 00:00:25,075
+M: Will you spend the night there or take the train back after your meeting's done?
+
+8
+00:00:25,715 --> 00:00:27,795
+W: I'll probably stay there for the night.
+
+9
+00:00:28,255 --> 00:00:31,650
+You wouldn't happen to know any good places to eat there, would you?
+
+10
+00:00:32,120 --> 00:00:32,735
+M: I know some.
+
+11
+00:00:33,535 --> 00:00:36,165
+I'll e-mail you the details when I get back to my office.

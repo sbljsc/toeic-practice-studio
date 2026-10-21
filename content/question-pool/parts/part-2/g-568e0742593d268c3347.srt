@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,270
+Who didn't show up to this morning's meeting?
+
+2
+00:00:03,325 --> 00:00:05,720
+(A) Lynn called in sick this morning.
+
+3
+00:00:07,280 --> 00:00:09,600
+(B) To show it to the client.
+
+4
+00:00:10,760 --> 00:00:13,200
+(C) Yes, we signed the contract.

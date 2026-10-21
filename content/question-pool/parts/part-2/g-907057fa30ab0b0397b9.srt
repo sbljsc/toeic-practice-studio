@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,130
+Didn't you bring your car to work this morning?
+
+2
+00:00:03,285 --> 00:00:06,255
+(A) No, I took the bus today.
+
+3
+00:00:07,440 --> 00:00:09,840
+(B) Yes, I will drive you there.
+
+4
+00:00:11,100 --> 00:00:13,940
+(C) She might be working today.

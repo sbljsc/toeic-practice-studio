@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,355
+(A) One woman is leaning back in her chair.
+
+2
+00:00:04,475 --> 00:00:08,310
+(B) The man is handing some documents to the woman.
+
+3
+00:00:09,680 --> 00:00:13,805
+(C) The people are sorting out the documents together.
+
+4
+00:00:15,100 --> 00:00:18,265
+(D) The man is looking over some papers.

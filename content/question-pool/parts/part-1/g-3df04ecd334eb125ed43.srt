@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,570
+(A) He's getting on the subway.
+
+2
+00:00:03,645 --> 00:00:07,480
+(B) He's reading a notice on the wall of the train station.
+
+3
+00:00:08,985 --> 00:00:11,660
+(C) He's strolling along the track.
+
+4
+00:00:13,320 --> 00:00:15,820
+(D) He's standing alone on the platform.

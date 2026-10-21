@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:03,170
+W: Jason, what are you planning to do this evening?
+
+2
+00:00:03,715 --> 00:00:05,855
+Some of us are going to see a movie together.
+
+3
+00:00:07,135 --> 00:00:09,480
+M: I've got tickets to see a baseball game tonight.
+
+4
+00:00:10,065 --> 00:00:12,175
+W: Oh, that sounds like a lot of fun.
+
+5
+00:00:12,765 --> 00:00:13,735
+I hope you enjoy it.
+
+6
+00:00:14,455 --> 00:00:16,635
+By the way, have you finished the report yet?
+
+7
+00:00:17,455 --> 00:00:21,915
+M: I've written everything and checked it for mistakes, but I need to insert a couple of graphs.
+
+8
+00:00:22,735 --> 00:00:24,600
+I should be done with that in ten minutes.
+
+9
+00:00:24,995 --> 00:00:25,455
+W: Great.
+
+10
+00:00:25,855 --> 00:00:28,095
+Would you e-mail me a copy when you're finished, please?
+
+11
+00:00:29,255 --> 00:00:29,870
+M: Of course.
+
+12
+00:00:30,115 --> 00:00:31,235
+That's not a problem at all.

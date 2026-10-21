@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:03,030
+M: Marcia, would you be interested in switching shifts with me tomorrow?
+
+2
+00:00:03,970 --> 00:00:04,610
+W: Not particularly.
+
+3
+00:00:05,645 --> 00:00:09,850
+I specifically requested the morning shift so that I could attend a concert in the evening.
+
+4
+00:00:10,950 --> 00:00:11,930
+M: That's too bad.
+
+5
+00:00:12,310 --> 00:00:14,730
+I need to finish by four to take my wife to the airport.
+
+6
+00:00:16,000 --> 00:00:20,510
+W: I'd love to help you out, but I've already got tickets, and they aren't refundable.
+
+7
+00:00:21,250 --> 00:00:24,270
+You know, Tina mentioned that she's not busy tomorrow.
+
+8
+00:00:25,010 --> 00:00:25,350
+M: Really?
+
+9
+00:00:26,030 --> 00:00:27,700
+I ought to talk to her in that case.
+
+10
+00:00:28,140 --> 00:00:29,410
+Do you happen to know where she is?
+
+11
+00:00:29,930 --> 00:00:32,550
+W: She ran out to get a drink from the café downstairs.
+
+12
+00:00:33,570 --> 00:00:35,440
+She should return here in twenty minutes.

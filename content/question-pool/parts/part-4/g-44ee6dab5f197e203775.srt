@@ -1,0 +1,27 @@
+1
+00:00:00,200 --> 00:00:03,700
+Thank you for attending this demonstration of my firm's newest software.
+
+2
+00:00:03,700 --> 00:00:08,250
+As I hope you noticed, the software does exactly what it's supposed to.
+
+3
+00:00:09,060 --> 00:00:13,400
+We believe the accountants who utilize it will find they become more efficient in their work.
+
+4
+00:00:14,140 --> 00:00:18,510
+I'd like to inform everybody of a special deal that's only for people in this room.
+
+5
+00:00:19,960 --> 00:00:23,110
+We intend to release the software at a press conference next week.
+
+6
+00:00:23,640 --> 00:00:28,080
+If you order it the day before, you can purchase it for fifty percent off the regular price.
+
+7
+00:00:28,285 --> 00:00:34,950
+We know everyone who's here, so simply give the operator your name when you order, and the discount will be applied.

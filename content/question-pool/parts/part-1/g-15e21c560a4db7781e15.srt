@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,250
+(A) One man is standing at the door.
+
+2
+00:00:04,115 --> 00:00:07,460
+(B) The men are walking up the stairs.
+
+3
+00:00:08,340 --> 00:00:11,100
+(C) One man is filming the other.
+
+4
+00:00:11,360 --> 00:00:14,720
+(D) The men are being interviewed.

@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:02,390
+Thank you, everybody, for coming to my workshop.
+
+2
+00:00:02,805 --> 00:00:10,400
+Because the theme of this summer's event is alternative energy, we're going to do a hands-on activity which I'm pretty sure you will enjoy.
+
+3
+00:00:11,140 --> 00:00:14,330
+We're going to spend the next hour or so making solar ovens.
+
+4
+00:00:14,640 --> 00:00:15,175
+That's right.
+
+5
+00:00:15,920 --> 00:00:21,120
+One hour from now, you'll have made an oven that doesn't require electricity or gas to operate.
+
+6
+00:00:21,680 --> 00:00:23,510
+It only needs the light of the sun.
+
+7
+00:00:24,460 --> 00:00:33,335
+Unfortunately, since the weather is overcast today, we can't go outside to use them, but as soon as there's a sunny day, you'll be able to test them yourselves.
+
+8
+00:00:33,640 --> 00:00:34,605
+So let's get started.

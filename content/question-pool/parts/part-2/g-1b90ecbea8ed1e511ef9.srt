@@ -1,0 +1,15 @@
+1
+00:00:00,445 --> 00:00:01,985
+Why don't we flag down a cab?
+
+2
+00:00:03,245 --> 00:00:06,750
+(A) Let's just go for a walk instead.
+
+3
+00:00:07,745 --> 00:00:10,865
+(B) It's about an hour from here.
+
+4
+00:00:11,735 --> 00:00:14,445
+(C) Because it's a national holiday.

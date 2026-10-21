@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:00,480
+Hello.
+
+2
+00:00:01,000 --> 00:00:02,040
+This is Brian Peterson.
+
+3
+00:00:02,560 --> 00:00:03,280
+Thank you for calling.
+
+4
+00:00:03,920 --> 00:00:09,300
+Unfortunately, I can not take your call right now because I'm out of the country attending a seminar in Rome.
+
+5
+00:00:09,980 --> 00:00:13,410
+I'm going to be back in the office on Monday, June 10.
+
+6
+00:00:14,120 --> 00:00:17,770
+I don't have my cell phone with me, so you can't get in touch with me that way.
+
+7
+00:00:18,220 --> 00:00:21,655
+You can send me an e-mail though as I'll be checking it twice a day.
+
+8
+00:00:22,040 --> 00:00:26,880
+If there is an urgent matter which must be discussed, you are welcome to contact Danica Murray.
+
+9
+00:00:27,700 --> 00:00:29,560
+She should be able to solve any issues.
+
+10
+00:00:29,900 --> 00:00:30,280
+Thank you.
+
+11
+00:00:30,560 --> 00:00:30,660
+Goodbye.

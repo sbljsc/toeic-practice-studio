@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,955
+Where did Ms. Kato graduate from?
+
+2
+00:00:03,235 --> 00:00:06,035
+(A) She has a class in half an hour.
+
+3
+00:00:07,290 --> 00:00:10,335
+(B) A small college in the east, I think.
+
+4
+00:00:11,795 --> 00:00:14,360
+(C) She has some colleagues there.

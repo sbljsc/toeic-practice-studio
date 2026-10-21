@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:02,075
+Welcome to this special meeting.
+
+2
+00:00:02,340 --> 00:00:06,715
+You have all been invited here by the design committee for a very important reason.
+
+3
+00:00:07,470 --> 00:00:12,095
+I am sure that you are aware that a first prototype model has been completed.
+
+4
+00:00:12,815 --> 00:00:19,055
+The purpose of this meeting is to obtain your reactions to the look of the prototype in an informal way.
+
+5
+00:00:19,895 --> 00:00:25,455
+You will be asked to note your reactions down quickly, fold your paper, and place it in an envelope.
+
+6
+00:00:25,975 --> 00:00:27,455
+Please do not write your names.
+
+7
+00:00:27,675 --> 00:00:29,175
+We want honest and frank comments.
+
+8
+00:00:30,035 --> 00:00:36,825
+So let's take a few minutes to finish our coffee, then we'll move into the studio for the unveiling of Prototype A.

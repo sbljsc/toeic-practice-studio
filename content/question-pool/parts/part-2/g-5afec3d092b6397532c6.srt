@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,995
+Do you know why Mr. Lee called off the meeting this morning?
+
+2
+00:00:04,070 --> 00:00:07,120
+(A) Something urgent came up.
+
+3
+00:00:08,230 --> 00:00:10,745
+(B) He will be back by then.
+
+4
+00:00:12,040 --> 00:00:14,710
+(C) No, I forgot to call him.

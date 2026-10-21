@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,000
+How far is your hotel from here?
+
+2
+00:00:02,835 --> 00:00:06,360
+(A) I'm staying in Room 1204.
+
+3
+00:00:07,400 --> 00:00:09,925
+(B) At the Prince Hotel.
+
+4
+00:00:11,140 --> 00:00:13,880
+(C) About ten minutes on foot.

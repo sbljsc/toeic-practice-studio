@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,605
+(A) She has stopped to chat with some others.
+
+2
+00:00:04,500 --> 00:00:07,580
+(B) She is looking into the store window.
+
+3
+00:00:08,640 --> 00:00:12,340
+(C) She is checking out some items in the rack.
+
+4
+00:00:13,440 --> 00:00:17,000
+(D) She has placed her bag down next to her.

@@ -1,0 +1,27 @@
+1
+00:00:00,200 --> 00:00:01,380
+Good afternoon, shoppers.
+
+2
+00:00:01,920 --> 00:00:07,300
+The management here at the Maytag Department Store would like to wish everyone a very happy Christmas.
+
+3
+00:00:07,820 --> 00:00:11,440
+For your convenience, this store has extended its opening hours.
+
+4
+00:00:11,940 --> 00:00:16,550
+We will be closing at 10:00 p. m. this evening instead of 9 like we always do.
+
+5
+00:00:16,840 --> 00:00:22,840
+This will allow all those last-minute shoppers to buy their family the presents which they so richly deserve.
+
+6
+00:00:23,280 --> 00:00:32,240
+In fact, why don't you make an evening of it and invite your loved ones to dinner at the basement gourmet cafeteria, which will be open until 8?
+
+7
+00:00:32,660 --> 00:00:34,930
+Thank you, and merry Christmas.

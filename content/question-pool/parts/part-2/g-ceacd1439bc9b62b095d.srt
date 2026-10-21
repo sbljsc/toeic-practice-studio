@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,695
+Would you prefer sugar with your tea or just cream?
+
+2
+00:00:03,940 --> 00:00:05,890
+(A) I'll take both please.
+
+3
+00:00:07,040 --> 00:00:09,700
+(B) Yes, I will do just that.
+
+4
+00:00:10,940 --> 00:00:13,370
+(C) No, he likes it that way.

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,010
+Perhaps we should call to reserve the tables for this evening.
+
+2
+00:00:04,160 --> 00:00:07,915
+(A) Thank you. It was a delicious meal.
+
+3
+00:00:08,800 --> 00:00:13,280
+(B) I think that may be a wise thing to do.
+
+4
+00:00:13,520 --> 00:00:17,380
+(C) That would be a table for a party of six.

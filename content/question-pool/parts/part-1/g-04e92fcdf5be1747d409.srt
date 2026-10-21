@@ -1,0 +1,15 @@
+1
+00:00:00,450 --> 00:00:03,940
+(A) The people are loading goods onto a truck.
+
+2
+00:00:04,770 --> 00:00:08,235
+(B) A man is closing up the storage room.
+
+3
+00:00:09,410 --> 00:00:13,295
+(C) One of the people is handling heavy machinery.
+
+4
+00:00:14,410 --> 00:00:17,840
+(D) One man is directing the other man.

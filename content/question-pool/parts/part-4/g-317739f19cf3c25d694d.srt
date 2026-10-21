@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:02,720
+Thank you for coming to this meeting, everyone.
+
+2
+00:00:03,155 --> 00:00:07,240
+We need to discuss the sales data from the first quarter which was released this morning.
+
+3
+00:00:07,995 --> 00:00:11,220
+Our branches in Europe and Asia did exceptionally well.
+
+4
+00:00:11,920 --> 00:00:15,420
+Every single one of them turned a profit in the last three months.
+
+5
+00:00:16,160 --> 00:00:23,040
+As for our American and Canadian branches, they were mostly profitable as only a couple places lost money.
+
+6
+00:00:23,665 --> 00:00:28,780
+Now, as for our South American branches, we didn't do as well as we had hoped.
+
+7
+00:00:29,540 --> 00:00:31,020
+Take a look at this chart here.
+
+8
+00:00:31,600 --> 00:00:38,300
+I'd like to discuss each country individually, starting with the one which lost the greatest amount of money.

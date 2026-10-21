@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:04,255
+W: I'm terribly sorry, Henry, but I am going to have to cancel the meeting tonight.
+
+2
+00:00:05,295 --> 00:00:14,495
+I just received a call from Mr. King, a very important client of mine, and he says that he is in the area and he wants to come over to the office at 6 to talk to me about something.
+
+3
+00:00:15,015 --> 00:00:17,075
+Do you think we can get together another time?
+
+4
+00:00:17,095 --> 00:00:19,295
+M: Sure, we can always catch a flick this weekend.
+
+5
+00:00:20,055 --> 00:00:21,655
+Who is this Mr. King guy anyway?
+
+6
+00:00:22,115 --> 00:00:27,015
+W: Oh, he is the owner of a fabric manufacturing firm that I recently sold a group policy to.
+
+7
+00:00:27,695 --> 00:00:31,135
+He mentioned something about wanting to increase the size of his group policy.
+
+8
+00:00:31,455 --> 00:00:32,775
+M: Wow, that's great.
+
+9
+00:00:33,135 --> 00:00:36,915
+I wish more of my customers would come and visit me to buy extra coverage.

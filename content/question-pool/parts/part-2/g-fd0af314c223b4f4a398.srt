@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,450
+Who came by while I was out?
+
+2
+00:00:03,150 --> 00:00:04,510
+(A) I'll take it for you.
+
+3
+00:00:05,670 --> 00:00:07,960
+(B) Julie, your insurance agent.
+
+4
+00:00:09,025 --> 00:00:11,685
+(C) I am expecting him today.

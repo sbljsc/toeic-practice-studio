@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:02,825
+W: I was just informed we'll be getting a new assignment.
+
+2
+00:00:03,905 --> 00:00:06,885
+We're scheduled to go to 83 Lambert Street.
+
+3
+00:00:07,845 --> 00:00:09,395
+M1: What kind of work will we be doing there?
+
+4
+00:00:10,380 --> 00:00:13,545
+W: We've got to take care of the lawn and plant some trees and flowers.
+
+5
+00:00:14,625 --> 00:00:16,165
+The job starts tomorrow.
+
+6
+00:00:16,755 --> 00:00:19,225
+M1: Okay, but I heard it's supposed to rain then.
+
+7
+00:00:19,960 --> 00:00:23,050
+Mr. Myers, can we delay the work next week if it rains?
+
+8
+00:00:23,845 --> 00:00:28,710
+M2: In that case, you'll have the day off, but you'll need to come on the weekend to handle the job.
+
+9
+00:00:29,145 --> 00:00:31,525
+It's for a new client, and we don't want to lose him.
+
+10
+00:00:33,125 --> 00:00:34,345
+Is that okay, Tim?
+
+11
+00:00:34,745 --> 00:00:35,965
+M1: I sure hope it doesn't rain.
+
+12
+00:00:36,225 --> 00:00:37,645
+I'm planning to visit my parents.

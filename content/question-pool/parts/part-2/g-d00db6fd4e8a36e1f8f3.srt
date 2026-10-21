@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,085
+I don't understand why we are not getting many calls today.
+
+2
+00:00:04,395 --> 00:00:06,505
+(A) I didn't call him either.
+
+3
+00:00:07,785 --> 00:00:11,425
+(B) Give it some time. The ad only went out this morning.
+
+4
+00:00:12,830 --> 00:00:15,465
+(C) Why don't you study a little more?

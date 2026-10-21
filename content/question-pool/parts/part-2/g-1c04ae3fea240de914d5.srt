@@ -1,0 +1,15 @@
+1
+00:00:00,445 --> 00:00:02,650
+Where did you ever get a hold of those tickets?
+
+2
+00:00:04,880 --> 00:00:06,660
+(A) Yes, I got in touch with him.
+
+3
+00:00:07,825 --> 00:00:10,210
+(B) They're for the three o'clock show.
+
+4
+00:00:11,445 --> 00:00:14,275
+(C) From a friend who works at the theater.

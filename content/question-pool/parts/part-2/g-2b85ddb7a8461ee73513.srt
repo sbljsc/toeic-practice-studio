@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,315
+How do you know Jeff Miller?
+
+2
+00:00:02,595 --> 00:00:05,445
+(A) Since my high school days.
+
+3
+00:00:06,250 --> 00:00:09,200
+(B) We went to the same college.
+
+4
+00:00:10,055 --> 00:00:12,495
+(C) He says he knows you, too.

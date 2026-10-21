@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:00,620
+Attention!
+
+2
+00:00:01,140 --> 00:00:02,620
+We are now beginning a fire drill.
+
+3
+00:00:03,220 --> 00:00:07,820
+Would all staff designated as fire wardens please make your way to your positions immediately?
+
+4
+00:00:08,880 --> 00:00:11,905
+And all employees should now make their way out of the building.
+
+5
+00:00:12,360 --> 00:00:12,880
+Do not run.
+
+6
+00:00:13,560 --> 00:00:14,680
+Do not use the elevators.
+
+7
+00:00:15,400 --> 00:00:18,560
+If you are in the center of the building, you may use the escalators.
+
+8
+00:00:18,960 --> 00:00:22,740
+If you are close to the entrance doors, use the emergency stairs.
+
+9
+00:00:23,340 --> 00:00:27,940
+Please follow the instructions from the fire wardens, who will be wearing orange vests.
+
+10
+00:00:28,535 --> 00:00:29,520
+Thank you for your attention.
+
+11
+00:00:30,425 --> 00:00:33,540
+You may re-enter the building when the all-clear signal is given.

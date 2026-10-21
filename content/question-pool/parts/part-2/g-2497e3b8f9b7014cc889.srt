@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,905
+Isn't there an updated version of this program?
+
+2
+00:00:04,005 --> 00:00:05,895
+(A) Not that I am aware of.
+
+3
+00:00:07,275 --> 00:00:09,670
+(B) Yes, it is a great program.
+
+4
+00:00:10,895 --> 00:00:12,905
+(C) Let's do it another day.

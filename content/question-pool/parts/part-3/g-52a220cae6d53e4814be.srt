@@ -1,0 +1,27 @@
+1
+00:00:00,200 --> 00:00:02,035
+M: Have you been to any good restaurants lately?
+
+2
+00:00:02,300 --> 00:00:05,320
+I'm looking for somewhere special to take my wife on her birthday.
+
+3
+00:00:05,970 --> 00:00:09,680
+W: Well...My fiancé and I tried Clancy's Seafood Bar last weekend.
+
+4
+00:00:10,660 --> 00:00:10,920
+M: Oh, really?
+
+5
+00:00:11,380 --> 00:00:18,380
+I read in the local paper last week that the food and atmosphere there are superb but the price is a bit on the steep side.
+
+6
+00:00:18,380 --> 00:00:24,000
+W: It's true that the food is really very good, and the price is a bit on the expensive side.
+
+7
+00:00:24,490 --> 00:00:29,500
+However, the place is a bit too formal for my liking: I couldn't really relax there.

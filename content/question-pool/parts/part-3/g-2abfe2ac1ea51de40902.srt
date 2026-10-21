@@ -1,0 +1,51 @@
+1
+00:00:00,200 --> 00:00:01,360
+W: Aren't you ready yet?
+
+2
+00:00:01,620 --> 00:00:03,200
+We have to take off soon, you know.
+
+3
+00:00:03,200 --> 00:00:09,680
+The rain out there is starting to really come down hard, and the traffic on the road is probably going to be chaotic.
+
+4
+00:00:10,340 --> 00:00:10,780
+M: I know.
+
+5
+00:00:10,940 --> 00:00:11,840
+Just give me a second.
+
+6
+00:00:12,260 --> 00:00:15,975
+I have to take this paper up to Mr. Kim's office before we take off.
+
+7
+00:00:16,320 --> 00:00:19,540
+Tell you what: why don't I meet you in the lobby in five minutes?
+
+8
+00:00:20,040 --> 00:00:23,265
+This way, I can go back to my office to get my coat as well.
+
+9
+00:00:23,800 --> 00:00:26,220
+W: All right, Bob, but hurry up, please.
+
+10
+00:00:27,090 --> 00:00:31,740
+This is our first meeting with Mr. Rowe, and I don't want to give him the wrong impression by being late.
+
+11
+00:00:32,060 --> 00:00:33,025
+M: Don't worry.
+
+12
+00:00:33,190 --> 00:00:34,400
+We still have plenty of time.
+
+13
+00:00:34,870 --> 00:00:39,660
+Besides, we are going to take the subway, so you don't have to worry about getting stuck in traffic.

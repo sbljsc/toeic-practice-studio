@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,875
+Did you like the play you just saw?
+
+2
+00:00:02,760 --> 00:00:05,920
+(A) No, I saw her today.
+
+3
+00:00:06,900 --> 00:00:10,040
+(B) Yes, it was very nice.
+
+4
+00:00:10,990 --> 00:00:15,045
+(C) Yes, all work and no play.

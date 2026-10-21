@@ -1,0 +1,35 @@
+1
+00:00:00,420 --> 00:00:03,375
+W: Do you know if enough people have registered for the computer class?
+
+2
+00:00:03,625 --> 00:00:07,140
+I have to let Mr. Terrance know whether the class is going to open or not.
+
+3
+00:00:07,560 --> 00:00:10,820
+M: I checked the list earlier, and there were many who had already registered.
+
+4
+00:00:11,500 --> 00:00:15,125
+I think it's safe to tell Mr. Terrance that the class is going to be held.
+
+5
+00:00:15,600 --> 00:00:19,160
+In fact, ask him if he would be interested in opening an extra class?
+
+6
+00:00:19,825 --> 00:00:25,300
+Registration lasts until this Friday, and I think there is a good chance that we could fill another class.
+
+7
+00:00:25,810 --> 00:00:27,620
+W: I think he would be happy to hear that.
+
+8
+00:00:28,080 --> 00:00:30,260
+I will call him right away to see what he says.
+
+9
+00:00:30,560 --> 00:00:36,300
+M: Thanks, and could you also do me a favor and see how many people have registered for the cooking class?

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,950
+The renovation work they're doing is very loud.
+
+2
+00:00:04,205 --> 00:00:07,015
+(A) It will be completed next year.
+
+3
+00:00:08,065 --> 00:00:10,865
+(B) Why don't you shut the windows?
+
+4
+00:00:11,790 --> 00:00:14,770
+(C) There will be plenty of work.

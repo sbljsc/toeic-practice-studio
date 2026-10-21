@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,490
+Didn't you enjoy the speech?
+
+2
+00:00:02,540 --> 00:00:05,140
+(A) He speaks two languages.
+
+3
+00:00:06,250 --> 00:00:09,085
+(B) Yes, it's much better.
+
+4
+00:00:10,065 --> 00:00:13,090
+(C) No, it was a bit boring.

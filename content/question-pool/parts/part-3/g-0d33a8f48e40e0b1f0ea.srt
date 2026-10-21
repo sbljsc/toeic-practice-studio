@@ -1,0 +1,51 @@
+1
+00:00:00,200 --> 00:00:04,030
+M1: Wendy, are you still planning to order some items from the office supply store?
+
+2
+00:00:04,400 --> 00:00:05,140
+W: That's correct.
+
+3
+00:00:05,640 --> 00:00:07,765
+Do you need me to add anything to the list?
+
+4
+00:00:08,080 --> 00:00:10,080
+You'd better do it by three.
+
+5
+00:00:10,460 --> 00:00:10,800
+M1: Okay.
+
+6
+00:00:11,140 --> 00:00:14,910
+I noticed we're out of file folders and could use some ink for the printer, too.
+
+7
+00:00:15,180 --> 00:00:16,655
+I'll e-mail the details to you.
+
+8
+00:00:16,940 --> 00:00:17,640
+W: Thanks, Brian.
+
+9
+00:00:17,840 --> 00:00:20,565
+I'll check my inbox before I submit the order form.
+
+10
+00:00:21,340 --> 00:00:24,820
+M2: Oh, I could use a few things as well, but I've got to attend a meeting.
+
+11
+00:00:25,285 --> 00:00:26,895
+It's not going to finish until four.
+
+12
+00:00:27,255 --> 00:00:29,640
+W: I suppose I can wait until then, Mr. Lopez.
+
+13
+00:00:30,290 --> 00:00:32,860
+Just get me the list as quickly as you can.

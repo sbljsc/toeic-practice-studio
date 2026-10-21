@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:06,975
+W: Hey, David, I just dropped off my car to get an oil change at George's Garage, and I didn't see your car there.
+
+2
+00:00:07,400 --> 00:00:12,075
+Didn't you say that you were going to take your car in to get your winter tires put on this morning?
+
+3
+00:00:12,860 --> 00:00:14,595
+M: Oh, I didn't take my car there.
+
+4
+00:00:14,820 --> 00:00:16,805
+I ended up taking it to another place.
+
+5
+00:00:17,935 --> 00:00:18,360
+W: Really?
+
+6
+00:00:18,860 --> 00:00:19,960
+Why did you do that?
+
+7
+00:00:20,120 --> 00:00:24,520
+I thought you said you were happy with the work they did to your car the last time you took it in.
+
+8
+00:00:24,840 --> 00:00:28,200
+M: I know, but I found a better and cheaper place near my apartment.
+
+9
+00:00:28,800 --> 00:00:33,700
+Plus, the mechanic that used to take care of my car at George's Garage doesn't work there anymore.
+
+10
+00:00:33,700 --> 00:00:37,085
+He apparently started his own shop downtown somewhere.

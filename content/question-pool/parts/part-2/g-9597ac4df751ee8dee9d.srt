@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,510
+Would you mind holding the door open for me?
+
+2
+00:00:03,620 --> 00:00:06,905
+(A) Of course. Here you go.
+
+3
+00:00:07,740 --> 00:00:10,605
+(B) Oh, it's probably closed.
+
+4
+00:00:11,800 --> 00:00:15,345
+(C) No, it's being held another time.

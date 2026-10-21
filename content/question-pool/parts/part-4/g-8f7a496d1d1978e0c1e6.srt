@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:00,665
+Hello, everyone.
+
+2
+00:00:01,205 --> 00:00:04,485
+As CEO of this company, I am happy to make this great announcement.
+
+3
+00:00:05,325 --> 00:00:14,705
+I have been informed by the sales manager this morning that the sales division has just reported on its sales figures for the first half of the year, and they are well beyond expectations.
+
+4
+00:00:15,725 --> 00:00:21,225
+They have also surveyed customer satisfaction, and, there again, the results are excellent.
+
+5
+00:00:21,925 --> 00:00:27,440
+The combination of lower costs and higher sales means that we are heading for the highest profit figures ever.
+
+6
+00:00:27,845 --> 00:00:29,045
+So, what does all this mean?
+
+7
+00:00:29,685 --> 00:00:30,985
+Yes, you guessed it.
+
+8
+00:00:31,120 --> 00:00:34,685
+This means that you guys are due for a fat bonus at the end of this year.
+
+9
+00:00:35,305 --> 00:00:39,455
+All you have to do is just continue doing what you have been doing so far.

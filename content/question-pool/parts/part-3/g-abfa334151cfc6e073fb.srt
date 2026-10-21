@@ -1,0 +1,27 @@
+1
+00:00:00,200 --> 00:00:04,520
+M1: Dave, hasn't the shipment of computer monitors gone out to the electronics shops yet?
+
+2
+00:00:05,100 --> 00:00:07,580
+M2: The truck left here five minutes ago, Mr. Curtis.
+
+3
+00:00:08,060 --> 00:00:08,800
+Why do you ask?
+
+4
+00:00:08,800 --> 00:00:17,040
+M1: I just received a call from Mr. Brown, the manager of the Bad Boys Electronics Store, and he said that he was in a hurry to receive the goods.
+
+5
+00:00:17,540 --> 00:00:21,800
+I think you'd better call the truck driver and ask him to drop by there first.
+
+6
+00:00:22,260 --> 00:00:23,765
+M2: I don't think I have to do that.
+
+7
+00:00:24,180 --> 00:00:27,375
+As far as I am concerned, Bad Boys is first on his list.

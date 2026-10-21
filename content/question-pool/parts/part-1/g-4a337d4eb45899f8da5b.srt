@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,825
+(A) A lamp has been positioned on either side of the sofa.
+
+2
+00:00:05,340 --> 00:00:08,125
+(B) The television is being turned on.
+
+3
+00:00:09,625 --> 00:00:12,425
+(C) The sofa is occupied at the moment.
+
+4
+00:00:13,965 --> 00:00:17,040
+(D) The carpet is being laid on the floor.

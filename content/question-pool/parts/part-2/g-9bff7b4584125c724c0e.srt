@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,385
+Were you able to pick up the books you need?
+
+2
+00:00:03,200 --> 00:00:05,920
+(A) I booked it this morning.
+
+3
+00:00:06,940 --> 00:00:10,150
+(B) No, they were all sold out.
+
+4
+00:00:11,220 --> 00:00:14,040
+(C) Can you pick me up at 5?

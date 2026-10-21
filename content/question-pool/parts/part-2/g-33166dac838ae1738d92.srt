@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,215
+When should I leave?
+
+2
+00:00:02,355 --> 00:00:04,975
+(A) Let's say goodbye here.
+
+3
+00:00:06,075 --> 00:00:08,475
+(B) He is on his way over.
+
+4
+00:00:09,795 --> 00:00:12,750
+(C) Take off right after lunch.

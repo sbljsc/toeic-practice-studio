@@ -1,0 +1,51 @@
+1
+00:00:00,200 --> 00:00:02,860
+M: I heard you're considering taking a class in computer programming.
+
+2
+00:00:03,510 --> 00:00:03,940
+W: That's right.
+
+3
+00:00:04,525 --> 00:00:08,120
+If I ever want to be promoted, I need to acquire some more skills.
+
+4
+00:00:09,370 --> 00:00:11,900
+M: Did you see that the Dawkins Computer Academy just opened?
+
+5
+00:00:12,460 --> 00:00:14,480
+Apparently, it has some outstanding instructors.
+
+6
+00:00:15,330 --> 00:00:17,200
+You might want to consider taking a class there.
+
+7
+00:00:17,960 --> 00:00:21,660
+W: I'd love to, but I only have time on the weekend in the morning.
+
+8
+00:00:22,760 --> 00:00:24,680
+Are there any classes available then?
+
+9
+00:00:25,640 --> 00:00:27,315
+M: I'm pretty sure there's one you can take.
+
+10
+00:00:28,040 --> 00:00:29,885
+Why don't you visit the Web page and find out?
+
+11
+00:00:30,440 --> 00:00:32,380
+Here's a brochure with the information you need.
+
+12
+00:00:33,070 --> 00:00:33,620
+W: Thanks a lot.
+
+13
+00:00:34,280 --> 00:00:35,960
+I think I'll do that right now.

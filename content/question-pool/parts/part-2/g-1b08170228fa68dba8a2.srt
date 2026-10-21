@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,040
+Where do you suppose I could pick up the items on the list?
+
+2
+00:00:03,910 --> 00:00:07,495
+(A) Try looking in the store over there.
+
+3
+00:00:08,500 --> 00:00:11,875
+(B) It's too heavy to pick it up alone.
+
+4
+00:00:12,980 --> 00:00:16,080
+(C) Yes, I think you can do it.

@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:05,275
+W: I overheard you mentioning to the sales manager that you and your wife are into watching movies.
+
+2
+00:00:06,220 --> 00:00:08,395
+Will you be seeing one this weekend by any chance?
+
+3
+00:00:08,835 --> 00:00:13,455
+M: Yes, I was thinking of checking out the Sunday matinée at the Imperial Six Cinema.
+
+4
+00:00:14,205 --> 00:00:16,415
+They are playing Mary Poppins there this weekend.
+
+5
+00:00:17,255 --> 00:00:20,495
+You see, I am a real big fan of classical flicks.
+
+6
+00:00:20,775 --> 00:00:22,035
+W: Oh, that's perfect.
+
+7
+00:00:22,215 --> 00:00:25,955
+I got these two complimentary tickets that you can use at that theater.
+
+8
+00:00:26,675 --> 00:00:31,555
+My brother works there, and he gave them to me, but I have to go out of town this weekend.
+
+9
+00:00:31,895 --> 00:00:33,295
+Why don't you put them to good use?
+
+10
+00:00:33,815 --> 00:00:34,195
+M: Really?
+
+11
+00:00:34,735 --> 00:00:35,835
+That's very nice of you.
+
+12
+00:00:36,220 --> 00:00:37,395
+I really appreciate it.

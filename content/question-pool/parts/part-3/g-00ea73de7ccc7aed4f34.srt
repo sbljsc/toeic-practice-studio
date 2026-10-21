@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:02,610
+M: Do you know why Ms. Sato called a meeting for 11?
+
+2
+00:00:03,515 --> 00:00:05,510
+I thought she was leaving for Chicago this morning.
+
+3
+00:00:06,055 --> 00:00:08,830
+W: She was, but she delayed her trip a couple of days.
+
+4
+00:00:09,440 --> 00:00:16,530
+She apparently is not happy with the proposal we put together, and she said she couldn't possibly present that in Chicago today.
+
+5
+00:00:17,290 --> 00:00:20,090
+So, she called a meeting this morning to talk to us about it.
+
+6
+00:00:21,090 --> 00:00:23,970
+Anyway, we'd better get going, or we are going to be late.
+
+7
+00:00:24,000 --> 00:00:25,290
+It's almost eleven o'clock.
+
+8
+00:00:25,895 --> 00:00:27,110
+M: I hope the meeting will be short.
+
+9
+00:00:27,810 --> 00:00:34,810
+I have to meet a client at 12:00 for lunch on the other side of town, and I have to leave the office by 11:30 at the latest.
+
+10
+00:00:35,250 --> 00:00:42,570
+W: Well, I am sure that Ms. Sato will let you go early if you tell her about the situation before the meeting starts.

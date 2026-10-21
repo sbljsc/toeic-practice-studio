@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,900
+When will you take off for Paris?
+
+2
+00:00:03,025 --> 00:00:05,590
+(A) No, she left a while ago.
+
+3
+00:00:06,705 --> 00:00:08,905
+(B) I'd rather go to London.
+
+4
+00:00:10,025 --> 00:00:12,225
+(C) On Tuesday afternoon.

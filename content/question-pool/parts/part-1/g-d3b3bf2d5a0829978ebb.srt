@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,335
+(A) She's reading to a large audience.
+
+2
+00:00:04,110 --> 00:00:07,035
+(B) She's standing in front of the art gallery.
+
+3
+00:00:08,270 --> 00:00:10,995
+(C) She's looking for a place to sit.
+
+4
+00:00:12,055 --> 00:00:14,795
+(D) She's by herself in the gallery.

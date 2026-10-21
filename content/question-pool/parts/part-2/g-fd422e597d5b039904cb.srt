@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,445
+Should I schedule you for two this afternoon?
+
+2
+00:00:03,645 --> 00:00:06,970
+(A) Yes, I have a full schedule today.
+
+3
+00:00:08,305 --> 00:00:10,560
+(B) That would suit me fine.
+
+4
+00:00:11,660 --> 00:00:14,410
+(C) No, there will be three of us.

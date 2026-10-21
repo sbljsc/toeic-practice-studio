@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,360
+(A) The workers have finished for the day.
+
+2
+00:00:04,280 --> 00:00:07,260
+(B) The men are working outdoors.
+
+3
+00:00:08,240 --> 00:00:11,360
+(C) One man is pushing the wheelbarrow.
+
+4
+00:00:12,300 --> 00:00:16,115
+(D) One man is planting trees by the hillside.

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,010
+(A) The bed is being made right now.
+
+2
+00:00:04,410 --> 00:00:08,290
+(B) The window blinds have been drawn to keep the lights out.
+
+3
+00:00:09,830 --> 00:00:13,150
+(C) The television has been placed in the middle of the room.
+
+4
+00:00:14,910 --> 00:00:17,530
+(D) The windows have been left unclosed.

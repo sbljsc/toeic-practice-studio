@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:02,690
+Good evening, and welcome to The Bay View Restaurant.
+
+2
+00:00:03,530 --> 00:00:06,050
+I'm Richard, and I'll be looking after you this evening.
+
+3
+00:00:06,530 --> 00:00:11,810
+I should tell you that you may dine àla carte, or choose from our range of special set meals.
+
+4
+00:00:12,900 --> 00:00:18,210
+The set meals have been designed by our head chef to provide an exquisite dining experience.
+
+5
+00:00:19,365 --> 00:00:24,230
+Starters, all main courses come with a choice of our finest desserts and wines.
+
+6
+00:00:25,175 --> 00:00:37,050
+Set A is for lovers of red meats, and rich red wine for a low price of fifteen dollars; Set B is for those who are fond of fish and white wine for a price of twelve dollars.
+
+7
+00:00:38,090 --> 00:00:40,670
+For dessert, you may choose from our cake selection.
+
+8
+00:00:41,530 --> 00:00:45,550
+Oh, and fresh filtered coffee is also included in these meals.

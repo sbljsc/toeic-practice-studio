@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,430
+(A) They're playing the same musical instrument.
+
+2
+00:00:03,535 --> 00:00:06,885
+(B) The musicians are performing in front of an audience.
+
+3
+00:00:08,605 --> 00:00:10,885
+(C) They are about to finish their performance.
+
+4
+00:00:12,505 --> 00:00:14,945
+(D) They are walking off the stage.

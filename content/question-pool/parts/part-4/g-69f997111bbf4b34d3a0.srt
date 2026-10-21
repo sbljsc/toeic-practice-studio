@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:00,595
+Hello, everyone.
+
+2
+00:00:01,175 --> 00:00:05,195
+I have been invited to your organization to advise you about increasing your sales.
+
+3
+00:00:05,825 --> 00:00:11,395
+I have observed your operations with a great deal of care, and I must say that I have enjoyed my time here.
+
+4
+00:00:11,995 --> 00:00:16,995
+I should also say that I've been impressed with the dedication and enthusiasm I've seen here.
+
+5
+00:00:17,535 --> 00:00:21,255
+Your organization provides a valuable service and performs very well.
+
+6
+00:00:22,050 --> 00:00:25,195
+And the staff is effective and efficient and clearly likes working here.
+
+7
+00:00:26,515 --> 00:00:29,415
+It is possible, however, to improve your service and your sales.
+
+8
+00:00:30,095 --> 00:00:34,755
+One of the ways we are going to start doing that is by encouraging staff participation and creativity.
+
+9
+00:00:36,455 --> 00:00:40,445
+So let's break into small groups and think about ways that we can improve the store.

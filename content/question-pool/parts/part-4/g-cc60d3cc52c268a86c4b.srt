@@ -1,0 +1,27 @@
+1
+00:00:00,200 --> 00:00:01,735
+Welcome to the Goldfields Tour!
+
+2
+00:00:02,275 --> 00:00:11,235
+We have about a one-hour bus trip through beautiful rolling hills before we reach the first stop on our tour, the picturesque and historic town of Daylesford.
+
+3
+00:00:11,695 --> 00:00:18,235
+When we reach Daylesford, I suggest that we simply stroll around the old town for around thirty minutes to an hour.
+
+4
+00:00:18,935 --> 00:00:26,475
+Daylesford was founded at the time of the first gold rush and is largely unchanged since the boom period of the 1880s.
+
+5
+00:00:27,235 --> 00:00:32,475
+Why don't you stop at one of the famous bakeries on the main street for some delicious coffee and cakes?
+
+6
+00:00:33,310 --> 00:00:37,355
+Return to the bus by 11:00 a.m., and we will proceed with the rest of the tour.
+
+7
+00:00:38,015 --> 00:00:38,275
+Thank you.

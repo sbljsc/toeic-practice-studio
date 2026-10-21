@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:04,980
+M: Have we made arrangements to reschedule last week's outdoor concert which was canceled due to rain?
+
+2
+00:00:05,460 --> 00:00:11,140
+W: I was informed by Travis Donovan that it will be held next Tuesday at 6:00 in the evening.
+
+3
+00:00:12,300 --> 00:00:13,040
+M: Are you positive?
+
+4
+00:00:13,040 --> 00:00:17,465
+I want to print some posters to advertise it and don't want to get the date wrong.
+
+5
+00:00:18,660 --> 00:00:23,520
+W: Why don't you call Mr. Donovan at extension 584 and confirm it with him?
+
+6
+00:00:23,760 --> 00:00:24,600
+M: Thanks for the number.
+
+7
+00:00:25,220 --> 00:00:28,980
+But I have to wait to call him because I just saw him leave the office with a client.
+
+8
+00:00:29,420 --> 00:00:32,910
+W: Oh, I wasn't aware he had any meetings scheduled for today.

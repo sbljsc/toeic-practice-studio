@@ -1,0 +1,27 @@
+1
+00:00:00,200 --> 00:00:04,520
+M1: Have you decided on whether you are going to apply for the job that's opened up in marketing?
+
+2
+00:00:05,610 --> 00:00:11,800
+M2: I thought it over, and I don't think I am going to apply for it because the position doesn't pay as much as I had thought.
+
+3
+00:00:12,320 --> 00:00:15,580
+M1: That's true, but there is a great chance for a quick promotion there.
+
+4
+00:00:16,100 --> 00:00:23,640
+If I were you, I'd think it over again because in a couple of years you'll be in much better situation than you would have been if you had stayed here.
+
+5
+00:00:24,160 --> 00:00:26,295
+M2: Hmm... I think you have a point there.
+
+6
+00:00:26,860 --> 00:00:29,630
+Maybe I should try to see if I can get the position first.
+
+7
+00:00:30,100 --> 00:00:32,740
+After all, I might not even be considered for it.

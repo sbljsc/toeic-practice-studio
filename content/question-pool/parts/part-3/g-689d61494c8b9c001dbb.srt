@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:03,420
+W: I have an appointment to meet with Mr. Ewing at 2.
+
+2
+00:00:03,960 --> 00:00:04,880
+Where can I park?
+
+3
+00:00:05,360 --> 00:00:09,720
+M: I'm sorry, but our underground parking lot is under renovation at the moment.
+
+4
+00:00:10,265 --> 00:00:17,720
+There is free parking two blocks north of here, but there is a good chance that it might be a full house today because of the art exhibit.
+
+5
+00:00:18,715 --> 00:00:23,540
+Your best bet is to turn your car around and drive back down this street to the intersection.
+
+6
+00:00:24,640 --> 00:00:25,780
+There is a pay lot there.
+
+7
+00:00:27,025 --> 00:00:29,300
+W: That's quite a distance to walk back here.
+
+8
+00:00:29,880 --> 00:00:33,655
+Do you think I would get a ticket if I just parked somewhere along this street?
+
+9
+00:00:34,050 --> 00:00:36,735
+M: You can try, but I wouldn't if I were you.
+
+10
+00:00:37,320 --> 00:00:39,935
+I saw a car being towed away a few days ago.

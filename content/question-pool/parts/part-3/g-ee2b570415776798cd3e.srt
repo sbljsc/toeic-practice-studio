@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:03,000
+W: What are all of these boxes doing here in the office?
+
+2
+00:00:03,600 --> 00:00:10,660
+M: I was at lunch when they arrived, so I'm not sure, but it appears as if the computer monitors the Accounting Department ordered have arrived.
+
+3
+00:00:11,200 --> 00:00:16,280
+W: Well, we have some clients coming momentarily, so they have to be removed at once.
+
+4
+00:00:16,710 --> 00:00:21,605
+M: Okay, I'll call the secretary there and make sure someone comes here to take them away.
+
+5
+00:00:21,745 --> 00:00:22,180
+W: Thanks, Fred.
+
+6
+00:00:22,840 --> 00:00:25,585
+After doing that, would you mind straightening up the conference room?
+
+7
+00:00:26,160 --> 00:00:27,700
+I noticed it was a bit messy.
+
+8
+00:00:28,360 --> 00:00:28,940
+M: No problem.
+
+9
+00:00:29,490 --> 00:00:31,240
+I'll get right on it as soon as I make the call.

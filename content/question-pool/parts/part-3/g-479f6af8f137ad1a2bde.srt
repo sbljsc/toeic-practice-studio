@@ -1,0 +1,51 @@
+1
+00:00:00,200 --> 00:00:01,765
+W: Welcome to the Hatfield House.
+
+2
+00:00:02,420 --> 00:00:04,565
+Have you had the opportunity to look over the menu?
+
+3
+00:00:05,150 --> 00:00:07,085
+M: I have, but I'm not sure what to order.
+
+4
+00:00:07,625 --> 00:00:09,485
+It's been several months since I dined here.
+
+5
+00:00:10,245 --> 00:00:11,125
+What do you recommend?
+
+6
+00:00:11,475 --> 00:00:13,025
+W: Why don't you try our newest item?
+
+7
+00:00:13,805 --> 00:00:17,305
+You can get a pork chop with a baked potato and sautéed vegetables.
+
+8
+00:00:18,125 --> 00:00:20,250
+I've had it before and highly recommend it.
+
+9
+00:00:20,765 --> 00:00:23,085
+M: All right, I think I'll go with your suggestion.
+
+10
+00:00:23,350 --> 00:00:23,765
+W: Excellent.
+
+11
+00:00:24,445 --> 00:00:28,385
+In the meantime, would you care for a soup or salad as an appetizer?
+
+12
+00:00:28,385 --> 00:00:31,460
+M: No thanks, but I would like some iced tea.
+
+13
+00:00:31,745 --> 00:00:34,425
+W: Sure, I'll bring you a glass in a couple of minutes.

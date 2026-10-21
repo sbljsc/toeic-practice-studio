@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:04,300
+(A) The aircraft is about to land at the airport.
+
+2
+00:00:05,260 --> 00:00:08,750
+(B) The people are boarding the plane.
+
+3
+00:00:09,610 --> 00:00:14,045
+(C) The cargo is being loaded onto the plane.
+
+4
+00:00:15,020 --> 00:00:18,495
+(D) The plane landed a short while ago.

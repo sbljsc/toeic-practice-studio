@@ -1,0 +1,27 @@
+1
+00:00:00,200 --> 00:00:03,380
+We'd like to start our evening news bulletin with a special report.
+
+2
+00:00:04,200 --> 00:00:08,560
+The weather bureau has issued a special warning regarding an approaching dust storm.
+
+3
+00:00:09,120 --> 00:00:20,550
+The unusually dry weather which we've been experiencing over the last three months has combined with strong northeasterly winds to produce a massive dust storm, which is moving steadily towards our city.
+
+4
+00:00:21,280 --> 00:00:29,670
+The thick clouds should hit the northwestern suburbs by about 9:00 a.m. tomorrow morning and then gradually move across the city in a southeasterly direction.
+
+5
+00:00:30,230 --> 00:00:37,200
+The weather bureau advises all residents to make no unnecessary trips tomorrow, as visibility will be extremely reduced.
+
+6
+00:00:37,970 --> 00:00:40,820
+Schools and government offices will, however, be open tomorrow.
+
+7
+00:00:42,040 --> 00:00:48,680
+Anyone with asthma or any other breathing disorder should remain indoors and keep doors and windows tightly closed.

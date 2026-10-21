@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,960
+I finally got a hold of the manager.
+
+2
+00:00:03,435 --> 00:00:05,580
+(A) How did you pull that off?
+
+3
+00:00:06,940 --> 00:00:08,985
+(B) They hold it for a month.
+
+4
+00:00:10,200 --> 00:00:12,540
+(C) He doesn't work there anymore.

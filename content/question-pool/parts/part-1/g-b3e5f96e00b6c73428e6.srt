@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,790
+(A) A piece of furniture is being repaired.
+
+2
+00:00:04,750 --> 00:00:08,210
+(B) A machine is being worked on.
+
+3
+00:00:09,000 --> 00:00:11,760
+(C) A toolbox is being opened.
+
+4
+00:00:13,080 --> 00:00:16,585
+(D) A desk drawer is being closed.

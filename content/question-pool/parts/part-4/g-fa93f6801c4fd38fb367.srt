@@ -1,0 +1,23 @@
+1
+00:00:00,200 --> 00:00:05,065
+Hello, this is Rob McKenzie here at FM-99.99 with the morning traffic report.
+
+2
+00:00:06,010 --> 00:00:08,145
+We're happy to report that there are no major holdups.
+
+3
+00:00:08,805 --> 00:00:15,285
+There was a minor accident on Highway 7 near Steeles Avenue, but traffic is flowing smoothly now that the road has been cleared up.
+
+4
+00:00:16,095 --> 00:00:24,985
+We do however anticipate that traffic will start to slow on the freeway, both northbound and southbound, within the next twenty minutes up till 9:30.
+
+5
+00:00:25,875 --> 00:00:31,625
+So if you are beginning your journey now, we advise you to take Kennedy Road and avoid the freeway until 9:30.
+
+6
+00:00:32,465 --> 00:00:36,025
+We'll be back again in an hour at 9 to bring you more traffic updates!

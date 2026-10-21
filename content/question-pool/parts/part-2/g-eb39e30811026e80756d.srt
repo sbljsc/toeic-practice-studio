@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,880
+Mr. Park has given us an extension on the report.
+
+2
+00:00:04,340 --> 00:00:06,300
+(A) That's a relief.
+
+3
+00:00:07,275 --> 00:00:09,040
+(B) For three days.
+
+4
+00:00:10,560 --> 00:00:12,920
+(C) From the reporter.

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,230
+When did Mr. Lewis hire his assistant?
+
+2
+00:00:03,530 --> 00:00:05,955
+(A) About a year ago.
+
+3
+00:00:06,990 --> 00:00:09,355
+(B) At our home office.
+
+4
+00:00:10,430 --> 00:00:12,690
+(C) Because he is going to leave.

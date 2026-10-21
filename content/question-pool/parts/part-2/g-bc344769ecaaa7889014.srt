@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,485
+Why did you get back from your trip so early?
+
+2
+00:00:03,795 --> 00:00:06,575
+(A) Because the meeting got canceled.
+
+3
+00:00:07,725 --> 00:00:09,845
+(B) Next Friday at the earliest.
+
+4
+00:00:11,385 --> 00:00:13,560
+(C) I'll be taking the train.

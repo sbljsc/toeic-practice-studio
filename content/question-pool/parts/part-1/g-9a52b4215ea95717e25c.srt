@@ -1,0 +1,15 @@
+1
+00:00:00,440 --> 00:00:03,720
+(A) The bakery is full of customers today.
+
+2
+00:00:04,840 --> 00:00:08,715
+(B) Some baked goods are stacked on the stand.
+
+3
+00:00:09,840 --> 00:00:13,700
+(C) The man is putting bread on the stand.
+
+4
+00:00:14,800 --> 00:00:18,600
+(D) The bread has just been taken out of the oven.

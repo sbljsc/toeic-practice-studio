@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,700
+It's really hot out there.
+
+2
+00:00:02,975 --> 00:00:06,355
+(A) Yes, the humidity level is unbelievable.
+
+3
+00:00:07,895 --> 00:00:10,575
+(B) He went over there an hour ago.
+
+4
+00:00:11,775 --> 00:00:14,595
+(C) Why don't you turn down the heat then?

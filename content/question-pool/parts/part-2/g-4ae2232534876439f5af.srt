@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,680
+When are you going to talk to the general manager about the raise?
+
+2
+00:00:03,680 --> 00:00:07,730
+(A) It's generally done this way.
+
+3
+00:00:08,760 --> 00:00:11,380
+(B) In his big office.
+
+4
+00:00:12,300 --> 00:00:15,235
+(C) When he comes back from lunch.

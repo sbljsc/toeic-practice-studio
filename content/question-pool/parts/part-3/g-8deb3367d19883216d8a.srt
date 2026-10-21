@@ -1,0 +1,47 @@
+1
+00:00:00,470 --> 00:00:04,820
+M: We seem to have already gone over our budget on travel expenses this quarter.
+
+2
+00:00:05,370 --> 00:00:06,270
+Do you know the reason?
+
+3
+00:00:06,745 --> 00:00:10,910
+W: Well, the main reason is because the airline we deal with has raised their fares.
+
+4
+00:00:11,690 --> 00:00:18,410
+On top of that, we had to change the hotel we use because many of our staff complained about being robbed during their trips.
+
+5
+00:00:19,530 --> 00:00:23,650
+So, we signed a contract with another chain, and they are a bit more expensive.
+
+6
+00:00:24,170 --> 00:00:27,630
+M: Well, we are going to have to do something to tighten up around here.
+
+7
+00:00:28,310 --> 00:00:35,770
+Tell you what; from now on I want you to make sure you allow only those staff members who must take trips to go on them.
+
+8
+00:00:36,560 --> 00:00:39,310
+This way, we should be able to keep down the cost a bit.
+
+9
+00:00:40,020 --> 00:00:48,970
+W: Actually, we have been doing that, but it's hard to judge which trips should be allowed or not because everyone seems to have legitimate reasons for taking the trips.
+
+10
+00:00:49,470 --> 00:00:51,870
+I think we need to find other ways to cut costs.
+
+11
+00:00:52,590 --> 00:00:54,510
+I'm meeting with the other managers today.
+
+12
+00:00:54,930 --> 00:00:57,225
+Why don't I bring up the issue at the meeting?

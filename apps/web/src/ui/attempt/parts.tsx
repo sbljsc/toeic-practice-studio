@@ -410,6 +410,7 @@ export function QuestionPanel({
   onSelect,
   onFlag,
   solution,
+  sharedMaterials,
 }: {
   question: AttemptQuestion;
   group: Attempt['groups'][number];
@@ -419,6 +420,8 @@ export function QuestionPanel({
   onSelect: (optionId: 'A' | 'B' | 'C' | 'D') => void;
   onFlag: () => void;
   solution?: { answer: string; selected: string | null };
+  /** The group passage. A group shows it once, above all of its questions. */
+  sharedMaterials?: Attempt['groups'][number]['materials'];
 }) {
   // (P0 fix) Listening questions are editable WHILE listening runs; they lock
   // only when the exam enters reading. This used to disable every option.
@@ -434,11 +437,11 @@ export function QuestionPanel({
   });
   const locked = !lock.editable || !isCurrentPhaseQuestion({ phaseQuestionIds: attempt.timing.phase_question_ids, questionId: question.id });
   const review = ['submitted', 'expired'].includes(attempt.status) ? solution : undefined;
-  const sharedMaterials = group.materials;
+  const materials = sharedMaterials ?? group.materials;
   const displayNumber = attempt.questions.findIndex((item) => item.id === question.id) + 1;
 
   return (
-    <section className="question-panel" data-testid="practice-form" data-question-id={question.id}>
+    <section className="question-panel" data-question-id={question.id}>
       <div className="question-head">
         <div className="question-meta">
           <Tag tone="neutral">{PART_LABEL[question.part] ?? `Part ${question.part}`}</Tag>
@@ -456,7 +459,9 @@ export function QuestionPanel({
         </button>}
       </div>
 
-      <MaterialContent materials={sharedMaterials} questionNumbers={Object.fromEntries(attempt.questions.map((q, index) => [q.id, index + 1]))} />
+      {sharedMaterials ? null : (
+        <MaterialContent materials={materials} questionNumbers={Object.fromEntries(attempt.questions.map((q, index) => [q.id, index + 1]))} />
+      )}
 
       {question.stem ? <MarkdownText className="question-stem" text={question.stem} flow="prose" /> : null}
 
@@ -499,6 +504,74 @@ export function QuestionPanel({
       ) : null}
     </section>
   );
+}
+
+/**
+ * One group on one page: the shared passage is written once and every
+ * question of that group follows below it, so a reader keeps the article in
+ * view while answering.
+ */
+export function GroupPanel({
+  attempt,
+  group,
+  questions,
+  answers,
+  currentQuestionId,
+  readOnly,
+  onSelect,
+  onFlag,
+}: {
+  attempt: Attempt;
+  group: Attempt['groups'][number];
+  questions: AttemptQuestion[];
+  answers: Record<string, { option_id: string | null; flagged: boolean; visited: boolean; dirty: boolean }>;
+  currentQuestionId?: string;
+  readOnly: boolean;
+  onSelect: (question: AttemptQuestion, optionId: 'A' | 'B' | 'C' | 'D') => void;
+  onFlag: (question: AttemptQuestion) => void;
+}) {
+  const sharedMaterials = group.materials ?? [];
+  const numbers = Object.fromEntries(attempt.questions.map((q, index) => [q.id, index + 1]));
+  return (
+    <section
+      className="group-panel"
+      data-testid="practice-form"
+      data-testid-group="group-panel"
+      data-group-id={group.id}
+      data-question-id={currentQuestionId ?? questions[0]?.id}
+    >
+      {sharedMaterials.length ? (
+        <div className="group-panel__material">
+          <MaterialContent materials={sharedMaterials} questionNumbers={numbers} />
+        </div>
+      ) : null}
+      {questions.map((question) => (
+        <div
+          key={question.id}
+          className="group-panel__question"
+          id={questionBlockId(question.id)}
+          data-testid={`question-block-${question.id}`}
+          data-current={question.id === currentQuestionId ? 'true' : 'false'}
+        >
+          <QuestionPanel
+            question={question}
+            group={group}
+            answer={answers[question.id]}
+            readOnly={readOnly}
+            attempt={attempt}
+            sharedMaterials={[]}
+            onSelect={(optionId) => onSelect(question, optionId)}
+            onFlag={() => onFlag(question)}
+          />
+        </div>
+      ))}
+    </section>
+  );
+}
+
+/** The DOM id of a question block; used as the scroll anchor. */
+export function questionBlockId(questionId: string): string {
+  return `question-block-${questionId}`;
 }
 
 function isLabelOnly(text: string, id: string): boolean {

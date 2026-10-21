@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,440
+I wonder who is going to take on the next project, don't you?
+
+2
+00:00:04,385 --> 00:00:07,880
+(A) Sure, I can take it with me today.
+
+3
+00:00:08,945 --> 00:00:12,225
+(B) Sorry, but I am not going that way.
+
+4
+00:00:13,245 --> 00:00:15,960
+(C) It will most likely be Jake.

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,945
+Why don't we drive to the new Chinese restaurant on Spadina Road?
+
+2
+00:00:04,945 --> 00:00:08,665
+(A) Sure, I've been craving Chinese food lately.
+
+3
+00:00:09,840 --> 00:00:12,885
+(B) Lunch with the rest of the staff members.
+
+4
+00:00:14,080 --> 00:00:16,850
+(C) He lived in Hong Kong for a while.

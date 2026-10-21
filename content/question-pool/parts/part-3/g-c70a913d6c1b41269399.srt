@@ -1,0 +1,55 @@
+1
+00:00:00,200 --> 00:00:02,980
+M: Cindy, did you happen to attend the staff meeting today?
+
+2
+00:00:03,620 --> 00:00:06,840
+I was at the factory in Dunham and got back to the office just now.
+
+3
+00:00:08,000 --> 00:00:10,225
+W1: Sorry, Albert, but I missed it as well.
+
+4
+00:00:11,180 --> 00:00:12,010
+M: That's too bad.
+
+5
+00:00:12,450 --> 00:00:15,040
+I was hoping to find out if next year's budget was discussed.
+
+6
+00:00:15,860 --> 00:00:16,660
+Do you know, Joanie?
+
+7
+00:00:17,705 --> 00:00:18,620
+W2: It wasn't.
+
+8
+00:00:18,620 --> 00:00:26,140
+Mr. Richards said discussions regarding it are still ongoing, but it should be covered at this Friday's meeting.
+
+9
+00:00:27,660 --> 00:00:28,240
+M: Oh, no.
+
+10
+00:00:28,690 --> 00:00:30,320
+I'm scheduled to be in Laredo all day.
+
+11
+00:00:31,025 --> 00:00:33,440
+I'll be giving a speech at a marketing conference there.
+
+12
+00:00:34,200 --> 00:00:35,260
+W1: Don't worry about it.
+
+13
+00:00:35,590 --> 00:00:38,640
+I'll take notes and fill you in on anything important you miss.
+
+14
+00:00:39,920 --> 00:00:40,585
+M: Thanks, Cindy.

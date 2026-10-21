@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,170
+Do you recall when we last saw a movie together?
+
+2
+00:00:04,265 --> 00:00:07,520
+(A) Let's go and check it out this weekend.
+
+3
+00:00:08,595 --> 00:00:12,060
+(B) Yes, that sounds like a great idea.
+
+4
+00:00:13,160 --> 00:00:17,020
+(C) It must've been at least a couple of years ago.

@@ -1,0 +1,15 @@
+1
+00:00:00,455 --> 00:00:03,115
+(A) There is a microphone near the speaker.
+
+2
+00:00:04,295 --> 00:00:06,880
+(B) They're speaking to one another.
+
+3
+00:00:08,035 --> 00:00:10,455
+(C) He's ready to take off his shirt.
+
+4
+00:00:11,895 --> 00:00:14,555
+(D) He's admiring the picture on the wall.

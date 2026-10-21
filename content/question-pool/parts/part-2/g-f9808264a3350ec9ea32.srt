@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,760
+Should I take my car, or do you think it would be wiser to take the bus?
+
+2
+00:00:04,945 --> 00:00:08,315
+(A) The boss is a wise man.
+
+3
+00:00:09,260 --> 00:00:12,450
+(B) Let's just hop in a cab instead.
+
+4
+00:00:13,500 --> 00:00:16,315
+(C) It shouldn't take over an hour.

@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:04,980
+W: Jack, I'm sorry to tell you this, but you and I are going to have to work late this evening.
+
+2
+00:00:05,440 --> 00:00:08,960
+The brochures we ordered came in this morning, but there is a problem.
+
+3
+00:00:09,620 --> 00:00:12,920
+Can you believe they forgot to attach our company logo to them?
+
+4
+00:00:13,140 --> 00:00:14,520
+M: You've got to be kidding me.
+
+5
+00:00:15,020 --> 00:00:16,300
+How many brochures are there?
+
+6
+00:00:16,525 --> 00:00:23,460
+W: Well, there are 12 boxes that need to go out first thing tomorrow morning, so you and I are going to have to get them done tonight.
+
+7
+00:00:23,460 --> 00:00:24,780
+M: Are you kidding me?
+
+8
+00:00:24,780 --> 00:00:28,480
+Couldn't we just send them back and have the printing company do the work?

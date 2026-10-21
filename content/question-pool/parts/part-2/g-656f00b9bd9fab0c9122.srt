@@ -1,0 +1,16 @@
+1
+00:00:00,200 --> 00:00:03,940
+Were you planning on making a trip to our head office, or is Mr. King coming
+here?
+
+2
+00:00:05,165 --> 00:00:07,480
+(A) We are going to plan it soon.
+
+3
+00:00:08,780 --> 00:00:11,880
+(B) Mr. King might be the person to talk to.
+
+4
+00:00:13,085 --> 00:00:15,800
+(C) I'm supposed to meet him at his office.

@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:04,950
+M: Ms. Collins is considering restructuring the manner in which we acquire books for the library.
+
+2
+00:00:05,705 --> 00:00:06,250
+W: Why is that?
+
+3
+00:00:06,870 --> 00:00:07,640
+Is there a problem?
+
+4
+00:00:08,285 --> 00:00:08,690
+M: Sort of.
+
+5
+00:00:09,390 --> 00:00:10,230
+Take a look at this graph.
+
+6
+00:00:10,930 --> 00:00:16,820
+The section with the least number of books is also the busiest because patrons are checking them out so much.
+
+7
+00:00:17,990 --> 00:00:21,770
+W: Hmm...We should definitely be spending more money in that case.
+
+8
+00:00:22,390 --> 00:00:24,935
+How soon can we start purchasing more books?
+
+9
+00:00:25,850 --> 00:00:32,715
+M: We've almost spent the money allocated for acquisitions for the year, so we should wait two more months before buying anything new.
+
+10
+00:00:33,530 --> 00:00:38,130
+W: Well, meanwhile, let's compile a list of which books we want to acquire.

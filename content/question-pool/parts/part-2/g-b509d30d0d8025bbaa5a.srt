@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,245
+Where should I put this box of ink cartridges, Ms. Fujimoto?
+
+2
+00:00:04,625 --> 00:00:07,085
+(A) At the local stationery store.
+
+3
+00:00:08,485 --> 00:00:10,765
+(B) Put it in the next room.
+
+4
+00:00:12,005 --> 00:00:14,300
+(C) She is the receptionist.

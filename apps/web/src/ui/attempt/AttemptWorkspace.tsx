@@ -7,17 +7,32 @@ import { Banner, Loading } from '../components';
 import { useAnswerPipeline } from './saveQueue';
 import { useAudioController } from './media';
 import { queueInterruption } from './interruptionDelivery';
-import { AnswerCard, AudioBar, ClosedNotice, Preflight, QuestionPanel, StickyHeader, saveBadgeFor } from './parts';
+import { AnswerCard, AudioBar, ClosedNotice, GroupPanel, Preflight, StickyHeader, questionBlockId, saveBadgeFor } from './parts';
 import { TranscriptPanel } from '../TranscriptPanel';
 import { ActivityStatistics } from '../ActivityStatistics';
 import { useActivity } from './useActivity';
 import { nextEligibleIndex, questionEligible } from './workspaceNavigation';
 import { keepsSameAudioSegment } from './audioSegment';
+import { groupQuestions, nextGroupIndex, prevGroupIndex } from './groupLayout';
 import type { WorkspaceView } from '../WorkspaceViewToggle';
 import { practiceSubtitleContext } from '../subtitleSync';
 
 interface Props { attemptId: string; onSubmitted: (id: string) => void; onExit: () => void }
 const closed = (value: Attempt | null) => !!value && ['submitted', 'expired'].includes(value.status);
+
+/**
+ * Bring a question into view after a jump. The target may sit inside the
+ * group that is already on screen, so scrolling has to happen after the
+ * group re-renders. Motion is skipped when the learner asked for reduced
+ * motion.
+ */
+function scrollToQuestion(questionId: string): void {
+  if (typeof document === 'undefined') return;
+  const target = document.getElementById(questionBlockId(questionId));
+  if (!target) return;
+  const reduced = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
+  target.scrollIntoView({ block: 'nearest', behavior: reduced ? 'auto' : 'smooth' });
+}
 
 export function AttemptWorkspace({ attemptId, onSubmitted, onExit }: Props) {
   const tabId = useMemo(getTabId, []);
@@ -175,6 +190,16 @@ export function AttemptWorkspace({ attemptId, onSubmitted, onExit }: Props) {
     return () => clearTimeout(boundary);
   }, [clock.expired, attempt?.status, attempt?.timing.phase, syncClock]);
 
+  // A jump may land in another group, which only exists after the render
+  // that follows the state change. Scroll once the new group is on screen.
+  useEffect(() => {
+    const current = currentAttempt.current;
+    const question = current?.questions[currentIndex];
+    if (!question) return;
+    const frame = requestAnimationFrame(() => scrollToQuestion(question.id));
+    return () => cancelAnimationFrame(frame);
+  }, [currentIndex]);
+
   const jumpTo = useCallback((index: number) => {
     const current = currentAttempt.current;
     if (!current) return;
@@ -284,6 +309,11 @@ export function AttemptWorkspace({ attemptId, onSubmitted, onExit }: Props) {
     audio.state.durationSeconds > 0 && audio.state.positionSeconds >= audio.state.durationSeconds - 0.25;
   const subtitle = practiceSubtitleContext(attempt, audio.state.queueIndex);
   const group = question ? attempt.groups.find((item) => item.id === question.group_id) : undefined;
+  // One group fills the page, so the page buttons move between groups and the
+  // answer card reaches any question inside the current group.
+  const groupQuestionCount = group ? groupQuestions(attempt, group).length : 0;
+  const prevGroupTarget = prevGroupIndex(attempt, currentIndex);
+  const nextGroupTarget = nextGroupIndex(attempt, currentIndex);
   const answered = Object.values(pipeline.answers).filter((item) => item.option_id !== null).length;
   const flagged = Object.values(pipeline.answers).filter((item) => item.flagged).length;
 
@@ -472,20 +502,22 @@ export function AttemptWorkspace({ attemptId, onSubmitted, onExit }: Props) {
             ) : null}
 
             {question && group ? (
-              <QuestionPanel
-                question={question}
-                group={group}
-                answer={pipeline.answers[question.id]}
-                readOnly={readOnly || submitting || clock.expired}
+              <GroupPanel
                 attempt={attempt}
-                onSelect={(optionId) => {
+                group={group}
+                questions={groupQuestions(attempt, group)}
+                answers={pipeline.answers}
+                currentQuestionId={question.id}
+                readOnly={readOnly || submitting || clock.expired}
+                onSelect={(target, optionId) => {
                   const latest = currentAttempt.current;
-                  if (!latest || ownershipLost.current || readOnly || submitting || clock.expired || !questionEligible(latest, question)) return;
-                  if (!pipeline.selectOption(question.id, optionId)) return;
-                  const next = autoNext ? nextEligibleIndex(latest, currentIndex) : null;
+                  if (!latest || ownershipLost.current || readOnly || submitting || clock.expired || !questionEligible(latest, target)) return;
+                  if (!pipeline.selectOption(target.id, optionId)) return;
+                  const targetIndex = latest.questions.findIndex((item) => item.id === target.id);
+                  const next = autoNext ? nextEligibleIndex(latest, targetIndex) : null;
                   if (next !== null) jumpTo(next);
                 }}
-                onFlag={() => pipeline.toggleFlag(question.id)}
+                onFlag={(target) => pipeline.toggleFlag(target.id)}
               />
             ) : (
               <div className="state-block">
@@ -498,23 +530,24 @@ export function AttemptWorkspace({ attemptId, onSubmitted, onExit }: Props) {
               <button
                 type="button"
                 className="btn btn-secondary"
-                disabled={currentIndex <= 0}
-                onClick={() => jumpTo(currentIndex - 1)}
+                disabled={prevGroupTarget === null}
+                onClick={() => { if (prevGroupTarget !== null) jumpTo(prevGroupTarget); }}
                 data-testid="prev-question"
               >
-                上一题
+                上一组
               </button>
               <span className="nav-position">
                 本轮第 {currentIndex + 1} / {attempt.questions.length} 题
+                {groupQuestionCount > 1 ? `（本组 ${groupQuestionCount} 题）` : ''}
               </span>
               <button
                 type="button"
                 className="btn btn-secondary"
-                disabled={currentIndex >= attempt.questions.length - 1}
-                onClick={() => jumpTo(currentIndex + 1)}
+                disabled={nextGroupTarget === null}
+                onClick={() => { if (nextGroupTarget !== null) jumpTo(nextGroupTarget); }}
                 data-testid="next-question"
               >
-                下一题
+                下一组
               </button>
             </div>
 

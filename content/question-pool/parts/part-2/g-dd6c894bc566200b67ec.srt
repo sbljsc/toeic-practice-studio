@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,120
+Will you be attending the seminar, or do you have too much work?
+
+2
+00:00:04,260 --> 00:00:07,350
+(A) No, I will attend to it later.
+
+3
+00:00:08,620 --> 00:00:11,050
+(B) I will definitely be there.
+
+4
+00:00:12,340 --> 00:00:14,725
+(C) Sorry, but I didn't see it.

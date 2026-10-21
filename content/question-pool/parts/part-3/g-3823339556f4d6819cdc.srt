@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:03,440
+M: Laurie, don't we have a meeting to attend at 3:30 p.m.?
+
+2
+00:00:03,845 --> 00:00:05,500
+W: You didn't read your e-mail yet, Steve?
+
+3
+00:00:06,200 --> 00:00:12,220
+We were all notified that it has been postponed until tomorrow because Mr. Whistler's flight was canceled this morning.
+
+4
+00:00:12,720 --> 00:00:15,200
+M: Oh, I haven't checked my inbox all day long.
+
+5
+00:00:15,775 --> 00:00:17,100
+W: You'd better take a look at it then.
+
+6
+00:00:17,680 --> 00:00:21,345
+That e-mail contains some important information relevant to the meeting.
+
+7
+00:00:21,900 --> 00:00:23,860
+M: Thanks for letting me know about that.
+
+8
+00:00:23,940 --> 00:00:28,760
+You know, since we have some free time now, we ought to finish doing the employee evaluations.
+
+9
+00:00:29,280 --> 00:00:29,900
+W: I agree.
+
+10
+00:00:30,240 --> 00:00:33,100
+I'll collect the files from my office and be back soon.

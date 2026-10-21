@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,800
+Who is good with computers?
+
+2
+00:00:02,975 --> 00:00:05,555
+(A) Yes, it is very good.
+
+3
+00:00:06,800 --> 00:00:09,205
+(B) The software came with it.
+
+4
+00:00:10,480 --> 00:00:13,290
+(C) John is the person you are looking for.

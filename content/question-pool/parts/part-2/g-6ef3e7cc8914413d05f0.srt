@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,020
+Caroline is planning to take the job in New York, isn't she?
+
+2
+00:00:04,345 --> 00:00:07,800
+(A) I think she's still considering her options.
+
+3
+00:00:09,165 --> 00:00:12,780
+(B) It was not planned properly to begin with.
+
+4
+00:00:13,795 --> 00:00:16,300
+(C) They're yours, aren't they?

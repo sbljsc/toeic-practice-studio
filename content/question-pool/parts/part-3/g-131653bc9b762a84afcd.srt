@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:06,765
+M: As you can see, Ms. Bright, the Emerald Room has space for fifty people, so that should be large enough for the seminar you're hosting.
+
+2
+00:00:07,670 --> 00:00:11,425
+W: Actually, we've had more than seventy people sign up so far.
+
+3
+00:00:11,995 --> 00:00:14,925
+It appears as though we may have more than 100 attendees.
+
+4
+00:00:16,485 --> 00:00:18,525
+M: The Diamond Room has a capacity of 150.
+
+5
+00:00:19,525 --> 00:00:23,085
+It's our biggest room, but it's rented out on December 11.
+
+6
+00:00:23,685 --> 00:00:25,100
+W: How about on the tenth?
+
+7
+00:00:25,475 --> 00:00:26,905
+M: It's available the entire day.
+
+8
+00:00:27,265 --> 00:00:29,745
+Perhaps it would be better to book it on an alternative date.
+
+9
+00:00:30,570 --> 00:00:32,865
+W: I pretty much have to, don't I?
+
+10
+00:00:33,650 --> 00:00:37,125
+But I need to speak with my supervisor first to get confirmation.

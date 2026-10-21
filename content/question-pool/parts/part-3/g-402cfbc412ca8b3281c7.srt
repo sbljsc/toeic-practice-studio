@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:04,080
+M: You didn't forget to call the Maintenance Department to take a look at our machine, did you?
+
+2
+00:00:04,375 --> 00:00:10,660
+W: I made the call to Jack as soon as I got into work at 9 this morning, but he said he had many rounds to make today.
+
+3
+00:00:11,260 --> 00:00:14,380
+According to him, the earliest he can come is around 4.
+
+4
+00:00:14,680 --> 00:00:15,500
+M: That's a bit late.
+
+5
+00:00:16,115 --> 00:00:20,780
+I have an appointment with Mr. Smith at 5, and it will take me at least an hour to get there.
+
+6
+00:00:21,460 --> 00:00:23,970
+We need someone here to explain the problem to him.
+
+7
+00:00:24,220 --> 00:00:26,000
+W: My meeting with my client got canceled.
+
+8
+00:00:26,700 --> 00:00:28,540
+I'll stick around and tell Jack about the problem.
+
+9
+00:00:29,260 --> 00:00:31,105
+You go right ahead and meet Mr. Smith.

@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:00,880
+M: Good afternoon.
+
+2
+00:00:00,905 --> 00:00:04,565
+I'm from Waldorf Taxi Trucks with the items you requested.
+
+3
+00:00:04,565 --> 00:00:05,705
+W: Oh, really?
+
+4
+00:00:06,445 --> 00:00:09,005
+I wasn't aware that we were expecting any deliveries.
+
+5
+00:00:09,665 --> 00:00:10,720
+Who did you speak to?
+
+6
+00:00:11,005 --> 00:00:12,705
+M: Her name was Sylvie James.
+
+7
+00:00:13,205 --> 00:00:16,885
+She called us just before lunch today and requested a special order.
+
+8
+00:00:17,525 --> 00:00:21,120
+Let's see I should have the phone order form here somewhere.
+
+9
+00:00:21,590 --> 00:00:21,745
+Ah.
+
+10
+00:00:22,205 --> 00:00:22,720
+Here it is.
+
+11
+00:00:23,240 --> 00:00:29,945
+W: Okay, but Sylvie's out showing some of our clients around our plant site and is not due back for another two hours.
+
+12
+00:00:30,410 --> 00:00:33,485
+Why don't you leave the boxes here and I will sign for it?

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,960
+Who is supposed to show up at the party?
+
+2
+00:00:03,365 --> 00:00:05,980
+(A) Everyone said they'll be there.
+
+3
+00:00:07,125 --> 00:00:09,720
+(B) He's holding it at a banquet hall.
+
+4
+00:00:10,850 --> 00:00:13,640
+(C) Yes, I had a great time there.

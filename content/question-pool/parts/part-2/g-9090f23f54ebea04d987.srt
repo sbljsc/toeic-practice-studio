@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,630
+Are you making the presentation today, or is Mr. Smith going to do it?
+
+2
+00:00:04,755 --> 00:00:08,270
+(A) He is going to be here any minute now.
+
+3
+00:00:08,985 --> 00:00:12,275
+(B) He told me to take care of it today.
+
+4
+00:00:13,260 --> 00:00:16,395
+(C) It is supposed to last until three.

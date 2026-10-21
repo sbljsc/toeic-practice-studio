@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,980
+When is Paul due to arrive here?
+
+2
+00:00:03,160 --> 00:00:06,515
+(A) No, he has not handed it in yet.
+
+3
+00:00:07,480 --> 00:00:10,180
+(B) Next month is the deadline.
+
+4
+00:00:11,360 --> 00:00:14,400
+(C) Let me call him to find out.

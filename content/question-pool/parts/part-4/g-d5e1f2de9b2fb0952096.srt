@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:02,915
+I'd like to welcome you all to this creative writing seminar.
+
+2
+00:00:03,735 --> 00:00:06,215
+We have some wonderful activities for you this evening.
+
+3
+00:00:06,865 --> 00:00:17,195
+The program tonight has been developed by our special guest, John Walkley, the author of that wonderful novel The Smiths and the winner of the Franklin Award for Literature last year.
+
+4
+00:00:17,965 --> 00:00:21,975
+Before John begins the session, I'd like to say a few words about his life.
+
+5
+00:00:22,730 --> 00:00:27,755
+Born in a small, country town in the southwest, he had difficulty finding friends.
+
+6
+00:00:28,175 --> 00:00:33,595
+He began writing at an early age and was soon winning prizes for his poetry and short stories.
+
+7
+00:00:34,415 --> 00:00:37,975
+I can't think of a better person to speak to us tonight about creativity.
+
+8
+00:00:38,575 --> 00:00:40,595
+So please welcome John Walkley.

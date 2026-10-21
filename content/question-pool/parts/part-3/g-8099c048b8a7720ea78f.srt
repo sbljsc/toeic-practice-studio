@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:03,380
+M: Wilma, are you planning to e-mail me those documents anytime soon?
+
+2
+00:00:04,220 --> 00:00:06,040
+The staff meeting is thirty minutes from now.
+
+3
+00:00:06,545 --> 00:00:08,800
+W: I sent them to you more than two hours ago.
+
+4
+00:00:09,400 --> 00:00:10,420
+Didn't you get them?
+
+5
+00:00:10,980 --> 00:00:11,820
+M: Apparently not.
+
+6
+00:00:12,290 --> 00:00:14,880
+I just checked my e-mail, and nothing has arrived all morning.
+
+7
+00:00:15,635 --> 00:00:18,720
+W: We could be having problems with the company-wide computer server.
+
+8
+00:00:19,600 --> 00:00:22,690
+I'll give someone in the Maintenance Department a call right now.
+
+9
+00:00:23,360 --> 00:00:28,060
+M: Okay, but before you do that, how about printing the documents and then bringing them to me?
+
+10
+00:00:28,340 --> 00:00:29,620
+I need to look over them at once.
+
+11
+00:00:30,225 --> 00:00:30,720
+W: No problem.
+
+12
+00:00:31,080 --> 00:00:32,180
+You'll have them in two minutes.

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,610
+Why don't you take a break and stay home for a few days?
+
+2
+00:00:03,700 --> 00:00:06,720
+(A) Thanks, I had a great vacation.
+
+3
+00:00:07,865 --> 00:00:11,740
+(B) I wish I could, but I have too much work.
+
+4
+00:00:12,655 --> 00:00:15,935
+(C) The one here is much stronger.

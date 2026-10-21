@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,830
+Do you want to join me for a game of tennis after work?
+
+2
+00:00:04,330 --> 00:00:06,915
+(A) Thanks, but I'll pass this time.
+
+3
+00:00:07,950 --> 00:00:10,410
+(B) I learned the game a week ago.
+
+4
+00:00:11,580 --> 00:00:14,295
+(C) There will be three of us going.

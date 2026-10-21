@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,795
+When is Harry going to arrive?
+
+2
+00:00:02,985 --> 00:00:05,840
+(A) He had a great time.
+
+3
+00:00:06,780 --> 00:00:09,420
+(B) At Terminal Two.
+
+4
+00:00:10,155 --> 00:00:12,320
+(C) At about four.

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,440
+Did your staff win the game at the company picnic?
+
+2
+00:00:03,620 --> 00:00:05,960
+(A) We have been doing fine.
+
+3
+00:00:07,190 --> 00:00:09,400
+(B) It got rained out.
+
+4
+00:00:10,620 --> 00:00:12,620
+(C) That's what he said.

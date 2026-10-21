@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:03,580
+M: Have you gotten used to the new software John installed on your computer yet?
+
+2
+00:00:03,940 --> 00:00:08,000
+It's supposed to be faster and easier to use than the program that was originally there.
+
+3
+00:00:08,490 --> 00:00:11,480
+W: I don't know because I haven't had the time to use it yet.
+
+4
+00:00:12,060 --> 00:00:14,920
+I've been away on a business trip and just got back this morning.
+
+5
+00:00:15,620 --> 00:00:19,560
+Tell you what, I will try it out this morning and let you know how it is at lunch.
+
+6
+00:00:20,380 --> 00:00:23,780
+I just hope it won't take long for me to learn how to use the program.
+
+7
+00:00:24,230 --> 00:00:25,780
+M: You shouldn't have any problems with it.
+
+8
+00:00:26,245 --> 00:00:28,840
+The command keys are exactly the same as the old program.
+
+9
+00:00:29,430 --> 00:00:29,880
+W: Is that right?
+
+10
+00:00:30,440 --> 00:00:32,785
+I guess I won't have any problems using it then.

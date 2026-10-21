@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:00,595
+Hi.
+
+2
+00:00:00,850 --> 00:00:01,955
+It's nice to see you all.
+
+3
+00:00:02,635 --> 00:00:05,735
+Before we begin the cooking course, let me tell you who I am.
+
+4
+00:00:05,785 --> 00:00:07,625
+Luke Paget is my name.
+
+5
+00:00:08,345 --> 00:00:14,375
+For the past 3 years I've been the leader of a team of innovative chefs working for Holiday Time Resorts.
+
+6
+00:00:15,495 --> 00:00:26,055
+As my main role is to develop new meals, it's a great pleasure to be here and have the opportunity to meet people, especially those who are passionate about food and cooking.
+
+7
+00:00:26,890 --> 00:00:28,515
+Please watch and listen carefully.
+
+8
+00:00:29,470 --> 00:00:34,535
+Should you have any questions, make a note, and then ask them later during the discussion period.

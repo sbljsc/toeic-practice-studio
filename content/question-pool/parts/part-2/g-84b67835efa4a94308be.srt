@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,340
+Who is going to attend the Mr. McKenzie's retirement party?
+
+2
+00:00:04,430 --> 00:00:06,860
+(A) He has not arrived yet.
+
+3
+00:00:08,025 --> 00:00:10,150
+(B) Let's go right now.
+
+4
+00:00:11,445 --> 00:00:13,735
+(C) Everyone except Jill.

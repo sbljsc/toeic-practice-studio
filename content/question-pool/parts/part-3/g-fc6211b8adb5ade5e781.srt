@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:03,390
+M: Excuse me, but I'd like to exchange this shirt I bought last night.
+
+2
+00:00:03,855 --> 00:00:04,490
+W1: Of course, sir.
+
+3
+00:00:04,950 --> 00:00:06,770
+Do you mind my asking what the problem is?
+
+4
+00:00:07,530 --> 00:00:08,095
+M: Not at all.
+
+5
+00:00:08,470 --> 00:00:12,550
+When I arrived home and took it out of the packaging, I noticed this huge tear in it.
+
+6
+00:00:13,265 --> 00:00:15,330
+W1: Wow, I'm terribly sorry about that.
+
+7
+00:00:15,800 --> 00:00:19,070
+You're free to exchange it for anything of equal or lesser value here.
+
+8
+00:00:19,950 --> 00:00:20,970
+May I see your receipt, please?
+
+9
+00:00:21,490 --> 00:00:23,715
+M: I didn't realize you were going to request it.
+
+10
+00:00:23,930 --> 00:00:25,430
+W2: You can let him exchange it, Danielle.
+
+11
+00:00:26,150 --> 00:00:29,920
+I sold him the item yesterday, so I can confirm he bought it here.
+
+12
+00:00:30,290 --> 00:00:31,455
+M: Thanks for your assistance.

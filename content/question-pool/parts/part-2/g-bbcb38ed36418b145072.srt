@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,190
+Would you like to check out a movie or go for a drive somewhere?
+
+2
+00:00:04,385 --> 00:00:07,200
+(A) I didn't see him anyway.
+
+3
+00:00:08,015 --> 00:00:11,105
+(B) He drove all the way here.
+
+4
+00:00:11,905 --> 00:00:14,680
+(C) A movie sounds inviting.

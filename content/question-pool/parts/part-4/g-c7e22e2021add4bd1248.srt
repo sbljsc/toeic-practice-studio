@@ -1,0 +1,23 @@
+1
+00:00:00,200 --> 00:00:04,380
+I can see that this is your first time for treatment here in our office, Mr. Anderson.
+
+2
+00:00:04,975 --> 00:00:08,760
+Would you please take this form to the counter and fill it out as best as you can?
+
+3
+00:00:09,490 --> 00:00:11,440
+If you have any questions, come back to me.
+
+4
+00:00:12,070 --> 00:00:15,040
+We need this information to give you the best treatment possible.
+
+5
+00:00:16,100 --> 00:00:21,140
+After you are done, bring it back to me, and I will place you in the queue to see Dr. Helen Thompson.
+
+6
+00:00:22,300 --> 00:00:25,020
+She should be available in around thirty minutes.

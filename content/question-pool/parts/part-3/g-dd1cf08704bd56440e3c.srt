@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:04,610
+W: Before we board our plane, do you mind if we do some shopping at the duty-free stores?
+
+2
+00:00:05,535 --> 00:00:07,990
+I need to buy some souvenirs for my friends.
+
+3
+00:00:09,000 --> 00:00:09,530
+M: Be my guest.
+
+4
+00:00:10,455 --> 00:00:13,010
+But I've got to head to the gate to speak with somebody there.
+
+5
+00:00:13,590 --> 00:00:14,810
+Take a look at my boarding pass.
+
+6
+00:00:16,035 --> 00:00:19,630
+W: Oh, I can't believe one of the letters in Thomas is missing.
+
+7
+00:00:20,830 --> 00:00:24,950
+M: Yeah, I want to make sure there aren't any problems when it's time to board.
+
+8
+00:00:25,390 --> 00:00:26,890
+Where shall we meet when I'm done?
+
+9
+00:00:27,070 --> 00:00:29,550
+W: How about at that coffee shop over there?
+
+10
+00:00:30,270 --> 00:00:33,340
+After I finish shopping, I'd like something to drink.
+
+11
+00:00:33,810 --> 00:00:34,270
+M: Great.
+
+12
+00:00:34,530 --> 00:00:35,890
+I'll see you in a few minutes.

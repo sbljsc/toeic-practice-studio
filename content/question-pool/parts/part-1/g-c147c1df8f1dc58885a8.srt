@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,330
+(A) She's guiding the cart.
+
+2
+00:00:03,440 --> 00:00:05,860
+(B) She's ready to cross the road.
+
+3
+00:00:07,200 --> 00:00:10,040
+(C) She's loading a box onto the cart.
+
+4
+00:00:11,540 --> 00:00:13,320
+(D) She's sweeping the sidewalk.

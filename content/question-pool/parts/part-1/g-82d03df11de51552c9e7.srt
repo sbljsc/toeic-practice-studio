@@ -1,0 +1,15 @@
+1
+00:00:00,415 --> 00:00:03,055
+(A) She's fixing the wheel of the cart.
+
+2
+00:00:04,195 --> 00:00:07,975
+(B) She's pushing the cart toward the construction area.
+
+3
+00:00:09,235 --> 00:00:12,305
+(C) She's pouring cement onto the ground.
+
+4
+00:00:13,380 --> 00:00:16,655
+(D) She's moving some construction materials.

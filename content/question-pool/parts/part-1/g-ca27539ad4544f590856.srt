@@ -1,0 +1,15 @@
+1
+00:00:00,495 --> 00:00:03,060
+(A) The boat has stopped at sea.
+
+2
+00:00:04,195 --> 00:00:08,005
+(B) The sailboat is being pushed into the water.
+
+3
+00:00:09,235 --> 00:00:12,650
+(C) The boat is resting under the trees.
+
+4
+00:00:13,875 --> 00:00:17,055
+(D) The trees are being cut down at the moment.

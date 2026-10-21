@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,810
+Is Mr. Chen likely going to show up this evening?
+
+2
+00:00:03,660 --> 00:00:06,330
+(A) Most likely not.
+
+3
+00:00:07,240 --> 00:00:09,865
+(B) Yes, it went up.
+
+4
+00:00:10,675 --> 00:00:13,020
+(C) He will show it to me.

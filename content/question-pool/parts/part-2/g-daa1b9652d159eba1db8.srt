@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,405
+Don't you feel like going over to the art gallery after work?
+
+2
+00:00:04,465 --> 00:00:07,680
+(A) Yes, he teaches art for a living.
+
+3
+00:00:08,760 --> 00:00:11,840
+(B) Yes, but I don't think I can tonight.
+
+4
+00:00:12,830 --> 00:00:16,300
+(C) Okay, I could hang the picture in my room.

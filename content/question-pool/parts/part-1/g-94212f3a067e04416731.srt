@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,750
+(A) He's opening the door.
+
+2
+00:00:03,840 --> 00:00:07,070
+(B) He's sitting upright in a chair.
+
+3
+00:00:07,885 --> 00:00:10,340
+(C) He's working with a tool.
+
+4
+00:00:11,625 --> 00:00:14,480
+(D) He's taking off his running shoes.

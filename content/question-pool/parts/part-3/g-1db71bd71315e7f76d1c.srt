@@ -1,0 +1,35 @@
+1
+00:00:00,395 --> 00:00:02,850
+W: Hello, sir, how can I be of service to you today?
+
+2
+00:00:03,335 --> 00:00:06,710
+M: Hi, my name is John Smith, and I am here to check in.
+
+3
+00:00:07,265 --> 00:00:11,095
+I made a reservation for a single room for two nights three days ago.
+
+4
+00:00:11,595 --> 00:00:13,415
+W: Ah... yes, Mr. Smith.
+
+5
+00:00:13,995 --> 00:00:15,015
+We've been expecting you.
+
+6
+00:00:15,380 --> 00:00:19,775
+I can see here that you requested a non-smoking room overlooking Lake Huron.
+
+7
+00:00:20,135 --> 00:00:24,725
+You've also asked for your breakfast meal to be served in your room at 7 a.m. sharp, right?
+
+8
+00:00:25,015 --> 00:00:26,315
+M: Yes, that is correct.
+
+9
+00:00:26,880 --> 00:00:34,055
+I have to make a presentation at a business seminar at 9, so I want to have some time to read over the materials beforehand.

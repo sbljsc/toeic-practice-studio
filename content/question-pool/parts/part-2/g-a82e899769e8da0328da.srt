@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,015
+I could always handwrite the letter.
+
+2
+00:00:03,095 --> 00:00:05,660
+(A) That would seem more personal.
+
+3
+00:00:06,810 --> 00:00:09,580
+(B) Mary wrote the letter this morning.
+
+4
+00:00:10,820 --> 00:00:13,570
+(C) I will hand it to her when I get there.

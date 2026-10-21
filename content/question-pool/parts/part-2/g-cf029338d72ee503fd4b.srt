@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,700
+Who is scheduled to speak first?
+
+2
+00:00:02,860 --> 00:00:05,860
+(A) He is the keynote speaker.
+
+3
+00:00:06,840 --> 00:00:10,445
+(B) Linda Evans is the first on the list.
+
+4
+00:00:11,460 --> 00:00:14,620
+(C) They are scheduled to arrive soon.

@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:03,050
+M: I heard an alarming report from Mr. Davis a few minutes ago.
+
+2
+00:00:03,805 --> 00:00:05,010
+He mentioned that Gordon, Inc.
+
+3
+00:00:05,350 --> 00:00:06,870
+has made a bid for one of our competitors.
+
+4
+00:00:08,070 --> 00:00:12,275
+W: So the rumors that Gordon is thinking of getting involved in our industry are true.
+
+5
+00:00:13,270 --> 00:00:14,325
+M: It appears that way.
+
+6
+00:00:14,730 --> 00:00:17,995
+We've known for a long time that Gordon wants to own a publishing company.
+
+7
+00:00:18,485 --> 00:00:20,895
+W: Anyway, which company is it bidding on?
+
+8
+00:00:21,450 --> 00:00:23,300
+Is it bigger or smaller than us?
+
+9
+00:00:24,180 --> 00:00:27,490
+M: It's the second-largest company in the region according to market share.
+
+10
+00:00:28,390 --> 00:00:34,270
+W: Oh, that will make it just a bit larger than us since we're the third-largest company.

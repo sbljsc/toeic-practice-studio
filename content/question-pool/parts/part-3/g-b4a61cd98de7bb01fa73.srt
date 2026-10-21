@@ -1,0 +1,55 @@
+1
+00:00:00,200 --> 00:00:05,400
+M: As you can see, the kitchen has been redone, and the living room is spacious as well.
+
+2
+00:00:05,810 --> 00:00:06,480
+W: You're right.
+
+3
+00:00:06,770 --> 00:00:10,395
+I really like the large backyard with the swimming pool, too.
+
+4
+00:00:10,790 --> 00:00:12,330
+But what about the price?
+
+5
+00:00:12,650 --> 00:00:15,990
+M: The owner is asking for $220,000.
+
+6
+00:00:16,670 --> 00:00:17,390
+What do you think?
+
+7
+00:00:18,030 --> 00:00:19,835
+Shall I set up a meeting with him?
+
+8
+00:00:20,050 --> 00:00:21,130
+W: I don't think so.
+
+9
+00:00:21,390 --> 00:00:23,050
+That's out of my price range.
+
+10
+00:00:23,490 --> 00:00:27,250
+M: All right, then I can show you something a bit cheaper if you'd like.
+
+11
+00:00:27,590 --> 00:00:29,210
+W: Yes, that would be great.
+
+12
+00:00:29,630 --> 00:00:32,010
+We can go there right now if you have time.
+
+13
+00:00:32,430 --> 00:00:32,650
+M: Sure.
+
+14
+00:00:33,050 --> 00:00:36,295
+It's only about ten minutes away from here by car.

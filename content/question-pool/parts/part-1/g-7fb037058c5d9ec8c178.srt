@@ -1,0 +1,15 @@
+1
+00:00:00,415 --> 00:00:02,835
+(A) One of the women has a hat on.
+
+2
+00:00:03,975 --> 00:00:06,615
+(B) The women are riding their bicycles.
+
+3
+00:00:07,975 --> 00:00:11,240
+(C) The bicyclists are locking up their bikes.
+
+4
+00:00:12,355 --> 00:00:15,565
+(D) They have stopped to get something from the store.

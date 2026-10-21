@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,810
+You have some spare time this morning, don't you?
+
+2
+00:00:03,715 --> 00:00:06,405
+(A) It is ten o'clock now.
+
+3
+00:00:07,495 --> 00:00:10,015
+(B) Yes, in my office.
+
+4
+00:00:10,975 --> 00:00:13,180
+(C) I think so.

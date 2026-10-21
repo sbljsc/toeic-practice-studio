@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,640
+Where do you get your car fixed?
+
+2
+00:00:03,025 --> 00:00:06,240
+(A) I park my car in the underground garage.
+
+3
+00:00:07,405 --> 00:00:10,760
+(B) From a grocery store near my house.
+
+4
+00:00:11,620 --> 00:00:15,065
+(C) Why? Are you having car problems?

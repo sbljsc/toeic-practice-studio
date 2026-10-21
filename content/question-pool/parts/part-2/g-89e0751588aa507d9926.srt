@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,715
+The bonuses will be paid this month, won't they?
+
+2
+00:00:03,820 --> 00:00:05,630
+(A) Yes, they will.
+
+3
+00:00:06,900 --> 00:00:09,925
+(B) No, I paid the bill last month.
+
+4
+00:00:11,180 --> 00:00:13,535
+(C) Payday is this Friday.

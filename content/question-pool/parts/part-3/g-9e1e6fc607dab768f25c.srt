@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:10,250
+W: We're impressed with your prior experience and feel that you have a great deal of potential, so we'd like to hire you for the open position in the Research Department.
+
+2
+00:00:11,450 --> 00:00:15,590
+M: Will I receive both the salary and the benefits we discussed when we met previously?
+
+3
+00:00:16,155 --> 00:00:16,670
+W: That's correct.
+
+4
+00:00:17,230 --> 00:00:19,470
+You'll also get an annual performance bonus.
+
+5
+00:00:20,450 --> 00:00:23,180
+We'd like you to start working on February 1.
+
+6
+00:00:23,870 --> 00:00:29,670
+M: I think that should be possible, but it depends upon my being able to find an apartment since I'll be coming from Cleveland.
+
+7
+00:00:30,330 --> 00:00:35,710
+W: We have an employee who assists new workers who have to move from out of town.
+
+8
+00:00:36,350 --> 00:00:38,750
+M: Could you give me that person's telephone number, please?

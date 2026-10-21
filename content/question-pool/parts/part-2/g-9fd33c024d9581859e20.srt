@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,050
+How much is it to get into the place?
+
+2
+00:00:03,295 --> 00:00:06,670
+(A) There is a ten-dollar cover charge.
+
+3
+00:00:07,655 --> 00:00:10,905
+(B) Sure, we can go there if you'd like.
+
+4
+00:00:11,935 --> 00:00:14,710
+(C) How about going this Saturday?

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,275
+Mr. Suzuki is waiting for the delivery, isn't he?
+
+2
+00:00:03,275 --> 00:00:06,815
+(A) He will be here shortly.
+
+3
+00:00:08,040 --> 00:00:11,255
+(B) No, I don't know him well.
+
+4
+00:00:12,325 --> 00:00:16,255
+(C) Yes, he's downstairs at the lobby now.

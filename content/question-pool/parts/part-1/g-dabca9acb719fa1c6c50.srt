@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,620
+(A) They're setting the table.
+
+2
+00:00:04,120 --> 00:00:07,355
+(B) They're ready to order their meals.
+
+3
+00:00:08,165 --> 00:00:11,240
+(C) They're conversing over a meal.
+
+4
+00:00:12,660 --> 00:00:15,300
+(D) They're talking about their colleagues.

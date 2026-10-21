@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,050
+How many paid vacation days do you get this year?
+
+2
+00:00:04,240 --> 00:00:07,575
+(A) As far as I know, it's two weeks.
+
+3
+00:00:08,720 --> 00:00:12,825
+(B) I will be going to Mexico for two weeks.
+
+4
+00:00:13,905 --> 00:00:17,610
+(C) Yes, I am thinking of doing that as well.

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,115
+Do you know why Ms. O'Brien made her appointment for Monday?
+
+2
+00:00:04,390 --> 00:00:06,615
+(A) I'll call to make a reservation.
+
+3
+00:00:08,360 --> 00:00:10,815
+(B) She's leaving town on Tuesday.
+
+4
+00:00:12,440 --> 00:00:15,075
+(C) For three o'clock this afternoon.

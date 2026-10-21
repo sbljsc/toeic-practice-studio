@@ -1,0 +1,27 @@
+1
+00:00:00,200 --> 00:00:02,135
+M: Samantha, you're running a bit late this morning.
+
+2
+00:00:02,990 --> 00:00:04,495
+W: I had trouble driving here.
+
+3
+00:00:05,075 --> 00:00:13,155
+I normally do a U-turn at the intersection of Maple Street and Forest Avenue, but there was a sign indicating it's not permitted anymore.
+
+4
+00:00:14,475 --> 00:00:20,495
+M: Oh, yeah, the city put it up because several accidents have happened at that intersection in the past few months.
+
+5
+00:00:20,975 --> 00:00:29,135
+W: I wasn't aware of that, so I had to drive straight until I could find a place to turn around, and that was when traffic got bad.
+
+6
+00:00:30,055 --> 00:00:35,855
+M: Well, it's okay to be late today since you didn't know about the sign, but make sure that it doesn't happen again.
+
+7
+00:00:36,485 --> 00:00:37,675
+W: Thanks for understanding.

@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:02,660
+M: I was at the mall and saw this beautiful laptop.
+
+2
+00:00:03,200 --> 00:00:04,475
+I couldn't help but pick it up.
+
+3
+00:00:04,820 --> 00:00:05,890
+Don't you think it's nice?
+
+4
+00:00:06,360 --> 00:00:09,700
+W: Yes, it's a very nice laptop, but why did you buy it?
+
+5
+00:00:09,860 --> 00:00:12,400
+I thought you just picked up a new one a few weeks ago.
+
+6
+00:00:12,660 --> 00:00:18,520
+M: I know, but I was not happy with the keyboard, so I gave it to my brother, and he gave me the money to buy this one.
+
+7
+00:00:18,880 --> 00:00:20,615
+W: You guys must have a lot of money.
+
+8
+00:00:20,960 --> 00:00:23,020
+These laptops cost an arm and a leg.

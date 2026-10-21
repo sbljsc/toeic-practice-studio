@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,025
+(A) The fruit is displayed on the stand.
+
+2
+00:00:04,385 --> 00:00:07,105
+(B) Some food is being cooked in the kitchen.
+
+3
+00:00:08,625 --> 00:00:10,985
+(C) The apples are being picked.
+
+4
+00:00:12,585 --> 00:00:15,645
+(D) There is a basket full of fruit on the table.

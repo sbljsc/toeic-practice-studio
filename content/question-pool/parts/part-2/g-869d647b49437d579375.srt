@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,125
+What was that you said again, Mr. Carlson?
+
+2
+00:00:03,410 --> 00:00:07,615
+(A) Sorry, I am not sure where Mr. Carlson is.
+
+3
+00:00:08,585 --> 00:00:12,510
+(B) Yes, she said it several times already.
+
+4
+00:00:13,545 --> 00:00:16,625
+(C) I said you should send them a check.

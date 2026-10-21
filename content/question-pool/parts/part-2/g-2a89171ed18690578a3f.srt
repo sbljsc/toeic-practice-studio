@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,770
+What's taking her so long?
+
+2
+00:00:02,940 --> 00:00:04,885
+(A) It's longer than that.
+
+3
+00:00:05,910 --> 00:00:07,840
+(B) At three o'clock.
+
+4
+00:00:09,040 --> 00:00:11,200
+(C) She's held up in traffic.

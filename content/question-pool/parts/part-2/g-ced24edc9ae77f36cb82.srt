@@ -1,0 +1,15 @@
+1
+00:00:00,160 --> 00:00:02,580
+Where can I find the person in charge around here?
+
+2
+00:00:03,895 --> 00:00:06,300
+(A) We can charge it on his account.
+
+3
+00:00:07,840 --> 00:00:10,100
+(B) He stepped out for a moment.
+
+4
+00:00:11,145 --> 00:00:13,640
+(C) I will get it for you in a second.

@@ -1,0 +1,55 @@
+1
+00:00:00,200 --> 00:00:00,860
+M: Hello, Ms. Wilson.
+
+2
+00:00:01,700 --> 00:00:02,660
+This is Mark Daniels.
+
+3
+00:00:02,880 --> 00:00:05,580
+I regret to inform you that I'll be a few minutes late for our meeting.
+
+4
+00:00:06,245 --> 00:00:06,980
+W: What's the problem?
+
+5
+00:00:07,480 --> 00:00:08,340
+Are you stuck in traffic?
+
+6
+00:00:09,400 --> 00:00:14,580
+M: No, but I missed the exit for your office, so I had to drive for ten minutes until I could turn around.
+
+7
+00:00:15,220 --> 00:00:16,835
+I should be there in fifteen minutes.
+
+8
+00:00:17,315 --> 00:00:20,920
+W: Okay, but please be aware that I have to leave by 2:30.
+
+9
+00:00:21,605 --> 00:00:23,780
+I'm meeting with the CEO of my firm then.
+
+10
+00:00:24,620 --> 00:00:26,620
+Will you have enough time for the demonstration?
+
+11
+00:00:27,780 --> 00:00:28,560
+M: More than enough.
+
+12
+00:00:29,010 --> 00:00:31,660
+You'll be able to see everything our new laptop can do.
+
+13
+00:00:31,965 --> 00:00:32,160
+W: Great.
+
+14
+00:00:32,645 --> 00:00:33,975
+I'm looking forward to it.

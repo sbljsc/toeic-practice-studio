@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,115
+Why is John smiling like that?
+
+2
+00:00:03,180 --> 00:00:05,915
+(A) He just heard that he got promoted.
+
+3
+00:00:07,080 --> 00:00:10,055
+(B) So that he can take off early today.
+
+4
+00:00:11,280 --> 00:00:13,700
+(C) It's usually like that, I guess.

@@ -1,0 +1,16 @@
+1
+00:00:00,200 --> 00:00:03,725
+Can you give Ron a hand with his work, or do you have to leave for your
+appointment?
+
+2
+00:00:05,180 --> 00:00:08,515
+(A) I don't have to leave until after lunch.
+
+3
+00:00:09,705 --> 00:00:12,465
+(B) Yes, Ron is very helpful to me.
+
+4
+00:00:13,715 --> 00:00:16,645
+(C) I will take him with me to my appointment.

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,155
+Could you show me where the men's sportswear section is?
+
+2
+00:00:04,220 --> 00:00:06,475
+(A) I like sports, too.
+
+3
+00:00:07,760 --> 00:00:10,225
+(B) Go up to the next floor.
+
+4
+00:00:11,540 --> 00:00:13,110
+(C) At 2 o'clock.

@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:01,700
+Attention, all maintenance staff.
+
+2
+00:00:01,880 --> 00:00:04,480
+Please listen carefully to the following important announcement.
+
+3
+00:00:05,800 --> 00:00:10,545
+As you know, today is the day of the special meeting for all maintenance and engineering staff.
+
+4
+00:00:11,015 --> 00:00:20,640
+The meeting will be held at the advertised time of 10:00 a.m. However, there has been a change of venue due to the damage to Building 5 caused by last night's storm.
+
+5
+00:00:21,400 --> 00:00:23,480
+The meeting will now be held in the cafeteria.
+
+6
+00:00:24,040 --> 00:00:30,340
+I repeat, today's meeting will not be held in the Building 5 conference room but has been moved to the cafeteria.
+
+7
+00:00:31,475 --> 00:00:34,380
+That should please many of you because coffee will be available!
+
+8
+00:00:35,320 --> 00:00:41,860
+The meeting time will, however, be shortened in order to allow the repair teams to continue working on the Building 5 roof.
+
+9
+00:00:42,545 --> 00:00:42,800
+Thanks.

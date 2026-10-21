@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:00,525
+M: Hi, Susan.
+
+2
+00:00:00,985 --> 00:00:01,520
+This is Mike.
+
+3
+00:00:02,045 --> 00:00:03,930
+Listen, could you do me a huge favor?
+
+4
+00:00:04,190 --> 00:00:04,745
+W: Well, I'll try.
+
+5
+00:00:05,285 --> 00:00:05,760
+What is it?
+
+6
+00:00:06,020 --> 00:00:09,425
+M: I have an appointment with a new client this afternoon, but I can't make it.
+
+7
+00:00:09,845 --> 00:00:10,730
+Could you do it for me?
+
+8
+00:00:11,125 --> 00:00:14,310
+Another important client has called me in for an emergency meeting.
+
+9
+00:00:14,645 --> 00:00:19,265
+I really have to be out of the office this afternoon, and I can't get back here before 3:00 p.m.
+
+10
+00:00:20,325 --> 00:00:23,565
+W: Well, in that case, of course I'll be happy to take over for you.
+
+11
+00:00:23,565 --> 00:00:27,305
+Why don't you drop by the office later so I can tell you how it went?

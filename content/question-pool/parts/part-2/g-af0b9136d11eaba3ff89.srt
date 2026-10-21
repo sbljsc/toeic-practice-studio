@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,205
+Can you tell John to come and see me when he steps into the office?
+
+2
+00:00:04,500 --> 00:00:07,725
+(A) Yes, he stepped out a minute ago.
+
+3
+00:00:08,680 --> 00:00:11,845
+(B) I think he went to see his doctor.
+
+4
+00:00:12,880 --> 00:00:15,865
+(C) I don't think he's coming back today.

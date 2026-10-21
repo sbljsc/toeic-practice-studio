@@ -1,0 +1,15 @@
+1
+00:00:00,470 --> 00:00:03,325
+(A) The man is leaning over the long table.
+
+2
+00:00:04,490 --> 00:00:07,660
+(B) The man is sorting through the pile of books.
+
+3
+00:00:08,830 --> 00:00:11,930
+(C) The man is stacking the books on the shelves.
+
+4
+00:00:13,090 --> 00:00:16,020
+(D) The man is looking to make a purchase.

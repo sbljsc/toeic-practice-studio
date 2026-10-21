@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:02,960
+M: Will you be making the trip out to Los Angeles next Monday?
+
+2
+00:00:02,960 --> 00:00:09,900
+W: I was planning to, but something has come up, so I was contemplating whether or not I should delay my trip to the week after.
+
+3
+00:00:10,520 --> 00:00:11,350
+Why do you ask?
+
+4
+00:00:11,555 --> 00:00:19,730
+M: My brother who moved to France five years ago is coming to LA next week on a business trip, so I was thinking of going out there to see him.
+
+5
+00:00:20,020 --> 00:00:23,660
+And since I heard you are going, I thought maybe we could drive down together.
+
+6
+00:00:24,340 --> 00:00:25,860
+W: That sounds like a good idea.
+
+7
+00:00:26,340 --> 00:00:30,360
+I do have to make a trip there, and it would be nice to have some company.
+
+8
+00:00:31,240 --> 00:00:36,980
+Hmm...tell you what, I will see what I can do to take the trip next week after all.
+
+9
+00:00:37,280 --> 00:00:40,470
+Let me give you a shout with the details after lunch today.

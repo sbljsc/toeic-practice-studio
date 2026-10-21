@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,740
+Should I put you down for the morning or the afternoon?
+
+2
+00:00:04,100 --> 00:00:06,760
+(A) Three o'clock would be okay with me.
+
+3
+00:00:08,180 --> 00:00:10,900
+(B) Yes, I'd like a morning call, please.
+
+4
+00:00:12,165 --> 00:00:15,000
+(C) Sure ， I could drive down to get you.

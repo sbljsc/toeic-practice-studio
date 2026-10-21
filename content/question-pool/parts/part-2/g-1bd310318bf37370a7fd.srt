@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,600
+Who's taking care of the proofreading?
+
+2
+00:00:03,045 --> 00:00:05,580
+(A) As soon as I finish with this book.
+
+3
+00:00:06,940 --> 00:00:09,240
+(B) It hasn't been assigned yet.
+
+4
+00:00:10,260 --> 00:00:13,080
+(C) Yes, I've read all of his books.

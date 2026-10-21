@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,835
+Aren't you taking off early today?
+
+2
+00:00:02,855 --> 00:00:06,025
+(A) Yes, I usually take it home with me.
+
+3
+00:00:07,140 --> 00:00:09,890
+(B) The traffic is very heavy today.
+
+4
+00:00:10,925 --> 00:00:14,210
+(C) No, I have some things to finish off.

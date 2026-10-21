@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:03,165
+W: I was impressed with the interviewee we met this morning.
+
+2
+00:00:03,885 --> 00:00:07,945
+He has plenty of experience and should be easy to collaborate with.
+
+3
+00:00:08,750 --> 00:00:12,785
+M: The only problem is that Matt Doering can't start working until two months from now.
+
+4
+00:00:13,580 --> 00:00:15,585
+W: Do you think we can afford to wait that long?
+
+5
+00:00:16,325 --> 00:00:21,085
+I suppose we could hire Harry Anderson instead, but he's not as qualified.
+
+6
+00:00:22,365 --> 00:00:24,665
+M: I'm in favor of waiting until Matt can start.
+
+7
+00:00:25,150 --> 00:00:27,625
+In the meantime, we can give extra work to Sylvia.
+
+8
+00:00:28,600 --> 00:00:29,765
+She doesn't mind working overtime.
+
+9
+00:00:30,395 --> 00:00:33,965
+W: All right, then do you want to make the call, or should I?
+
+10
+00:00:34,600 --> 00:00:35,305
+M: Go ahead and do it.
+
+11
+00:00:35,625 --> 00:00:37,185
+Let me know if our offer is accepted.

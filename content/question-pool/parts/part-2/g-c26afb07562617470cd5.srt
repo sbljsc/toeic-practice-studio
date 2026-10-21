@@ -1,0 +1,15 @@
+1
+00:00:00,420 --> 00:00:02,550
+How much is the bus ride to the airport?
+
+2
+00:00:03,565 --> 00:00:05,800
+(A) Thirty minutes from here.
+
+3
+00:00:07,120 --> 00:00:09,240
+(B) One will be leaving soon.
+
+4
+00:00:10,820 --> 00:00:13,120
+(C) Five dollars for adults.

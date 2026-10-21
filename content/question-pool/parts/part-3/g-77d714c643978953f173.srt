@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:04,905
+W: Did you see Nate Houseman's newest book was reviewed in the Peterson Daily today?
+
+2
+00:00:05,260 --> 00:00:05,560
+M: Really?
+
+3
+00:00:06,240 --> 00:00:07,640
+How did the reviewer like it?
+
+4
+00:00:07,780 --> 00:00:11,330
+W: He enjoyed the story, but he pointed out a few problems with the book.
+
+5
+00:00:11,820 --> 00:00:13,500
+Here, take a look at his ratings.
+
+6
+00:00:14,260 --> 00:00:16,380
+M: Hmm...Check out this two-star rating.
+
+7
+00:00:16,720 --> 00:00:19,620
+You know, Nate's already working on the third book in the series.
+
+8
+00:00:20,300 --> 00:00:22,815
+He said he'd submit it for review in two months.
+
+9
+00:00:23,300 --> 00:00:25,640
+W: We'd better have a meeting to discuss this issue.
+
+10
+00:00:26,100 --> 00:00:29,280
+If he can make it better, the entire series will be improved.
+
+11
+00:00:30,160 --> 00:00:30,740
+M: I agree.
+
+12
+00:00:31,080 --> 00:00:33,735
+I'll contact him and find out when he can fly up here.

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,735
+How long will you be on the road today?
+
+2
+00:00:02,760 --> 00:00:05,570
+(A) I'll be back around three.
+
+3
+00:00:06,780 --> 00:00:09,270
+(B) Roughly an hour ago.
+
+4
+00:00:10,360 --> 00:00:13,375
+(C) Yes, I will be driving there.

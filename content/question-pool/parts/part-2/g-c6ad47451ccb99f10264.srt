@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,345
+Do you recall which day I spoke to Jack?
+
+2
+00:00:03,435 --> 00:00:06,915
+(A) Yes, it was a day before you left for New York.
+
+3
+00:00:08,010 --> 00:00:10,620
+(B) Tuesday would be a good day to meet.
+
+4
+00:00:11,730 --> 00:00:14,985
+(C) No, I am not sure what it is called.

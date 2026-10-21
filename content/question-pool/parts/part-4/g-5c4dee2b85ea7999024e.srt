@@ -1,0 +1,31 @@
+1
+00:00:00,385 --> 00:00:04,405
+In addition to our regular menu, I would like to point out the day's Chef Special.
+
+2
+00:00:04,865 --> 00:00:13,305
+All of the menu items are part of a set including a choice of salad or vegetables, a glass of house red or white wine, and a cup of brewed coffee.
+
+3
+00:00:14,100 --> 00:00:16,845
+Chicken, veal, and lamb are all on offer today.
+
+4
+00:00:17,625 --> 00:00:21,105
+The chicken is served in an oven-baked casserole with Middle-Eastern flavors.
+
+5
+00:00:22,045 --> 00:00:27,365
+The veal is pan-fried in olive oil richly flavored with garlic, capers and red peppers.
+
+6
+00:00:28,065 --> 00:00:34,065
+The chef's Tunisian lamb has been marinated overnight in a special sauce and then char grilled to perfection.
+
+7
+00:00:35,045 --> 00:00:39,685
+The vegetables today are new potatoes, carrots and zucchini with butter and fresh herbs.
+
+8
+00:00:40,450 --> 00:00:41,485
+Would you care to order now?

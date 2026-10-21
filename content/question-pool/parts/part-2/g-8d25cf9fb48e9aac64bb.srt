@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,175
+Why is the meeting being delayed?
+
+2
+00:00:03,290 --> 00:00:06,430
+(A) Yes, it's being delayed an hour.
+
+3
+00:00:07,340 --> 00:00:10,300
+(B) In the large conference room.
+
+4
+00:00:11,030 --> 00:00:14,385
+(C) One of the speakers is not here.

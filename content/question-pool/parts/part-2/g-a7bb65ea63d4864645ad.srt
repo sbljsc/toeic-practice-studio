@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,195
+The rain is expected to come down hard this weekend, isn't it?
+
+2
+00:00:04,345 --> 00:00:07,860
+(A) Yes, he is waiting for it now.
+
+3
+00:00:08,780 --> 00:00:11,760
+(B) Yes, but I won't be here.
+
+4
+00:00:12,880 --> 00:00:15,400
+(C) To get away for a while.

@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:02,965
+M1: Dave, were you able to download that app you were telling me about?
+
+2
+00:00:03,300 --> 00:00:05,355
+I'm having some issues getting it on my phone.
+
+3
+00:00:05,980 --> 00:00:09,300
+M2: Are you referring to the one which monitors all public transportation in the city, Jeff?
+
+4
+00:00:09,905 --> 00:00:11,595
+M1: Yeah, that's the one I'm talking about.
+
+5
+00:00:12,400 --> 00:00:15,065
+M2: I tried downloading it last night, but I had a problem as well.
+
+6
+00:00:15,220 --> 00:00:16,350
+I'm not sure what's going on.
+
+7
+00:00:16,960 --> 00:00:23,160
+W: According to Susan, there were some bugs in the programming, so the city has made it unavailable for a while.
+
+8
+00:00:23,605 --> 00:00:25,570
+It should be ready three days from now.
+
+9
+00:00:26,260 --> 00:00:26,645
+M1: Great.
+
+10
+00:00:27,235 --> 00:00:28,945
+I'm looking forward to being able to use it.

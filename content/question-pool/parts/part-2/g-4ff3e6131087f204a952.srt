@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,185
+Where should I go to get this approved?
+
+2
+00:00:03,360 --> 00:00:06,095
+(A) Your best bet is to speak to John.
+
+3
+00:00:07,155 --> 00:00:09,615
+(B) You have to prove it first.
+
+4
+00:00:10,840 --> 00:00:13,025
+(C) I could get it for you.

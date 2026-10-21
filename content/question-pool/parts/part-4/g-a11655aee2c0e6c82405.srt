@@ -1,0 +1,27 @@
+1
+00:00:00,405 --> 00:00:01,925
+Welcome to the Fishing Hole.
+
+2
+00:00:02,225 --> 00:00:05,765
+I'm Natalie, and it's my great pleasure to be your server this evening.
+
+3
+00:00:06,325 --> 00:00:12,520
+I know that you've got your menus already, but I'd like to give you this little flyer featuring the specials of the day.
+
+4
+00:00:13,105 --> 00:00:17,085
+You can see that it has four dishes on it, all of which are outstanding.
+
+5
+00:00:17,785 --> 00:00:23,385
+However, if you ask me, the baked rainbow trout is the best of those four items.
+
+6
+00:00:23,985 --> 00:00:25,810
+You can't go wrong ordering it.
+
+7
+00:00:26,405 --> 00:00:32,465
+I'll be back with some bread in a moment, but if you're ready to order drinks, I can take your order right now.

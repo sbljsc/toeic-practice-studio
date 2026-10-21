@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:02,110
+W: Thank you for visiting the site, Mr. Murphy.
+
+2
+00:00:02,730 --> 00:00:05,210
+I thought you'd like to see how construction is progressing.
+
+3
+00:00:06,110 --> 00:00:08,220
+M1: There aren't any problems right now, are there?
+
+4
+00:00:08,645 --> 00:00:12,890
+W: Some supplies we ordered haven't arrived yet, but they won't be needed until tomorrow.
+
+5
+00:00:13,545 --> 00:00:14,210
+M1: That's good to hear.
+
+6
+00:00:14,880 --> 00:00:17,790
+My associate, Mr. Vernon, has a question he'd like to ask you.
+
+7
+00:00:18,960 --> 00:00:19,330
+M2: That's right.
+
+8
+00:00:20,010 --> 00:00:21,490
+When do you anticipate finishing the work?
+
+9
+00:00:22,150 --> 00:00:24,405
+The deadline for the project is two weeks from today.
+
+10
+00:00:25,050 --> 00:00:26,370
+W: We're going to make it.
+
+11
+00:00:26,390 --> 00:00:28,370
+There's no reason for you to be concerned.
+
+12
+00:00:28,965 --> 00:00:31,650
+M2: Okay, I'll report back to the clients to let them know what you said.

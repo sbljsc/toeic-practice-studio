@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,700
+Would you like to go for lunch together?
+
+2
+00:00:03,175 --> 00:00:05,600
+(A) At the company cafeteria.
+
+3
+00:00:07,135 --> 00:00:10,200
+(B) There are four people in our group.
+
+4
+00:00:11,320 --> 00:00:14,620
+(C) Thank you, but I am too busy today.

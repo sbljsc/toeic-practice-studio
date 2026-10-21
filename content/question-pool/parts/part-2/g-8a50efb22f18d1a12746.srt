@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,980
+Where do I go to pick up the tickets?
+
+2
+00:00:03,160 --> 00:00:05,935
+(A) Try that window over there.
+
+3
+00:00:07,030 --> 00:00:10,250
+(B) Sure, I will pick you up at seven.
+
+4
+00:00:11,345 --> 00:00:14,435
+(C) You need to get up a little earlier.

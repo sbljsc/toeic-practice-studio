@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,840
+Do I have to deliver it in person?
+
+2
+00:00:02,925 --> 00:00:05,580
+(A) No, you can mail it in instead.
+
+3
+00:00:06,985 --> 00:00:09,945
+(B) Yes, he works at the post office.
+
+4
+00:00:11,080 --> 00:00:13,360
+(C) On the first basement floor.

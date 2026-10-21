@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,645
+Did you talk to Cindy this morning or last night?
+
+2
+00:00:04,070 --> 00:00:07,005
+(A) I'm thinking of taking off today.
+
+3
+00:00:08,385 --> 00:00:11,895
+(B) She left a message on my machine.
+
+4
+00:00:12,635 --> 00:00:15,485
+(C) It may not last that long.

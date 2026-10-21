@@ -1,0 +1,27 @@
+1
+00:00:00,200 --> 00:00:00,780
+Good morning.
+
+2
+00:00:00,940 --> 00:00:07,960
+As I'm sure you're aware, the gallery's management committee has requested an engineering survey of the site and its facilities.
+
+3
+00:00:09,100 --> 00:00:22,540
+The aim of this survey is twofold: first, to find remedies for certain serious problems which have resulted in damage to the building and parts of the collection; secondly, to consider how the facilities can be improved.
+
+4
+00:00:23,700 --> 00:00:28,100
+I have to report to you that the structure of the building requires immediate attention.
+
+5
+00:00:28,695 --> 00:00:30,660
+Neglect has resulted in serious damage.
+
+6
+00:00:31,580 --> 00:00:36,440
+I know that the necessary renovations will be expensive and funding is a problem.
+
+7
+00:00:37,040 --> 00:00:43,360
+But my consultants are certain that, if we act now, far more serious and expensive repairs can be avoided.

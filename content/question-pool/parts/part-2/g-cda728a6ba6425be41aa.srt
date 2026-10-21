@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,670
+How did you manage to get the project done on time?
+
+2
+00:00:03,990 --> 00:00:06,520
+(A) It might be a little too late.
+
+3
+00:00:07,610 --> 00:00:09,890
+(B) I work with a great staff.
+
+4
+00:00:11,310 --> 00:00:13,820
+(C) Let's do it tomorrow instead.

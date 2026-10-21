@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:07,680
+M: I was just reading over the sales report and realized that our numbers have taken quite a dip compared to this time last year.
+
+2
+00:00:08,360 --> 00:00:09,760
+What do you think the problem is?
+
+3
+00:00:10,100 --> 00:00:16,780
+W: Well, there are several reasons, but one of the main reasons is that we have lost some of our main players to our competitors.
+
+4
+00:00:17,620 --> 00:00:22,200
+I brought the issue up at our last meeting, but no one really thought that it was all that important.
+
+5
+00:00:23,200 --> 00:00:28,980
+I, on the other hand, feel that we really need to focus our attention on keeping those talented people here.
+
+6
+00:00:29,660 --> 00:00:33,160
+M: In your opinion, what is the main reason people are leaving us?
+
+7
+00:00:33,360 --> 00:00:34,160
+W: It's obvious.
+
+8
+00:00:34,400 --> 00:00:37,440
+We need to compensate them with higher pay and benefits.

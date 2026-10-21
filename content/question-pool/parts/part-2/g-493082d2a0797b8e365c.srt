@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,070
+Where do you usually get your hair done?
+
+2
+00:00:03,110 --> 00:00:05,785
+(A) From a hairstylist I know.
+
+3
+00:00:06,920 --> 00:00:09,495
+(B) I don't like my hair long.
+
+4
+00:00:10,740 --> 00:00:12,925
+(C) Usually once a month.

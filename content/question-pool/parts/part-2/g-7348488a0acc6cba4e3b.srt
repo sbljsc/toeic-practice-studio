@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,585
+Should I sign my name on the first page or all the pages?
+
+2
+00:00:04,540 --> 00:00:07,420
+(A) I already told you his name.
+
+3
+00:00:08,480 --> 00:00:11,105
+(B) Just sign the last one.
+
+4
+00:00:12,100 --> 00:00:14,930
+(C) The sign is rather noticeable.

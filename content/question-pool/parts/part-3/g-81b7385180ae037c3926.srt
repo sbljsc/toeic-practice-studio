@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:03,795
+M: I heard we're going to be sending some employees to the trade fair next week.
+
+2
+00:00:04,525 --> 00:00:04,995
+W: That's right.
+
+3
+00:00:05,575 --> 00:00:11,355
+Mr. Wilson decided to rent a booth since so many international firms will be represented there.
+
+4
+00:00:12,255 --> 00:00:13,135
+M: I'd love to go.
+
+5
+00:00:13,855 --> 00:00:17,790
+I've been to several trade fairs in the past, so I'm familiar with what happens at them.
+
+6
+00:00:18,495 --> 00:00:22,870
+W: You'd better drop by his department and talk to him soon in that case.
+
+7
+00:00:23,315 --> 00:00:26,655
+All attendees must be registered by the end of the day tomorrow.
+
+8
+00:00:27,695 --> 00:00:28,995
+M: I wasn't aware of that.
+
+9
+00:00:29,095 --> 00:00:30,030
+Thanks for letting me know.
+
+10
+00:00:30,575 --> 00:00:31,475
+W: No problem.

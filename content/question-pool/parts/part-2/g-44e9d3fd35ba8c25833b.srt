@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,885
+How long is the ticket valid for?
+
+2
+00:00:03,215 --> 00:00:05,545
+(A) Check the expiration date.
+
+3
+00:00:06,965 --> 00:00:09,685
+(B) It's valued at two dollars.
+
+4
+00:00:10,865 --> 00:00:13,500
+(C) Not too much longer, I hope.

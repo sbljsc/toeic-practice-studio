@@ -1,0 +1,15 @@
+1
+00:00:00,385 --> 00:00:03,665
+Why don't you ask the boss to write a letter of recommendation for you?
+
+2
+00:00:04,985 --> 00:00:07,020
+(A) At the post office.
+
+3
+00:00:08,010 --> 00:00:10,080
+(B) I already did.
+
+4
+00:00:11,150 --> 00:00:13,600
+(C) From a college friend.

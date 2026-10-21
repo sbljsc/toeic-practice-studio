@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,840
+Have you had a chance to say hello to our new designer?
+
+2
+00:00:04,020 --> 00:00:07,125
+(A) She was recruited from another company.
+
+3
+00:00:08,160 --> 00:00:11,185
+(B) That's great. Thank you very much.
+
+4
+00:00:12,215 --> 00:00:15,265
+(C) No, but I would like to meet her.

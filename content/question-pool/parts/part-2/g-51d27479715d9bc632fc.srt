@@ -1,0 +1,15 @@
+1
+00:00:00,425 --> 00:00:02,470
+You walk to the office every morning, don't you?
+
+2
+00:00:03,575 --> 00:00:06,895
+(A) Sorry, but he has not shown up to work yet.
+
+3
+00:00:08,125 --> 00:00:11,370
+(B) Yes, I live five minutes away from here.
+
+4
+00:00:12,585 --> 00:00:15,220
+(C) Did you try calling him at home?

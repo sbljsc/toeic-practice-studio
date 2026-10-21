@@ -1,0 +1,51 @@
+1
+00:00:00,460 --> 00:00:01,360
+M: Hello, Ms. Mercer.
+
+2
+00:00:01,840 --> 00:00:04,360
+This is James Murdock from Speedy Auto Mechanics.
+
+3
+00:00:04,715 --> 00:00:06,480
+The work on your vehicle has been completed.
+
+4
+00:00:07,010 --> 00:00:08,020
+W: That's excellent news.
+
+5
+00:00:08,980 --> 00:00:13,940
+Unfortunately, I'm going to be in meetings all day, so I can't pick it up until tomorrow.
+
+6
+00:00:14,460 --> 00:00:18,460
+M: If you give me your office address, I can have someone drop it off there.
+
+7
+00:00:18,915 --> 00:00:19,880
+W: Would you do that for me?
+
+8
+00:00:20,500 --> 00:00:22,000
+I'd really appreciate it.
+
+9
+00:00:22,120 --> 00:00:24,475
+I work at 983 Emerson Lane.
+
+10
+00:00:25,105 --> 00:00:27,820
+M: All right, your car should be there in around an hour.
+
+11
+00:00:28,240 --> 00:00:30,240
+I'll have the driver call you when he arrives.
+
+12
+00:00:30,740 --> 00:00:31,080
+W: Great.
+
+13
+00:00:31,760 --> 00:00:34,540
+And if he can give me the bill then, I'd appreciate it.

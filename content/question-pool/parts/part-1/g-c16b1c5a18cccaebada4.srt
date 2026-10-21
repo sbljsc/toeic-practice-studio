@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,165
+(A) They're hurrying to catch a plane.
+
+2
+00:00:03,400 --> 00:00:05,660
+(B) They're being led to the airplane.
+
+3
+00:00:07,560 --> 00:00:09,680
+(C) They're waiting for their luggage.
+
+4
+00:00:11,240 --> 00:00:13,940
+(D) They're standing in line with their bags.

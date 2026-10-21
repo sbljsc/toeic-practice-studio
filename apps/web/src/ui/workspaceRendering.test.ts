@@ -41,6 +41,113 @@ test('live QuestionPanel refuses correctness decorations even if supplied a solu
   assert.match(html, /标记本题/); assert.doesNotMatch(html, /清空本题/);
 });
 
+test('a group renders its passage once with every question of that group below it', () => {
+  const value = fixture();
+  value.questions = [
+    { ...value.questions[0], id: 'q1', group_id: 'g', stem: 'First question' },
+    { ...value.questions[0], id: 'q2', group_id: 'g', stem: 'Second question' },
+  ];
+  value.groups = [{ id: 'g', materials: [{ kind: 'text', text: 'The shared passage.' }] }];
+  const html = renderToStaticMarkup(createElement(parts.GroupPanel, {
+    attempt: value,
+    group: value.groups[0],
+    questions: value.questions,
+    answers: { q1: answer, q2: answer },
+    currentQuestionId: 'q1',
+    readOnly: false,
+    onSelect() {},
+    onFlag() {},
+  }));
+  // The passage appears once, not once per question.
+  assert.equal(html.match(/The shared passage\./g)?.length, 1);
+  assert.equal(html.match(/group-panel__question/g)?.length, 2);
+  assert.match(html, /First question/);
+  assert.match(html, /Second question/);
+  assert.match(html, /第 1 题/);
+  assert.match(html, /第 2 题/);
+});
+
+test('the group container owns the practice form and the current question', () => {
+  const value = fixture();
+  value.questions = [
+    { ...value.questions[0], id: 'q1', group_id: 'g', stem: 'First question' },
+    { ...value.questions[0], id: 'q2', group_id: 'g', stem: 'Second question' },
+  ];
+  value.groups = [{ id: 'g', materials: [] }];
+  const html = renderToStaticMarkup(createElement(parts.GroupPanel, {
+    attempt: value,
+    group: value.groups[0],
+    questions: value.questions,
+    answers: { q1: answer, q2: answer },
+    currentQuestionId: 'q2',
+    readOnly: false,
+    onSelect() {},
+    onFlag() {},
+  }));
+  // Exactly one practice form: the group. Each question keeps its own block.
+  assert.equal(html.match(/data-testid="practice-form"/g)?.length, 1);
+  assert.match(html, /data-question-id="q2"/);
+  assert.match(html, /data-testid="question-block-q1"/);
+  assert.match(html, /data-testid="question-block-q2"/);
+  // The current question is the one marked as current.
+  assert.match(html, /data-testid="question-block-q2"[^>]*data-current="true"/);
+  assert.match(html, /data-testid="question-block-q1"[^>]*data-current="false"/);
+});
+
+test('every question of a group answers and flags on its own', () => {
+  const value = fixture();
+  value.questions = [
+    { ...value.questions[0], id: 'q1', group_id: 'g', stem: 'First question' },
+    { ...value.questions[0], id: 'q2', group_id: 'g', stem: 'Second question' },
+  ];
+  value.groups = [{ id: 'g', materials: [] }];
+  const html = renderToStaticMarkup(createElement(parts.GroupPanel, {
+    attempt: value,
+    group: value.groups[0],
+    questions: value.questions,
+    answers: { q1: answer, q2: answer },
+    currentQuestionId: 'q1',
+    readOnly: false,
+    onSelect() {},
+    onFlag() {},
+  }));
+  for (const id of ['q1', 'q2']) {
+    for (const option of ['A', 'B', 'C', 'D']) {
+      assert.match(html, new RegExp(`data-testid="option-${id}-${option}"`));
+    }
+    assert.match(html, new RegExp(`data-testid="question-block-${id}"`));
+  }
+  // Each question keeps its own flag button.
+  assert.equal(html.match(/data-testid="flag-button"/g)?.length, 2);
+});
+
+test('a group with no passage renders its questions without a material box', () => {
+  const value = fixture();
+  value.questions = [
+    { ...value.questions[0], id: 'q1', group_id: 'g', stem: 'First question' },
+    { ...value.questions[0], id: 'q2', group_id: 'g', stem: 'Second question' },
+  ];
+  value.groups = [{ id: 'g', materials: [] }];
+  const html = renderToStaticMarkup(createElement(parts.GroupPanel, {
+    attempt: value,
+    group: value.groups[0],
+    questions: value.questions,
+    answers: {},
+    currentQuestionId: 'q1',
+    readOnly: false,
+    onSelect() {},
+    onFlag() {},
+  }));
+  assert.doesNotMatch(html, /group-panel__material/);
+  assert.match(html, /First question/);
+  assert.match(html, /Second question/);
+});
+
+test('the scroll anchor of a question is stable and unique', () => {
+  assert.equal(parts.questionBlockId('q-abc'), 'question-block-q-abc');
+  assert.notEqual(parts.questionBlockId('q-abc'), parts.questionBlockId('q-abd'));
+});
+
 test('question stems and options share safe Markdown reflow inside their real controls', () => {
   const value = fixture();
   value.questions[0].stem = 'Which **service** will the company\nprovide?\n\nChoose one.';

@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:05,400
+M: I want to start investing some money toward my retirement years, but I am not sure what would be best.
+
+2
+00:00:06,060 --> 00:00:08,800
+Didn't you tell me that you know of someone who was working in the field?
+
+3
+00:00:09,260 --> 00:00:11,580
+W: Yes, my brother is an investment manager.
+
+4
+00:00:12,060 --> 00:00:14,460
+He helps people make the right investment choices.
+
+5
+00:00:14,760 --> 00:00:17,560
+Do you want me to call him and set up an appointment for you?
+
+6
+00:00:18,060 --> 00:00:18,280
+M: Yes.
+
+7
+00:00:18,765 --> 00:00:19,160
+Can you?
+
+8
+00:00:19,860 --> 00:00:22,405
+I would really appreciate it if you could do it right away.
+
+9
+00:00:22,940 --> 00:00:28,750
+In fact, I am going to be in my office all day today, so do you think you could have him call me directly here?
+
+10
+00:00:28,985 --> 00:00:33,920
+W: Sorry, Jack, but he went out of town on business and won't be coming back until late this evening.
+
+11
+00:00:34,560 --> 00:00:36,740
+I will give him a shout the first thing tomorrow morning.

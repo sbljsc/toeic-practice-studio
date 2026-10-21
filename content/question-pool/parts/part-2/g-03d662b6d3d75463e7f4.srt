@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,545
+Would you care to join us for some tea at the executive lounge?
+
+2
+00:00:04,740 --> 00:00:07,780
+(A) Sure, I can teach you later.
+
+3
+00:00:08,685 --> 00:00:11,330
+(B) Normally, at this time.
+
+4
+00:00:12,345 --> 00:00:14,765
+(C) I will be right with you.

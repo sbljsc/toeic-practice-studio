@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:03,575
+M: Hi, I saw a for-rent sign on your lobby window.
+
+2
+00:00:04,455 --> 00:00:06,240
+I am looking for a two-bedroom apartment.
+
+3
+00:00:06,695 --> 00:00:07,595
+W: You are in luck.
+
+4
+00:00:08,055 --> 00:00:14,475
+We do have an available apartment for rent on the fifth floor, and I think it may be exactly what you're looking for.
+
+5
+00:00:14,765 --> 00:00:17,775
+It has two bedrooms, and the rent is quite reasonable.
+
+6
+00:00:18,175 --> 00:00:24,135
+In fact, I don't think you will be able to find a place like this for a price this low anywhere near here.
+
+7
+00:00:24,575 --> 00:00:24,935
+M: Really?
+
+8
+00:00:25,370 --> 00:00:27,295
+Do you think I can take a look at it right now?
+
+9
+00:00:27,815 --> 00:00:29,775
+I really am in a hurry to find a place.
+
+10
+00:00:30,075 --> 00:00:30,855
+W: Of course.
+
+11
+00:00:31,195 --> 00:00:33,585
+Just give me a second, and I will get the key.

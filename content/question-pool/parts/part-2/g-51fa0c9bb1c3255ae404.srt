@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,350
+Isn't there an additional charge to send it by express mail?
+
+2
+00:00:04,105 --> 00:00:08,000
+(A) No, everything is included in the cost.
+
+3
+00:00:09,265 --> 00:00:12,340
+(B) I will charge it on my credit card.
+
+4
+00:00:13,480 --> 00:00:16,860
+(C) Yes, there will be a couple more people.

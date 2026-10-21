@@ -1,0 +1,55 @@
+1
+00:00:00,200 --> 00:00:02,330
+W: Thank you for calling Wendigo Rental Cars.
+
+2
+00:00:03,230 --> 00:00:04,570
+How may I be of assistance?
+
+3
+00:00:05,790 --> 00:00:06,050
+M: Hello.
+
+4
+00:00:06,680 --> 00:00:08,180
+My name is Maurice Dumond.
+
+5
+00:00:08,565 --> 00:00:15,450
+I made a reservation with the booking code 8570-49AA, but I'd like to change it.
+
+6
+00:00:15,820 --> 00:00:17,090
+W: Of course, Mr. Dumond.
+
+7
+00:00:17,675 --> 00:00:21,870
+You're listed as having reserved a sedan from July 10 to 15.
+
+8
+00:00:22,530 --> 00:00:23,750
+What would you like to alter?
+
+9
+00:00:24,310 --> 00:00:30,310
+M: I need a larger vehicle that can fit seven people, but I'm not permitted to spend more than $65 a day.
+
+10
+00:00:30,870 --> 00:00:31,490
+W: Good news.
+
+11
+00:00:31,890 --> 00:00:34,310
+We have one type of vehicle that fits your request.
+
+12
+00:00:34,670 --> 00:00:36,150
+Will you be picking it up at the airport?
+
+13
+00:00:36,830 --> 00:00:37,555
+M: That's correct.
+
+14
+00:00:37,830 --> 00:00:41,790
+My flight's arriving at 10 a.m., so I'll probably get the car around noon.

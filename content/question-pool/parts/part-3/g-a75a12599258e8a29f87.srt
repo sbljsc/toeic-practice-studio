@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:04,180
+W: Tom, isn't it about time that you should have heard something about your promotion?
+
+2
+00:00:04,180 --> 00:00:08,295
+It's been a couple of weeks since the boss first mentioned it to you, hasn't it?
+
+3
+00:00:08,700 --> 00:00:12,530
+M: The announcement will be posted on the company notice board after lunch today.
+
+4
+00:00:13,000 --> 00:00:14,580
+I am starting to feel a bit nervous.
+
+5
+00:00:15,120 --> 00:00:16,820
+W: Yeah, I guess you would.
+
+6
+00:00:17,220 --> 00:00:17,980
+But you know what?
+
+7
+00:00:18,400 --> 00:00:19,580
+Don't worry too much.
+
+8
+00:00:19,800 --> 00:00:21,680
+I am certain that you will get the position.
+
+9
+00:00:22,200 --> 00:00:27,420
+I mean, realistically speaking, there isn't anyone in our office who can do the job that you do.
+
+10
+00:00:27,760 --> 00:00:28,720
+M: You are too kind.
+
+11
+00:00:29,060 --> 00:00:32,080
+Let's just hope that management feels the same way as you do.

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,300
+David Richardson used to be one of our customers, wasn't he?
+
+2
+00:00:04,350 --> 00:00:07,870
+(A) Yes, until he moved to another city.
+
+3
+00:00:08,740 --> 00:00:11,620
+(B) He often uses it at the workplace.
+
+4
+00:00:13,360 --> 00:00:16,200
+(C) Yes, at the Customs Office.

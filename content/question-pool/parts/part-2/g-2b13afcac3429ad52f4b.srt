@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,130
+Should we finish what we're doing or go for lunch first?
+
+2
+00:00:04,260 --> 00:00:06,920
+(A) They're doing it now.
+
+3
+00:00:08,100 --> 00:00:11,060
+(B) Let's get this over with first.
+
+4
+00:00:12,180 --> 00:00:14,760
+(C) Some sandwiches and drinks.

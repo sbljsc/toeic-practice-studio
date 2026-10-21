@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,935
+Does Peter know that Mr. Kim knows why he was late to the meeting?
+
+2
+00:00:05,355 --> 00:00:07,875
+(A) He's been informed.
+
+3
+00:00:08,875 --> 00:00:11,790
+(B) I was five minutes late.
+
+4
+00:00:12,575 --> 00:00:14,935
+(C) He was stuck in traffic.

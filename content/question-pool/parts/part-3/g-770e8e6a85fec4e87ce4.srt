@@ -1,0 +1,51 @@
+1
+00:00:00,200 --> 00:00:01,920
+W: I've got some outstanding news.
+
+2
+00:00:02,700 --> 00:00:09,180
+The inspector gave my new café a passing grade, so now I have permission to open it for business.
+
+3
+00:00:10,010 --> 00:00:11,180
+M: I'm so happy for you.
+
+4
+00:00:11,840 --> 00:00:13,910
+When is the grand opening scheduled for?
+
+5
+00:00:14,330 --> 00:00:14,940
+W: This Friday.
+
+6
+00:00:15,395 --> 00:00:18,020
+Why don't you stop by if you have some time?
+
+7
+00:00:18,700 --> 00:00:22,880
+Drinks will be half off, and there will be live entertainment all day long.
+
+8
+00:00:23,555 --> 00:00:24,055
+M: Okay.
+
+9
+00:00:24,600 --> 00:00:26,245
+I'll visit sometime after work.
+
+10
+00:00:26,725 --> 00:00:27,940
+Where exactly is it located?
+
+11
+00:00:28,770 --> 00:00:31,520
+W: It's on the corner of Macon Street and Bedford Drive.
+
+12
+00:00:32,320 --> 00:00:34,635
+It's right beside the big drugstore.
+
+13
+00:00:35,240 --> 00:00:37,485
+M: Oh, I know exactly where it is.

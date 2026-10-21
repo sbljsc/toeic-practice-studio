@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,125
+Why did Mr. Owens decide to leave?
+
+2
+00:00:03,280 --> 00:00:06,165
+(A) He got a better offer elsewhere.
+
+3
+00:00:07,180 --> 00:00:10,050
+(B) Mr. Owens will be here soon.
+
+4
+00:00:11,070 --> 00:00:13,930
+(C) Okay, I will give him a call.

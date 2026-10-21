@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,775
+Are you going to take the bus to Chicago?
+
+2
+00:00:03,475 --> 00:00:05,895
+(A) The boss told me to.
+
+3
+00:00:06,975 --> 00:00:09,515
+(B) To pick up someone.
+
+4
+00:00:10,340 --> 00:00:13,055
+(C) No, I am going to drive.

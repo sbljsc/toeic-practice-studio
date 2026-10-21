@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:03,535
+M: Ms. Hutchinson, here are the blueprints for the Desmond Building.
+
+2
+00:00:04,375 --> 00:00:06,075
+Catie and I finished them a moment ago.
+
+3
+00:00:06,815 --> 00:00:07,935
+We hope you like them.
+
+4
+00:00:08,075 --> 00:00:12,315
+W: I'm glad you finished, but you're running way behind schedule, Hans.
+
+5
+00:00:12,315 --> 00:00:18,055
+The final design is due a week from today, and we've only completed the second stage.
+
+6
+00:00:18,580 --> 00:00:19,455
+M: I'm terribly sorry.
+
+7
+00:00:20,180 --> 00:00:23,435
+I'm sure that if we work hard, we can finish on schedule though.
+
+8
+00:00:24,275 --> 00:00:29,855
+W: Well, it's my job to examine the plans, but I'm flying to Toronto on business tomorrow.
+
+9
+00:00:30,535 --> 00:00:34,495
+I have no choice but to call the client to request an extension.
+
+10
+00:00:35,395 --> 00:00:36,315
+M: When are you returning?
+
+11
+00:00:36,705 --> 00:00:37,855
+W: Three days from now.
+
+12
+00:00:38,335 --> 00:00:41,215
+So we can't initiate the next step until then.

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,540
+When are we getting together?
+
+2
+00:00:02,620 --> 00:00:04,710
+(A) At John's house.
+
+3
+00:00:05,840 --> 00:00:08,150
+(B) After work at six.
+
+4
+00:00:09,280 --> 00:00:11,220
+(C) For his birthday.

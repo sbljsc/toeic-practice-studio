@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:04,575
+Are you planning to go to Mr. Brown's retirement party this evening?
+
+2
+00:00:05,900 --> 00:00:08,775
+(A) He retired a year ago.
+
+3
+00:00:09,720 --> 00:00:12,800
+(B) Yes, but I will be late.
+
+4
+00:00:13,680 --> 00:00:16,030
+(C) At the big plant.

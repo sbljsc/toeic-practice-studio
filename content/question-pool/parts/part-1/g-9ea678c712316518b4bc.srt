@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,405
+(A) The computer monitor is under the desk.
+
+2
+00:00:04,495 --> 00:00:06,940
+(B) The shelves are filled with books.
+
+3
+00:00:08,405 --> 00:00:12,200
+(C) There are books neatly arranged on top of the desk.
+
+4
+00:00:13,800 --> 00:00:16,495
+(D) Papers are stacked on the floor.

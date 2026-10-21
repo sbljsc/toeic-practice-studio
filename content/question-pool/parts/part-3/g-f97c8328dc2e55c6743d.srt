@@ -1,0 +1,51 @@
+1
+00:00:00,200 --> 00:00:00,920
+M: Hello, Ms. Loomis.
+
+2
+00:00:01,675 --> 00:00:02,880
+This is Brandon Carter calling.
+
+3
+00:00:03,620 --> 00:00:05,860
+The items you ordered from us on Monday have just arrived.
+
+4
+00:00:07,270 --> 00:00:08,380
+W: That's surprising news.
+
+5
+00:00:08,920 --> 00:00:12,520
+They weren't supposed to arrive until sometime next week.
+
+6
+00:00:13,800 --> 00:00:20,240
+M: One of our employees visited the warehouse this morning, so he picked up all the items and brought everything back in his truck.
+
+7
+00:00:20,900 --> 00:00:21,500
+W: Wonderful.
+
+8
+00:00:22,200 --> 00:00:24,520
+You even got the couch and armchair I ordered?
+
+9
+00:00:25,760 --> 00:00:26,315
+M: Of course.
+
+10
+00:00:26,740 --> 00:00:31,360
+If you're at home today, we can deliver the shipment to you anytime between two and six.
+
+11
+00:00:32,255 --> 00:00:33,780
+W: I'll be home by five o'clock.
+
+12
+00:00:34,310 --> 00:00:34,580
+M: Great.
+
+13
+00:00:35,160 --> 00:00:35,840
+I'll make the arrangements.

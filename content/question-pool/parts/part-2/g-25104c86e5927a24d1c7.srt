@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,755
+When should I be expecting you?
+
+2
+00:00:03,160 --> 00:00:05,115
+(A) How's Friday for you?
+
+3
+00:00:06,240 --> 00:00:08,210
+(B) I should be there.
+
+4
+00:00:09,480 --> 00:00:11,930
+(C) Yes, he is expecting you.

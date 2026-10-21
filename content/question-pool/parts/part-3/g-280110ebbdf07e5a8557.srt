@@ -1,0 +1,31 @@
+1
+00:00:00,580 --> 00:00:09,460
+W: I need to step out for a moment because I parked my car on Peterson Road this morning, but there is no parking there between the hours of 2 and 4 on weekdays.
+
+2
+00:00:09,840 --> 00:00:13,360
+I am going to have to drive all the way to Jane Road and park there.
+
+3
+00:00:14,175 --> 00:00:20,500
+M: You know, instead of trying to find a spot on Jane Road, you should just park your car in the lot at the supermarket on College Street.
+
+4
+00:00:21,360 --> 00:00:24,005
+It's free, and it's not too far to walk here from there.
+
+5
+00:00:24,340 --> 00:00:25,380
+W: I guess you are right.
+
+6
+00:00:25,860 --> 00:00:29,460
+I could leave my car there and not have to worry about moving it again.
+
+7
+00:00:30,005 --> 00:00:30,320
+M: You should.
+
+8
+00:00:30,880 --> 00:00:33,340
+I always do, and I haven't had any problems yet.

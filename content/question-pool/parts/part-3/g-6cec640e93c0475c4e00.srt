@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:02,935
+W: The copier has been on the blink for a few days.
+
+2
+00:00:03,205 --> 00:00:05,815
+I called you guys last week to come and take a look.
+
+3
+00:00:06,440 --> 00:00:07,475
+What took you so long?
+
+4
+00:00:08,040 --> 00:00:15,275
+M: I'm terribly sorry, but some of our technicians have suddenly come down with terrible colds, and I have been terribly busy running around.
+
+5
+00:00:15,970 --> 00:00:18,975
+Anyway, did you check and see if any paper is jammed inside?
+
+6
+00:00:19,495 --> 00:00:23,355
+W: Yes, that's the first thing I did, and that's not the problem.
+
+7
+00:00:23,770 --> 00:00:25,015
+And it's not the toner either.
+
+8
+00:00:25,675 --> 00:00:27,875
+I'm afraid the problem may be more serious.
+
+9
+00:00:28,275 --> 00:00:28,675
+M: All right.
+
+10
+00:00:28,875 --> 00:00:30,975
+Let me take a look and see what the problem is.

@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:02,040
+M: Aren't you supposed to be in Boston right now?
+
+2
+00:00:02,535 --> 00:00:04,900
+I thought you left to attend the business conference yesterday?
+
+3
+00:00:05,440 --> 00:00:07,840
+W: I did, and I came back late last night.
+
+4
+00:00:08,420 --> 00:00:14,200
+It was only a day affair, and I took the last flight out because I have a meeting with Mr. Jones this afternoon.
+
+5
+00:00:14,915 --> 00:00:20,200
+I could have taken a flight out this morning, but I have some things to prepare before I meet with him.
+
+6
+00:00:20,590 --> 00:00:25,550
+M: You know, if I had known that it was only a day affair, I would have taken the trip with you.
+
+7
+00:00:25,710 --> 00:00:30,450
+I also have a meeting with a very important client today, and that's why I didn't make the trip.
+
+8
+00:00:30,810 --> 00:00:32,690
+W: You should've talked to me about it.
+
+9
+00:00:32,870 --> 00:00:34,270
+We could've made the trip together.

@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:06,040
+M: Mr. Sanchez is coming in to take a look around our factory to see if it's big enough to suit his demands.
+
+2
+00:00:06,740 --> 00:00:10,895
+If he is satisfied, there is a good chance that he will sign a deal with us today.
+
+3
+00:00:11,380 --> 00:00:13,360
+W: I really hope that will happen.
+
+4
+00:00:14,060 --> 00:00:16,440
+The business this deal will bring is huge.
+
+5
+00:00:16,840 --> 00:00:18,490
+Let's just keep our fingers crossed.
+
+6
+00:00:18,800 --> 00:00:19,870
+M: Don't worry too much.
+
+7
+00:00:20,060 --> 00:00:21,185
+I'm sure we will get it.
+
+8
+00:00:21,620 --> 00:00:24,415
+After all, we have everything he requested over the phone.
+
+9
+00:00:25,060 --> 00:00:28,040
+Anyway, let's take off a bit early to pick him up at the airport.
+
+10
+00:00:28,790 --> 00:00:30,520
+W: That sounds like a good idea.
+
+11
+00:00:31,320 --> 00:00:35,275
+We don't want to get stuck in rush hour traffic and be late for his arrival.

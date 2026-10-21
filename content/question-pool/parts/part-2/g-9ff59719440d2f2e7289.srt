@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,795
+What is your opinion regarding Johnson's project?
+
+2
+00:00:03,840 --> 00:00:06,900
+(A) It is going to be very profitable.
+
+3
+00:00:07,920 --> 00:00:10,950
+(B) Yes, John will be here today.
+
+4
+00:00:12,140 --> 00:00:15,505
+(C) Sure, I will put you in charge of it.

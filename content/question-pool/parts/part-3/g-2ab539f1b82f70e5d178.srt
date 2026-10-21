@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:02,320
+M1: What was your impression of the first candidate we met?
+
+2
+00:00:03,135 --> 00:00:05,480
+W: You're talking about Leslie Wheeler, right?
+
+3
+00:00:06,070 --> 00:00:09,760
+I thought she was extremely competent and would make a great addition to the company.
+
+4
+00:00:10,640 --> 00:00:11,560
+How about you, Joe?
+
+5
+00:00:12,160 --> 00:00:13,220
+M2: I agree with you completely.
+
+6
+00:00:13,890 --> 00:00:15,900
+M1: Honestly, I wasn't very impressed with her.
+
+7
+00:00:16,255 --> 00:00:19,760
+But if you both disagree, I suppose we can invite her back for a second interview.
+
+8
+00:00:20,960 --> 00:00:23,990
+W: In my opinion, that would be the best thing to do.
+
+9
+00:00:24,460 --> 00:00:26,360
+Shall I give her a call before lunch?
+
+10
+00:00:27,040 --> 00:00:28,370
+M1: I don't think we should do that.
+
+11
+00:00:28,705 --> 00:00:31,440
+Let's wait a couple of days until the interviews are all over.

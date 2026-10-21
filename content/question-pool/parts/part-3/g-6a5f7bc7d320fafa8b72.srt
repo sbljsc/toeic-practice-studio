@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:04,850
+M: I'm terribly sorry, but I won't be able to show you the house you mentioned over the phone this morning.
+
+2
+00:00:05,390 --> 00:00:13,450
+The owner went away for the weekend and was supposed to be back this morning, but he just called and said he won't be back until tomorrow because his flight got canceled.
+
+3
+00:00:13,940 --> 00:00:14,750
+W: That's terrible.
+
+4
+00:00:15,270 --> 00:00:19,410
+I got off work an hour early and drove all the way across town to see this house.
+
+5
+00:00:19,975 --> 00:00:23,670
+Isn't there any possible chance that I could at least take a look around the yard?
+
+6
+00:00:24,210 --> 00:00:27,550
+M: Well, I am sure that the owner won't mind if we checked out the house.
+
+7
+00:00:27,990 --> 00:00:28,790
+Give me a second.
+
+8
+00:00:28,950 --> 00:00:30,910
+I will call his hotel and ask for his permission.
+
+9
+00:00:31,740 --> 00:00:33,670
+In the meantime, would you like some coffee?
+
+10
+00:00:34,330 --> 00:00:35,690
+W: Yes, that would be nice.
+
+11
+00:00:35,860 --> 00:00:37,190
+I take mine black, please.

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,160
+What's in the forecast for the weekend?
+
+2
+00:00:03,300 --> 00:00:06,015
+(A) I heard it's going to rain.
+
+3
+00:00:07,000 --> 00:00:09,610
+(B) Probably on Saturday.
+
+4
+00:00:10,620 --> 00:00:13,485
+(C) Yes, at the local park.

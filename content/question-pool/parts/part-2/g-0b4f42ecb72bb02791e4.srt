@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,560
+Should we try Greek food tonight?
+
+2
+00:00:03,085 --> 00:00:05,520
+(A) Yes, he is from Greece.
+
+3
+00:00:06,705 --> 00:00:09,320
+(B) Sure, I'd love to try it.
+
+4
+00:00:10,520 --> 00:00:12,820
+(C) I didn't go there tonight.

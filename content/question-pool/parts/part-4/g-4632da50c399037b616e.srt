@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:04,060
+Welcome to Earthbeat, your top-rated, environmental radio program.
+
+2
+00:00:04,440 --> 00:00:05,760
+First, let's go to the news.
+
+3
+00:00:06,120 --> 00:00:08,180
+We have some sad news to announce today.
+
+4
+00:00:08,740 --> 00:00:14,320
+The federal government has decided to discontinue funding for environmental science on ABC Radio.
+
+5
+00:00:14,580 --> 00:00:20,340
+This will mean that Earthbeat will no longer be broadcast after the last program in this series airs in November.
+
+6
+00:00:21,480 --> 00:00:27,000
+A government spokesperson said, however, that funding will be increased for pure science and business reporting.
+
+7
+00:00:27,680 --> 00:00:29,360
+Let's move to our first special report.
+
+8
+00:00:30,120 --> 00:00:39,820
+We have in our studio a very special guest: it's Amy McIntyre, the distinguished botanist and author of several prize-winning books on the flora of New Guinea.
+
+9
+00:00:40,440 --> 00:00:42,720
+She'll be talking to our reporter, Jim Cross.

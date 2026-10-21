@@ -1,0 +1,55 @@
+1
+00:00:00,200 --> 00:00:03,215
+M: Deanna, you picked up the order from the grocery store, right?
+
+2
+00:00:03,535 --> 00:00:04,075
+W: That's correct.
+
+3
+00:00:04,795 --> 00:00:07,275
+I went in the morning before I showed up for work.
+
+4
+00:00:07,895 --> 00:00:08,830
+Is there a problem?
+
+5
+00:00:09,405 --> 00:00:11,615
+M: Yeah, it looks like we didn't get enough flour.
+
+6
+00:00:12,610 --> 00:00:14,595
+There were only ten kilograms in the box.
+
+7
+00:00:15,415 --> 00:00:19,095
+That's not enough to bake all the cakes and cookies which our customers ordered today.
+
+8
+00:00:20,035 --> 00:00:21,780
+W: Keith told me that was how much we needed.
+
+9
+00:00:22,155 --> 00:00:23,235
+I guess he made a mistake.
+
+10
+00:00:24,675 --> 00:00:26,590
+M: Actually, we need double that amount.
+
+11
+00:00:27,195 --> 00:00:29,270
+Would you mind going back and purchasing some more?
+
+12
+00:00:29,895 --> 00:00:32,240
+Be sure to get a receipt so I can pay you back.
+
+13
+00:00:32,750 --> 00:00:32,995
+W: All right.
+
+14
+00:00:33,335 --> 00:00:34,775
+I should return in half an hour.

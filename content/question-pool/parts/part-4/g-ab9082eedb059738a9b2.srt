@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:04,065
+Thank you for calling TC Telecom on this beautiful September Monday morning.
+
+2
+00:00:04,550 --> 00:00:12,925
+Currently, all of our operators are busy with other calls, however, if you'd be kind enough to wait on the line, one of our operators will be with you very shortly.
+
+3
+00:00:13,650 --> 00:00:19,145
+In the meantime, if you know the extension of the person you wish to contact, please press it on your phone now.
+
+4
+00:00:19,525 --> 00:00:22,745
+If you are calling to check your account profile, please press 1.
+
+5
+00:00:23,445 --> 00:00:26,630
+If you wish to delete or change a service, please press 2.
+
+6
+00:00:26,925 --> 00:00:30,125
+If you would like to get in touch with our billing services, press 3.
+
+7
+00:00:30,730 --> 00:00:39,405
+If this is a call that needs the attention of a customer service representative, please continue holding, and talk to the operator.Thank you and we hope you have a great day.
+
+8
+00:00:39,885 --> 00:00:43,565
+Remember, we here at TC Telecom value every call.

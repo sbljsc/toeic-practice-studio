@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:00,570
+Hi, Mark.
+
+2
+00:00:00,970 --> 00:00:05,510
+I've been trying to contact you by e-mail, but for some reason you have not responded.
+
+3
+00:00:06,230 --> 00:00:08,870
+This is Julie, the secretary of the Choral Society.
+
+4
+00:00:09,430 --> 00:00:11,150
+I hope you receive this message in time.
+
+5
+00:00:11,790 --> 00:00:14,270
+We've had to cancel tonight's rehearsal at the last minute.
+
+6
+00:00:14,970 --> 00:00:21,150
+If for some reason you don't get this message tonight, I apologize—there won't be anybody else at the hall this evening.
+
+7
+00:00:21,150 --> 00:00:30,650
+I hope you understand that our conductor is unable to attend because of some urgent family business, and we've decided to postpone the rehearsal until next week.
+
+8
+00:00:31,370 --> 00:00:36,415
+I can't really give you any more details at the moment, but I'll let you know in the next few days.
+
+9
+00:00:36,555 --> 00:00:37,090
+See you soon.

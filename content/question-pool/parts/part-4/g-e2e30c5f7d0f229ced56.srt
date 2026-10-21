@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:01,440
+Attention, all shoppers!
+
+2
+00:00:02,160 --> 00:00:05,095
+Rush now to Tim Holton's for a very special offer.
+
+3
+00:00:05,285 --> 00:00:17,380
+Yes, shoppers, from now until noon you can enjoy the special taste of Tim's many varieties of donuts or a delicious sandwich or one of their aromatic coffees at very special prices.
+
+4
+00:00:18,135 --> 00:00:20,480
+Why don't you sit down, and rest your weary legs?
+
+5
+00:00:21,280 --> 00:00:24,840
+Your choice of coffee and donut will cost you only two dollars.
+
+6
+00:00:25,500 --> 00:00:28,180
+The sandwich and donut set is only three dollars.
+
+7
+00:00:28,505 --> 00:00:38,700
+Yes, shoppers, up until twelve o'clock, a delicious cup of the best-brewed coffee and a donut set will cost you only two dollars, and a sandwich set will cost only three dollars.
+
+8
+00:00:39,520 --> 00:00:41,240
+That's half the original price, shoppers.
+
+9
+00:00:41,500 --> 00:00:42,650
+Don't miss out!

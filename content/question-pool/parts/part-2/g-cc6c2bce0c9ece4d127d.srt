@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,555
+What did you think of the movie we just saw?
+
+2
+00:00:03,650 --> 00:00:05,800
+(A) I'll see it this weekend.
+
+3
+00:00:07,050 --> 00:00:09,365
+(B) At the theater in the mall.
+
+4
+00:00:10,610 --> 00:00:12,650
+(C) It was very exciting.

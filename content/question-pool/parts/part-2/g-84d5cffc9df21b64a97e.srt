@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,250
+Has Robert Cunningham gotten back to you with an answer yet?
+
+2
+00:00:04,700 --> 00:00:06,720
+(A) Yes, he was correct.
+
+3
+00:00:07,880 --> 00:00:10,085
+(B) I'll get back to him.
+
+4
+00:00:11,200 --> 00:00:13,500
+(C) He'll call this evening.

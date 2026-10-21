@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,430
+You are planning on going to the weekend picnic, aren't you?
+
+2
+00:00:04,430 --> 00:00:07,980
+(A) No, I will be going with Sarah instead.
+
+3
+00:00:09,035 --> 00:00:12,135
+(B) That depends on if I can get a ride.
+
+4
+00:00:13,190 --> 00:00:16,175
+(C) Well, I could pick you up at ten.

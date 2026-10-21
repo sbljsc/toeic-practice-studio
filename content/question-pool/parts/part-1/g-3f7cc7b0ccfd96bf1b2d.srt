@@ -1,0 +1,15 @@
+1
+00:00:00,455 --> 00:00:03,235
+(A) She's preparing dinner for her family.
+
+2
+00:00:04,535 --> 00:00:06,975
+(B) She's wiping off the kitchen counter.
+
+3
+00:00:08,675 --> 00:00:10,555
+(C) She's washing some vegetables.
+
+4
+00:00:12,495 --> 00:00:14,635
+(D) She's standing near the sink.

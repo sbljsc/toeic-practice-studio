@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,920
+What does he do for a living?
+
+2
+00:00:03,155 --> 00:00:05,830
+(A) No, he moved last week.
+
+3
+00:00:07,175 --> 00:00:09,475
+(B) He does it all the time.
+
+4
+00:00:10,835 --> 00:00:12,520
+(C) He's an accountant.

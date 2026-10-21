@@ -1,0 +1,55 @@
+1
+00:00:00,200 --> 00:00:07,580
+W: I know that you've worked very hard the last couple of weeks preparing for the presentation, and I am sure that you will do an excellent job today.
+
+2
+00:00:08,020 --> 00:00:09,595
+I just wanted to wish you good luck.
+
+3
+00:00:09,900 --> 00:00:10,440
+M: Thanks.
+
+4
+00:00:10,760 --> 00:00:14,820
+I am a bit nervous right now, but at the same time I am quite confident.
+
+5
+00:00:15,440 --> 00:00:19,295
+I have worked very hard, and I really know my material inside out.
+
+6
+00:00:19,780 --> 00:00:20,540
+So, don't worry.
+
+7
+00:00:20,675 --> 00:00:21,540
+I will do my best.
+
+8
+00:00:22,140 --> 00:00:25,105
+W: Actually, I feel very relieved to hear that from you.
+
+9
+00:00:25,300 --> 00:00:27,625
+I was a bit worried that you might not be ready.
+
+10
+00:00:28,080 --> 00:00:29,420
+Anyway, where is Mark?
+
+11
+00:00:30,085 --> 00:00:34,700
+The traffic is quite bad at this time of the day, and I don't want to take any chances of being late.
+
+12
+00:00:35,250 --> 00:00:36,400
+M: Don't worry, Ms. Wang.
+
+13
+00:00:36,880 --> 00:00:40,180
+It usually only takes about fifteen minutes to get there from here.
+
+14
+00:00:40,960 --> 00:00:44,560
+If worst comes to worst, I can always get off and run there.

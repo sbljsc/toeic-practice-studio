@@ -1,0 +1,35 @@
+1
+00:00:00,440 --> 00:00:06,020
+M: Lucy, a client of mine is arriving in a few minutes for a consultation, but Mr. Woods just requested to see me immediately.
+
+2
+00:00:06,880 --> 00:00:09,060
+W: What's the name of the person coming to visit?
+
+3
+00:00:09,720 --> 00:00:10,660
+M: Alexander Sullivan.
+
+4
+00:00:10,960 --> 00:00:12,540
+Would you mind talking to him for a few minutes?
+
+5
+00:00:13,280 --> 00:00:14,880
+I should be back by a quarter after eleven.
+
+6
+00:00:15,360 --> 00:00:19,200
+W: Okay, but please be sure the meeting doesn't run too long.
+
+7
+00:00:19,840 --> 00:00:25,100
+Derrick and I are going to the Watertown facility, and we're planning to leave at half past eleven.
+
+8
+00:00:26,480 --> 00:00:28,400
+M: I'm positive I'll be done before then.
+
+9
+00:00:28,540 --> 00:00:32,145
+W: In that case, I'll speak with Mr. Sullivan until you return.

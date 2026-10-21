@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:05,035
+W: Lars, would you mind listening to me rehearse my presentation for this afternoon's meeting.
+
+2
+00:00:05,915 --> 00:00:08,155
+I want to make sure I get everything right.
+
+3
+00:00:09,890 --> 00:00:10,735
+M: Can you wait a few minutes?
+
+4
+00:00:11,495 --> 00:00:14,585
+I have to write an e-mail to my boss about the department's budget.
+
+5
+00:00:14,975 --> 00:00:17,115
+W: Sure, it's fine for me to wait.
+
+6
+00:00:18,310 --> 00:00:20,095
+M: What are you going to be talking about anyway?
+
+7
+00:00:20,795 --> 00:00:22,875
+I wasn't even aware there's a meeting later today.
+
+8
+00:00:23,655 --> 00:00:27,555
+W: It was called last night after almost everyone had gone home for the day.
+
+9
+00:00:28,055 --> 00:00:31,185
+I'll be talking about the effects of the new marketing campaign.
+
+10
+00:00:32,170 --> 00:00:34,095
+M: Oh, I heard things are going well.
+
+11
+00:00:34,835 --> 00:00:36,665
+I trust you have good news for everyone.

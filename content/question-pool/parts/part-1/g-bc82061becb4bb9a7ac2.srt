@@ -1,0 +1,15 @@
+1
+00:00:00,405 --> 00:00:03,870
+(A) One man is giving a speech in a conference hall.
+
+2
+00:00:04,920 --> 00:00:07,785
+(B) All of the men are watching television.
+
+3
+00:00:09,165 --> 00:00:12,305
+(C) One of the men is talking into the microphone.
+
+4
+00:00:13,645 --> 00:00:16,790
+(D) They are holding a conversation over coffee.

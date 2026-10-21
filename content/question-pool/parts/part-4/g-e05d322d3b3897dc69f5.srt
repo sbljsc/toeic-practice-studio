@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:03,185
+Audio World is opening a new store and we're celebrating.
+
+2
+00:00:04,125 --> 00:00:07,185
+Yes, it's party time at Audio World, and you're invited!
+
+3
+00:00:07,905 --> 00:00:20,465
+Come on down for the opening of the spacious new store in exciting downtown George St. Festivities will begin at 9:00 a.m. on Saturday morning, with free performances, balloons and face-painting for your children.
+
+4
+00:00:21,205 --> 00:00:24,205
+And of course, there'll be some incredible opening specials.
+
+5
+00:00:24,650 --> 00:00:29,385
+Here's an example: complete hi-fi sound systems for as little as $500.
+
+6
+00:00:30,265 --> 00:00:34,205
+At last you can get that surround sound system you've been dreaming of!
+
+7
+00:00:34,905 --> 00:00:41,025
+And that's not all: all day there will be specials, with discounts of as much as 50%.
+
+8
+00:00:41,025 --> 00:00:45,070
+See you all on Saturday morning, at our new George St. superstore!

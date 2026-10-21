@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,855
+When are you thinking of taking off?
+
+2
+00:00:03,045 --> 00:00:06,185
+(A) As soon as I get this done.
+
+3
+00:00:07,120 --> 00:00:09,525
+(B) He took it with him.
+
+4
+00:00:10,520 --> 00:00:13,450
+(C) At around 3 last night.

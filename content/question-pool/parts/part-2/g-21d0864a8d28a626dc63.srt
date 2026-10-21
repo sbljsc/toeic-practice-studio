@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,735
+When do you suppose the delivery trucks will leave?
+
+2
+00:00:04,200 --> 00:00:06,110
+(A) He's coming by bus.
+
+3
+00:00:07,380 --> 00:00:09,460
+(B) Probably before ten.
+
+4
+00:00:10,790 --> 00:00:13,240
+(C) Sure, I will take it there.

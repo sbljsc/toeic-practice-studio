@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,585
+Where can I pick up a raincoat?
+
+2
+00:00:02,820 --> 00:00:05,305
+(A) Yes, it might be all right.
+
+3
+00:00:06,395 --> 00:00:08,340
+(B) Around three o'clock.
+
+4
+00:00:09,780 --> 00:00:11,730
+(C) Probably at the mall.

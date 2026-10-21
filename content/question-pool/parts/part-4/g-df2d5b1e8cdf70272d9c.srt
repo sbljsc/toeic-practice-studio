@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:00,720
+Good morning.
+
+2
+00:00:01,000 --> 00:00:03,420
+This is Karen Holmes, Mr. Reid's secretary.
+
+3
+00:00:04,100 --> 00:00:11,620
+I'm sorry to disturb you Mr. Stokes, but Mr. Reid just called from the airport to tell me that his plane has been delayed by fog.
+
+4
+00:00:12,220 --> 00:00:17,840
+The airport anticipates that the fog will lift sufficiently by ten o'clock for planes to be able to take off.
+
+5
+00:00:18,245 --> 00:00:22,470
+So there will be a delay of at least two hours in Mr. Reid's itinerary.
+
+6
+00:00:23,040 --> 00:00:26,040
+He could well arrive in New York at one o'clock in the afternoon.
+
+7
+00:00:26,600 --> 00:00:32,420
+That would mean that he will miss lunch but should have no problem arriving in time for the afternoon meeting.
+
+8
+00:00:33,180 --> 00:00:35,980
+I will call you back after ten to let you know the situation.
+
+9
+00:00:36,620 --> 00:00:39,700
+Oh, and do you have a cell phone number on which you can be contacted?
+
+10
+00:00:40,420 --> 00:00:40,775
+Thanks.
+
+11
+00:00:41,020 --> 00:00:42,620
+I'll speak to you later, Mr. Stokes.

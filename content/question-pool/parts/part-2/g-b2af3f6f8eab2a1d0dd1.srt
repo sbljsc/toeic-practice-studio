@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,935
+If you get this work done by three, I think you should call it a day.
+
+2
+00:00:05,120 --> 00:00:07,460
+(A) I will go home and get them.
+
+3
+00:00:08,700 --> 00:00:10,815
+(B) I'll call him back later.
+
+4
+00:00:11,905 --> 00:00:14,405
+(C) That's what I am planning to do.

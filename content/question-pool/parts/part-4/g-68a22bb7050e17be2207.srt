@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:02,255
+May I have your attention please?
+
+2
+00:00:02,925 --> 00:00:10,890
+This announcement is for all passengers waiting for Flight 705, scheduled to depart for London at 2 o'clock.
+
+3
+00:00:11,510 --> 00:00:27,025
+We have just been informed by Heathrow Airport that airplanes are being suspended for traveling to and from the airport due to heavy fog passing through the region and planes that are scheduled for arrival are being re-routed to other nearby airports.
+
+4
+00:00:28,075 --> 00:00:33,605
+This, unfortunately, will also delay our flights scheduled to take off for London until further notice.
+
+5
+00:00:35,185 --> 00:00:43,015
+In the meantime, the passengers that are affected are asked to take advantage of the refreshments we have set up in the lounge on the second floor.
+
+6
+00:00:43,850 --> 00:00:46,965
+Please show your ticket to the lounge attendant as you enter.
+
+7
+00:00:47,845 --> 00:00:55,325
+For further announcements regarding the Heathrow situation, please check with the bulletin board display set up throughout the terminal.
+
+8
+00:00:56,065 --> 00:00:57,605
+Thank you for your kind understanding.

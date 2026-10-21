@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:00,700
+Hi, Jen.
+
+2
+00:00:00,900 --> 00:00:01,700
+It's Brian calling.
+
+3
+00:00:02,460 --> 00:00:06,760
+Could you please pass on this important message to Jack Burbery in the Dispatch Office?
+
+4
+00:00:07,700 --> 00:00:12,240
+Last night I tried to contact Jack about the return of some items from the Continental Café.
+
+5
+00:00:12,960 --> 00:00:19,000
+The chef at the Continental is not happy about the quality of yesterday's delivery of fresh fruit and vegetables.
+
+6
+00:00:20,040 --> 00:00:27,720
+As you know, the Continental Café has been a particularly important client of ours, so it's important that we provide it with good service.
+
+7
+00:00:28,400 --> 00:00:31,080
+The Continental would like us to discount that delivery.
+
+8
+00:00:31,860 --> 00:00:36,860
+Could Jack send a representative to the Continental to check on the produce and to arrange the details?
+
+9
+00:00:37,940 --> 00:00:39,240
+And please tell him that this is urgent.

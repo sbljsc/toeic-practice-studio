@@ -1,0 +1,51 @@
+1
+00:00:00,200 --> 00:00:01,325
+W: You look somewhat disappointed.
+
+2
+00:00:02,170 --> 00:00:02,965
+Is there something wrong?
+
+3
+00:00:03,570 --> 00:00:08,485
+M: Baker Research sent us the results of the customer satisfaction survey we conducted last month.
+
+4
+00:00:09,085 --> 00:00:11,325
+As you can see, the numbers are less than stellar.
+
+5
+00:00:12,105 --> 00:00:15,285
+W: Wow, we got low marks on nearly everything.
+
+6
+00:00:15,605 --> 00:00:18,375
+I think we'd better review the information together.
+
+7
+00:00:18,685 --> 00:00:19,285
+M: I agree.
+
+8
+00:00:19,685 --> 00:00:23,645
+But let's examine the top-rated one first to try to figure out what we're doing correctly.
+
+9
+00:00:24,345 --> 00:00:25,085
+W: That makes sense.
+
+10
+00:00:25,945 --> 00:00:29,885
+Nobody's using the conference room, so we can discuss the matter in there.
+
+11
+00:00:29,970 --> 00:00:30,245
+M: Okay.
+
+12
+00:00:30,765 --> 00:00:32,405
+Let me grab a cup of coffee first.
+
+13
+00:00:32,945 --> 00:00:35,010
+This is probably going to be a lengthy meeting.

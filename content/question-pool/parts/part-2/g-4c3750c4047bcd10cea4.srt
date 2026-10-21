@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,595
+When are you expecting your guest from out of town?
+
+2
+00:00:03,895 --> 00:00:05,415
+(A) For a week.
+
+3
+00:00:06,680 --> 00:00:08,615
+(B) Early tomorrow morning.
+
+4
+00:00:10,115 --> 00:00:12,865
+(C) At the Hilton Hotel downtown.

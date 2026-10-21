@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:00,605
+Good morning.
+
+2
+00:00:01,265 --> 00:00:02,445
+This is Clarice Meadows.
+
+3
+00:00:03,185 --> 00:00:05,820
+I ordered several items by phone about an hour ago.
+
+4
+00:00:06,225 --> 00:00:11,165
+My order number is 6547-MD23.
+
+5
+00:00:12,375 --> 00:00:16,765
+After looking at your catalog, I've decided that I'd like to make an adjustment to my order.
+
+6
+00:00:17,805 --> 00:00:25,015
+I ordered one of item number DR493, but I'd like to increase that number to two, please.
+
+7
+00:00:25,665 --> 00:00:34,385
+In addition, I'd like to have the entire order sent by express mail because I need to have everything two days from now as I'm going on vacation in three days.
+
+8
+00:00:35,365 --> 00:00:39,385
+Please call me back at the number you have on file for me to confirm everything.
+
+9
+00:00:39,905 --> 00:00:40,265
+Thank you.

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,000
+Did you get in touch with him, or should I try calling?
+
+2
+00:00:04,200 --> 00:00:07,490
+(A) I just got off the phone with him.
+
+3
+00:00:08,280 --> 00:00:11,160
+(B) He is sitting on the couch.
+
+4
+00:00:12,125 --> 00:00:15,125
+(C) I'll get it for you later.

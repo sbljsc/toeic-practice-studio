@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,300
+Would you like some coffee while you wait?
+
+2
+00:00:03,485 --> 00:00:06,495
+(A) Yes, two copies please.
+
+3
+00:00:07,400 --> 00:00:10,620
+(B) Yes, if it's not too much trouble.
+
+4
+00:00:10,620 --> 00:00:15,075
+(C) No, I only got here five minutes ago.

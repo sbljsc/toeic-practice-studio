@@ -1,0 +1,43 @@
+1
+00:00:00,200 --> 00:00:02,960
+M: That workshop conducted by Matthew Carter was outstanding.
+
+2
+00:00:03,680 --> 00:00:05,155
+I'm glad we decided to attend it.
+
+3
+00:00:05,840 --> 00:00:07,185
+W: I couldn't agree more.
+
+4
+00:00:07,740 --> 00:00:10,035
+So what are your plans for the remainder of the day?
+
+5
+00:00:11,060 --> 00:00:14,440
+M: The only other event I'm interested in attending starts at 1:30.
+
+6
+00:00:15,040 --> 00:00:16,240
+It should be pretty interesting.
+
+7
+00:00:16,240 --> 00:00:19,460
+W: You're not staying for the speech being given at 4:00?
+
+8
+00:00:20,880 --> 00:00:25,985
+M: I'd love to listen to Andrea Warner talk, but I've got to catch a plane to Dublin this evening.
+
+9
+00:00:26,660 --> 00:00:30,865
+Anyway, why don't we have lunch together and then return to the convention center?
+
+10
+00:00:31,660 --> 00:00:32,445
+W: Sounds good.
+
+11
+00:00:32,720 --> 00:00:37,445
+We can discuss a couple of those ideas for projects you mentioned on the phone last week.

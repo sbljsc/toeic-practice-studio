@@ -1181,6 +1181,29 @@ button {
   padding: 24px;
 }
 
+/* One group on one page: the passage stays on screen with its questions. */
+.group-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.group-panel__material {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  max-height: 46vh;
+  overflow-y: auto;
+}
+
+.group-panel__question { scroll-margin-top: 96px; }
+
+.group-panel__question[data-current="true"] .question-panel {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
 .question-head {
   display: flex;
   justify-content: space-between;

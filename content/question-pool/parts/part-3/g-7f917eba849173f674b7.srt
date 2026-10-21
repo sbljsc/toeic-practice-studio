@@ -1,0 +1,35 @@
+1
+00:00:00,200 --> 00:00:05,825
+W1: Sarah, I overheard Mr. Denver saying that Mr. Rodriguez is coming for a visit next Monday.
+
+2
+00:00:06,440 --> 00:00:07,085
+W2: Oh, no.
+
+3
+00:00:07,885 --> 00:00:10,225
+I hope he's not bringing us bad news again.
+
+4
+00:00:10,625 --> 00:00:15,665
+I mean, he seldom makes a trip out here, but when he does, he usually brings us bad news.
+
+5
+00:00:16,105 --> 00:00:23,455
+The last time he came he told us about the budget cut, and that really affected a lot of our salespeople here.
+
+6
+00:00:23,565 --> 00:00:27,125
+W1: I know, but let's just hope that it'll be something good this time.
+
+7
+00:00:27,675 --> 00:00:28,285
+Who knows?
+
+8
+00:00:28,530 --> 00:00:32,015
+He could be coming here to tell us that we will be getting a bonus or something.
+
+9
+00:00:32,445 --> 00:00:34,370
+W2: I doubt that very much.

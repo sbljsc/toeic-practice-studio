@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,235
+Did the contractor give you the completion date?
+
+2
+00:00:03,515 --> 00:00:06,240
+(A) I will finish it by then.
+
+3
+00:00:07,275 --> 00:00:10,030
+(B) He said sometime in May.
+
+4
+00:00:11,115 --> 00:00:13,845
+(C) He will make the suggestion.

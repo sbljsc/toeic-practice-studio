@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,320
+How many copies should I make of the manuscript?
+
+2
+00:00:03,915 --> 00:00:06,140
+(A) The sooner the better.
+
+3
+00:00:07,420 --> 00:00:09,460
+(B) He's coughing a bit.
+
+4
+00:00:10,600 --> 00:00:12,820
+(C) Have a dozen ready.

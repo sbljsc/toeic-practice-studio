@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,825
+How do you get along with your boss?
+
+2
+00:00:02,880 --> 00:00:05,660
+(A) I will bring it along tomorrow.
+
+3
+00:00:06,780 --> 00:00:09,330
+(B) He is very kind to me.
+
+4
+00:00:10,345 --> 00:00:13,265
+(C) Yes, he's my manager.

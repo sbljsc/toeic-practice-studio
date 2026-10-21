@@ -1,0 +1,23 @@
+1
+00:00:00,200 --> 00:00:05,860
+In an important move today, the Board of Directors announced that their search for a new CEO has been successful.
+
+2
+00:00:06,260 --> 00:00:12,440
+We are pleased to announce that Mr. Michael Benwick, one of the most respected business leaders in Europe, has accepted the position.
+
+3
+00:00:13,560 --> 00:00:20,000
+Mr. Benwick has had a far-ranging and highly successful career in industry in South Africa and the United Kingdom.
+
+4
+00:00:20,660 --> 00:00:27,600
+After graduating from Oxford in 1965, he took a middle management position in South Africa's mining industry.
+
+5
+00:00:27,920 --> 00:00:29,460
+From there he has never looked back.
+
+6
+00:00:30,170 --> 00:00:35,540
+We welcome him not only for his dynamism and charisma but also for his wealth of experience.

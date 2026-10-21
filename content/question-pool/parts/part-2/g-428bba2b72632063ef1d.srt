@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,980
+Would you care for a cup of coffee after the meeting?
+
+2
+00:00:04,030 --> 00:00:06,905
+(A) No, I didn't meet him today.
+
+3
+00:00:08,160 --> 00:00:10,435
+(B) Yes, she does care about it.
+
+4
+00:00:11,470 --> 00:00:14,460
+(C) Sure, that would be very nice.

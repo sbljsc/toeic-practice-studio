@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,970
+(A) They are serving food to the others.
+
+2
+00:00:04,045 --> 00:00:07,250
+(B) They are preparing food in the kitchen.
+
+3
+00:00:08,640 --> 00:00:11,780
+(C) They are arranging the plates on the table.
+
+4
+00:00:13,040 --> 00:00:16,040
+(D) They are helping themselves to some food.

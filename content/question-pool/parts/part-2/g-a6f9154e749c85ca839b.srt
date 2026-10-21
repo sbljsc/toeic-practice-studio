@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,460
+Do you know where I can catch a bus to downtown?
+
+2
+00:00:03,460 --> 00:00:06,355
+(A) He just left a minute ago.
+
+3
+00:00:07,440 --> 00:00:10,400
+(B) Sure, I will catch you later.
+
+4
+00:00:11,290 --> 00:00:14,045
+(C) Try the stop over there.

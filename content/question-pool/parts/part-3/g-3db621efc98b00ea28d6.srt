@@ -1,0 +1,51 @@
+1
+00:00:00,200 --> 00:00:00,840
+M: Hello, Ms. Maxwell.
+
+2
+00:00:01,540 --> 00:00:03,730
+You wanted me to visit to talk about something?
+
+3
+00:00:04,035 --> 00:00:04,460
+W: That's correct.
+
+4
+00:00:05,140 --> 00:00:08,220
+I need to talk about the tenants upstairs in the unit above me.
+
+5
+00:00:08,760 --> 00:00:11,200
+They keep making too much noise late at night.
+
+6
+00:00:12,100 --> 00:00:12,420
+M: I see.
+
+7
+00:00:13,120 --> 00:00:15,660
+Have you spoken with them in person to request that they be quieter?
+
+8
+00:00:16,220 --> 00:00:17,760
+W: I have, but that didn't work.
+
+9
+00:00:18,220 --> 00:00:22,240
+They still listen to music and play the guitar at all hours of the day and night.
+
+10
+00:00:23,120 --> 00:00:27,580
+M: Okay, I'd better pay a visit to 4C and have a talk with them.
+
+11
+00:00:27,705 --> 00:00:29,520
+When I'm done, I'll come back down here.
+
+12
+00:00:30,115 --> 00:00:30,420
+W: Thanks.
+
+13
+00:00:30,910 --> 00:00:32,480
+I really appreciate your assistance.

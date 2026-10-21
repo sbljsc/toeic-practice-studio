@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,170
+Don't you think you should study the map before we leave?
+
+2
+00:00:04,340 --> 00:00:07,780
+(A) Don't worry, I know the area well.
+
+3
+00:00:08,750 --> 00:00:11,580
+(B) I've already studied for the test.
+
+4
+00:00:12,435 --> 00:00:15,125
+(C) Why don't we take off soon?

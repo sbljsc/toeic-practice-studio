@@ -1,0 +1,27 @@
+1
+00:00:00,200 --> 00:00:07,080
+Welcome, everyone, to the thirteenth annual conference being hosted by the International Society of Electrical Engineers.
+
+2
+00:00:07,640 --> 00:00:11,640
+My name is Kate Daniels, and I'm the current president of the society.
+
+3
+00:00:12,935 --> 00:00:19,860
+Before we get started with the keynote speech by Dr. Lyndon Schafer, I should inform you of a couple of things.
+
+4
+00:00:20,960 --> 00:00:27,740
+First, Sarah West will be a bit late, so she'll be changing speaking times with Meredith Trudeau.
+
+5
+00:00:28,540 --> 00:00:34,360
+In addition, we'll be holding the election for a new president today at 5:00 in the evening.
+
+6
+00:00:35,010 --> 00:00:38,020
+Only current members of the society are eligible to vote.
+
+7
+00:00:38,760 --> 00:00:42,340
+You must show your membership card prior to receiving a ballot.

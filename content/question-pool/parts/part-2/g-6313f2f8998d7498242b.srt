@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,840
+When is the game supposed to start?
+
+2
+00:00:03,140 --> 00:00:05,480
+(A) When the rain lets up a little.
+
+3
+00:00:06,920 --> 00:00:09,200
+(B) The game is going to be great.
+
+4
+00:00:10,760 --> 00:00:13,690
+(C) Between Boston and New York.

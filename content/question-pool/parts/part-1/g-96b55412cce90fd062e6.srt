@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:04,230
+(A) One woman is reserving a room at the hotel.
+
+2
+00:00:05,180 --> 00:00:08,650
+(B) The guests are checking out of their rooms.
+
+3
+00:00:09,700 --> 00:00:13,900
+(C) The hotel clerks are standing in front of the hotel.
+
+4
+00:00:14,800 --> 00:00:17,840
+(D) The lamps have been turned on.

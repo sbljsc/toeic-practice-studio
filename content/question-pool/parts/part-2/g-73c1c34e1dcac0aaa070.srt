@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,820
+When will you have the report ready?
+
+2
+00:00:02,890 --> 00:00:06,220
+(A) I report directly to Mr. Singh.
+
+3
+00:00:07,880 --> 00:00:10,460
+(B) Yes, you can give it to me.
+
+4
+00:00:11,920 --> 00:00:15,030
+(C) I'll have it on your desk by noon.

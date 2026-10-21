@@ -1,0 +1,15 @@
+1
+00:00:00,470 --> 00:00:03,060
+This particular model was only released last year.
+
+2
+00:00:04,410 --> 00:00:08,555
+(A) Yes, it has become very popular in such a short time.
+
+3
+00:00:09,690 --> 00:00:12,760
+(B) We are thinking of a name for this product.
+
+4
+00:00:13,915 --> 00:00:17,415
+(C) No, there are several models available.

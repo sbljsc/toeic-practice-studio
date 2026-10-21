@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,470
+Didn't you back up the work on your computer?
+
+2
+00:00:04,650 --> 00:00:06,795
+(A) No, I came through the front door.
+
+3
+00:00:08,010 --> 00:00:10,790
+(B) No, I forgot all about it.
+
+4
+00:00:11,990 --> 00:00:15,055
+(C) I will give it back to you today.

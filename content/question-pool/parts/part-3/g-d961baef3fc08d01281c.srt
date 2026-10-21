@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:05,660
+M: We need to come up with a catchy name for our new line of digital cameras that is soon to be released on the market.
+
+2
+00:00:06,120 --> 00:00:08,380
+Do you have any suggestions of what we should do?
+
+3
+00:00:08,840 --> 00:00:19,480
+W: Well, we could use a professional consulting company like we have always done in the past, but I think we would have more luck trying something new, like asking the consumers directly.
+
+4
+00:00:20,270 --> 00:00:21,400
+M: You mean like having a contest?
+
+5
+00:00:22,410 --> 00:00:24,430
+You know, I think you have a good idea there.
+
+6
+00:00:24,820 --> 00:00:30,260
+This way we can get the consumers directly involved, and at the same time it would save us a lot of money.
+
+7
+00:00:30,640 --> 00:00:33,555
+W: Yes, it's like killing two birds with one stone.
+
+8
+00:00:33,840 --> 00:00:35,280
+Let's bring it up at our meeting today.

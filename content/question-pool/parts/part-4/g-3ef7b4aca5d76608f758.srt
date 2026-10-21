@@ -1,0 +1,23 @@
+1
+00:00:00,200 --> 00:00:07,000
+Hello, Ms. Brown, my name is Mike Lee and I'm calling from Burma Airways London office about your missing baggage.
+
+2
+00:00:07,670 --> 00:00:14,685
+I just want to let you know that we have located the whereabouts of your lost baggage, and we can have it delivered to your house tomorrow.
+
+3
+00:00:15,430 --> 00:00:23,225
+Or if you prefer, you can come into our office at the airport anytime between 9:00 a.m. and 6:00 p.m. to pick it up.
+
+4
+00:00:24,120 --> 00:00:30,375
+Could you please contact me at 777-2213, during office hours today?
+
+5
+00:00:31,100 --> 00:00:35,875
+Please let us know as soon as possible, so that we can make the best arrangement for you.
+
+6
+00:00:36,460 --> 00:00:38,830
+And please accept our apologies for the mix-up.

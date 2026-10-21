@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,325
+(A) She's fishing off the edge of the boat.
+
+2
+00:00:04,280 --> 00:00:06,600
+(B) She's leaning against a railing.
+
+3
+00:00:07,605 --> 00:00:10,995
+(C) She's out for a walk on a trail.
+
+4
+00:00:11,920 --> 00:00:15,440
+(D) She's bending over to pick up something.

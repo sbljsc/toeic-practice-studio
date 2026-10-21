@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:04,300
+Where do you feel like meeting, here in my office or somewhere outside?
+
+2
+00:00:05,505 --> 00:00:09,180
+(A) Okay, that sounds like a good place to meet.
+
+3
+00:00:09,950 --> 00:00:13,585
+(B) How about the little coffee shop on Main Street?
+
+4
+00:00:14,425 --> 00:00:18,070
+(C) Yes, I think I can spare the time to see you.

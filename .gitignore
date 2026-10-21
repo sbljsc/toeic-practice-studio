@@ -14,3 +14,6 @@ __pycache__/
 *.log
 /dist/
 /build/
+tmp_*.py
+tmp_*.txt
+tmp_*.mjs

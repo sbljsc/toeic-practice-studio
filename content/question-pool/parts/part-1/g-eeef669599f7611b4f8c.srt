@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,460
+(A) The cabinet doors are open.
+
+2
+00:00:04,320 --> 00:00:07,180
+(B) The woman is fixing a dish.
+
+3
+00:00:08,740 --> 00:00:11,700
+(C) The woman is drinking some water.
+
+4
+00:00:13,040 --> 00:00:16,300
+(D) There are dishes piled up in the sink.

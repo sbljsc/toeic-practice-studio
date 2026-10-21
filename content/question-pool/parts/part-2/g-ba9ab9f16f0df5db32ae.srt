@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:04,220
+How about showing our appreciation by sending Jenny a thank-you card?
+
+2
+00:00:05,780 --> 00:00:08,480
+(A) Thank you. I appreciate it.
+
+3
+00:00:09,415 --> 00:00:11,880
+(B) That's a wonderful gesture.
+
+4
+00:00:13,340 --> 00:00:16,260
+(C) The post office is not far.

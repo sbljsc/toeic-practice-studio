@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,900
+Who was that talking to Mr. Thompson at the conference?
+
+2
+00:00:04,060 --> 00:00:05,700
+(A) In an hour.
+
+3
+00:00:06,755 --> 00:00:08,560
+(B) I'll go with you.
+
+4
+00:00:09,940 --> 00:00:11,900
+(C) Our new receptionist.

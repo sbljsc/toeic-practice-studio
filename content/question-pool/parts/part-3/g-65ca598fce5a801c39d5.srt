@@ -1,0 +1,55 @@
+1
+00:00:00,200 --> 00:00:00,425
+M: Hello.
+
+2
+00:00:01,025 --> 00:00:04,265
+This is Jerod Townshend calling from Arbor Rental Car.
+
+3
+00:00:04,965 --> 00:00:06,645
+May I speak with Ms. Murray, please?
+
+4
+00:00:07,490 --> 00:00:08,085
+W: This is she.
+
+5
+00:00:08,585 --> 00:00:11,085
+Are you calling about the car I booked online this morning?
+
+6
+00:00:11,825 --> 00:00:13,205
+M: That's correct, Ms. Murray.
+
+7
+00:00:13,885 --> 00:00:19,465
+Unfortunately, we've been having problems with our computer system all day, so your reservation was only partially saved.
+
+8
+00:00:20,145 --> 00:00:22,505
+I therefore have to confirm some information.
+
+9
+00:00:23,205 --> 00:00:25,870
+You need a car starting on the tenth of this month, right?
+
+10
+00:00:26,125 --> 00:00:26,965
+W: That's correct.
+
+11
+00:00:27,145 --> 00:00:28,365
+And I requested an SUV.
+
+12
+00:00:29,375 --> 00:00:32,285
+M: Oh, I'm really glad I called you...Let me write that down.
+
+13
+00:00:32,715 --> 00:00:32,965
+W: Sure.
+
+14
+00:00:33,685 --> 00:00:35,175
+Is there anything else you'd like to know?

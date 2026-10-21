@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,520
+When will you start your new position at the head office?
+
+2
+00:00:03,695 --> 00:00:06,415
+(A) The first of next month.
+
+3
+00:00:07,260 --> 00:00:10,110
+(B) At the downtown office.
+
+4
+00:00:11,160 --> 00:00:13,605
+(C) I'm heading this one.

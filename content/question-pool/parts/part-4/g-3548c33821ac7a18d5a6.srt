@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:10,280
+In sports news today, Blackburn United announced their intention to recruit new players and expand their facilities after their historic Cup Final win on Friday night.
+
+2
+00:00:10,985 --> 00:00:16,180
+Their win has attracted the attention of major new sponsors and investors from the corporate world.
+
+3
+00:00:16,720 --> 00:00:22,860
+There are rumors that two star strikers now playing with European teams have signed or are close to signing.
+
+4
+00:00:23,880 --> 00:00:32,020
+New coaching staff members will also be recruited, and training facilities and clubrooms will be upgraded, a club spokesperson announced today.

@@ -1,0 +1,15 @@
+1
+00:00:00,155 --> 00:00:02,175
+Hasn't she been on the show before?
+
+2
+00:00:03,235 --> 00:00:05,790
+(A) Yes, about a year ago.
+
+3
+00:00:06,870 --> 00:00:10,035
+(B) Okay, I will show it to you later.
+
+4
+00:00:11,275 --> 00:00:13,680
+(C) It will air this Tuesday.

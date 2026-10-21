@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,875
+Don't you feel a bit chilly with the air conditioner on?
+
+2
+00:00:03,745 --> 00:00:06,865
+(A) Yes, it's freezing in here.
+
+3
+00:00:07,920 --> 00:00:11,110
+(B) No, I don't feel too well.
+
+4
+00:00:12,220 --> 00:00:14,755
+(C) He is a bit silly.

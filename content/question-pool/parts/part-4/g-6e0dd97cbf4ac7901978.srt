@@ -1,0 +1,11 @@
+1
+00:00:00,200 --> 00:00:08,080
+It is reported in the business news column today that Susan Bartlett, CEO of Tasty Foods, will leave her position at the end of December.
+
+2
+00:00:09,020 --> 00:00:16,440
+It is well known that the success of Tasty Foods' expansion into Asia was due to Ms. Bartlett's personal dynamism and commitment.
+
+3
+00:00:17,185 --> 00:00:24,100
+A committee, which includes Ms. Bartlett, who will remain with the company as a consultant, is currently searching for the next CEO.

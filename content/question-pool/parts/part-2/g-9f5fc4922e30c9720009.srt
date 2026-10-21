@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,040
+Do you think I should pack my umbrella?
+
+2
+00:00:03,205 --> 00:00:05,950
+(A) Yes, I think he will do it.
+
+3
+00:00:07,180 --> 00:00:09,715
+(B) It is scheduled to stop soon.
+
+4
+00:00:10,790 --> 00:00:14,125
+(C) Yes, I heard rain is in the forecast.

@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,800
+Today is a great day to go for a walk by the beach.
+
+2
+00:00:04,135 --> 00:00:07,020
+(A) Yes, it is a beautiful day.
+
+3
+00:00:07,970 --> 00:00:10,640
+(B) I didn't know it was raining.
+
+4
+00:00:11,830 --> 00:00:14,680
+(C) I went swimming the other day.

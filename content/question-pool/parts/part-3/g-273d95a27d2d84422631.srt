@@ -1,0 +1,39 @@
+1
+00:00:00,405 --> 00:00:02,635
+M: There seems to be some mistakes on this bill.
+
+2
+00:00:03,045 --> 00:00:05,005
+You charged me for a movie I didn't watch.
+
+3
+00:00:05,810 --> 00:00:07,585
+And this charge here...what is it?
+
+4
+00:00:08,020 --> 00:00:10,405
+W: That's for the room service you had this morning, sir.
+
+5
+00:00:11,265 --> 00:00:11,745
+M: Room service?
+
+6
+00:00:12,225 --> 00:00:12,885
+What room service?
+
+7
+00:00:13,715 --> 00:00:17,905
+You'd better check your computer again because I think you're mistaking me for someone else.
+
+8
+00:00:18,425 --> 00:00:21,365
+I met a client for breakfast at a restaurant this morning.
+
+9
+00:00:21,845 --> 00:00:23,200
+W: Oh, is that right?
+
+10
+00:00:23,665 --> 00:00:26,175
+Let me straighten this mistake out right away.

@@ -1,0 +1,39 @@
+1
+00:00:00,200 --> 00:00:04,680
+W: I noticed you walking out of the subway station this morning when I was driving to work.
+
+2
+00:00:05,370 --> 00:00:06,340
+Where is your car?
+
+3
+00:00:06,970 --> 00:00:08,365
+M: Oh, I left it at home.
+
+4
+00:00:08,750 --> 00:00:13,665
+I've decided to take the subway to work from today because I can't afford to drive it every day.
+
+5
+00:00:14,890 --> 00:00:16,010
+W: I know what you mean.
+
+6
+00:00:16,450 --> 00:00:19,805
+The prices of gas and parking are way too high these days.
+
+7
+00:00:20,230 --> 00:00:22,535
+And insurance, that's another story.
+
+8
+00:00:23,030 --> 00:00:28,265
+In fact, it's so bad that I have been seriously thinking of selling my car.
+
+9
+00:00:28,975 --> 00:00:33,950
+M: Well, you should think about taking the subway to work too then, because it's not as bad as you think it is.
+
+10
+00:00:34,470 --> 00:00:38,800
+In fact, I kind of enjoy reading the paper and not having to worry about driving.

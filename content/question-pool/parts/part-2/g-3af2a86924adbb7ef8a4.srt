@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,110
+Don't you have to call the airport to confirm your flight today?
+
+2
+00:00:04,290 --> 00:00:07,430
+(A) I already took care of it this morning.
+
+3
+00:00:08,350 --> 00:00:12,110
+(B) We are still considering which firm to go with.
+
+4
+00:00:13,130 --> 00:00:16,680
+(C) I am taking the seven o'clock flight out.

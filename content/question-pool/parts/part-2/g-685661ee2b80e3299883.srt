@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,230
+How did Karen manage to get the contract?
+
+2
+00:00:03,285 --> 00:00:05,605
+(A) I heard it's a big deal.
+
+3
+00:00:06,660 --> 00:00:09,485
+(B) She is a very smooth talker.
+
+4
+00:00:10,510 --> 00:00:13,035
+(C) She likes to manage people.

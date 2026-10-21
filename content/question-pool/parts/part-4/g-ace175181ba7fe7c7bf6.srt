@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:01,835
+Could I have your attention everyone?
+
+2
+00:00:02,500 --> 00:00:12,600
+An emergency situation has occurred on the tenth floor, and I ask everyone at this time to leave what you are doing and proceed toward the nearest exit out of the building.
+
+3
+00:00:13,380 --> 00:00:21,255
+This situation does not pose any immediate danger, but as a safety precaution, we are asking everyone to evacuate the building.
+
+4
+00:00:21,940 --> 00:00:27,140
+So, please do not panic, but walk calmly to the nearest staircase out of the building.
+
+5
+00:00:27,940 --> 00:00:29,740
+Please do not take the elevators.
+
+6
+00:00:30,380 --> 00:00:36,515
+Now, once you are outside, please make sure all the members of your department have arrived safely.
+
+7
+00:00:37,415 --> 00:00:43,380
+If by any chance anyone is missing, please report the missing person to your immediate supervisors.
+
+8
+00:00:44,220 --> 00:00:48,775
+Thank you, and we will let you know the progress of the situation as it occurs.

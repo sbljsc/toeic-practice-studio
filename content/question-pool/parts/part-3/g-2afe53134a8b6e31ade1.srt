@@ -1,0 +1,31 @@
+1
+00:00:00,200 --> 00:00:07,205
+M: Susan, I need you to make a dozen copies of these reports for tomorrow's meeting with the board members before you take off today.
+
+2
+00:00:07,660 --> 00:00:11,140
+W: I'm sorry, Mr. Brown, but we are completely out of paper right now.
+
+3
+00:00:11,305 --> 00:00:15,460
+I called our supplier and made the order last night, but it has not arrived yet.
+
+4
+00:00:16,010 --> 00:00:18,120
+M: Okay, I will call and find out what's happening.
+
+5
+00:00:18,640 --> 00:00:23,340
+In the meanwhile, send Peter down to the stationery store to buy some paper right away.
+
+6
+00:00:23,580 --> 00:00:28,455
+There are a lot of pages to copy, so you'd better get started if you don't want to stay late tonight.
+
+7
+00:00:28,515 --> 00:00:28,880
+W: All right.
+
+8
+00:00:29,335 --> 00:00:31,000
+I will take care of the matter right away.

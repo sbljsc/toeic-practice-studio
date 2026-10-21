@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:03,660
+(A) The house is undergoing renovations.
+
+2
+00:00:04,670 --> 00:00:07,760
+(B) The bushes are being trimmed.
+
+3
+00:00:09,020 --> 00:00:12,790
+(C) Some furniture has been set out in the yard.
+
+4
+00:00:13,880 --> 00:00:17,245
+(D) People are relaxing in the backyard.

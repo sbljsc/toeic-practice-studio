@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:01,915
+Where did Michelle say she was born?
+
+2
+00:00:02,975 --> 00:00:05,275
+(A) She doesn't know it yet.
+
+3
+00:00:06,480 --> 00:00:09,205
+(B) Yes, she grew up there.
+
+4
+00:00:10,230 --> 00:00:12,880
+(C) I think she is French.

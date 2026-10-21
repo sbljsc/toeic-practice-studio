@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,175
+Did you have a hard time finding this place?
+
+2
+00:00:03,040 --> 00:00:06,410
+(A) Why don't you take a look at the map?
+
+3
+00:00:07,160 --> 00:00:10,280
+(B) No, I've been here once before.
+
+4
+00:00:11,380 --> 00:00:14,440
+(C) This job is easier than you think.

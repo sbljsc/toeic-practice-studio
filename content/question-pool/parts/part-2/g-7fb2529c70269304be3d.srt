@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,800
+Could you recommend a nice place to take Mr. Lee?
+
+2
+00:00:03,865 --> 00:00:07,020
+(A) I recommended him to the boss.
+
+3
+00:00:08,240 --> 00:00:10,760
+(B) What type of food does he like?
+
+4
+00:00:11,830 --> 00:00:14,560
+(C) He will be here for a week.

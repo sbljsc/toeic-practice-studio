@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,445
+Don't you need this note for your presentation?
+
+2
+00:00:03,965 --> 00:00:06,725
+(A) Thanks, I almost forgot about it.
+
+3
+00:00:07,830 --> 00:00:10,565
+(B) Actually, there was nobody present.
+
+4
+00:00:12,085 --> 00:00:15,145
+(C) No, I didn't take notes during the speech.

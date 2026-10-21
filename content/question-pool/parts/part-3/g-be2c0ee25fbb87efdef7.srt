@@ -1,0 +1,47 @@
+1
+00:00:00,200 --> 00:00:02,215
+M: Is there anything else I can get you, ma'am?
+
+2
+00:00:02,440 --> 00:00:04,700
+W: Yes, I would like to have this coffee refilled.
+
+3
+00:00:05,180 --> 00:00:07,100
+Also, could you bring me the menu again?
+
+4
+00:00:07,680 --> 00:00:09,580
+I want to take a look at your choice of pies.
+
+5
+00:00:10,300 --> 00:00:13,370
+I overheard a couple saying how good your pies are here.
+
+6
+00:00:13,705 --> 00:00:16,360
+M: You must be from out of town if you don't know about our pies.
+
+7
+00:00:17,080 --> 00:00:20,220
+In fact, most of our customers come here for our apple pie.
+
+8
+00:00:20,645 --> 00:00:25,820
+Of course that doesn't mean that our food is not good, it's just that our pies are out of this world.
+
+9
+00:00:26,485 --> 00:00:27,260
+You have to try it.
+
+10
+00:00:27,605 --> 00:00:28,410
+W: Is that right?
+
+11
+00:00:28,740 --> 00:00:30,840
+I guess you leave me no choice but to try it.
+
+12
+00:00:31,270 --> 00:00:32,910
+I'll have the apple pie, please.

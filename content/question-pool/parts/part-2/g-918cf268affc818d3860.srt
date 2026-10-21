@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:02,730
+Were there plenty of forms for everyone at the workshop?
+
+2
+00:00:03,770 --> 00:00:06,305
+(A) There were just enough.
+
+3
+00:00:07,195 --> 00:00:09,890
+(B) He works until six today.
+
+4
+00:00:11,210 --> 00:00:13,650
+(C) I already went shopping.

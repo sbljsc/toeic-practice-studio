@@ -1,0 +1,15 @@
+1
+00:00:00,200 --> 00:00:04,010
+Do you know if we hired anyone to take over Mr. Peterson's job?
+
+2
+00:00:05,085 --> 00:00:08,440
+(A) The position is still up for grabs.
+
+3
+00:00:09,250 --> 00:00:12,540
+(B) I heard he is going into retirement.
+
+4
+00:00:13,435 --> 00:00:16,705
+(C) I'll take it over to him myself.
