@@ -205,6 +205,7 @@ Windows 便携包以 Windows 10/11 x64 为范围，实际 Release 资产仍需�
 | [Windows 便携版指南](docs/windows.md) | Windows 10/11 x64 下载、解压、启动、备份升级、排障与构建 |
 | [架构与接口](docs/architecture.md) | 题库边界、组卷、冻结快照、计时、状态、备份和主要接口 |
 | [Markdown 题库格式](docs/md-question-store.md) | 题组文件的结构、章节、Part 6 空位与按组导入导出 |
+| [练习题来源核查](docs/question-sources.md) | 官方、开放许可与第三方题库的授权现状、实测统计与扩充建议 |
 | [验收记录](docs/acceptance.md) | 数据检查、运行验证、浏览器验收与覆盖限制 |
 | [使用条款](LICENSE.md) | 自有代码的个人非商业许可范围 |
 | [内容权利说明](CONTENT-NOTICE.md) | 第三方练习内容的权利、授权现状与处理渠道 |
