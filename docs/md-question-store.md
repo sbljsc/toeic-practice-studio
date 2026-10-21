@@ -145,7 +145,7 @@ passage 数量；材料段数由 `### Passage K` 的实际条数决定。
 
 听力组（Part 1–4）除 md 外还有：
 
-- `<group_id>.flac`：整段录音，16 kHz / 单声道 / 16 bit。
+- `audio/<audio_asset>.flac`：整段录音，16 kHz / 单声道 / 16 bit。
 - `<group_id>.srt`：逐句字幕。SRT 序号从 1 起，时间为**该段内相对时间**，
   格式：
 
@@ -160,7 +160,11 @@ passage 数量；材料段数由 `### Passage K` 的实际条数决定。
   ```
 
   一句可以跨多行（换行用 `\n` 连接）；中文字幕不进 SRT，另存于
-  md 的 `## 原文` 之后由前端按需显示。
+  md 的 `### Transcript (zh)` 之后由前端按需显示。
+
+逐句字幕必须与 `### Transcript` 的英文原文**逐句对应**：加载器会按与
+`valid_sentences` 相同的规则切分原文并校验时间轴，任何一句对不上，
+整个题库都不可用。
 
 ## 4. Part 6 逻辑空位
 
@@ -192,4 +196,17 @@ Part 6 材料的空位在 md 中写作 `{{blank:N}}`，N 是**该 passage 内的
 - `textLayouts.ts`（2.3 MB 的全文索引）→ 直接内联进 md 的 `## 原文`
 - `materialTranscripts.ts`（图片转录）→ 内联进 md
 - `manifest.json` 保留，资产登记与 sha256 校验不变
+
+`manifest.json` 的 `schema_version` 改为 `3` 时，后端按 md 题库加载；
+`pool.json` 仍然保留，作为生成器的输入和往返比对的基准。
+
+## 7. 生成与校验
+
+- `tools/build_md_pool.py` 从 `pool.json` 与 `textLayouts.ts` 生成 md 树。
+  它不修改任何题目内容、答案、选项、题组成员、录音或字幕。
+- `tools/test_build_md_pool.py` 与 `tests/api/test_md_pool.py` 覆盖格式、
+  往返一致性和失败场景。
+- 往返校验：把 md 树加载回题库后，与 `pool.json` 的 2000 题 / 1030 组
+  **逐字段比对**。允许的差异只有排版层面——标题标记、软换行与汉字间空格；
+  文字本身必须逐字相同。
 
