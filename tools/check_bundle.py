@@ -31,7 +31,7 @@ def main():
         elif isinstance(value,list):
             for item in value:clean(item)
     clean(content)
-    ignored = {'.git','.venv','node_modules','.data','dist','__pycache__','.pytest_cache'}
+    ignored = {'.git','.venv','node_modules','.data','dist','__pycache__','.pytest_cache','work'}
     for path in ROOT.rglob('*'):
         if not path.is_file() or any(part in ignored or part.startswith('.venv-') for part in path.relative_to(ROOT).parts):
             continue
