@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 The prices charged by your Accounting Department do not match those -------
 to me by your Sales Department at the time of purchase.
@@ -29,7 +29,7 @@ to me by your Sales Department at the time of purchase.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：D**
 

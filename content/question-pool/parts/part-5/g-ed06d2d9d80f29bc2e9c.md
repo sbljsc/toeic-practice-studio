@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Mr. Smith wants you to know that he will be ------- job applicants all day on
 Thursday, and that all enquiries should be directed to his secretary.
@@ -29,7 +29,7 @@ Thursday, and that all enquiries should be directed to his secretary.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：D**
 

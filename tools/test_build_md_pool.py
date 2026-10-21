@@ -57,7 +57,7 @@ def _question_blocks(section: str) -> list[tuple[int, list[str]]]:
     current = 0
     body: list[str] = []
     for line in section.split("\n"):
-        match = re.match(r"^###\s+第\s*(\d+)\s*题\s*$", line.strip())
+        match = re.match(r"^#{2,6}\s+第\s*(\d+)\s*题\s*$", line.strip())
         if match:
             if current:
                 blocks.append((current, body))
@@ -134,7 +134,7 @@ def test_part_seven_numbers_every_passage_in_order():
     group = next(item for item in POOL["groups"]
                  if item["part"] == 7 and len(item["materials"]) >= 3)
     text = _group_md(group)
-    headings = re.findall(r"^### Passage (\d+)$", text, re.M)
+    headings = re.findall(r"^#{2,6} Passage (\d+)$", text, re.M)
     assert headings == [str(index) for index in range(1, len(group["materials"]) + 1)]
 
 
@@ -223,8 +223,8 @@ def test_an_empty_review_text_writes_no_source_block():
     group = next(item for item in POOL["groups"]
                  if item["part"] == 1 and not (item["review_text"] or "").strip())
     text = _group_md(group)
-    assert "### 教材原文" not in text
-    assert "### Transcript" in text
+    assert "教材原文" not in text
+    assert "Transcript" in text
 
 
 def test_the_generator_refuses_to_clean_a_directory_outside_the_output_root():
@@ -258,8 +258,78 @@ def test_every_group_writes_one_file_and_a_listening_group_writes_one_subtitle()
 
 
 def test_a_material_heading_is_never_mistaken_for_a_section_label():
-    # A heading inside a material is stored one level deeper than it reads.
-    assert demote_headings("### Title") == "#### Title"
-    assert demote_headings("## Title") == "### Title"
+    # A heading inside a material keeps its own level; the file's labels sit
+    # deeper than any heading a material can carry.
+    assert demote_headings("### Title") == "### Title"
+    assert demote_headings("## Title") == "## Title"
     assert demote_headings("###### Title") == "###### Title"
     assert demote_headings("not a heading") == "not a heading"
+
+
+def test_a_label_is_deeper_than_any_heading_a_material_can_carry():
+    # The reader splits the file on its own labels, so a label must never
+    # share a level with a heading that belongs to the material.
+    def level(text: str) -> int:
+        return len(text) - len(text.lstrip("#"))
+
+    labels = ("##### Material 1", "##### Passage 1", "##### 第 1 题",
+              "##### Transcript", "##### Review")
+    material_headings = ["# Title", "## Title", "### Title",
+                         "#### Title"]
+    for label in labels:
+        for heading in material_headings:
+            assert level(label) > level(heading), (label, heading)
+
+
+def test_a_deep_heading_inside_a_material_is_not_read_as_a_label():
+    # A material may carry a heading as deep as the file's own labels. The
+    # reader recognises a label by its exact wording, so the heading stays
+    # part of the material.
+    from toeic_practice.md_pool import parse_md_group
+
+    text = "\n".join([
+        "---",
+        "group_id: g-0123456789abcdef0123",
+        "part: 7",
+        "section: reading",
+        "questions:",
+        "  - id: q-0123456789abcdef0123",
+        "    index: 1",
+        "---",
+        "",
+        "## 原文",
+        "",
+        "##### Passage 1",
+        "",
+        "##### A heading that only looks like a label",
+        "",
+        "##### 第 9 题",
+        "",
+        "body text",
+        "",
+        "## 选项",
+        "",
+        "##### 第 1 题",
+        "",
+        "Stem?",
+        "",
+        "- A. one",
+        "- B. two",
+        "- C. three",
+        "- D. four",
+        "",
+        "## 答案 / 题解",
+        "",
+        "##### 第 1 题",
+        "",
+        "**答案：A**",
+        "",
+        "why",
+        "",
+    ])
+    group, questions = parse_md_group(text, "g-0123456789abcdef0123.md")
+    assert len(questions) == 1
+    assert len(group["materials"]) == 1
+    body = group["materials"][0]["text"]
+    assert "A heading that only looks like a label" in body
+    assert "第 9 题" in body

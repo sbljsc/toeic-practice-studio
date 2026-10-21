@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 If we are to ------- towards our common goals, workers must have faith in
 management, and vice versa.
@@ -29,7 +29,7 @@ management, and vice versa.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 

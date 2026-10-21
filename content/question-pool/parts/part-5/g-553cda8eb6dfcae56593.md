@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Any employee wishing to terminate his or her employment before the end of
 the contract may do so after giving 30 days written -------.
@@ -29,7 +29,7 @@ the contract may do so after giving 30 days written -------.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：C**
 

@@ -28,7 +28,7 @@ blanks:
 
 ## 原文
 
-### Review
+##### Review
 
 肖恩
 ·
@@ -112,7 +112,7 @@ Apex/HKG
 ·
 怀特
 
-### Material 1
+##### Material 1
 
 Mr. Sean Ronald
 1385 Midland Ave.
@@ -153,28 +153,28 @@ Cory White
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 - A. with
 - B. by
 - C. for
 - D. along
 
-### 第 2 题
+##### 第 2 题
 
 - A. There is a hotel shuttle bus that can take the guests to the hotel.
 - B. You have booked two rooms at the Marco Polo Hong Kong Hotel.
 - C. Guests will not need to pay for room services such as the mini-bar.
 - D. The room rate must be paid by guests when they check out.
 
-### 第 3 题
+##### 第 3 题
 
 - A. decide
 - B. select
 - C. settle
 - D. detour
 
-### 第 4 题
+##### 第 4 题
 
 - A. accuse
 - B. loan
@@ -183,7 +183,7 @@ Cory White
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 
@@ -195,7 +195,7 @@ the Marco Polo Hong Kong Hotel -------- details as shown:
 →按照句意，______ details as shown应表示“详细信息如下”，故
 (A)with最恰当。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：A**
 
@@ -206,7 +206,7 @@ the Marco Polo Hong Kong Hotel -------- details as shown:
 →下句介绍如何乘坐大巴到达酒店。可知，横线处应填入与大巴有关的
 信息，故选(A)。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：C**
 
@@ -217,7 +217,7 @@ Apex/HKG will -------- the room rate for the guests first.
 →横线处应填入词义为“支付”的动词。(C)settle除了有“解决”的
 意思之外，还可表示“支付，结算”，故为正确答案。
 
-### 第 4 题
+##### 第 4 题
 
 **答案：D**
 

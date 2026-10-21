@@ -21,7 +21,7 @@ questions:
 
 ## 原文
 
-### Review
+##### Review
 
 收件人：全体员工
 
@@ -213,7 +213,7 @@ scan
  reconsider
 重新考虑
 
-### Passage 1
+##### Passage 1
 
 To: All Staff Members
 
@@ -288,7 +288,7 @@ Regina Paul
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 According to the memo, what is NOT true about the company’s new official
 policy?
@@ -298,7 +298,7 @@ policy?
 - C. Employees should get answers to their requests within a day.
 - D. Employees must make requests ten days before going on vacation.
 
-### 第 2 题
+##### 第 2 题
 
 Why did Ms. Valiant request time off?
 
@@ -307,7 +307,7 @@ Why did Ms. Valiant request time off?
 - C. She would like to visit the beach.
 - D. She wants to see her relatives.
 
-### 第 3 题
+##### 第 3 题
 
 What did Ms. Valiant most likely do on July 2?
 
@@ -316,7 +316,7 @@ What did Ms. Valiant most likely do on July 2?
 - C. Met Mr. Marconi
 - D. Reserved some plane tickets
 
-### 第 4 题
+##### 第 4 题
 
 What is indicated about Ms. Paul?
 
@@ -325,7 +325,7 @@ What is indicated about Ms. Paul?
 - C. She failed to follow the company’s new policy.
 - D. She is employed as a lawyer at her company.
 
-### 第 5 题
+##### 第 5 题
 
 What does Ms. Paul suggest in the second e-mail?
 
@@ -336,7 +336,7 @@ What does Ms. Paul suggest in the second e-mail?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 
@@ -360,7 +360,7 @@ policy?
 →备忘录中说如连续休假7天以上，休假申请单上须说明请假人不在岗
 期间的详细工作安排。而不是说不能请假超过一周，故答案为(B)。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：D**
 
@@ -381,7 +381,7 @@ Why did Ms. Valiant request time off?
 →瓦利恩特女士在邮件中提到“我们这个大家庭里几乎所有人都会在期
 间某个时候出现”，由此可知，她休假是想要见亲戚。故答案为(D)。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：B**
 
@@ -407,7 +407,7 @@ What did Ms. Valiant most likely do on July 2?
 申请单，我今天从人力资源部领取的”，而人力资源部在二楼。故答案为
 (B)。
 
-### 第 4 题
+##### 第 4 题
 
 **答案：C**
 
@@ -430,7 +430,7 @@ What is indicated about Ms. Paul?
 斯·瓦利恩特的休假申请，周四才给予回复，由此可知，她没有遵守公司的
 新规定。故答案为(C)。
 
-### 第 5 题
+##### 第 5 题
 
 **答案：A**
 

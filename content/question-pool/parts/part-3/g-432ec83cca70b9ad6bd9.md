@@ -17,21 +17,21 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 W: Did you cancel your trip? I thought you were supposed to take off today.
 M: I was, but I got a great deal on a plane ticket from a friend of mine who works at a travel agency. So I decided to fly to New York next Monday instead.
 W: Wow! That is great. What about your hotel reservation? Were you able to change it? I heard it's very hard to get any rooms this week because of the film festival there.
 M: Actually, I ended up canceling it. It turns out that another friend of mine has a condominium there, and he said I could use it while I am staying there. He recently moved out here from New York because of his new job, and he hasn't had enough time to get rid of it yet.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 W: 你取消旅行了吗？我以为你应该今天出发呢。
 M: 原定是今天出发，但是我从一个在旅行社工作的朋友那里买到一张很值的机票。所以我决定下周一再飞往纽约。
 W: 哇，太棒了！那你预订的宾馆怎么办？你能调换一下吗？我听说因为那儿正举办电影节，这周很难订到房间。
 M: 其实，我最后把房间取消了。原来我的另一个朋友在那儿有一套公寓，他说我在那儿时可以住在里面。他近期要搬出纽约，因为他找到了一份新工作，但还没来得及卖掉这套房子。
 
-### Review
+##### Review
 
 W: Did you cancel your trip? I thought you were supposed to take off today.
 
@@ -102,7 +102,7 @@ postpone
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Why did the man delay his trip?
 
@@ -111,7 +111,7 @@ Why did the man delay his trip?
 - C. His friend could not make it on time.
 - D. He couldn’t book a hotel room.
 
-### 第 2 题
+##### 第 2 题
 
 According to the woman, why is it hard to reserve a room in New York
 this week?
@@ -121,7 +121,7 @@ this week?
 - C. Some of the hotels aren’t accepting bookings.
 - D. A large deposit is required for reservations.
 
-### 第 3 题
+##### 第 3 题
 
 What can be inferred about the man?
 
@@ -132,7 +132,7 @@ What can be inferred about the man?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 
@@ -167,7 +167,7 @@ C
 D
 ）他订不到房间。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：B**
 
@@ -203,7 +203,7 @@ C
 D
 ）预订需要一大笔押金。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：B**
 

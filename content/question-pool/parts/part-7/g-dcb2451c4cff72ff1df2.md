@@ -21,7 +21,7 @@ questions:
 
 ## 原文
 
-### Review
+##### Review
 
 伯纳德租赁公司是本市顶级的房地产中介。请让我们的房地产经纪人
 为您寻找完美的房产。请告诉他们您的需求，他们将会为您寻找符合您期
@@ -183,7 +183,7 @@ appreciate
  entertainment
 娱乐
 
-### Passage 1
+##### Passage 1
 
 Bernard Rentals is the city’s top real estate agency. Let our realtors find the
 perfect place for you. Tell them what you’re looking for, and they’ll match your
@@ -248,7 +248,7 @@ Martina Thompson
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 In the advertisement, what is mentioned about Bernard Rentals?
 
@@ -257,7 +257,7 @@ In the advertisement, what is mentioned about Bernard Rentals?
 - C. It is the oldest realtor in the city.
 - D. It charges small amounts for its services.
 
-### 第 2 题
+##### 第 2 题
 
 Which home fits Ms. Davis’s requirements best?
 
@@ -266,7 +266,7 @@ Which home fits Ms. Davis’s requirements best?
 - C. 31 Stanton Avenue
 - D. 88 Walden Street
 
-### 第 3 题
+##### 第 3 题
 
 In the e-mail, what does Ms. Davis request Bernard Rentals to do?
 
@@ -275,7 +275,7 @@ In the e-mail, what does Ms. Davis request Bernard Rentals to do?
 - C. Negotiate with the owner of a home
 - D. Send her a brochure about the city
 
-### 第 4 题
+##### 第 4 题
 
 What is suggested about Ms. Thompson?
 
@@ -284,7 +284,7 @@ What is suggested about Ms. Thompson?
 - C. She is employed at Bernard Rentals.
 - D. She is a resident of Oxnard.
 
-### 第 5 题
+##### 第 5 题
 
 What does Ms. Thompson offer to do for Ms. Davis?
 
@@ -295,7 +295,7 @@ What does Ms. Thompson offer to do for Ms. Davis?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：D**
 
@@ -315,7 +315,7 @@ In the advertisement, what is mentioned about Bernard Rentals?
 该公司的服务费用低廉。
 →广告提到，伯纳德租赁公司价格低廉，但是服务优质。答案是 (D)。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：B**
 
@@ -345,7 +345,7 @@ Which home fits Ms. Davis’s requirements best?
 不超过17.5万美元，显然洛克菲勒路743号最符合她一家人的需求。答案是
 (B)。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：B**
 
@@ -366,7 +366,7 @@ In the e-mail, what does Ms. Davis request Bernard Rentals to do?
 →在邮件中，戴维斯女士希望伯纳德租赁公司能为她寻找一些房源，带
 她去看房。答案是 (B)。
 
-### 第 4 题
+##### 第 4 题
 
 **答案：D**
 
@@ -387,7 +387,7 @@ What is suggested about Ms. Thompson?
 →汤普森女士在邮件中写道，她跟戴维斯女士可能会成为邻居，说明她
 也居住在奥克斯纳德。答案是 (D)。
 
-### 第 5 题
+##### 第 5 题
 
 **答案：A**
 

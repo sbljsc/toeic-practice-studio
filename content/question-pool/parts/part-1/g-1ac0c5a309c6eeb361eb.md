@@ -13,27 +13,27 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 (A) Some customers are entering the store.
 (B) The store clerk is cleaning the store with a broom.
 (C) Some goods have been hung on a rack outside of the store.
 (D) The floor of the store is being mopped.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 (A) 一些顾客正往商店里走。
 (B) 店员正在用扫帚清扫商店。
 (C) 一些商品被挂在商店外面的架子上了。
 (D) 有人正在拖商店的地板。
 
-### Material 1
+##### Material 1
 
 ![题目图片](/api/assets/img-380834822f7384838d9b)
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 - A. Some customers are entering the store.
 - B. The store clerk is cleaning the store with a broom.
@@ -42,7 +42,7 @@ questions:
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：C**
 

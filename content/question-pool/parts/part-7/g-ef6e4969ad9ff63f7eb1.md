@@ -17,7 +17,7 @@ questions:
 
 ## 原文
 
-### Review
+##### Review
 
 纽约
  (4
@@ -48,7 +48,7 @@ questions:
 的反差。
 ”
 
-### Passage 1
+##### Passage 1
 
 New
 
@@ -72,7 +72,7 @@ offering a stimulating contrast in the design of the new center.”
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 What was NOT announced at the press meeting?
 
@@ -83,7 +83,7 @@ council.
 - D. The design of the new building has won the Architectural Design of the
 Year Award.
 
-### 第 2 题
+##### 第 2 题
 
 What can be inferred about Lars Svendersen?
 
@@ -92,7 +92,7 @@ What can be inferred about Lars Svendersen?
 - C. He has been nominated for the architect of the year award.
 - D. He has a good relationship with the city council staff.
 
-### 第 3 题
+##### 第 3 题
 
 What will the new convention center NOT have in its new building?
 
@@ -103,7 +103,7 @@ What will the new convention center NOT have in its new building?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：D**
 
@@ -126,7 +126,7 @@ Year Award.
 →文中指出，酒店将拆除邻近的建筑物 (A)，建造与酒店相通的会议中
 心 (B)，其设计已经得到城市委员会的批准 (C)。答案是 (D)。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：B**
 
@@ -148,7 +148,7 @@ What can be inferred about Lars Svendersen?
 他和城市委员会的关系很好。
 →拉尔斯·恩凡德森已经是纽约最成功的建筑师之一，故答案是 (B)。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：C**
 

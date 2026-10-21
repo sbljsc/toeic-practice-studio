@@ -17,7 +17,7 @@ questions:
 
 ## 原文
 
-### Review
+##### Review
 
 ### 退房不必排队等候
 #### 节省时间的退房手续
@@ -37,11 +37,11 @@ _________________________________
 当您离开房间时请把钥匙放在床头柜上。
 谢谢您入住格兰德套房。
 
-### Passage 1
+##### Passage 1
 
 No need to wait in line to check-out with
 
-##### TIME-SAVING CHECK-OUT PROCEDURE
+#### TIME-SAVING CHECK-OUT PROCEDURE
 
 To serve our guests better, all details needed to check out have already been
 taken care of when you checked in. In the early morning of your departure, please
@@ -55,7 +55,7 @@ Thank you for choosing Grand Suites.
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Where would this information be found?
 
@@ -64,7 +64,7 @@ Where would this information be found?
 - C. On a notice board in the hotel lobby
 - D. At the hotel bar
 
-### 第 2 题
+##### 第 2 题
 
 According to the information provided, what happens when a guest checks into
 the hotel?
@@ -74,7 +74,7 @@ the hotel?
 - C. The guest’s luggage gets sent up the room.
 - D. The check out information automatically gets prepared.
 
-### 第 3 题
+##### 第 3 题
 
 What can be inferred about the procedure mentioned?
 
@@ -85,7 +85,7 @@ What can be inferred about the procedure mentioned?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 
@@ -106,7 +106,7 @@ Where would this information be found?
 →为使客人在客房中就能办理退房手续，酒店准备了此退房手续说明。
 答案是 (A)。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：D**
 
@@ -127,7 +127,7 @@ the hotel?
 会自动准备好退房信息。
 →退房所需的手续会在入住时就安排好。答案是 (D)。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：B**
 

@@ -17,15 +17,15 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 Good morning. This is Karen Holmes, Mr. Reid's secretary. I'm sorry to disturb you Mr. Stokes, but Mr. Reid just called from the airport to tell me that his plane has been delayed by fog. The airport anticipates that the fog will lift sufficiently by ten o'clock for planes to be able to take off. So there will be a delay of at least two hours in Mr. Reid's itinerary. He could well arrive in New York at one o'clock in the afternoon. That would mean that he will miss lunch but should have no problem arriving in time for the afternoon meeting. I will call you back after ten to let you know the situation. Oh, and do you have a cell phone number on which you can be contacted? Thanks. I'll speak to you later, Mr. Stokes.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 早上好，我是里德先生的秘书卡伦·霍姆斯。斯托克斯先生，很抱歉打扰您，里德先生刚刚从机场打电话说他的航班因为大雾推迟了。机场预测大雾会在10点之前散尽，那时飞机才能起飞。所以里德先生的行程会延迟至少两个小时，他会在下午1点到达纽约。这意味着他会错过午饭，不过按时参加下午的会议应该没有问题。我会在10点以后再给您打电话告诉您最新情况。哦，您有可以联系到您的手机号吗？谢谢。斯托克斯先生，我过一会儿打给您。
 
-### Review
+##### Review
 
 Good morning. This is Karen Holmes, Mr. Reid's secretary.
 I'm sorry to
@@ -95,7 +95,7 @@ disturb
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Why is Mr. Reid being delayed?
 
@@ -104,7 +104,7 @@ Why is Mr. Reid being delayed?
 - C. He has to attend to something else.
 - D. His secretary is not back from New York.
 
-### 第 2 题
+##### 第 2 题
 
 When is Mr. Reid expected to arrive in New York?
 
@@ -113,7 +113,7 @@ When is Mr. Reid expected to arrive in New York?
 - C. At one.
 - D. At two.
 
-### 第 3 题
+##### 第 3 题
 
 What does the caller request from Mr. Stokes?
 
@@ -124,7 +124,7 @@ What does the caller request from Mr. Stokes?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 
@@ -159,7 +159,7 @@ C
 D
 ）他的秘书还没有从纽约回来。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：C**
 
@@ -202,7 +202,7 @@ D
 2
 点。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：A**
 

@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Golf Weekly is a newly published magazine that caters ------- to experienced
 and inexperienced golfers who are just learning to play the game.
@@ -29,7 +29,7 @@ and inexperienced golfers who are just learning to play the game.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 

@@ -17,15 +17,15 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 In an important move today, the Board of Directors announced that their search for a new CEO has been successful. We are pleased to announce that Mr. Michael Benwick, one of the most respected business leaders in Europe, has accepted the position. Mr. Benwick has had a far-ranging and highly successful career in industry in South Africa and the United Kingdom. After graduating from Oxford in 1965, he took a middle management position in South Africa's mining industry. From there he has never looked back. We welcome him not only for his dynamism and charisma but also for his wealth of experience.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 在今天的一项重要提议中，董事会宣布他们成功地找到了新首席执行官。我们很高兴地宣布迈克尔·本维克先生接受了这一职位，他是欧洲最受尊敬的商业领袖之一。本维克先生在南非和英国的职业生涯涉及范围很广泛，而且非常成功。1965年从牛津毕业以后，他在南非煤矿业获得了一个中层管理职位。从那开始他一直蒸蒸日上。我们欢迎他的到来，不仅仅是因为他的干劲儿和领袖魅力，也是因为他拥有非常丰富的经验。
 
-### Review
+##### Review
 
 In an important move today,
 the Board of Directors announced that their
@@ -93,7 +93,7 @@ coalminer
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 What is the main topic of the talk?
 
@@ -102,7 +102,7 @@ What is the main topic of the talk?
 - C. The executive’s trip to the United Kingdom.
 - D. The mining industry in South Africa.
 
-### 第 2 题
+##### 第 2 题
 
 Who is Mr. Benwick?
 
@@ -111,7 +111,7 @@ Who is Mr. Benwick?
 - C. One of the board members.
 - D. A university professor.
 
-### 第 3 题
+##### 第 3 题
 
 What does the speaker imply when he says, “We welcome him not only for
 his dynamism and charisma but also for his wealth of experience”?
@@ -123,7 +123,7 @@ his dynamism and charisma but also for his wealth of experience”?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 
@@ -158,7 +158,7 @@ C
 D
 ）南非的煤矿业。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：B**
 
@@ -193,7 +193,7 @@ C
 D
 ）一位大学教授。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：D**
 

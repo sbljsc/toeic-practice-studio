@@ -32,3 +32,12 @@
 .material-content th { font-weight: 650; background: var(--surface-sunken); }
 .material-content__figure { margin: 1em 0; }
 .material-content__figure img { display: block; max-width: 100%; height: auto; object-fit: contain; }
+.material-content__picture { margin: 1em 0; }
+.material-content__picture .material-content__figure { margin: 0; }
+.material-content__picture-text { margin-top: .6em; }
+.material-content__picture-text summary {
+  cursor: pointer; color: var(--muted, #5b6472); font-size: .9375rem;
+  width: fit-content; padding: .2em 0;
+}
+.material-content__picture-text summary:hover { color: var(--accent); }
+.material-content__picture-text .material-content__text { margin-top: .5em; }

@@ -17,21 +17,21 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 W: I noticed you walking out of the subway station this morning when I was driving to work. Where is your car?
 M: Oh, I left it at home. I've decided to take the subway to work from today because I can't afford to drive it every day.
 W: I know what you mean. The prices of gas and parking are way too high these days. And insurance, that's another story. In fact, it's so bad that I have been seriously thinking of selling my car.
 M: Well, you should think about taking the subway to work too then, because it's not as bad as you think it is. In fact, I kind of enjoy reading the paper and not having to worry about driving.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 W: 今天早晨我开车上班时看到你从地铁站出来。你的车呢？
 M: 噢，我把它放家里了。我已经决定从今天开始乘地铁上班了，因为每天开车我负担不起了。
 W: 我明白你的意思。最近油价和停车费都太贵了，而且保险也是个问题。实际上，情况太糟了，我一直在认真地考虑要不要把车卖了。
 M: 那么，你应该也考虑一下乘地铁上班，因为乘地铁并不像你想像的那么糟糕。其实，我有点儿喜欢上在地铁里读报纸的感觉了，而且不用为开车担心。
 
-### Review
+##### Review
 
 W:
 I noticed you walking out of the subway station this morning
@@ -93,7 +93,7 @@ notice
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 How did the man get to work this morning?
 
@@ -102,7 +102,7 @@ How did the man get to work this morning?
 - C. He got a ride with a co-worker.
 - D. He walked.
 
-### 第 2 题
+##### 第 2 题
 
 What has the woman been thinking of doing?
 
@@ -111,7 +111,7 @@ What has the woman been thinking of doing?
 - C. Catch up on her reading.
 - D. Changing her insurance company.
 
-### 第 3 题
+##### 第 3 题
 
 What does the man mean when he says, “because it’s not as bad as you
 think it is”?
@@ -123,7 +123,7 @@ think it is”?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 
@@ -158,7 +158,7 @@ C
 D
 ）他步行去的。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：B**
 
@@ -193,7 +193,7 @@ C
 D
 ）换一家保险公司。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：B**
 

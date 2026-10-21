@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 The hard work put in during his younger years made him become ------- sound
 in his later years.
@@ -29,7 +29,7 @@ in his later years.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：D**
 

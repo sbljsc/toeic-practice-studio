@@ -13,14 +13,14 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 When will you have the report ready?
 (A) I report directly to Mr. Singh.
 (B) Yes, you can give it to me.
 (C) I'll have it on your desk by noon.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 你什么时候能把报告准备好？
 (A) 我直接向辛格先生报告。
@@ -31,7 +31,7 @@ When will you have the report ready?
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Mark your answer on your answer sheet.
 
@@ -41,7 +41,7 @@ Mark your answer on your answer sheet.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：C**
 

@@ -13,14 +13,14 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 Where can I catch the train for Chicago?
 (A) In one hour.
 (B) At Stop 6.
 (C) Yes, you can.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 我在哪里能搭到开往芝加哥的火车？
 (A) 在一小时内。
@@ -31,7 +31,7 @@ Where can I catch the train for Chicago?
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Mark your answer on your answer sheet.
 
@@ -41,7 +41,7 @@ Mark your answer on your answer sheet.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 

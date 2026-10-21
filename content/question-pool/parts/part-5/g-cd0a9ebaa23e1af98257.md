@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 The new head of marketing has been criticized for being too ------- to please
 senior managers.
@@ -29,7 +29,7 @@ senior managers.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：D**
 

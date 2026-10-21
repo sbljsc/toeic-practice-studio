@@ -15,7 +15,7 @@ from pathlib import Path
 from .pool_library import positive_number
 from .subtitle_cues import valid_sentences
 
-QUESTION_HEADING = re.compile(r"^###\s+第\s*(\d+)\s*题\s*$")
+QUESTION_HEADING = re.compile(r"^#{2,6}\s+第\s*(\d+)\s*题\s*$")
 OPTION_LINE = re.compile(r"^\s*-\s*([A-D])\.\s*(.*)$")
 OPTION_PAREN = re.compile(r"^\s*[（(]\s*([A-D])\s*[）)]\s*(.*)$")
 OPTION_BLOCK = re.compile(r"^\s*[（(]\s*$")
@@ -25,11 +25,12 @@ ANSWER_LINE = re.compile(r"^\*\*答案：([A-D])\*\*\s*$")
 BLANK_TOKEN = re.compile(r"\{\{blank:(\d+)\}\}")
 SRT_TIME = re.compile(
     r"(\d+):(\d{2}):(\d{2})[,.](\d{1,3})\s*-->\s*(\d+):(\d{2}):(\d{2})[,.](\d{1,3})")
-MATERIAL_HEADING = re.compile(r"^###\s+(?:Material|Passage)\s+(\d+)\s*$")
+MATERIAL_HEADING = re.compile(r"^#{2,6}\s+(?:Material|Passage)\s+(\d+)\s*$")
+IMAGE_TEXT_HEADING = "###### 图片文字"
 # The generator and older files name the same blocks differently; both are read.
-SCRIPT_EN = ("### Transcript", "### 听力原文")
-SCRIPT_ZH = ("### Transcript (zh)", "### 中文原文")
-SOURCE_HEADING = ("### 教材原文", "### Review")
+SCRIPT_EN = ("##### Transcript", "### Transcript", "### 听力原文")
+SCRIPT_ZH = ("##### Transcript (zh)", "### Transcript (zh)", "### 中文原文")
+SOURCE_HEADING = ("##### 教材原文", "### 教材原文", "##### Review", "### Review")
 NO_MATERIAL = "（本题无附加材料）"
 
 
@@ -173,6 +174,15 @@ def _material_body(body: str) -> tuple[str, dict | None]:
     """Read one material block as text or as a picture reference."""
     lines = body.split("\n")
     images = [line.strip() for line in lines if line.strip().startswith("![")]
+    # A picture may be followed by its written description, which the source
+    # recorded as the material text. The description is kept as the text of
+    # the picture material so a reader never loses the readable form.
+    description = ""
+    for index, line in enumerate(lines):
+        if line.strip() == IMAGE_TEXT_HEADING:
+            description = "\n".join(lines[index + 1:]).strip("\n")
+            lines = lines[:index]
+            break
     if images and len(images) == len([line for line in lines if line.strip()]):
         match = re.fullmatch(r"!\[(.*?)\]\(([^)]+)\)", images[0])
         if not match:
@@ -180,10 +190,13 @@ def _material_body(body: str) -> tuple[str, dict | None]:
         url = match.group(2)
         if not re.fullmatch(r"/api/assets/[A-Za-z0-9_-]+", url):
             raise ValueError("图片引用地址无效")
-        return "", {"kind": "image", "asset_id": url.rsplit("/", 1)[-1], "alt": match.group(1)}
+        picture = {"kind": "image", "asset_id": url.rsplit("/", 1)[-1], "alt": match.group(1)}
+        if description:
+            picture["text"] = description
+        return "", picture
     text = "\n".join(lines).strip("\n")
-    # A heading inside a material is stored one level deeper than it reads.
-    text = re.sub(r"(?m)^####(#{0,5})(?=\s)", r"###\1", text)
+    # A heading that belongs to the material keeps the level it was written
+    # with, because the file's own labels sit deeper than any of them.
     return text, None
 
 

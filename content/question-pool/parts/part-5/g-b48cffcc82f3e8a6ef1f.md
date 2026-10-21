@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 The giant pharmaceutical company insists that its new drug is ------- safe as
 long as it used under the supervision of a doctor.
@@ -29,7 +29,7 @@ long as it used under the supervision of a doctor.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：C**
 

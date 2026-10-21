@@ -13,14 +13,14 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 Where can I find the person in charge around here?
 (A) We can charge it on his account.
 (B) He stepped out for a moment.
 (C) I will get it for you in a second.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 我在哪儿能找到负责人？
 (A) 我们可以把这个记在他的账上。
@@ -31,7 +31,7 @@ Where can I find the person in charge around here?
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Mark your answer on your answer sheet.
 
@@ -41,7 +41,7 @@ Mark your answer on your answer sheet.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 

@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 This is an excellent time to consider changing jobs because of the large
 number of positions ------- available in the mining sector.
@@ -29,7 +29,7 @@ number of positions ------- available in the mining sector.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 

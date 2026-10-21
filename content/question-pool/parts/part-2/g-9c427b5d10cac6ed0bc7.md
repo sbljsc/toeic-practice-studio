@@ -13,14 +13,14 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 Who's planning to take you to the software exhibition?
 (A) He will take his car.
 (B) Jack said he will.
 (C) To get some information.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 谁计划带你去软件展览？
 (A) 他会用他的车。
@@ -31,7 +31,7 @@ Who's planning to take you to the software exhibition?
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Mark your answer on your answer sheet.
 
@@ -41,7 +41,7 @@ Mark your answer on your answer sheet.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 

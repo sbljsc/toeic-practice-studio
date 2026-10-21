@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Our CEO’s flamboyant style has its -------, but our profitability is more than
 satisfying to our shareholders.
@@ -29,7 +29,7 @@ satisfying to our shareholders.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 

@@ -17,7 +17,7 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 M: I heard an alarming report from Mr. Davis a few minutes ago. He mentioned that Gordon, Inc. has made a bid for one of our competitors.
 W: So the rumors that Gordon is thinking of getting involved in our industry are true.
@@ -26,7 +26,7 @@ W: Anyway, which company is it bidding on? Is it bigger or smaller than us?
 M: It's the second-largest company in the region according to market share.
 W: Oh, that will make it just a bit larger than us since we're the third-largest company.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 M: 几分钟前我听到了戴维斯先生的一份惊人的报告。他提到，戈登公司已经出价要收购我们的一个竞争对手了。
 W: 所以，戈登公司正在考虑涉足我们行业的小道消息已经坐实了。
@@ -35,7 +35,7 @@ W: 不管怎么说，它正在收购的是哪家公司呢？比我们公司大�
 M: 依据市场份额来看，它是本地区第二大公司。
 W: 哦，那它比我们公司大一点儿，因为我们是第三大的公司。
 
-### Review
+##### Review
 
 M: I heard an alarming report from Mr. Davis a few minutes ago. He
 mentioned that Gordon, Inc. has made a bid for one of our competitors.
@@ -102,17 +102,24 @@ alarming
 市
 场份额
 
-### Material 1
+##### Material 1
 
-#### Market Share of Local Companies
+### Market Share of Local Companies
 
-### Material 2
+##### Material 2
 
 ![题目图片](/api/assets/img-fd2e717bd87f204ef4f1)
 
+###### 图片文字
+
+Bellevue 13%
+Fordham Corp. 20%
+Percival 22%
+Duncan, Inc 45%
+
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 What industry do the speakers most likely work in?
 
@@ -121,7 +128,7 @@ What industry do the speakers most likely work in?
 - C. Food Service.
 - D. Publishing.
 
-### 第 2 题
+##### 第 2 题
 
 What does the man indicate about Gordon, Inc.?
 
@@ -130,7 +137,7 @@ What does the man indicate about Gordon, Inc.?
 - C. It has a branch office in the downtown area.
 - D. It is not currently involved in his industry.
 
-### 第 3 题
+##### 第 3 题
 
 Look at the graphic. Which company did Gordon, Inc. attempt to buy?
 
@@ -141,7 +148,7 @@ Look at the graphic. Which company did Gordon, Inc. attempt to buy?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：D**
 
@@ -176,7 +183,7 @@ C
 D
 ）出版业。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：D**
 
@@ -211,7 +218,7 @@ C
 D
 ）它目前尚未涉足男士所在的行业。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：B**
 

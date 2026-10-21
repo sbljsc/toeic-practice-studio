@@ -17,7 +17,7 @@ questions:
 
 ## 原文
 
-### Review
+##### Review
 
 ### 明良 Quik Motion QM-208 安全指南
 
@@ -71,9 +71,9 @@ Quik Motion
 info@akira.com
 。
 
-### Passage 1
+##### Passage 1
 
-#### Akira QuikMotion QM-208 Safety Guide
+### Akira QuikMotion QM-208 Safety Guide
 
 Congratulations on your purchase of an Akira QuikMotion Digital Video
 Camera. With due care and proper maintenance, your video camera will provide
@@ -109,7 +109,7 @@ local Akira dealer, or email us at: info@akira.com.
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Who would most likely be reading this pamphlet?
 
@@ -118,7 +118,7 @@ Who would most likely be reading this pamphlet?
 - C. People who have just purchased the video camera
 - D. Any individual taking a photography course at school
 
-### 第 2 题
+##### 第 2 题
 
 What should a user do if the video camera is accidentally dropped in water?
 
@@ -127,7 +127,7 @@ What should a user do if the video camera is accidentally dropped in water?
 - C. Remove the battery and not use it for a full day
 - D. Replace the battery with a dry one right away
 
-### 第 3 题
+##### 第 3 题
 
 What are users warned not to do?
 
@@ -138,7 +138,7 @@ What are users warned not to do?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：C**
 
@@ -159,7 +159,7 @@ Who would most likely be reading this pamphlet?
 →本文主要在讲述数码摄像机的使用注意事项，且在开头对购买此产品
 的顾客表示了感谢。答案是 (C)。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：C**
 
@@ -180,7 +180,7 @@ What should a user do if the video camera is accidentally dropped in water?
 →摄像机浸水后必须取出电池，放在干燥的环境中，24小时内不可再使
 用。答案是 (C)。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：A**
 

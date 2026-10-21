@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Sandy Duncan was handpicked by the general manager to head the next project
 because of ------- experience in this field.
@@ -29,7 +29,7 @@ because of ------- experience in this field.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 

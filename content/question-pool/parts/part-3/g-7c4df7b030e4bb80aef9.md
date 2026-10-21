@@ -17,21 +17,21 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 W: Hi, my name is Sarah Ferguson, and I made a reservation for a non-smoking room with a view of the river for two nights.
 M: I'm terribly sorry, Ms. Ferguson, but our staff must have made a mistake , because according to the information in the computer, your room is facing the park, not the river.
 W: That's terrible. I was hoping to have a nice view of the river from my room. Oh well, I guess mistakes happen. I'll just take the room facing the park then.
 M: Thank you. And to make up for our mistake, we would like to offer you a free dinner coupon for two at our hotel restaurant located on the basement floor.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 W: 你好，我是萨拉·弗格森，我预订了两晚无烟河景房。
 M: 非常抱歉，弗格森女士，我们的工作人员一定是弄错了，因为根据电脑里的信息，您的房间是朝向公园的，不是河畔。
 W: 那太糟糕了。我本来希望能从我的房间看到河畔的好景色。唉，好吧，应该是哪儿出错了吧。那我就要朝公园的房间吧。
 M: 谢谢。为了弥补我们的过错，我们想向您提供一张我们宾馆餐厅的免费双人晚餐券，餐厅在地下一层。
 
-### Review
+##### Review
 
 W:
 Hi, my name is Sarah Ferguson, and I made a reservation for a non-
@@ -94,7 +94,7 @@ basement floor
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Where are they?
 
@@ -103,7 +103,7 @@ Where are they?
 - C. At a restaurant.
 - D. At a park.
 
-### 第 2 题
+##### 第 2 题
 
 Why is the man apologizing to the woman?
 
@@ -112,7 +112,7 @@ Why is the man apologizing to the woman?
 - C. He does not know how to use the computer.
 - D. The restaurant is closed for business today.
 
-### 第 3 题
+##### 第 3 题
 
 What does the man offer the woman?
 
@@ -123,7 +123,7 @@ What does the man offer the woman?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 
@@ -158,7 +158,7 @@ C
 D
 ）在公园。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：B**
 
@@ -193,7 +193,7 @@ C
 D
 ）餐厅今天停业。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：A**
 

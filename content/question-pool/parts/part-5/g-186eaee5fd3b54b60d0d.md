@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Customers need to consider carefully ------- kind of interior fittings will best
 satisfy both their needs and tastes.
@@ -29,7 +29,7 @@ satisfy both their needs and tastes.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 

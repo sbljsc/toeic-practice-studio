@@ -17,7 +17,7 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 M: Excuse me, but I'd like to exchange this shirt I bought last night.
 W1: Of course, sir. Do you mind my asking what the problem is?
@@ -27,7 +27,7 @@ M: I didn't realize you were going to request it.
 W2: You can let him exchange it, Danielle. I sold him the item yesterday, so I can confirm he bought it here.
 M: Thanks for your assistance.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 M: 不好意思，打扰下。我想更换一下我昨天买的这件衬衫。
 W1: 当然可以，先生。您若不介意，我想问一下是什么问题？
@@ -37,7 +37,7 @@ M: 我不知道你们需要收据。
 W2: 丹尼尔，可以让他换。这件衣服是我昨天卖给他的，所以我可以确定他是在这买的。
 M: 谢谢您的帮助。
 
-### Review
+##### Review
 
 speakers.
 
@@ -100,7 +100,7 @@ assistance
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Where does the conversation most likely take place?
 
@@ -109,7 +109,7 @@ Where does the conversation most likely take place?
 - C. At a music store.
 - D. At an electronics store.
 
-### 第 2 题
+##### 第 2 题
 
 Why does the man want to return the item?
 
@@ -118,7 +118,7 @@ Why does the man want to return the item?
 - C. He found something else cheaper.
 - D. The item cost too much.
 
-### 第 3 题
+##### 第 3 题
 
 What does the man imply when he says, “I didn’t realize you were going to
 request it”?
@@ -130,7 +130,7 @@ request it”?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 
@@ -165,7 +165,7 @@ C
 D
 ）在一家电器店。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：B**
 
@@ -200,7 +200,7 @@ C
 D
 ）这件衣服太贵了。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：A**
 

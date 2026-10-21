@@ -17,15 +17,15 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 Welcome, shoppers, to the Landmark Department Store's special year-end sale. Nearly every item here is being offered at a discount. However, if you want to find the best deals in the entire store, drop by the jewelry department, where you can get savings of up to fifty percent. Make sure you sign up for a special shopper's card before you check out, too. Doing that will give you ten percent off on future purchases and make you eligible for all kinds of special offers throughout the year. If you need assistance, speak to one of our customer service representatives. You can find them on every floor.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 各位顾客，欢迎大家参加地标百货公司的年终特别促销活动。这里几乎每一件商品都有折扣。然而，如果您想在商场找到最优的价格，那么请去珠宝柜台看看吧，在那里您可以节省将近百分之五十的花费。在您结账之前也请确保已经注册了特别折扣卡。注册这张卡之后您将在未来的购物中享受九折优惠并且可以参与全年各式特别优惠活动。如果您需要帮助，请联系任何一位客服代表即可。这些代表您在每层都可找到。
 
-### Review
+##### Review
 
 Welcome, shoppers, to the Landmark Department Store's special year-
 
@@ -82,11 +82,11 @@ deal
 代表；典
 型
 
-### Material 1
+##### Material 1
 
-#### Landmark Department Store
+### Landmark Department Store
 
-### Material 2
+##### Material 2
 
 | Floor | Department |
 | --- | --- |
@@ -97,7 +97,7 @@ deal
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Why is the store having a sale?
 
@@ -106,7 +106,7 @@ Why is the store having a sale?
 - C. Students are going back to school.
 - D. It is going out of business.
 
-### 第 2 题
+##### 第 2 题
 
 Look at the graphic. Where can shoppers get the biggest discounts?
 
@@ -115,7 +115,7 @@ Look at the graphic. Where can shoppers get the biggest discounts?
 - C. On the third floor.
 - D. On the fourth floor.
 
-### 第 3 题
+##### 第 3 题
 
 What does the speaker recommend listeners do?
 
@@ -126,7 +126,7 @@ What does the speaker recommend listeners do?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 
@@ -161,7 +161,7 @@ C
 D
 ）它面临倒闭。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：C**
 
@@ -196,7 +196,7 @@ C
 D
 ）在四层。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：C**
 

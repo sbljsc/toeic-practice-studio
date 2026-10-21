@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 When operating in a new culture, it is very important to be ------- of local
 practices which, at first sight, may seem strange.
@@ -29,7 +29,7 @@ practices which, at first sight, may seem strange.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 

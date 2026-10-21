@@ -13,14 +13,14 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 How far is your hotel from here?
 (A) I'm staying in Room 1204.
 (B) At the Prince Hotel.
 (C) About ten minutes on foot.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 你的宾馆离这里多远？
 (A) 我住在1204房间。
@@ -31,7 +31,7 @@ How far is your hotel from here?
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Mark your answer on your answer sheet.
 
@@ -41,7 +41,7 @@ Mark your answer on your answer sheet.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：C**
 

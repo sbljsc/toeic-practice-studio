@@ -17,7 +17,7 @@ questions:
 
 ## 原文
 
-### Review
+##### Review
 
 石油价格达到了历史最高点，每桶售价
 75
@@ -36,7 +36,7 @@ questions:
 的钱，因此他们被迫缩减成本。经济学家对此表示担忧，他们认为经济需
 要复苏而不是保持目前这种不景气的状况。
 
-### Passage 1
+##### Passage 1
 
 Oil
 
@@ -55,7 +55,7 @@ that the economy needs a boost rather than this phenomenon. —[4]—
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 What is the report mainly about?
 
@@ -64,7 +64,7 @@ What is the report mainly about?
 - C. The need for a boost in the travel industry
 - D. Spending patterns in the consumer market
 
-### 第 2 题
+##### 第 2 题
 
 According to the report, what will likely strike the economy the hardest if the
 price of oil hits the $80 per barrel mark?
@@ -74,7 +74,7 @@ price of oil hits the $80 per barrel mark?
 - C. Airlines
 - D. Gas stations
 
-### 第 3 题
+##### 第 3 题
 
 In which of the positions marked [1], [2], [3], and [4] does the following
 sentence best belong?
@@ -88,7 +88,7 @@ oil price.”
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 
@@ -108,7 +108,7 @@ What is the report mainly about?
 消费者市场的消费模式
 →这是一篇有关油价创历史最高的新闻报道。答案是 (A)。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：B**
 
@@ -134,7 +134,7 @@ price of oil hits the $80 per barrel mark?
 →文中指出，如果油价达到80美元，消费者的燃料负担会加重，致使能
 源消费量减少，而这是对经济的最大影响。答案是 (B)。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：B**
 

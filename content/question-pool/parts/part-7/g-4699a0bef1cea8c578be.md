@@ -21,7 +21,7 @@ questions:
 
 ## 原文
 
-### Review
+##### Review
 
 ### 出售高级住宅
 
@@ -168,9 +168,9 @@ accommodate
 coordinate
 协调
 
-### Passage 1
+##### Passage 1
 
-#### Prestige Properties now Available
+### Prestige Properties now Available
 
 For discerning customers seeking unique properties, The Hills Real
 Estate Agency is pleased to announce the availability of the following
@@ -229,7 +229,7 @@ Lisa Brown: 755-1207
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 For whom is this advertisement most likely intended?
 
@@ -238,7 +238,7 @@ For whom is this advertisement most likely intended?
 - C. Anyone who is looking for a bargain
 - D. Families with many children
 
-### 第 2 题
+##### 第 2 题
 
 Who is John Connor?
 
@@ -247,7 +247,7 @@ Who is John Connor?
 - C. An artist
 - D. A history professor
 
-### 第 3 题
+##### 第 3 题
 
 According to the e-mail, which of the following places will most likely suit
 Ms. Brown the most?
@@ -257,7 +257,7 @@ Ms. Brown the most?
 - C. Victorian Terrace
 - D. None of them
 
-### 第 4 题
+##### 第 4 题
 
 What is the main purpose of the e-mail?
 
@@ -266,7 +266,7 @@ What is the main purpose of the e-mail?
 - C. To put her apartment on the market
 - D. To reply to an inquiry she received from the man
 
-### 第 5 题
+##### 第 5 题
 
 What can be implied about Ms. Brown?
 
@@ -277,7 +277,7 @@ What can be implied about Ms. Brown?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 
@@ -298,7 +298,7 @@ For whom is this advertisement most likely intended?
 →第一篇文章是一则广告，主要是面向寻找独特房产的顾客介绍高级地
 段的售房信息。答案是(B)。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：B**
 
@@ -322,7 +322,7 @@ Who is John Connor?
 johnconnor@thehills.com中提到了咨询地点和咨询方法等信息，而且第二
 篇文章是一封向康纳咨询的邮件，因此可以推断康纳是房地产经纪人。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：B**
 
@@ -345,7 +345,7 @@ Ms. Brown the most?
 住宅。根据广告中描述的售房信息可知，仓库改建公寓最适合。答案是
 (B)。
 
-### 第 4 题
+##### 第 4 题
 
 **答案：B**
 
@@ -367,7 +367,7 @@ What is the main purpose of the e-mail?
 you..., I’d like to..., I was wondering if..., Is it possible...
 等，而信中提到了想要约定看房时间。答案是(B)。
 
-### 第 5 题
+##### 第 5 题
 
 **答案：A**
 

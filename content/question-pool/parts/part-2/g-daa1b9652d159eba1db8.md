@@ -13,14 +13,14 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 Don't you feel like going over to the art gallery after work?
 (A) Yes, he teaches art for a living.
 (B) Yes, but I don't think I can tonight.
 (C) Okay, I could hang the picture in my room.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 难道你不想下班后去美术馆吗？
 (A) 是的，他靠教美术谋生。
@@ -31,7 +31,7 @@ Don't you feel like going over to the art gallery after work?
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Mark your answer on your answer sheet.
 
@@ -41,7 +41,7 @@ Mark your answer on your answer sheet.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 

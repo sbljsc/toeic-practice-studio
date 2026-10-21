@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 ------- Mr. Bingham’s promotion became official, many of his colleagues have
 approached him to congratulate him.
@@ -29,7 +29,7 @@ approached him to congratulate him.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：C**
 

@@ -17,21 +17,21 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 W: Okay, let me see if I have everything straight here. Your flight is due to arrive next Tuesday on June 20 at 4:50 p. m. You will spend one night at the Hilton Hills and be on the 11 o'clock flight out to London, right?
 M: That's correct. I will spend a night in Paris to meet with Mr. Chretien the first thing Wednesday morning to settle a couple of things before I set out to London to close a deal with Mr. Charles Connery. I need you to make sure you have all the documents ready for me when I get there.
 W: No problem. I've also called Mr. Chretien and told him that you would be coming to see him, and he said he would have all the necessary documents ready for you as well.
 M: That's great. I have a gut feeling that I am going to land this contract. I feel very good about it.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 W: 好的，让我看看我是否把一切都弄清楚了。您的航班定于下星期二，也就是6月20日下午4 ∶ 50抵达。您将在希尔顿山庄度过一晚，然后乘坐11点的航班到伦敦，是吧？
 M: 对的。我将在巴黎度过一个晚上，周三上午第一件事情是与克雷蒂安先生解决一些事情，然后我将动身去伦敦与查尔斯·康纳里先生达成一项交易。我需要你确保在我到达那里的时候，你能够把所有文件都准备好。
 W: 没问题。我也给克雷蒂安先生打过电话了，我告诉他您将去见他，他说他也会准备好您需要的所有文件。
 M: 很好。我有种直觉，我将能签订这份合同。我对此感觉很好。
 
-### Review
+##### Review
 
 W: Okay, let me see if I have everything straight here. Your flight is due to
 arrive next Tuesday on June 20 at 4:50 p. m. You will spend one night at the Hilton
@@ -105,7 +105,7 @@ necessary
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 How many nights will the man spend in France?
 
@@ -114,7 +114,7 @@ How many nights will the man spend in France?
 - C. Three.
 - D. Four.
 
-### 第 2 题
+##### 第 2 题
 
 What does the man mean when he says, “I need you to make sure you have
 all the documents ready for me when I get there”?
@@ -124,7 +124,7 @@ all the documents ready for me when I get there”?
 - C. The woman should book a flight ticket to London.
 - D. The woman should reserve a room at the Hilton Hills.
 
-### 第 3 题
+##### 第 3 题
 
 Why is the man making the trip to London?
 
@@ -135,7 +135,7 @@ Why is the man making the trip to London?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 
@@ -170,7 +170,7 @@ C
 D
 ）四个。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：A**
 
@@ -212,7 +212,7 @@ C
 D
 ）女士应该在希尔顿山庄预订一个房间。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：B**
 

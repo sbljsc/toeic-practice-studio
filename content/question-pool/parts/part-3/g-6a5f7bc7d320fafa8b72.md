@@ -17,21 +17,21 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 M: I'm terribly sorry, but I won't be able to show you the house you mentioned over the phone this morning. The owner went away for the weekend and was supposed to be back this morning, but he just called and said he won't be back until tomorrow because his flight got canceled.
 W: That's terrible. I got off work an hour early and drove all the way across town to see this house. Isn't there any possible chance that I could at least take a look around the yard?
 M: Well, I am sure that the owner won't mind if we checked out the house. Give me a second. I will call his hotel and ask for his permission. In the meantime, would you like some coffee?
 W: Yes, that would be nice. I take mine black, please.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 M: 非常抱歉，我不能带你参观今天早晨你在电话里提到的房子了。房主出去度周末了，本来是要今天早晨回来的，但是他刚刚打来电话说因为航班取消了，他要到明天才能回来。
 W: 那太糟了。我提前一小时下班，然后开车穿越了整个城镇来看他的房子。有没有可能让我至少看看院子呢？
 M: 嗯，我确定房主一定不会介意我们看看房子的。请等我一下。我去给他住的宾馆打个电话征得他的同意。在此期间，你想喝点咖啡吗？
 W: 嗯，好的。我喝清咖啡。
 
-### Review
+##### Review
 
 M:
 I'm terribly sorry, but I won't be able to show you the house you
@@ -88,7 +88,7 @@ in the meantime
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Who most likely is the man?
 
@@ -97,7 +97,7 @@ Who most likely is the man?
 - C. A coffee shop attendant.
 - D. A hotel worker.
 
-### 第 2 题
+##### 第 2 题
 
 What does the man imply when he says, “he won’t be back until tomorrow
 because his flight got canceled”?
@@ -107,7 +107,7 @@ because his flight got canceled”?
 - C. The owner of the house cannot be reached.
 - D. The woman’s appointment got canceled.
 
-### 第 3 题
+##### 第 3 题
 
 What does the woman request?
 
@@ -118,7 +118,7 @@ What does the woman request?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 
@@ -153,7 +153,7 @@ C
 D
 ）旅店工作人员。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：D**
 
@@ -193,7 +193,7 @@ C
 D
 ）女士的预约被取消了。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：B**
 

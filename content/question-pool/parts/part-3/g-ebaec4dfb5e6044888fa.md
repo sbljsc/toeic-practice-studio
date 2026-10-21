@@ -17,21 +17,21 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 M: Do we still have far to go? This carry-on bag is really hurting my shoulder.
 W: We're almost there. The gate is just up those stairs there. What do you have in your bag anyway?
 M: Oh, I picked up some CDs and toys for my kids. The prices are unbelievably cheap here.
 W: This must be your first trip here. I remember picking up things when I first came here. After a while, you forget that everything here is cheaper than things back home.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 M: 我们还要走很远吗？这个手提包弄得我的肩膀真疼。
 W: 我们就快到了。那些楼梯上面就是登机口了。你的包里到底有什么？
 M: 哦，我给孩子买了一些CD和玩具。这儿的价格太便宜了，让人难以置信。
 W: 你一定是第一次来这儿吧。我记得我第一次到这儿来时买了东西。过不了多久，你就会忘记这里的所有东西都比家里的便宜。
 
-### Review
+##### Review
 
 M:
 Do we still have far to go? This carry-on bag is really hurting my
@@ -89,7 +89,7 @@ carry-on
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Where is the conversation most likely taking place?
 
@@ -98,7 +98,7 @@ Where is the conversation most likely taking place?
 - C. At a record store.
 - D. At a travel agency.
 
-### 第 2 题
+##### 第 2 题
 
 What does the man complain about?
 
@@ -107,7 +107,7 @@ What does the man complain about?
 - C. How expensive the tickets are.
 - D. How difficult it is to get home.
 
-### 第 3 题
+##### 第 3 题
 
 What can be inferred about the woman?
 
@@ -118,7 +118,7 @@ What can be inferred about the woman?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 
@@ -153,7 +153,7 @@ C
 D
 ）在旅行社。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：A**
 
@@ -188,7 +188,7 @@ C
 D
 ）回家太困难了。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：D**
 

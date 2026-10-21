@@ -28,7 +28,7 @@ blanks:
 
 ## 原文
 
-### Review
+##### Review
 
 ### 公共通知
 
@@ -78,9 +78,9 @@ blanks:
 )
 公开。
 
-### Material 1
+##### Material 1
 
-#### PUBLIC NOTICE
+### PUBLIC NOTICE
 
 Sheraton College intends to enter into a contract for consulting services with
 a potential company for the purpose of developing and implementing a campus-
@@ -111,28 +111,28 @@ January 15, 2019.
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 - A. assisted
 - B. blended
 - C. associated
 - D. united
 
-### 第 2 题
+##### 第 2 题
 
 - A. Consider
 - B. Consideration
 - C. Considered
 - D. Considerate
 
-### 第 3 题
+##### 第 3 题
 
 - A. The campus-wide one-card system is popular in colleges.
 - B. Applicants will be required to sign an affidavit.
 - C. The identification card is only accessible among students.
 - D. Sheraton College has implemented the one-card system.
 
-### 第 4 题
+##### 第 4 题
 
 - A. interests
 - B. interested
@@ -141,7 +141,7 @@ January 15, 2019.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：C**
 
@@ -153,7 +153,7 @@ applications to all persons -------- with the college.
 →______ with the college修饰all persons，句意应为“和大学有关
 联的所有人”。答案是 (C) associated (相关的，关联的)。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：B**
 
@@ -166,7 +166,7 @@ installation, products, and implementation.
 →横线处所填词作被动语态的主语。答案是名词 (B) Consideration
 (考虑)。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：B**
 
@@ -177,7 +177,7 @@ installation, products, and implementation.
 →由下句内容“上面声明他们目前不隶属于任何……”可知，横线处应
 描述与声明相关的内容，故选 (B)。
 
-### 第 4 题
+##### 第 4 题
 
 **答案：A**
 

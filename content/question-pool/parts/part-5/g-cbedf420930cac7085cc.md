@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 It has been ------- 40 years since our current president first walked through the
 doors of this illustrious institution.
@@ -29,7 +29,7 @@ doors of this illustrious institution.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 

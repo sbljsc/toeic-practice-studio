@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 The new head of marketing is already making his mark on the company even
 though he only ------- 6 weeks ago.
@@ -29,7 +29,7 @@ though he only ------- 6 weeks ago.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：D**
 

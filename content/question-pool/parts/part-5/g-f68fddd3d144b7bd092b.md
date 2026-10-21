@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Following a widespread dispute over wages, both parties involved -------
 came to an agreement to end the three-month walkout, as the company offered
@@ -30,7 +30,7 @@ higher wages and job guarantees.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 

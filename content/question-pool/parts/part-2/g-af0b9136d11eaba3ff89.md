@@ -13,14 +13,14 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 Can you tell John to come and see me when he steps into the office?
 (A) Yes, he stepped out a minute ago.
 (B) I think he went to see his doctor.
 (C) I don't think he's coming back today.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 约翰到办公室的时候你让他过来找我好吗？
 (A) 是的，他刚刚出去。
@@ -31,7 +31,7 @@ Can you tell John to come and see me when he steps into the office?
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Mark your answer on your answer sheet.
 
@@ -41,7 +41,7 @@ Mark your answer on your answer sheet.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：C**
 

@@ -28,7 +28,7 @@ blanks:
 
 ## 原文
 
-### Review
+##### Review
 
 ### 电影评论
 
@@ -66,15 +66,15 @@ blanks:
 ·
 瑞金斯
 
-### Material 1
+##### Material 1
 
-#### AT THE MOVIES
+### AT THE MOVIES
 
 Reviews by Elisa Reigns
 
 Ratings out of 5
 
-##### STRAIGHT COP CROOKED COP
+#### STRAIGHT COP CROOKED COP
 
 Canada’s two official cultures clash {{blank:1}} -------- an uptight, by-the-book
 police officer (Jerry Kirkland) from Vancouver hooks up with a rule-breaking
@@ -86,28 +86,28 @@ half of the movie. {{blank:4}} --------. •• Elisa Reigns
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 - A. despite
 - B. when
 - C. because of
 - D. until
 
-### 第 2 题
+##### 第 2 题
 
 - A. within
 - B. over
 - C. between
 - D. along
 
-### 第 3 题
+##### 第 3 题
 
 - A. fairly
 - B. directly
 - C. exactly
 - D. quickly
 
-### 第 4 题
+##### 第 4 题
 
 - A. The audience could well understand clichés in the movie.
 - B. The movie was about Canada’s two official cultures clash.
@@ -116,7 +116,7 @@ half of the movie. {{blank:4}} --------. •• Elisa Reigns
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 
@@ -129,7 +129,7 @@ from Quebec (Bruce Huard) for a drug-related murder investigation.
 →横线后是“主语+动词”结构的从句，因此横线处应填入从属连词。
 根据主句的clash (冲突；撞击) 和从句内容，最符合句意的是 (B) when。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：C**
 
@@ -142,7 +142,7 @@ audience.
 →chemistry表示“两个物质或人之间发生的化学反应”，引申为“两
 人之间的默契”，答案是 (C) between。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：D**
 
@@ -154,7 +154,7 @@ movie.
 →but前的内容应和starts to lag on toward the latter half of
 the movie (从电影后半段起开始变得拖沓) 相反。答案是 (D) quickly。
 
-### 第 4 题
+##### 第 4 题
 
 **答案：D**
 

@@ -13,14 +13,14 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 If you get this work done by three, I think you should call it a day.
 (A) I will go home and get them.
 (B) I'll call him back later.
 (C) That's what I am planning to do.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 如果你3点前能把这项工作完成，你就可以下班了。
 (A) 我会回家取它们。
@@ -31,7 +31,7 @@ If you get this work done by three, I think you should call it a day.
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Mark your answer on your answer sheet.
 
@@ -41,7 +41,7 @@ Mark your answer on your answer sheet.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：C**
 

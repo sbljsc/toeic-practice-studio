@@ -235,7 +235,11 @@ test('raw HTML, Markdown links and embeds never create active elements', () => {
 test('only local registered asset endpoints load; image OCR is not repeated', () => {
   for (const url of ['https://evil.test/x', '//evil.test/x', 'data:image/svg+xml,x', '/api/assets/../x', '/api/assets/x?redirect=x', '/api/assets/x%2fy', 'javascript:alert(1)']) assert.equal(materialImageUrl(url), undefined);
   const html = renderToStaticMarkup(createElement(MaterialContent, { materials: [{ kind: 'image', url: '/api/assets/img-123', alt: '路线图', text: 'REPEATED OCR' }] }));
-  assert.match(html, /src="\/api\/assets\/img-123"/); assert.match(html, /alt="路线图"/); assert.doesNotMatch(html, /REPEATED OCR/);
+  assert.match(html, /src="\/api\/assets\/img-123"/); assert.match(html, /alt="路线图"/);
+  // The picture carries the material; its written description repeats the
+  // same content and stays folded away instead of sitting beside the image.
+  assert.match(html, /<details/); assert.match(html, /REPEATED OCR/);
+  assert.doesNotMatch(html, /<img[^>]*>\s*<p>REPEATED OCR/);
   const fallback = renderToStaticMarkup(createElement(MaterialContent, { materials: [{ kind: 'image', url: 'https://evil.test/a', text: '<fallback>' }] }));
   assert.doesNotMatch(fallback, /<img|fallback/); assert.match(fallback, /题目图片暂不可用/);
 });

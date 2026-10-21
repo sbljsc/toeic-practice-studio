@@ -13,14 +13,14 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 Would you rather stay here or go for a walk with me?
 (A) I've been waiting for an hour.
 (B) Let me get my jacket.
 (C) Yes, I think so.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 你是想待在这里，还是想和我出去散散步呢？
 (A) 我已经等了一个小时了。
@@ -31,7 +31,7 @@ Would you rather stay here or go for a walk with me?
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Mark your answer on your answer sheet.
 
@@ -41,7 +41,7 @@ Mark your answer on your answer sheet.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 

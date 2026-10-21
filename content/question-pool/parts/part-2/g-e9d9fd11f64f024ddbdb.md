@@ -13,14 +13,14 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 You have some spare time this morning, don't you?
 (A) It is ten o'clock now.
 (B) Yes, in my office.
 (C) I think so.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 你今天上午有空，是吗？
 (A) 现在10点了。
@@ -31,7 +31,7 @@ You have some spare time this morning, don't you?
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Mark your answer on your answer sheet.
 
@@ -41,7 +41,7 @@ Mark your answer on your answer sheet.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：C**
 

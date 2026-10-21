@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Management experts consider it highly ------- that internal communications not
 only be ‘top-down’.
@@ -29,7 +29,7 @@ only be ‘top-down’.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 

@@ -13,14 +13,14 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 Why did Mr. Owens decide to leave?
 (A) He got a better offer elsewhere.
 (B) Mr. Owens will be here soon.
 (C) Okay, I will give him a call.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 为什么欧文斯先生决定离开？
 (A) 他在别处得到了更好的工作。
@@ -31,7 +31,7 @@ Why did Mr. Owens decide to leave?
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Mark your answer on your answer sheet.
 
@@ -41,7 +41,7 @@ Mark your answer on your answer sheet.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 

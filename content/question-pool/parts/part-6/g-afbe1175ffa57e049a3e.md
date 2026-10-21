@@ -28,7 +28,7 @@ blanks:
 
 ## 原文
 
-### Review
+##### Review
 
 ### 音乐厅将随着音乐活跃起来
 
@@ -79,9 +79,9 @@ blanks:
 ·
 波德赖斯带来的表演。
 
-### Material 1
+##### Material 1
 
-#### Halls will Come to Life with Music
+### Halls will Come to Life with Music
 
 Albert Hall and Royal Hall have disclosed their schedules for the upcoming
 season, with everything {{blank:1}} -------- classical music to stand-up comedy acts
@@ -97,14 +97,14 @@ Polish contralto George Podles are on the bill.
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 - A. over
 - B. at
 - C. up
 - D. from
 
-### 第 2 题
+##### 第 2 题
 
 - A. American Soprano Rosemary Voigt is very popular among people all over
 the world.
@@ -113,14 +113,14 @@ the world.
 - D. The folk superstar Judith Bachman is more famous than the Canadian
 baritone Mel Finley.
 
-### 第 3 题
+##### 第 3 题
 
 - A. besides
 - B. of
 - C. also
 - D. either
 
-### 第 4 题
+##### 第 4 题
 
 - A. series
 - B. steps
@@ -129,7 +129,7 @@ baritone Mel Finley.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：D**
 
@@ -144,7 +144,7 @@ between.
 形式。按照句意，应该使用表示范围的from... to... (从…到…)。答案是
 (D)。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：B**
 
@@ -157,7 +157,7 @@ baritone Mel Finley.
 →下句说“这个庄严肃穆的音乐厅也将于……举办……”。可知，横线
 处句子应该描述音乐厅的演出信息，故选 (B)。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：C**
 
@@ -170,7 +170,7 @@ Bachman on February 12, 13, and 14.
 →前一句提到史密斯一家将在阿尔伯特音乐厅首次登台，之后又介绍了
 几位艺术家的演出安排，故最恰当的是 (C) also。
 
-### 第 4 题
+##### 第 4 题
 
 **答案：A**
 

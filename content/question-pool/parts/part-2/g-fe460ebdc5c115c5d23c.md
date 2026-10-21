@@ -13,14 +13,14 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 Where can I pick up a raincoat?
 (A) Yes, it might be all right.
 (B) Around three o'clock.
 (C) Probably at the mall.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 我在哪里能买到雨衣？
 (A) 是的，没问题。
@@ -31,7 +31,7 @@ Where can I pick up a raincoat?
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Mark your answer on your answer sheet.
 
@@ -41,7 +41,7 @@ Mark your answer on your answer sheet.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：C**
 

@@ -13,14 +13,14 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 Why don't you take a break and stay home for a few days?
 (A) Thanks, I had a great vacation.
 (B) I wish I could, but I have too much work.
 (C) The one here is much stronger.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 你为什么不休息一下，在家待几天呢？
 (A) 谢谢，我的假期很愉快。
@@ -31,7 +31,7 @@ Why don't you take a break and stay home for a few days?
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Mark your answer on your answer sheet.
 
@@ -41,7 +41,7 @@ Mark your answer on your answer sheet.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 

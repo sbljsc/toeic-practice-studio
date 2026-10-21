@@ -13,14 +13,14 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 How about showing our appreciation by sending Jenny a thank-you card?
 (A) Thank you. I appreciate it.
 (B) That's a wonderful gesture.
 (C) The post office is not far.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 送珍妮一张感谢贺卡来表达我们的感激，怎么样？
 (A) 谢谢你。我很感激。
@@ -31,7 +31,7 @@ How about showing our appreciation by sending Jenny a thank-you card?
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Mark your answer on your answer sheet.
 
@@ -41,7 +41,7 @@ Mark your answer on your answer sheet.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 

@@ -28,7 +28,7 @@ blanks:
 
 ## 原文
 
-### Review
+##### Review
 
 ### 造梦者
 
@@ -58,9 +58,9 @@ Plus
 ”
 的感觉。
 
-### Material 1
+##### Material 1
 
-#### Dreamaker
+### Dreamaker
 
 The professionals that make your nights comfortable
 
@@ -80,21 +80,21 @@ helps to prevent that“roll out of bed” feeling.
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 - A. takes
 - B. features
 - C. accounts
 - D. calculates
 
-### 第 2 题
+##### 第 2 题
 
 - A. proves
 - B. proven
 - C. proving
 - D. prove
 
-### 第 3 题
+##### 第 3 题
 
 - A. Experts at the Dreamaker have spent less than 50 years studying the coil
 system.
@@ -104,7 +104,7 @@ Americans.
 and durable sleeping surface.
 - D. The number of coils does a great matter in making comfortable beds.
 
-### 第 4 题
+##### 第 4 题
 
 - A. provide
 - B. provisions
@@ -113,7 +113,7 @@ and durable sleeping surface.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 
@@ -125,7 +125,7 @@ about.
 →The Dreamaker Plus是产品名，the exclusive coil system是产品
 特点。最符合句意的是动词features (以…为特色)，故选 (B)。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：B**
 
@@ -138,7 +138,7 @@ technology.
 →并列连词and前后词性应保持一致。可知，横线处应填形容词，故选
 (B) proven (经过证实的)。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：C**
 
@@ -153,7 +153,7 @@ and durable sleeping surface.
 弹簧系统的独特之处。可知，横线处应该继续介绍这种床垫材质好在哪里，
 故选 (C)。
 
-### 第 4 题
+##### 第 4 题
 
 **答案：D**
 

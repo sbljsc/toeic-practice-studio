@@ -13,14 +13,14 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 Can I give you a check, or would you prefer cash?
 (A) It doesn't matter to me.
 (B) Yes, I checked it twice.
 (C) No, I don't have any money on me.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 我可以给你支票吗，还是你更想要现金？
 (A) 对我来说没关系。
@@ -31,7 +31,7 @@ Can I give you a check, or would you prefer cash?
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Mark your answer on your answer sheet.
 
@@ -41,7 +41,7 @@ Mark your answer on your answer sheet.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 

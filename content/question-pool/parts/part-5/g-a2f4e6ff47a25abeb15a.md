@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 The new store, ------- is currently undergoing construction, will have its grand
 opening sometime next spring.
@@ -29,7 +29,7 @@ opening sometime next spring.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：D**
 

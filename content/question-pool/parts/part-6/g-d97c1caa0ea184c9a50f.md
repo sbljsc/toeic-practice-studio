@@ -28,7 +28,7 @@ blanks:
 
 ## 原文
 
-### Review
+##### Review
 
 米歇尔  
 ·L·
@@ -64,7 +64,7 @@ blanks:
 克拉姆公司
 (206) 755 8956
 
-### Material 1
+##### Material 1
 
 Michelle L. Sinnott
 
@@ -100,14 +100,14 @@ Coram Incorporated
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 - A. you
 - B. us
 - C. them
 - D. him
 
-### 第 2 题
+##### 第 2 题
 
 - A. I would be grateful to receive any information regarding his work
 achievements.
@@ -116,14 +116,14 @@ achievements.
 achievements.
 - D. All information about Mr. Steven Davis is treated as confidential.
 
-### 第 3 题
+##### 第 3 题
 
 - A. facilities
 - B. values
 - C. services
 - D. opportunities
 
-### 第 4 题
+##### 第 4 题
 
 - A. enough
 - B. thoroughly
@@ -132,7 +132,7 @@ achievements.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 
@@ -145,7 +145,7 @@ your name as a reference.
 →句意应为“贵公司的初级会计师史蒂文·戴维斯最近对我们公司的一
 个类似职位表示很感兴趣…”。答案是 (B) us。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：A**
 
@@ -158,7 +158,7 @@ achievements.
 →下句写信人询问有关史蒂文·戴维斯的工作情况。由Furthermore可
 知，横线处也是询问他的工作业绩，故选 (A)。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：C**
 
@@ -173,7 +173,7 @@ appreciate it.
 关他在贵公司的工作表现，如果您能提供一些个人意见…”。答案是 (C)
 services。
 
-### 第 4 题
+##### 第 4 题
 
 **答案：D**
 

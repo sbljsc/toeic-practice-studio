@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Supervisors are reminded to ------- all subordinates with consideration and to
 remember that any discourtesy will be viewed as a serious breach of company
@@ -30,7 +30,7 @@ guidelines.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 

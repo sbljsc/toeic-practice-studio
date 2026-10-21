@@ -17,7 +17,7 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 M: Ms. Hutchinson, here are the blueprints for the Desmond Building. Catie and I finished them a moment ago. We hope you like them.
 W: I'm glad you finished, but you're running way behind schedule, Hans. The final design is due a week from today, and we've only completed the second stage.
@@ -26,7 +26,7 @@ W: Well, it's my job to examine the plans, but I'm flying to Toronto on business
 M: When are you returning?
 W: Three days from now. So we can't initiate the next step until then.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 M: 哈钦森女士，这是我和凯蒂刚刚完成的德斯蒙德大厦的设计蓝图，希望您能满意。
 W: 我很高兴你们完成了，但是汉斯，你们的进度还是落后于计划。一周后的今天要完成最终的设计，我们只完成了第二阶段。
@@ -35,7 +35,7 @@ W: 嗯，检查计划是我的工作，但我明天要飞往多伦多出差。�
 M: 您什么时候回来？
 W: 三天以后。所以只能等我回来，我们才能开始下一步。
 
-### Review
+##### Review
 
 M:
 Ms. Hutchinson, here are the blueprints for the Desmond Building.
@@ -95,13 +95,27 @@ extension
  initiate
 开始，创始；发起
 
-### Material 1
+##### Material 1
 
 ![题目图片](/api/assets/img-5810105d07dac82983c2)
 
+###### 图片文字
+
+Proposal
+↓
+Design
+↓
+Review
+↓
+Adjustments
+↓
+Final Design
+↓
+Approval
+
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Look at the graphic. Which step in the schedule was just completed?
 
@@ -110,7 +124,7 @@ Look at the graphic. Which step in the schedule was just completed?
 - C. Adjustments.
 - D. Final Design.
 
-### 第 2 题
+##### 第 2 题
 
 What does the woman say about the man?
 
@@ -119,7 +133,7 @@ What does the woman say about the man?
 - C. He is in charge of the project.
 - D. He needs to work harder.
 
-### 第 3 题
+##### 第 3 题
 
 What is the woman doing tomorrow?
 
@@ -130,7 +144,7 @@ What is the woman doing tomorrow?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 
@@ -165,7 +179,7 @@ C
 D
 ）最终设计。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：B**
 
@@ -200,7 +214,7 @@ C
 D
 ）他需要更努力地工作。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：C**
 

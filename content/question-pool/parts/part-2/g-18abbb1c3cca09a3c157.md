@@ -13,14 +13,14 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 Who got the overseas assignment?
 (A) Ms. Simpson did.
 (B) That's great.
 (C) A day after tomorrow.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 谁得到了海外的工作？
 (A) 辛普森女士得到了。
@@ -31,7 +31,7 @@ Who got the overseas assignment?
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Mark your answer on your answer sheet.
 
@@ -41,7 +41,7 @@ Mark your answer on your answer sheet.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 

@@ -28,7 +28,7 @@ blanks:
 
 ## 原文
 
-### Review
+##### Review
 
 ### 星门桑拿和温泉馆
 来星门桑拿和温泉馆恢复健康、放松身心和重振活力吧。从泡桑拿浴
@@ -53,9 +53,9 @@ blanks:
 电话：
  (205) 755-6987
 
-### Material 1
+##### Material 1
 
-#### STARGATE SAUNA AND SPA
+### STARGATE SAUNA AND SPA
 
 Recover, relax, and revive at the Stargate Sauna and Spa. Start with a sauna
 or steam, soak in a relaxing spa, {{blank:1}} -------- revitalize and soothe your soul
@@ -78,21 +78,21 @@ PHONE: (205) 755-6987
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 - A. soon
 - B. after
 - C. then
 - D. later
 
-### 第 2 题
+##### 第 2 题
 
 - A. needs
 - B. duties
 - C. promises
 - D. charges
 
-### 第 3 题
+##### 第 3 题
 
 - A. We have separate, luxurious, lounge areas for men and women to relax in.
 - B. Service fee at the Stargate Sauna and Spa is lower than any other.
@@ -100,7 +100,7 @@ PHONE: (205) 755-6987
 - D. Customers can enjoy three kinds of massages at the Stargate Sauna and
 Spa.
 
-### 第 4 题
+##### 第 4 题
 
 - A. repair
 - B. recreate
@@ -109,7 +109,7 @@ Spa.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：C**
 
@@ -121,7 +121,7 @@ soothe your soul with one of Stargate’s massages.
 →列举依次发生的事项时，一般在最后一个列举项前用 (C) then (然
 后，接着)。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：A**
 
@@ -133,7 +133,7 @@ have the style to suit your --------.
 →suit是表示“合…的意，适宜于”的及物动词。充当suit的宾语，且
 符合句意的是 (A) needs (需要，需求)。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：A**
 
@@ -146,7 +146,7 @@ Spa.
 信息有误，选项 (A) 符合原文意思，是对桑拿和温泉馆配套设施的进一步
 描述，故为正确答案。
 
-### 第 4 题
+##### 第 4 题
 
 **答案：C**
 

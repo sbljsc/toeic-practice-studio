@@ -21,7 +21,7 @@ questions:
 
 ## 原文
 
-### Review
+##### Review
 
 ### 林肯车站
 
@@ -166,12 +166,12 @@ off
  clarify
 澄清，阐明
 
-### Passage 1
+##### Passage 1
 
-#### Lincoln Station
-##### Departures
+### Lincoln Station
+#### Departures
 
-### Passage 2
+##### Passage 2
 
 | 131\* (Arrives at St. James Street) | 244 (Arrives at Duncan Road) | 364 (Arrives at Mayberry Avenue) | 382 (Arrives at Nutmeg Street) |
 | --- | --- | --- | --- |
@@ -183,7 +183,7 @@ off
 | 5:44 P.M. | 4:30 P.M. | 3:58 P.M. | 4:02 P.M. |
 | 7:02 P.M. | 6:41 P.M. | 5:43 P.M. | 6:33 P.M. |
 
-### Passage 3
+##### Passage 3
 
 * Runs from Monday to Saturday only.
 
@@ -194,7 +194,7 @@ days, one week, and one month. Inquire at the ticket booth for more information.
 Visit www.peoriacommutertrain.com to find out about routes, travel times,
 and costs.
 
-#### NOTICE
+### NOTICE
 
 Lincoln Station will close at 5:00 every evening during the month of
 December. Repair work on the station’s interior will take place in the station
@@ -228,7 +228,7 @@ Duncan Roswell
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 According to the schedule, which destination cannot be reached on Sundays?
 
@@ -237,7 +237,7 @@ According to the schedule, which destination cannot be reached on Sundays?
 - C. Mayberry Avenue
 - D. Nutmeg Street
 
-### 第 2 题
+##### 第 2 题
 
 In December, what is the last time the number 244 commuter train will depart
 from Lincoln Station?
@@ -247,7 +247,7 @@ from Lincoln Station?
 - C. At 4:30 P.M.
 - D. At 6:41 P.M.
 
-### 第 3 题
+##### 第 3 题
 
 Why will Lincoln Station close early in December?
 
@@ -256,7 +256,7 @@ Why will Lincoln Station close early in December?
 - C. Its budget has been reduced.
 - D. Some workers were laid off.
 
-### 第 4 题
+##### 第 4 题
 
 Which commuter train does Mr. Roswell most likely take?
 
@@ -265,7 +265,7 @@ Which commuter train does Mr. Roswell most likely take?
 - C. Number 364
 - D. Number 382
 
-### 第 5 题
+##### 第 5 题
 
 What does Mr. Roswell request Ms. Marlowe to do?
 
@@ -276,7 +276,7 @@ What does Mr. Roswell request Ms. Marlowe to do?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 
@@ -297,7 +297,7 @@ According to the schedule, which destination cannot be reached on Sundays?
 →根据时刻表中的星号“*”可知，终点站为圣詹姆斯街的131号车只在
 周一至周六运营。答案是 (A)。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：C**
 
@@ -326,7 +326,7 @@ from Lincoln Station?
 →由通知内容可知，林肯车站在12月每天下午5:00点闭站，因此244号
 列车最晚离开林肯站的时间则是下午4:30。答案是 (C)。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：A**
 
@@ -349,7 +349,7 @@ Why will Lincoln Station close early in December?
 →通知第一句提到，林肯车站在12月提前闭站是由于内部翻修。答案是
 (A)。
 
-### 第 4 题
+##### 第 4 题
 
 **答案：D**
 
@@ -370,7 +370,7 @@ Which commuter train does Mr. Roswell most likely take?
 →邮件提到，罗斯威尔先生的家位于肉豆蔻街，以上四个选项中，只有
 382号列车的终点站为肉豆蔻街。答案是 (D)。
 
-### 第 5 题
+##### 第 5 题
 
 **答案：B**
 

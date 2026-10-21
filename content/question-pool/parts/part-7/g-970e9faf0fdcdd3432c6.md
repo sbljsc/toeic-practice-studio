@@ -21,7 +21,7 @@ questions:
 
 ## 原文
 
-### Review
+##### Review
 
 ### 圣乔治媒体
 圣乔治媒体是最成功的消费者媒体出版公司，旗下品牌包括《城市生
@@ -103,15 +103,15 @@ jslester@stgeorgemedia.com
 董事长
 网络首发公司
 
-### Passage 1
+##### Passage 1
 
-#### St. George MEDIA
+### St. George MEDIA
 
 St. George Media, the publisher of leading consumer media titles including
 LIFE IN THE CITY, MOVIE REVIEW, TEEN GOSSIP and BRIDE & GROOM,
 is hiring for the following roles:
 
-##### Sales & Marketing
+#### Sales & Marketing
 
 • Director, Interactive Sales
 
@@ -121,7 +121,7 @@ is hiring for the following roles:
 
 • Sales Manager
 
-##### Web Production
+#### Web Production
 
 • Project Manager
 
@@ -178,7 +178,7 @@ Webstarters
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 What type of business has taken out the advertisement?
 
@@ -187,7 +187,7 @@ What type of business has taken out the advertisement?
 - C. A publishing company
 - D. A wedding boutique
 
-### 第 2 题
+##### 第 2 题
 
 Which of the following individuals would be most qualified for a position
 mentioned in the advertisement?
@@ -197,7 +197,7 @@ mentioned in the advertisement?
 - C. A human resources manager with 2 years of experience
 - D. A computer programmer with 5 years of hands-on experience
 
-### 第 3 题
+##### 第 3 题
 
 What is the main purpose of the e-mail?
 
@@ -206,7 +206,7 @@ What is the main purpose of the e-mail?
 - C. To show an alternative way of conducting business
 - D. To subscribe to a magazine at a discounted rate
 
-### 第 4 题
+##### 第 4 题
 
 What is NOT mentioned about Webstarters in the e-mail?
 
@@ -215,7 +215,7 @@ What is NOT mentioned about Webstarters in the e-mail?
 - C. It is in the process of expanding its staff.
 - D. Its owner has past experience in web-related work.
 
-### 第 5 题
+##### 第 5 题
 
 Which of the following magazines does Ms. Miller most likely read?
 
@@ -226,7 +226,7 @@ Which of the following magazines does Ms. Miller most likely read?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：C**
 
@@ -246,7 +246,7 @@ What type of business has taken out the advertisement?
 婚礼精品店
 →第一篇文章是一家出版公司的招聘广告。答案是 (C)。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：D**
 
@@ -268,7 +268,7 @@ mentioned in the advertisement?
 →招聘的职位有财务和销售部门的管理人员、项目经理、网络开发员、
 具有两年以上经验的程序员等。符合要求的是 (D)。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：C**
 
@@ -289,7 +289,7 @@ What is the main purpose of the e-mail?
 →出版公司想招聘网络开发员，自行解决网站相关业务，但苏西认为网
 站的筹备及管理比较复杂，建议采用外包管理。
 
-### 第 4 题
+##### 第 4 题
 
 **答案：C**
 
@@ -312,7 +312,7 @@ What is NOT mentioned about Webstarters in the e-mail?
 →公司成立于1990年 (A)，有网站建设方面的专业团队 (B)，董事长苏
 西·米勒具有网络开发团队的管理经验 (D)。答案是 (C)。
 
-### 第 5 题
+##### 第 5 题
 
 **答案：A**
 

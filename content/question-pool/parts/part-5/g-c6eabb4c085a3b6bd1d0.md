@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 The newly installed alarm system, which is directly connected to the police,
 will go off if the correct security code is not entered ------- 60 seconds of touching
@@ -30,7 +30,7 @@ the keypad.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：C**
 

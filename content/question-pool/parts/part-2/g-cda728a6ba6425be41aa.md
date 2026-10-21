@@ -13,14 +13,14 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 How did you manage to get the project done on time?
 (A) It might be a little too late.
 (B) I work with a great staff.
 (C) Let's do it tomorrow instead.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 你是怎样做到按时完成那个项目的？
 (A) 可能有点儿太迟了。
@@ -31,7 +31,7 @@ How did you manage to get the project done on time?
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Mark your answer on your answer sheet.
 
@@ -41,7 +41,7 @@ Mark your answer on your answer sheet.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 

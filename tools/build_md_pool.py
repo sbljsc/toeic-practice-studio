@@ -13,8 +13,8 @@ The file layout follows ``docs/md-question-store.md`` and the reader in
 ``apps/api/src/toeic_practice/md_pool.py``:
 
 * ``## 原文`` holds the optional transcript blocks and the shared material.
-  ``###`` starts a structural label; a content heading therefore uses ``####``
-  or deeper, so a reader never mistakes a label for material.
+  Structural labels use ``#####`` or deeper, so a heading that belongs to the
+  material itself is never mistaken for a label and keeps its own level.
 * ``## 选项`` holds one ``### 第 N 题`` block per question with its stem and
   its options.
 * ``## 答案 / 题解`` holds one ``### 第 N 题`` block per question with the
@@ -37,11 +37,11 @@ DEFAULT_LAYOUTS = REPO / "apps" / "web" / "src" / "domain" / "textLayouts.ts"
 SECTION_ORIGINAL = "## 原文"
 SECTION_OPTIONS = "## 选项"
 SECTION_SOLUTION = "## 答案 / 题解"
-HEADING_SCRIPT_EN = "### Transcript"
-HEADING_SCRIPT_ZH = "### Transcript (zh)"
-HEADING_SOURCE = "### 教材原文"
+HEADING_SCRIPT_EN = "##### Transcript"
+HEADING_SCRIPT_ZH = "##### Transcript (zh)"
+HEADING_SOURCE = "##### 教材原文"
 NO_MATERIAL = "（本题无附加材料）"
-HEADING_SOURCE = "### Review"
+HEADING_SOURCE = "##### Review"
 FENCE = "```"
 
 HEADING_LINE = re.compile(r"^(#{1,6})(\s)")
@@ -313,31 +313,41 @@ def material_blocks(group: dict, rendered: dict[str, str], blanks: list[dict]) -
     lines: list[str] = []
     label = "Passage" if group["part"] == 7 else "Material"
     for index, material in enumerate(group.get("materials", []), 1):
-        lines.append(f"### {label} {index}")
+        lines.append(f"##### {label} {index}")
         lines.append("")
         if material.get("kind") == "image":
             alt = material.get("alt") or "题目图片"
             lines.append(f"![{alt}](/api/assets/{material['asset_id']})")
+            # A picture may carry a written description - a map, a table or
+            # a chart that the source recorded as text. Dropping it would
+            # lose the only readable form of the material, so it is kept
+            # beside the picture under its own label.
+            description = material.get("text")
+            if description and description.strip():
+                lines.append("")
+                lines.append("###### 图片文字")
+                lines.append("")
+                lines.append(description.rstrip("\n"))
         else:
             text = to_blanks(rendered[material["text"]], blanks)
-            # A heading inside the material must not look like a section
-            # marker, so it is written one level deeper and read back one
-            # level up.
-            lines.append(demote_headings(text).rstrip("\n"))
+            # A heading that belongs to the material keeps its own level,
+            # because the structural labels are deeper than any heading the
+            # material can contain.
+            lines.append(text.rstrip("\n"))
         lines.append("")
     return lines
 
 
 def demote_headings(text: str) -> str:
-    """Push every heading inside a material one level deeper."""
-    return re.sub(r"(?m)^(#{1,5})(?=\s)", r"#\1", text)
+    """Keep a heading as it reads; the file's own labels sit deeper."""
+    return text
 
 
 def question_sections(group: dict, questions: dict[str, dict]) -> list[str]:
     lines: list[str] = [SECTION_OPTIONS, ""]
     for index, qid in enumerate(group["question_ids"], 1):
         question = questions[qid]
-        lines.append(f"### 第 {index} 题")
+        lines.append(f"##### 第 {index} 题")
         lines.append("")
         if question.get("stem"):
             lines.append(question["stem"])
@@ -355,7 +365,7 @@ def solution_sections(group: dict, questions: dict[str, dict]) -> list[str]:
     lines: list[str] = [SECTION_SOLUTION, ""]
     for index, qid in enumerate(group["question_ids"], 1):
         question = questions[qid]
-        lines.append(f"### 第 {index} 题")
+        lines.append(f"##### 第 {index} 题")
         lines.append("")
         lines.append(f"**答案：{question['answer']}**")
         lines.append("")
@@ -369,9 +379,9 @@ def reserved_markers() -> set[str]:
         SECTION_ORIGINAL, SECTION_OPTIONS, SECTION_SOLUTION,
         HEADING_SCRIPT_EN, HEADING_SCRIPT_ZH, HEADING_SOURCE, NO_MATERIAL,
     }
-    markers.update(f"### 第 {index} 题" for index in range(1, 12))
-    markers.update(f"### Material {index}" for index in range(1, 12))
-    markers.update(f"### Passage {index}" for index in range(1, 12))
+    markers.update(f"##### 第 {index} 题" for index in range(1, 12))
+    markers.update(f"##### Material {index}" for index in range(1, 12))
+    markers.update(f"##### Passage {index}" for index in range(1, 12))
     markers.update(f"**答案：{letter}**" for letter in "ABCD")
     return markers
 
@@ -538,3 +548,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+

@@ -21,7 +21,7 @@ questions:
 
 ## 原文
 
-### Review
+##### Review
 
 ### 美贝尔酒店
 第十街道
@@ -120,9 +120,9 @@ frontdesk@maybellhotel.com
 桑切斯
 前台经理，美贝尔酒店
 
-### Passage 1
+##### Passage 1
 
-#### Maybell Hotel
+### Maybell Hotel
 8339 10th Street
 Houston, TX 7701
 
@@ -132,7 +132,7 @@ Phone Number: 685-2837
 
 Date: June 20
 
-### Passage 2
+##### Passage 2
 
 | Date | Item | Price |
 | --- | --- | --- |
@@ -148,7 +148,7 @@ Date: June 20
 |  | **Tax** | $8.24 |
 |  | **Total** | $420.44 |
 
-### Passage 3
+##### Passage 3
 
 Paid in full with the credit card ending in the numbers 8849.
 
@@ -207,7 +207,7 @@ Front Desk Manager, Maybell Hotel
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 According to the invoice, what is true about Mr. Campbell?
 
@@ -216,7 +216,7 @@ According to the invoice, what is true about Mr. Campbell?
 - C. He had some clothes washed on June 18.
 - D. He made a phone call to another country.
 
-### 第 2 题
+##### 第 2 题
 
 In the first e-mail, what does Mr. Campbell suggest?
 
@@ -225,7 +225,7 @@ In the first e-mail, what does Mr. Campbell suggest?
 - C. He had an unpleasant stay at the Maybell Hotel.
 - D. He was unhappy with his room at the Maybell Hotel.
 
-### 第 3 题
+##### 第 3 题
 
 How much does Mr. Campbell request to be refunded?
 
@@ -234,7 +234,7 @@ How much does Mr. Campbell request to be refunded?
 - C. $18.00
 - D. $52.00
 
-### 第 4 题
+##### 第 4 题
 
 When did Ms. Soto quit her job?
 
@@ -243,7 +243,7 @@ When did Ms. Soto quit her job?
 - C. On June 23
 - D. On June 24
 
-### 第 5 题
+##### 第 5 题
 
 What does Ms. Sanchez offer Mr. Campbell?
 
@@ -254,7 +254,7 @@ What does Ms. Sanchez offer Mr. Campbell?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：D**
 
@@ -278,7 +278,7 @@ According to the invoice, what is true about Mr. Campbell?
 →根据账单可知，坎贝尔先生住了三晚，叫了一次客房服务，在6月19
 日享受了洗衣服务，所以可以排除前三个选项，答案是(D)。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：A**
 
@@ -300,7 +300,7 @@ In the first e-mail, what does Mr. Campbell suggest?
 的任何东西，由此可以推断他曾经多次在美贝尔酒店预订房间。所以答案选
 (A)。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：D**
 
@@ -322,7 +322,7 @@ How much does Mr. Campbell request to be refunded?
 →由发票内容可知，迷你冰箱消费是52美元，而坎贝尔先生说没有这笔
 消费，所以酒店应该退回52美元。答案是(D)。
 
-### 第 4 题
+##### 第 4 题
 
 **答案：B**
 
@@ -351,7 +351,7 @@ When did Ms. Soto quit her job?
 →根据酒店的回复邮件可知，索托女士是在坎贝尔先生离开酒店(6月20
 日)的第二天辞职的，所以答案应该选(B)。
 
-### 第 5 题
+##### 第 5 题
 
 **答案：A**
 

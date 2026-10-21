@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Due to the heavy damage the storm has caused in some rural areas, it is
 predicted that the cost of fruits and vegetables will be ------- this summer.
@@ -29,7 +29,7 @@ predicted that the cost of fruits and vegetables will be ------- this summer.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：D**
 

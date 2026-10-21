@@ -13,14 +13,14 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 You just returned from your overseas trip, didn't you?
 (A) Yes, I will be leaving today.
 (B) I had some business to take care of.
 (C) No, I got back early this morning.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 你刚从国外旅游回来，是吗？
 (A) 是的，我将于今天离开。
@@ -31,7 +31,7 @@ You just returned from your overseas trip, didn't you?
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 Mark your answer on your answer sheet.
 
@@ -41,7 +41,7 @@ Mark your answer on your answer sheet.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：C**
 

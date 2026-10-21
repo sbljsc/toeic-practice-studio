@@ -42,9 +42,26 @@ export function MaterialContent({ materials, className = '', questionNumbers }: 
       const transcript = material.kind === 'image' ? verifiedMaterialTranscript(material) : undefined;
       if (material.kind === 'image' && transcript === undefined) {
         const src = materialImageUrl(material.url);
-        return src ? <figure className="material-content__figure" key={index}>
-          <img src={src} alt={material.alt || '题目图片'} loading="lazy" />
-        </figure> : <p key={index}>{material.alt || '题目图片暂不可用'}</p>;
+        // The picture carries the material - a map, a chart or a floor
+        // plan - and its written description repeats the same content in
+        // text. The picture comes first; the text stays folded away so a
+        // reader can open it when the image cannot be read.
+        if (src) {
+          return (
+            <div className="material-content__picture" key={index}>
+              <figure className="material-content__figure">
+                <img src={src} alt={material.alt || '题目图片'} loading="lazy" />
+              </figure>
+              {material.text ? (
+                <details className="material-content__picture-text">
+                  <summary>图片文字说明</summary>
+                  <MarkdownText className="material-content__text" text={material.text} />
+                </details>
+              ) : null}
+            </div>
+          );
+        }
+        return <p key={index}>{material.alt || '题目图片暂不可用'}</p>;
       }
       return <MarkdownText key={index} className="material-content__text" text={repairLegacyMaterial(transcript ?? material.text ?? '', questionNumbers)} />;
     })}

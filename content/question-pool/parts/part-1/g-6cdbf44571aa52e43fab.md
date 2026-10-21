@@ -13,27 +13,27 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 (A) He has taken a seat at a workstation.
 (B) He is tidying up his work area.
 (C) He's turning on the computer.
 (D) He's about to sit in the chair.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 (A) 他已经坐在工作区里了。
 (B) 他正在清理他的工作区域。
 (C) 他正在开电脑。
 (D) 他正要坐到椅子上。
 
-### Material 1
+##### Material 1
 
 ![题目图片](/api/assets/img-de9310c79598fcb93e56)
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 - A. He has taken a seat at a workstation.
 - B. He is tidying up his work area.
@@ -42,7 +42,7 @@ questions:
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 

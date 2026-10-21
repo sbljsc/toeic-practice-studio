@@ -17,7 +17,7 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 M: I heard you're considering taking a class in computer programming.
 W: That's right. If I ever want to be promoted, I need to acquire some more skills.
@@ -26,7 +26,7 @@ W: I'd love to, but I only have time on the weekend in the morning. Are there an
 M: I'm pretty sure there's one you can take. Why don't you visit the Web page and find out? Here's a brochure with the information you need.
 W: Thanks a lot. I think I'll do that right now.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 M: 我听说你在考虑参加计算机编程课程。
 W: 是的。如果我想晋升，我需要学习更多的技能。
@@ -35,7 +35,7 @@ W: 我想去，但是我只有周末上午有时间。那个时间有课程吗�
 M: 我敢肯定那里有你可以参加的课程。你为什么不浏览一下该校网站找找看？这里有个宣传册，上面有你要的信息。
 W: 多谢！我想我现在就要去查查。
 
-### Review
+##### Review
 
 M: I heard you're considering taking a class in computer programming.
 
@@ -100,11 +100,11 @@ available
  brochure
 小册子
 
-### Material 1
+##### Material 1
 
-#### Dawkins Computer Academy Computer Programming Classes
+### Dawkins Computer Academy Computer Programming Classes
 
-### Material 2
+##### Material 2
 
 |  |  |
 | --- | --- |
@@ -115,7 +115,7 @@ available
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 What does the man say about the Dawkins Computer Academy?
 
@@ -124,7 +124,7 @@ What does the man say about the Dawkins Computer Academy?
 - C. It has been open for several years.
 - D. Some of its teachers are very good.
 
-### 第 2 题
+##### 第 2 题
 
 Look at the graphic. Which class will the woman most likely sign up for?
 
@@ -133,7 +133,7 @@ Look at the graphic. Which class will the woman most likely sign up for?
 - C. Class 3.
 - D. Class 4.
 
-### 第 3 题
+##### 第 3 题
 
 What does the man give the woman?
 
@@ -144,7 +144,7 @@ What does the man give the woman?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：D**
 
@@ -179,7 +179,7 @@ C
 D
 ）那里的一些老师很出色。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：D**
 
@@ -222,7 +222,7 @@ D
 4
 班。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：B**
 

@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 The Personnel Department has lost no time seeking a ------- for Dr. Roberts,
 who recently retired after 30 years of service.
@@ -29,7 +29,7 @@ who recently retired after 30 years of service.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 

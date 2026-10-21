@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 ------- it prove necessary to send your payment by money order, please take
 your request to the Payments Department, where you will find the appropriate
@@ -30,7 +30,7 @@ forms.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：C**
 

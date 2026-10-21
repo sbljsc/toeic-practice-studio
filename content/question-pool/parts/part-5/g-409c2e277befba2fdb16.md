@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 An independent investigator ------- a report on the company’s financial
 operations which, for some unknown reason, was never released.
@@ -29,7 +29,7 @@ operations which, for some unknown reason, was never released.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：C**
 

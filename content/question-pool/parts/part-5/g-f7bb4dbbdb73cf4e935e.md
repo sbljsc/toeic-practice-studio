@@ -17,7 +17,7 @@ questions:
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 As part of the takeover agreement, the new owners have agreed to ------- the
 existing senior managers.
@@ -29,7 +29,7 @@ existing senior managers.
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：C**
 

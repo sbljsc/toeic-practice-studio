@@ -17,7 +17,7 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 W: Welcome to the Hatfield House. Have you had the opportunity to look over the menu?
 M: I have, but I'm not sure what to order. It's been several months since I dined here. What do you recommend?
@@ -27,7 +27,7 @@ W: Excellent. In the meantime, would you care for a soup or salad as an appetize
 M: No thanks, but I would like some iced tea.
 W: Sure, I'll bring you a glass in a couple of minutes.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 W: 欢迎来到哈特菲尔德餐厅，您看过菜单了吗？
 M: 我看过了，但我不太清楚应该点些什么。上次来这里吃饭已经是几个月前的事了。你推荐些什么呢？
@@ -37,7 +37,7 @@ W: 太好了。同时，您要来一份汤或沙拉作为开胃菜吗？
 M: 不用了，谢谢，但我想点杯冰茶。
 W: 好的，我几分钟后就给您端来一杯。
 
-### Review
+##### Review
 
 W: Welcome to the Hatfield House. Have you had the opportunity to look over
 the menu?
@@ -104,7 +104,7 @@ go with
  appetizer
 开胃菜
 
-### Material 1
+##### Material 1
 
 |  |  |
 | --- | --- |
@@ -115,7 +115,7 @@ go with
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 What does the man say about the restaurant?
 
@@ -124,7 +124,7 @@ What does the man say about the restaurant?
 - C. It has a nice atmosphere.
 - D. It recently opened.
 
-### 第 2 题
+##### 第 2 题
 
 Look at the graphic. How much does the item the man ordered cost?
 
@@ -133,7 +133,7 @@ Look at the graphic. How much does the item the man ordered cost?
 - C. $22.00.
 - D. $25.00.
 
-### 第 3 题
+##### 第 3 题
 
 What will the woman bring the man next?
 
@@ -144,7 +144,7 @@ What will the woman bring the man next?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 
@@ -179,7 +179,7 @@ C
 D
 ）新开业。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：C**
 
@@ -222,7 +222,7 @@ D
 25
 美元。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：D**
 

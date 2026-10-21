@@ -21,7 +21,7 @@ questions:
 
 ## 原文
 
-### Review
+##### Review
 
 ### 出售二手货
 
@@ -199,14 +199,14 @@ seek
  interested
 感兴趣的
 
-### Passage 1
+##### Passage 1
 
-#### Secondhand Goods for Sale
+### Secondhand Goods for Sale
 
 All the goods and furniture in my apartment are for sale at unbelievable
 prices:
 
-### Passage 2
+##### Passage 2
 
 | Item | Age | Condition/Remarks | Price |
 | --- | --- | --- | --- |
@@ -218,7 +218,7 @@ prices:
 | Microwave oven | 3 yrs | Still cooks well. | $100 |
 | Cooking utensils | 1-3 yrs | Suitable for simple cooking. | $20 |
 
-### Passage 3
+##### Passage 3
 
 You won’t get prices like these anywhere. Everything listed must be sold by
 the end of this month as I will be leaving the country on the first of January. I am
@@ -252,7 +252,7 @@ James
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 What is being offered to the buyer at no cost?
 
@@ -261,7 +261,7 @@ What is being offered to the buyer at no cost?
 - C. A reading lamp
 - D. One month’s rent
 
-### 第 2 题
+##### 第 2 题
 
 Why is the owner getting rid of his used goods?
 
@@ -270,7 +270,7 @@ Why is the owner getting rid of his used goods?
 - C. He is in need of money right away.
 - D. He is moving into a furnished apartment.
 
-### 第 3 题
+##### 第 3 题
 
 What is the purpose of the e-mail message?
 
@@ -279,7 +279,7 @@ What is the purpose of the e-mail message?
 - C. To respond to a request made
 - D. To find out if delivery is available
 
-### 第 4 题
+##### 第 4 题
 
 On which day will James be available to meet with John?
 
@@ -288,7 +288,7 @@ On which day will James be available to meet with John?
 - C. Saturday afternoon
 - D. Anytime on weekdays
 
-### 第 5 题
+##### 第 5 题
 
 How much will it cost James to pick up the items he is interested in without
 the discount?
@@ -300,7 +300,7 @@ the discount?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：A**
 
@@ -320,7 +320,7 @@ What is being offered to the buyer at no cost?
 一个月的租金
 →广告的最后一段提到市内可提供运货服务。答案是 (A)。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：B**
 
@@ -340,7 +340,7 @@ Why is the owner getting rid of his used goods?
 他马上要搬进一个有家具的公寓。
 →物主1月1日将离开这个国家，即移居海外。答案是 (B)。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：A**
 
@@ -361,7 +361,7 @@ What is the purpose of the e-mail message?
 →看到旧货转手广告后，詹姆斯发送邮件询问转手物品的详细情况。答
 案是 (A)。
 
-### 第 4 题
+##### 第 4 题
 
 **答案：C**
 
@@ -381,7 +381,7 @@ On which day will James be available to meet with John?
 周一到周五的任何时间
 →邮件的最后一段提到了能见面的时间。答案是 (C)。
 
-### 第 5 题
+##### 第 5 题
 
 **答案：D**
 

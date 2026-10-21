@@ -17,21 +17,21 @@ questions:
 
 ## 原文
 
-### Transcript
+##### Transcript
 
 M: Have you gotten used to the new software John installed on your computer yet? It's supposed to be faster and easier to use than the program that was originally there.
 W: I don't know because I haven't had the time to use it yet. I've been away on a business trip and just got back this morning. Tell you what, I will try it out this morning and let you know how it is at lunch. I just hope it won't take long for me to learn how to use the program.
 M: You shouldn't have any problems with it. The command keys are exactly the same as the old program.
 W: Is that right? I guess I won't have any problems using it then.
 
-### Transcript (zh)
+##### Transcript (zh)
 
 M: 约翰装在你电脑上的新软件你现在用习惯了吗？它应该比原先的程序用起来更快捷、更容易。
 W: 不知道，因为我还没有时间去用它。我一直在外出差，今天早上才刚回来。告诉你吧，我打算今天上午尝试一下，然后午饭的时候告诉你它怎么样。我只希望学习使用这个程序不会费太长时间。
 M: 你应该不会有什么问题的。命令按键和旧程序是完全一样的。
 W: 真的吗？那样的话，我就不会有什么问题啦。
 
-### Review
+##### Review
 
 M:
 Have you gotten used to the new software John installed on your
@@ -91,7 +91,7 @@ command
 
 ## 选项
 
-### 第 1 题
+##### 第 1 题
 
 What are they talking about?
 
@@ -100,7 +100,7 @@ What are they talking about?
 - C. The lunch menu.
 - D. A co-worker.
 
-### 第 2 题
+##### 第 2 题
 
 What does the man want to know?
 
@@ -109,7 +109,7 @@ What does the man want to know?
 - C. How fast the new computer is.
 - D. How different the command keys are.
 
-### 第 3 题
+##### 第 3 题
 
 Why does the woman say, “I will try it out this morning”?
 
@@ -120,7 +120,7 @@ Why does the woman say, “I will try it out this morning”?
 
 ## 答案 / 题解
 
-### 第 1 题
+##### 第 1 题
 
 **答案：B**
 
@@ -155,7 +155,7 @@ C
 D
 ）一位同事。
 
-### 第 2 题
+##### 第 2 题
 
 **答案：A**
 
@@ -190,7 +190,7 @@ C
 D
 ）命令按键有多么不同。
 
-### 第 3 题
+##### 第 3 题
 
 **答案：B**
 
