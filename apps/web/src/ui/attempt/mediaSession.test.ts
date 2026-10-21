@@ -215,6 +215,38 @@ test('selecting a question without audio stops the running clip', async () => {
   h.session.destroy();
 });
 
+test('returning to an audible question after a silent one resumes the same clip', async () => {
+  const h = setup();
+  const first = { ...item('a', 10, 20), question_ids: ['qa'] };
+  h.session.update(attempt({ status: 'running', audio_queue: [first] }), true);
+  await flush();
+  assert.equal(h.audio.paused, false);
+  h.session.selectQuestion('reading-1');
+  await flush();
+  assert.equal(h.audio.paused, true);
+  // Coming back to the same clip must play again, not stay frozen.
+  h.session.selectQuestion('qa');
+  await flush();
+  assert.equal(h.audio.paused, false, 'the clip must resume when its question is selected again');
+  assert.equal(h.session.snapshot().queueIndex, 0);
+  h.session.destroy();
+});
+
+test('resuming a silenced clip does not restart it from the beginning', async () => {
+  const h = setup();
+  const first = { ...item('a', 10, 20), question_ids: ['qa'] };
+  h.session.update(attempt({ status: 'running', audio_queue: [first] }), true);
+  await flush();
+  h.audio.advance(5);
+  const reached = h.audio.currentTime;
+  h.session.selectQuestion('reading-1');
+  await flush();
+  h.session.selectQuestion('qa');
+  await flush();
+  assert.equal(h.audio.currentTime, reached, 'the clip must continue from where it stopped');
+  h.session.destroy();
+});
+
 test('replay targets the current question or shared material and stops at its own boundary', async () => {
   const h = setup();
   const first = item('a', 10, 20);

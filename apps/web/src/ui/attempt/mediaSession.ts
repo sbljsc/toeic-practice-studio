@@ -234,7 +234,12 @@ export class MediaSession {
       this.stopCurrentClip();
       return;
     }
-    if (index === this.state.queueIndex) return;
+    if (index === this.state.queueIndex) {
+      // The clip may have been silenced by a visit to a question without
+      // audio. Coming back resumes it where it stopped.
+      if (this.element.paused && this.expected() && !this.userPaused) void this.requestPlay();
+      return;
+    }
     this.replayOnly = false;
     this.state.queueIndex = index; this.state.positionSeconds = 0;
     this.state.durationSeconds = this.plan.segments[index].durationSeconds;

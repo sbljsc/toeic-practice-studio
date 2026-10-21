@@ -1,0 +1,177 @@
+# Markdown 题库存储格式（v2）
+
+本文档定义 TOEIC Practice Studio 的题目存储格式。目标是让题目以**明文可读、
+可手工编辑、可按组导入导出**的文件形式存在，同时保持现有 HTTP API 契约不变。
+
+## 1. 目录结构
+
+```
+content/question-pool/
+  manifest.json                    # 资产登记表 + 版本 + 校验和
+  parts/
+    part-1/
+      g-04e92fcdf5be1747d409.md     # 单题组：一个 md 文件
+    part-3/
+      g-00ea73de7ccc7aed4f34.md    # 多题组：一个 md 文件（组内多题同屏）
+      g-00ea73de7ccc7aed4f34.flac  # 同名兄弟文件：录音（仅听力组）
+      g-00ea73de7ccc7aed4f34.srt   # 同名兄弟文件：逐句字幕（仅听力组）
+  assets/
+    img-a49bfeeb88d2ed80014f.png   # 共享图片池（按内容哈希命名，可被多组引用）
+```
+
+规则：
+
+- **一个题组 = 一个 md 文件**，可选同名 `.flac` / `.srt` 兄弟文件。
+- 同 basename 的文件属于同一题组，导入导出按 basename 成组处理。
+- 图片是**共享池**，放在 `assets/`，由 md frontmatter 按 asset id 引用，
+  不随组复制。
+- 每个 Part 一个子目录 `parts/part-N/`。
+
+## 2. md 文件结构
+
+```markdown
+---
+group_id: g-04cef8991f3d486e23c2
+part: 7
+section: reading
+passage_type: single
+audio: null
+subtitles: null
+questions:
+  - id: q-b90e6164990c88a0e479
+    index: 1
+  - id: q-3f1c2d4e5a6b7c8d9e0f
+    index: 2
+---
+
+## 原文
+
+### Passage 1
+
+Harold Rimes [10:11 A.M.]
+Great news, everyone. The owner of the building at 465 Washington Avenue
+agreed to rent the space to us.
+
+### Passage 2
+
+...
+
+## 选项
+
+### 第 1 题
+
+What are the writers mainly discussing?
+
+- A. The success of their coffee shop
+- B. The comments by an inspector
+- C. The contract they need to sign
+- D. The plans for a new business
+
+### 第 2 题
+
+...
+
+## 答案 / 题解
+
+### 第 1 题
+
+**答案：D**
+
+这些作者主要在讨论什么？
+
+- A. 他们的咖啡店的成功
+- B.  检查员提出的意见
+- C. 他们需要签署的合同
+- D. 他们开展新业务的计划
+
+解析：（原文10:13提到……）
+```
+
+### 2.1 frontmatter 字段
+
+| 字段 | 必填 | 说明 |
+| --- | --- | --- |
+| `group_id` | 是 | 全局唯一题组 ID，`g-` + 20 位 hex |
+| `part` | 是 | 1–7 |
+| `section` | 是 | `listening`（Part 1–4）/ `reading`（Part 5–7） |
+| `passage_type` | Part 7 必填 | `single` / `double` / `triple` |
+| `audio` | 听力组必填 | 同 basename 的 `.flac` 文件名，或 `null` |
+| `subtitles` | 听力组可选 | 同 basename 的 `.srt` 文件名，或 `null` |
+| `questions` | 是 | 组内题目列表，按显示顺序 |
+
+### 2.2 三个章节
+
+固定三章，标题文字固定为 `## 原文`、`## 选项`、`## 答案 / 题解`：
+
+- **原文**：题组共享的材料。Part 1 的图片题用 `![题目图片](/api/assets/img-xxx.png)`
+  单行引用；Part 3/4/7 的长文本材料按排版后的段落写入；Part 6 的填空题材料
+  使用 `{{blank:N}}` 逻辑空位标记（见 §4）。
+- **选项**：每个子标题 `### 第 N 题` 下的题干与选项列表（`- A. …`）。
+  题干为空时（Part 6）只写选项。
+- **答案 / 题解**：每个子标题 `### 第 N 题` 下的 `**答案：X**`、
+  中文题干/选项与解析文字。
+
+`### 第 N 题` 中的 N 是**组内序号**（1 起），与 frontmatter `questions[].index`
+一致；`questions[].id` 是**全局题 ID**，两者共同确定一道题。
+
+### 2.3 Part 7 多 passage
+
+Part 7 一个题组含 1–5 段材料。`## 原文` 下每个材料用 `### Passage K`
+分隔（K 从 1 起，按题库中的材料顺序）；`## 选项` 与 `## 答案 / 题解` 的
+`### 第 N 题` 按题目顺序排列，题号即组内序号。
+
+`passage_type` 记录的是题组题型（`single` / `double` / `triple`），**不是**
+passage 数量；材料段数由 `### Passage K` 的实际条数决定。
+
+## 3. 听力组
+
+听力组（Part 1–4）除 md 外还有：
+
+- `<group_id>.flac`：整段录音，16 kHz / 单声道 / 16 bit。
+- `<group_id>.srt`：逐句字幕。SRT 序号从 1 起，时间为**该段内相对时间**，
+  格式：
+
+  ```
+  1
+  00:00:00,200 --> 00:00:02,610
+  M: Do you know why Ms. Sato called a meeting for 11?
+
+  2
+  00:00:02,610 --> 00:00:05,100
+  W: She was, but she delayed her trip a couple of days.
+  ```
+
+  一句可以跨多行（换行用 `\n` 连接）；中文字幕不进 SRT，另存于
+  md 的 `## 原文` 之后由前端按需显示。
+
+## 4. Part 6 逻辑空位
+
+Part 6 材料的空位在 md 中写作 `{{blank:N}}`，N 是**该 passage 内的空位序号**
+（从 1 起），不含任何具体题号。组卷时后端把当前轮次的题号填回：
+
+```
+{{blank:1}}  ->  (38)
+```
+
+因此同一份 md 在任何一轮组卷中都能正确显示题号。
+
+## 5. 导入导出
+
+- **导出（按组）**：把一个题组的 md + 同名 `.flac` / `.srt` + 其引用的
+  图片（若图片不在共享池中）打包成一个目录。
+- **导入（按组）**：读取上述目录，分配**新 ID** 以避免与已有题库冲突：
+  - 新组 ID：`g-` + `sha256(来源组ID + ":" + 来源md内容)[:20]`
+  - 新题 ID：`q-` + `sha256(来源题ID + ":" + 新组ID)[:20]`
+  - 图片资产：`img-` + `sha256(图片字节)[:20]`（内容寻址，天然去重）
+- 导入后组内题目顺序、答案、选项文本、音频与字幕必须**逐字节等价**。
+
+## 6. 与旧格式的关系
+
+`content/question-pool/pool.json` 与 `apps/web/src/domain/textLayouts.ts`、
+`apps/web/src/domain/materialTranscripts.ts` 是 v1 的产物。v2 用 md 取代它们：
+
+- `pool.json` → `parts/part-N/*.md`
+- `textLayouts.ts`（2.3 MB 的全文索引）→ 直接内联进 md 的 `## 原文`
+- `materialTranscripts.ts`（图片转录）→ 内联进 md
+- `manifest.json` 保留，资产登记与 sha256 校验不变
+
