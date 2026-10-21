@@ -46,6 +46,10 @@ def main():
     for g in pool.groups:
         assert not g.get('source_pages') and not g.get('listening_script', {}).get('source_pages')
     expected = {'manifest.json', 'pool.json'} | {a['path'] for a in library.assets.values()}
+    # The Markdown bank is the readable question tree beside the shared
+    # picture and recording pools.
+    expected |= {p.relative_to(root).as_posix() for p in (root / 'parts').rglob('*')
+                 if p.is_file()}
     actual = {p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file()}
     assert actual == expected, 'missing or extra content file'
     assert not any(p.is_symlink() for p in root.rglob('*')), 'linked content is not portable'

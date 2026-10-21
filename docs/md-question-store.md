@@ -8,15 +8,18 @@
 ```
 content/question-pool/
   manifest.json                    # 资产登记表 + 版本 + 校验和
+  pool.json                        # 旧格式快照，仅供生成器与往返比对使用
   parts/
     part-1/
       g-04e92fcdf5be1747d409.md     # 单题组：一个 md 文件
+      g-04e92fcdf5be1747d409.srt    # 同名兄弟文件：逐句字幕（仅听力组）
     part-3/
       g-00ea73de7ccc7aed4f34.md    # 多题组：一个 md 文件（组内多题同屏）
-      g-00ea73de7ccc7aed4f34.flac  # 同名兄弟文件：录音（仅听力组）
       g-00ea73de7ccc7aed4f34.srt   # 同名兄弟文件：逐句字幕（仅听力组）
   assets/
     img-a49bfeeb88d2ed80014f.png   # 共享图片池（按内容哈希命名，可被多组引用）
+  audio/
+    audio-04e92fcdf5be1747d409.flac # 录音原件，按资产 id 命名
 ```
 
 规则：
@@ -26,6 +29,8 @@ content/question-pool/
 - 图片是**共享池**，放在 `assets/`，由 md frontmatter 按 asset id 引用，
   不随组复制。
 - 每个 Part 一个子目录 `parts/part-N/`。
+- 录音放在 `audio/` 下按资产 id 命名，md 的 frontmatter 只登记资产 id，
+  因此复制一个题组目录不会重复占用几十兆的音频。
 
 ## 2. md 文件结构
 
@@ -35,8 +40,9 @@ group_id: g-04cef8991f3d486e23c2
 part: 7
 section: reading
 passage_type: single
-audio: null
+audio_asset: null
 subtitles: null
+explanation_verbatim: true
 questions:
   - id: q-b90e6164990c88a0e479
     index: 1
@@ -45,6 +51,11 @@ questions:
 ---
 
 ## 原文
+
+### Material 1
+
+共享材料或图片。Part 1 的图片题写成 `![题目图片](/api/assets/img-xxx)`；
+Part 3/4 的材料用 `### Material K`，Part 7 用 `### Passage K`。
 
 ### Passage 1
 
@@ -95,9 +106,11 @@ What are the writers mainly discussing?
 | `part` | 是 | 1–7 |
 | `section` | 是 | `listening`（Part 1–4）/ `reading`（Part 5–7） |
 | `passage_type` | Part 7 必填 | `single` / `double` / `triple` |
-| `audio` | 听力组必填 | 同 basename 的 `.flac` 文件名，或 `null` |
+| `audio_asset` | 听力组必填 | 录音资产 id，如 `audio-04e92fcdf5be1747d409`，否则 `null` |
 | `subtitles` | 听力组可选 | 同 basename 的 `.srt` 文件名，或 `null` |
+| `explanation_verbatim` | 是 | 题解正文按教材原文原样保留 |
 | `questions` | 是 | 组内题目列表，按显示顺序 |
+| `blanks` | Part 6 必填 | 逻辑空位到题目的映射，见 §4 |
 
 ### 2.2 三个章节
 
@@ -105,11 +118,16 @@ What are the writers mainly discussing?
 
 - **原文**：题组共享的材料。Part 1 的图片题用 `![题目图片](/api/assets/img-xxx.png)`
   单行引用；Part 3/4/7 的长文本材料按排版后的段落写入；Part 6 的填空题材料
-  使用 `{{blank:N}}` 逻辑空位标记（见 §4）。
+  使用 `{{blank:N}}` 逻辑空位标记（见 §4）。听力组另有两个固定小节：
+  `### Transcript`（英文原文）与 `### Transcript (zh)`（中文对照）；
+  教材复盘文本写在 `### 教材原文`。
 - **选项**：每个子标题 `### 第 N 题` 下的题干与选项列表（`- A. …`）。
   题干为空时（Part 6）只写选项。
 - **答案 / 题解**：每个子标题 `### 第 N 题` 下的 `**答案：X**`、
   中文题干/选项与解析文字。
+
+材料内部的标题会**降一级**写入（`##` 写成 `###`），这样它不会被误读成
+文件结构标记；加载器读回时再升回原级别。
 
 `### 第 N 题` 中的 N 是**组内序号**（1 起），与 frontmatter `questions[].index`
 一致；`questions[].id` 是**全局题 ID**，两者共同确定一道题。
