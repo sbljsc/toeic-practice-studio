@@ -6,6 +6,9 @@ Importing assigns fresh identifiers so that a bundle can never collide with
 the running bank: the new group id is derived from the source group id and
 the Markdown content, and each new question id from the source question id
 and the new group id.
+
+The frontmatter is parsed with the very same reader the API uses to load the
+bank, so an exported bundle always stays readable by the running system.
 """
 from __future__ import annotations
 
@@ -46,60 +49,49 @@ def new_asset_id(prefix: str, payload: bytes) -> str:
 
 def parse_frontmatter(text: str) -> tuple[dict, str]:
     """Split the leading YAML-ish block from the Markdown body."""
-    if not text.startswith('---\n'):
-        raise ValueError('缺少 frontmatter')
-    end = text.find('\n---\n', 3)
-    if end < 0:
+    from toeic_practice.md_pool import parse_frontmatter as read_frontmatter
+
+    values = read_frontmatter(text)
+    start = text.find('\n---\n', 3)
+    if start < 0:
         raise ValueError('frontmatter 未闭合')
-    block = text[4:end]
-    body = text[end + 5:]
-    data: dict = {}
-    key = None
-    for line in block.split('\n'):
-        if not line.strip():
-            continue
-        if line.startswith('  - ') and key:
-            data.setdefault(key, [])
-            if isinstance(data[key], list):
-                data[key].append(line[4:].strip())
-            continue
-        if line.startswith('  ') and key:
-            if isinstance(data.get(key), list) and data[key]:
-                data[key][-1] = data[key][-1] + ' ' + line.strip()
-            continue
-        if ':' not in line:
-            continue
-        key, _, value = line.partition(':')
-        key = key.strip()
-        value = value.strip()
-        if value == '':
-            data[key] = []
-        elif value == 'null':
-            data[key] = None
-        elif value.startswith('[') and value.endswith(']'):
-            data[key] = [item.strip() for item in value[1:-1].split(',') if item.strip()]
-        else:
-            data[key] = value
-    return data, body
+    return values, text[start + 5:]
 
 
 def frontmatter_lines(data: dict) -> str:
-    """Serialize the frontmatter block this tool understands."""
+    """Serialize the frontmatter block in the shape the bank uses."""
     lines = ['---']
-    for key in ('group_id', 'part', 'section', 'passage_type', 'audio', 'subtitles'):
+    for key in ('group_id', 'part', 'section', 'passage_type', 'audio_asset',
+                'subtitles', 'explanation_verbatim'):
         if key not in data:
             continue
         value = data[key]
-        lines.append(f'{key}: ' + ('null' if value is None else str(value)))
+        lines.append(f'{key}: ' + yaml_scalar(value))
     lines.append('questions:')
     for entry in data.get('questions', []):
-        lines.append(f'  - {entry}')
+        lines.append(f'  - id: {entry["id"]}')
+        lines.append(f'    index: {entry["index"]}')
     if data.get('blanks'):
         lines.append('blanks:')
         for entry in data['blanks']:
-            lines.append(f'  - {entry}')
+            lines.append(f'  - index: {entry["index"]}')
+            lines.append(f'    question_id: {entry["question_id"]}')
     lines.append('---')
     return '\n'.join(lines) + '\n'
+
+
+def yaml_scalar(value: object) -> str:
+    """Write a scalar the way the bank writes it, so files stay comparable."""
+    if value is None:
+        return 'null'
+    if isinstance(value, bool):
+        return 'true' if value else 'false'
+    if isinstance(value, int):
+        return str(value)
+    text = str(value)
+    if text == '' or re.search(r'[:#\[\]{}&*!|>\'"%@`]|^\s|\s$', text):
+        return '"' + text.replace('\\', '\\\\').replace('"', '\\"') + '"'
+    return text
 
 
 def referenced_assets(body: str) -> list[str]:
@@ -122,6 +114,39 @@ def rewrite_question_ids(body: str, mapping: dict[str, str]) -> str:
     for old, new in mapping.items():
         body = body.replace(old, new)
     return body
+
+
+def register_assets(library_root: Path, asset_mapping: dict[str, str],
+                    asset_payload: dict[str, bytes],
+                    source_records: dict[str, dict]) -> None:
+    """Add the renamed assets to the manifest so the bank can find them."""
+    manifest_path = library_root / 'manifest.json'
+    if not manifest_path.is_file():
+        raise SystemExit('题库缺少 manifest.json，无法登记新资源')
+    manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
+    assets = manifest.get('assets')
+    if not isinstance(assets, list):
+        raise SystemExit('题库 manifest 格式无效')
+    known = {entry.get('id') for entry in assets if isinstance(entry, dict)}
+    for old, new in asset_mapping.items():
+        if new in known:
+            continue
+        is_audio = old.startswith('audio-')
+        folder = 'audio' if is_audio else 'assets'
+        suffix = '.flac' if is_audio else '.png'
+        entry = {
+            'id': new,
+            'path': f'{folder}/{new}{suffix}',
+            'media_type': 'audio/flac' if is_audio else 'image/png',
+            'sha256': hashlib.sha256(asset_payload[old]).hexdigest(),
+        }
+        source = source_records.get(old) or {}
+        if 'duration_seconds' in source:
+            entry['duration_seconds'] = source['duration_seconds']
+        assets.append(entry)
+    manifest_path.write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True) + '\n',
+        encoding='utf-8')
 
 
 def export_groups(library_root: Path, group_ids: list[str], out_dir: Path,
@@ -181,6 +206,7 @@ def export_groups(library_root: Path, group_ids: list[str], out_dir: Path,
 def import_group(bundle: Path, library_root: Path, dry_run: bool = False) -> dict:
     """Copy one exported group into the bank under fresh identifiers."""
     from toeic_practice.library import Library
+    from toeic_practice.md_pool import parse_md_group
 
     library = Library(library_root)
     library.load()
@@ -192,6 +218,11 @@ def import_group(bundle: Path, library_root: Path, dry_run: bool = False) -> dic
     md_file = md_files[0]
     text = md_file.read_text(encoding='utf-8')
     data, body = parse_frontmatter(text)
+    try:
+        # The running bank must accept the bundle before anything is written.
+        parse_md_group(text, md_file.name)
+    except ValueError as error:
+        raise SystemExit(f'题组 Markdown 无法被题库读取：{error}') from error
     source_group = data.get('group_id')
     if not source_group or not GROUP_ID.match(str(source_group)):
         raise SystemExit('题组编号无效')
@@ -200,36 +231,72 @@ def import_group(bundle: Path, library_root: Path, dry_run: bool = False) -> dic
         raise SystemExit('题组缺少题目列表')
     question_ids = []
     for entry in questions:
-        parts = str(entry).split()
-        if len(parts) != 2 or not QUESTION_ID.match(parts[0]):
+        qid = entry.get('id') if isinstance(entry, dict) else str(entry).split()[0]
+        if not qid or not QUESTION_ID.match(str(qid)):
             raise SystemExit(f'题目条目无效：{entry}')
-        question_ids.append(parts[0])
+        question_ids.append(str(qid))
     new_group = new_group_id(str(source_group), text)
     mapping = {old: new_question_id(old, new_group) for old in question_ids}
-    new_body = rewrite_question_ids(body, mapping)
 
     asset_mapping: dict[str, str] = {}
-    for asset in referenced_assets(body):
+    asset_payload: dict[str, bytes] = {}
+    # A recording is named by the frontmatter; a picture by the body.
+    asset_ids = set(referenced_assets(body))
+    if data.get('audio_asset'):
+        asset_ids.add(str(data['audio_asset']))
+    for asset in sorted(asset_ids):
         prefix = 'img' if asset.startswith('img-') else 'audio'
+        payload = b''
         record = library.assets.get(asset)
         if record:
             origin = library_root / record['path']
             payload = origin.read_bytes() if origin.is_file() else b''
-        else:
-            local = bundle / 'assets' / f'{asset}.png'
-            payload = local.read_bytes() if local.is_file() else b''
+        if not payload:
+            # A bundle carries its media under the source group id.
+            candidates = [bundle / 'assets' / f'{asset}.png',
+                          bundle / f'{source_group}.flac',
+                          bundle / f'{asset}.flac']
+            for candidate in candidates:
+                if candidate.is_file():
+                    payload = candidate.read_bytes()
+                    break
+        if not payload:
+            raise SystemExit(f'资源文件缺失：{asset}')
+        asset_payload[asset] = payload
         asset_mapping[asset] = new_asset_id(prefix, payload)
-    new_body = rewrite_asset_references(new_body, asset_mapping)
 
+    blanks = data.get('blanks') or []
+    new_blanks = []
+    for entry in blanks:
+        source_question = entry.get('question_id')
+        if source_question not in mapping:
+            raise SystemExit(f'空位条目引用了未知题目：{entry}')
+        new_blanks.append({'index': entry.get('index'),
+                           'question_id': mapping[source_question]})
+
+    source_audio = data.get('audio_asset')
+    audio_asset = None
+    if source_audio:
+        audio_asset = asset_mapping.get(str(source_audio))
+        if not audio_asset:
+            raise SystemExit(f'录音资源缺失：{source_audio}')
+    source_subtitles = data.get('subtitles')
+    subtitles = f'{new_group}.srt' if audio_asset else None
+
+    new_body = rewrite_asset_references(rewrite_question_ids(body, mapping), asset_mapping)
+    if source_subtitles:
+        new_body = new_body.replace(str(source_subtitles), f'{new_group}.srt')
     new_text = frontmatter_lines({
         'group_id': new_group,
         'part': data.get('part'),
         'section': data.get('section'),
         'passage_type': data.get('passage_type'),
-        'audio': data.get('audio'),
-        'subtitles': data.get('subtitles'),
-        'questions': [f'{mapping[old]} {index + 1}' for index, old in enumerate(question_ids)],
-        'blanks': data.get('blanks'),
+        'audio_asset': audio_asset,
+        'subtitles': subtitles,
+        'explanation_verbatim': data.get('explanation_verbatim'),
+        'questions': [{'id': mapping[old], 'index': index + 1}
+                      for index, old in enumerate(question_ids)],
+        'blanks': new_blanks,
     }) + new_body
 
     part = int(data.get('part') or 0)
@@ -238,16 +305,38 @@ def import_group(bundle: Path, library_root: Path, dry_run: bool = False) -> dic
     target_dir = library_root / 'parts' / f'part-{part}'
     target_md = target_dir / f'{new_group}.md'
     if target_md.exists():
-        raise SystemExit('目标题组已存在')
+        # The identifier is derived from the content, so the very same
+        # bundle may already sit in the bank. That is not a conflict.
+        if target_md.read_text(encoding='utf-8') == new_text:
+            return {'group_id': new_group, 'questions': len(question_ids),
+                    'assets': len(asset_mapping), 'target': str(target_md),
+                    'status': 'already-imported'}
+        raise SystemExit('目标题组编号已被另一份内容占用')
     if dry_run:
         return {'group_id': new_group, 'questions': len(question_ids),
                 'assets': len(asset_mapping), 'target': str(target_md)}
     target_dir.mkdir(parents=True, exist_ok=True)
     target_md.write_text(new_text, encoding='utf-8')
-    for suffix in ('srt',):
-        source = bundle / md_file.with_suffix('.' + suffix).name
-        if source.is_file():
-            shutil.copy2(source, target_dir / f'{new_group}.{suffix}')
+    if subtitles:
+        source = bundle / str(source_subtitles)
+        if not source.is_file():
+            raise SystemExit(f'字幕文件缺失：{source_subtitles}')
+        shutil.copy2(source, target_dir / subtitles)
+    if audio_asset:
+        source_audio = bundle / f'{source_group}.flac'
+        if source_audio.is_file():
+            target_audio = library_root / 'audio' / f'{audio_asset}.flac'
+            target_audio.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(source_audio, target_audio)
+    for material_asset, new_asset in asset_mapping.items():
+        if not material_asset.startswith('img-'):
+            continue
+        target_asset_dir = library_root / 'assets'
+        target_asset_dir.mkdir(parents=True, exist_ok=True)
+        target_asset_dir.joinpath(f'{new_asset}.png').write_bytes(asset_payload[material_asset])
+    register_assets(library_root, asset_mapping, asset_payload,
+                     {key: (library.assets.get(key) or {})
+                      for key in asset_mapping})
     return {'group_id': new_group, 'questions': len(question_ids),
             'assets': len(asset_mapping), 'target': str(target_md)}
 
