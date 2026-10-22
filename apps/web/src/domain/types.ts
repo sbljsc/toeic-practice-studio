@@ -498,6 +498,20 @@ export interface SettingsResponse {
   vocabulary_threshold: number;
 }
 
+export interface UpdateStatus {
+  current_version: string;
+  latest_version: string | null;
+  latest_tag?: string | null;
+  update_available: boolean;
+  checked: boolean;
+  portable: boolean;
+  error: string | null;
+  staged?: boolean;
+  archive?: string;
+  bytes?: number;
+  sha256?: string;
+}
+
 export interface StatisticsResponse {
   attempt_count: number;
   completed_count: number;

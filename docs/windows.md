@@ -4,10 +4,10 @@
 
 ## 下载正确文件
 
-打开 [TOEIC Practice Studio v0.3.0 Release](https://github.com/sbljsc/toeic-practice-studio/releases/tag/v0.3.0)，在 **Assets** 中下载：
+打开 [TOEIC Practice Studio v0.4.0 Release](https://github.com/sbljsc/toeic-practice-studio/releases/tag/v0.4.0)，在 **Assets** 中下载：
 
 ```text
-TOEIC-Practice-Studio-0.3.0-windows-x64.zip
+TOEIC-Practice-Studio-0.4.0-windows-x64.zip
 ```
 
 不要使用 GitHub 自动生成的 “Source code (zip)” 或 “Source code (tar.gz)”。源码压缩包没有完成便携运行所需的组装，也不是本指南面向的下载项。
@@ -59,6 +59,25 @@ TOEIC-Practice-Studio-0.3.0-windows-x64.zip
 
 升级不会自动迁移或合并不同目录中的数据库。若新版无法恢复备份，先不要删除旧目录和原始 `.data/`，保留启动窗口中的错误信息以及所用 ZIP 资产名，便于排查。
 
+## 自动更新
+
+便携版可以在界面「设置 → 检查更新」中获取新版本，无需手动下载和解压：
+
+1. 点「检查更新」，程序读取 GitHub 官方发行页的最新版本。
+2. 点「下载更新」，程序下载发行包并**按官方发布的 SHA-256 校验**；
+   校验不符会立即删除下载内容并停止。
+3. 点「安装并重启」，确认后程序会停止服务、替换程序文件、再自动启动。
+   这个过程中页面会断开一次，随后浏览器需要重新打开。
+
+几点说明：
+
+- **学习数据不会被改动。** 更新只替换程序文件（`apps`、`content`、`runtime`
+  与文档），解压目录里的 `.data/` 原封不动。
+- 更新失败时原程序文件仍然可用；程序目录必须可写。
+- 版本检查走 GitHub 发行页的重定向，不消耗 API 配额，因此不需要联网账户。
+- 源码方式运行（不是便携版）时无法自我更新，请从仓库获取新版本。
+- 自动更新只认官方发行页上标记为最新版的版本，正式版与预发布版不会混淆。
+
 ## 常见问题
 
 | 现象 | 处理 |
@@ -66,7 +85,7 @@ TOEIC-Practice-Studio-0.3.0-windows-x64.zip
 | 双击后浏览器没有自动打开 | 保留启动窗口，查看是否已显示监听地址；手动打开 `http://127.0.0.1:8765`。若使用了 `--no-browser`，这是预期行为 |
 | 页面提示无法连接 `127.0.0.1:8765` | 启动窗口可能已经关闭或服务未成功启动。重新双击 `Start.cmd`，并保留窗口 |
 | 默认端口已被占用 | 在解压目录执行 `Start.cmd --port 8766`，再访问 `http://127.0.0.1:8766` |
-| 提示缺少 Python、Node.js、`.venv` 或网页构建 | 这通常表示下载了源码 ZIP、没有完整解压，或者文件缺失。重新下载 Release 中的 `TOEIC-Practice-Studio-0.3.0-windows-x64.zip` 并完整解压；便携版用户不需要安装这些开发工具 |
+| 提示缺少 Python、Node.js、`.venv` 或网页构建 | 这通常表示下载了源码 ZIP、没有完整解压，或者文件缺失。重新下载 Release 中的 `TOEIC-Practice-Studio-0.4.0-windows-x64.zip` 并完整解压；便携版用户不需要安装这些开发工具 |
 | 解压或启动时无法写入文件 | 换到一个当前用户可写的普通文件夹后重新完整解压 |
 | Windows 显示安全提示 | 只从上述官方 Release 下载并核对资产名。项目没有提供签名的自定义安装器，也不保证各台电脑上的 SmartScreen 提示行为一致 |
 | 服务窗口被关闭后页面失效 | 这是预期行为；双击 `Start.cmd` 重新启动即可，已有学习数据仍在原 `.data/` 中 |
@@ -114,7 +133,7 @@ Python 不在 `PATH` 中时，可将解释器路径传给安装脚本：
 
 ```powershell
 .\Setup.cmd "CPython314安装目录\python.exe"
-.venv/Scripts/python.exe tools/build_windows.py --version 0.3.0
+.venv/Scripts/python.exe tools/build_windows.py --version 0.4.0
 ```
 
 打包器会校验 `--version` 与 `package.json` 及 `apps/api/pyproject.toml` 中的版本一致；三处必须同时改为待发布版本。它随后自动安装网页依赖并构建网页，不需要另外手动执行 `npm ci` 或 `npm run web:build`。打包器默认调用 Git，并拒绝脏工作树。构建过程使用固定版本的官方 CPython 3.14.8 嵌入式运行时和锁定、随包提供的 Python 依赖；构建机首次安装依赖和获取运行时需要网络，组装后的便携包面向用户运行时不需要联网安装。
@@ -124,8 +143,8 @@ Python 不在 `PATH` 中时，可将解释器路径传给安装脚本：
 默认输出目录为 `dist/releases/`。Release 上传项只有以下两个文件：
 
 ```text
-TOEIC-Practice-Studio-0.3.0-windows-x64.zip
-TOEIC-Practice-Studio-0.3.0-windows-x64.zip.sha256
+TOEIC-Practice-Studio-0.4.0-windows-x64.zip
+TOEIC-Practice-Studio-0.4.0-windows-x64.zip.sha256
 ```
 
 发布前应检查包内包含构建后的网页、同一份 2000 道题题库、`content/vocabulary/reference.json` 词汇参考数据、完整运行时和依赖、启动文件、许可证及第三方声明；不得包含 `.data/`、个人数据库、备份、凭据或原始资料准备证据。本页只记录构建入口和发行约定，不表示某个 ZIP 已经通过下载、解压或浏览器验收。

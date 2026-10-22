@@ -2309,6 +2309,22 @@ button {
   color: var(--muted);
 }
 
+.update-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.settings-block code {
+  font-family: var(--mono);
+  font-size: 12px;
+  background: var(--surface-sunken);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 1px 4px;
+}
+
 .threshold-row {
   display: flex;
   gap: 10px;

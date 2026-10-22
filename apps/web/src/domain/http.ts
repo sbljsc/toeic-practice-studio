@@ -17,6 +17,7 @@ import type {
   InterruptEvent,
   ReviewPayload,
   SettingsResponse,
+  UpdateStatus,
   StatisticsResponse,
   VocabularyResponse,
   VocabReferenceResponse,
@@ -196,6 +197,13 @@ export const api = {
       body: body({ vocabulary_threshold: vocabularyThreshold }),
     }),
   statistics: () => request<StatisticsResponse>('/statistics'),
+  updateStatus: () => request<UpdateStatus>('/update/status'),
+  stageUpdate: () => request<UpdateStatus>('/update/stage', { method: 'POST', body: body({}) }),
+  installUpdate: (archive: string) =>
+    request<{ scheduled: boolean; log: string }>('/update/install', {
+      method: 'POST',
+      body: body({ archive }),
+    }),
 
   backups: () => request<BackupsResponse>('/backups'),
   createBackup: (includeLibrary: boolean) =>

@@ -24,7 +24,9 @@ from .routers import backups as backups_router
 from .routers import catalog as catalog_router
 from .routers import health as health_router
 from .routers import misc as misc_router
+from .routers import update as update_router
 from .routers import vocabulary as vocabulary_router
+from .update_service import UpdateService
 
 
 class Services:
@@ -36,6 +38,7 @@ class Services:
         self.attempts = AttemptService(store, library, clock, reference)
         self.vocabulary = VocabularyService(store, clock, library, reference)
         self.backups = BackupService(store, library, clock, backup_root)
+        self.updates = UpdateService()
 
 
 def create_app(*, clock=None, store=None, library=None, backup_root=None,
@@ -74,6 +77,7 @@ def create_app(*, clock=None, store=None, library=None, backup_root=None,
     app.include_router(vocabulary_router.router)
     app.include_router(backups_router.router)
     app.include_router(misc_router.router)
+    app.include_router(update_router.router)
 
     @app.get("/api", include_in_schema=False)
     @app.get("/api/{unmatched:path}", include_in_schema=False)

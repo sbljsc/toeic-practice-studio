@@ -1,7 +1,7 @@
 {
   "name": "toeic-practice-local",
   "private": true,
-  "version": "0.3.0",
+  "version": "0.4.0",
   "type": "module",
   "scripts": {
     "web:dev": "vite apps/web --config apps/web/vite.config.ts --host 127.0.0.1",
