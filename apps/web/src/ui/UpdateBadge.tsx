@@ -8,7 +8,6 @@ export function UpdateIndicator() {
   const [error, setError] = useState<string | null>(null);
 
   const badge = state ? updateBadge(state) : null;
-  if (!badge || !badge.label) return null;
 
   const onClick = useCallback(async () => {
     if (!state) return;
@@ -36,6 +35,10 @@ export function UpdateIndicator() {
       setError(updateErrorText(cause));
     }
   }, [state?.archive]);
+
+  // The hook must run on every render, so the empty case is handled here
+  // rather than by returning early.
+  if (!badge || !badge.label) return null;
 
   return (
     <>
