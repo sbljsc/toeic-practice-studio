@@ -1,9 +1,14 @@
 """Local launcher that opens the browser only after Uvicorn has started."""
 
 import argparse
+import os
+import threading
 import webbrowser
 
 import uvicorn
+
+# The running server, so a request can ask it to stop.
+RUNNING_SERVER = None
 
 
 class BrowserOpeningServer(uvicorn.Server):
@@ -30,9 +35,24 @@ def main() -> int:
         host="127.0.0.1",
         port=arguments.port,
     )
+    global RUNNING_SERVER
     server = BrowserOpeningServer(config, open_browser=not arguments.no_browser)
+    RUNNING_SERVER = server
     server.run()
     return 0 if server.started else 1
+
+
+def request_stop() -> bool:
+    """Ask the running server to shut down.
+
+    Uvicorn stops when its ``should_exit`` flag is set, which closes the
+    socket and lets the program files be replaced.
+    """
+    server = RUNNING_SERVER
+    if server is None:
+        return False
+    server.should_exit = True
+    return True
 
 
 if __name__ == "__main__":
