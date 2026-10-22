@@ -63,6 +63,12 @@ def create_app(*, clock=None, store=None, library=None, backup_root=None,
     app.state.services = services
     app.state.allow_test_host = allow_test_host
 
+    @app.on_event("startup")
+    def _check_for_updates() -> None:
+        # A release is fetched while the program is idle, so the badge is
+        # ready by the time the learner looks at it.
+        services.updates.start_idle_check()
+
     @app.exception_handler(ApiError)
     async def api_error_handler(request: Request, exc: ApiError) -> JSONResponse:
         return render_error(exc.status_code, exc.detail, exc.code)

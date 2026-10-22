@@ -100,6 +100,9 @@ class UpdateService:
             staged = self._staged_archive(plan["latest_version"])
             if staged is not None:
                 self._set(phase="ready", archive=str(staged))
+            else:
+                # Fetch it while the learner works, so it is ready when wanted.
+                self.start_download()
         return self.snapshot()
 
     def _staged_archive(self, version: str) -> Path | None:
@@ -131,6 +134,21 @@ class UpdateService:
                 break
             time.sleep(0.05)
         return self.snapshot()
+
+    def start_idle_check(self) -> None:
+        """Look for a release and fetch it while the program is idle.
+
+        The learner may never open a page, so the check does not wait for
+        one. The download runs in the background and the badge simply
+        reports it when a page is opened.
+        """
+        if not is_portable():
+            return
+        with self._lock:
+            if self._worker and self._worker.is_alive():
+                return
+        self._worker = threading.Thread(target=self._download, daemon=True)
+        self._worker.start()
 
     def _download(self) -> None:
         """Do the download and the check, in the background."""
