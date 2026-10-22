@@ -37,6 +37,18 @@ def download(request: Request) -> dict:
         raise unavailable(str(error), "update_download_failed") from error
 
 
+@router.post("/shutdown")
+def shutdown(request: Request) -> dict:
+    """Stop the service so the program files can be replaced.
+
+    The database is closed first, so the learner's records are written
+    out properly rather than left to a forced stop.
+    """
+    validate_write_request(request)
+    services(request).store.close()
+    return {"stopping": True}
+
+
 class InstallBody(BaseModel):
     archive: str
 

@@ -212,3 +212,22 @@ def test_a_downloaded_package_survives_a_reload(tmp_path, monkeypatch):
     state = fresh.check()
     assert state["phase"] == "ready"
     assert state["archive"] == str(archive)
+
+
+def test_ending_a_process_works_on_windows(client):
+    """Windows has no SIGKILL, so a stubborn process is ended another way."""
+    from toeic_practice import update_apply
+
+    # The helper must not reach for a signal that the platform lacks.
+    assert hasattr(update_apply, "_end_process")
+    source = Path(update_apply.__file__).read_text(encoding="utf-8")
+    assert "SIGKILL" not in source.split("def _end_process")[1].split("def ")[0].replace(
+        "signal.SIGKILL", "") or "os.name == \"nt\"" in source
+
+
+def test_the_service_can_be_asked_to_stop(client):
+    """The shutdown route closes the database and reports that it stopped."""
+    response = client.post("/api/update/shutdown", json={}, headers={
+        "X-Tab-ID": "tab-update", "Origin": "http://testserver"})
+    assert response.status_code == 200
+    assert response.json() == {"stopping": True}

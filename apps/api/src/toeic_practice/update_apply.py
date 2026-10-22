@@ -15,6 +15,8 @@ import os
 import signal
 import socket
 import time
+import urllib.error
+import urllib.request
 from pathlib import Path
 
 from .updater import install_staged, start_after_update
@@ -37,32 +39,58 @@ def wait_for_port(port: int, timeout: float = 60.0) -> bool:
     return False
 
 
+def _end_process(pid: int) -> None:
+    """End a process that will not let go of the port.
+
+    Windows has no SIGKILL, so the process tree is ended with taskkill.
+    """
+    if os.name == "nt":
+        subprocess.run(["taskkill", "/PID", str(pid), "/T", "/F"],
+                       capture_output=True, check=False)
+        return
+    try:
+        os.kill(pid, signal.SIGKILL)
+    except (OSError, ProcessLookupError, AttributeError):
+        pass
+
+
+def ask_service_to_stop(port: int) -> None:
+    """Ask the running service to close its database and stop."""
+    try:
+        request = urllib.request.Request(
+            f"http://127.0.0.1:{port}/api/update/shutdown", method="POST",
+            headers={"User-Agent": "toeic-practice-studio",
+                     "Content-Type": "application/json"},
+            data=b"{}")
+        urllib.request.urlopen(request, timeout=10).read()
+    except (urllib.error.URLError, OSError):
+        # The service may already be gone; the port check below decides.
+        pass
+
+
 def stop_service(pid: int, port: int) -> None:
     """Ask the old service to stop, and insist if it does not.
 
-    The service is told first so it can close its database cleanly. A
-    process that does not let go of the port in time is ended, because the
-    files cannot be replaced while it still holds them open.
+    The service is asked over HTTP first so it can close its database
+    cleanly. A process that does not let go of the port in time is ended,
+    because the files cannot be replaced while it still holds them open.
     """
-    if pid and pid != os.getpid():
-        try:
-            os.kill(pid, signal.SIGTERM)
-        except (OSError, ProcessLookupError):
-            pass
+    if not pid or pid == os.getpid():
+        return
+    ask_service_to_stop(port)
+    try:
+        os.kill(pid, signal.SIGTERM)
+    except (OSError, ProcessLookupError):
+        pass
     if wait_for_port(port, timeout=20.0):
         return
-    if pid and pid != os.getpid():
-        try:
-            os.kill(pid, signal.SIGTERM)
-        except (OSError, ProcessLookupError):
-            pass
+    try:
+        os.kill(pid, signal.SIGTERM)
+    except (OSError, ProcessLookupError):
+        pass
     if wait_for_port(port, timeout=20.0):
         return
-    if pid and pid != os.getpid():
-        try:
-            os.kill(pid, signal.SIGKILL)
-        except (OSError, ProcessLookupError):
-            pass
+    _end_process(pid)
     wait_for_port(port, timeout=20.0)
 
 
