@@ -126,6 +126,8 @@ def main(argv: list[str] | None = None) -> int:
         note("更新完成，正在重新启动…")
         start_after_update(root, args.port)
         note("已启动新版本。")
+        # The helper runs from the runtime folder it just replaced, so it
+        # ends here and lets the new program remove the leftovers.
         return 0
     except Exception as error:  # noqa: BLE001 - reported to the learner
         note(f"更新失败：{error}")

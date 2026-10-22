@@ -39,10 +39,10 @@ def main() -> int:
     )
     server = BrowserOpeningServer(config, open_browser=not arguments.no_browser)
     runtime_state.set_running(server, arguments.port)
-    server.run()
-    # The old folders are removed once the helper that replaced them has
-    # let go of the runtime, which is a moment after the program starts.
+    # The cleanup runs alongside the server: server.run() below only
+    # returns once the program has stopped.
     _remove_leftovers_later()
+    server.run()
     return 0 if server.started else 1
 
 
@@ -57,6 +57,8 @@ def _remove_leftovers_later() -> None:
 
     def worker() -> None:
         from .updater import clean_aside_folders
+        # The helper ends a moment after the program starts; until then it
+        # still holds the old runtime open.
         for _ in range(60):
             time.sleep(1.0)
             try:
