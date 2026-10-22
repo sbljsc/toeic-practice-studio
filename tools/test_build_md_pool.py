@@ -104,6 +104,71 @@ def test_an_out_of_range_layout_is_refused_instead_of_crashing():
     assert render_layout(broken["source"], broken) is None
 
 
+def test_a_layout_applies_only_to_its_exact_source():
+    """A same-length edit or extra text must not borrow another layout."""
+    layout = {"source": "Title\nBody.", "paragraphs": [1], "hardBreaks": [],
+              "headings": [{"line": 0, "level": 3}]}
+    index = LayoutIndex([layout])
+    assert index.apply("Other\nBody.") is None
+    assert index.apply(layout["source"] + " extra") is None
+    # Line endings are normalized before the lookup.
+    assert index.apply(layout["source"].replace("\n", "\r\n")) == "### Title\n\nBody."
+
+
+def test_part_six_frozen_labels_match_the_whole_template():
+    """A frozen display label only counts when the whole template matches."""
+    source = "An offer\nUse {{qid:q-abc}} ------- and {{qid:q-def}} -------.\nA new paragraph."
+    layout = {"source": source, "paragraphs": [1, 2], "hardBreaks": [],
+              "headings": [{"line": 0, "level": 3}]}
+    index = LayoutIndex([layout])
+    frozen = "An offer\nUse (31) ------- and (32) -------.\nA new paragraph."
+    assert index.apply(frozen) == \
+        "### An offer\n\nUse (31) ------- and (32) -------.\n\nA new paragraph."
+    assert index.apply(frozen + " mismatch") is None
+    assert index.apply(frozen.replace("(32)", "(0)")) is None
+
+
+def test_ambiguous_templates_never_pick_an_arbitrary_layout():
+    """Two readings of the same source, or a repeated label, refuse to guess."""
+    source = "Title\nUse {{qid:q-a}} ------- and {{qid:q-a}} -------."
+    layout = {"source": source, "paragraphs": [1], "hardBreaks": [],
+              "headings": [{"line": 0, "level": 3}]}
+    index = LayoutIndex([layout])
+    assert index.apply("Title\nUse (31) ------- and (32) -------.") is None
+    ambiguous = LayoutIndex([layout, {**layout, "headings": []}])
+    assert ambiguous.apply(source) is None
+
+
+def test_invalid_boundary_metadata_never_reformats_partially():
+    """A rejected layout leaves the source untouched instead of half-applied."""
+    source = "Title\nBody."
+    for invalid in (
+        {"paragraphs": [2], "hardBreaks": [], "headings": []},
+        {"paragraphs": [1.2], "hardBreaks": [], "headings": []},
+        {"paragraphs": [], "hardBreaks": [-1], "headings": []},
+        {"paragraphs": [], "hardBreaks": [], "headings": [{"line": 0, "level": 7}]},
+        {"paragraphs": [], "hardBreaks": [0], "headings": [{"line": 0, "level": 3}]},
+    ):
+        index = LayoutIndex([{**{"source": source}, **invalid}])
+        assert index.apply(source) is None
+
+
+def test_a_necessary_address_break_is_kept_but_trailing_spaces_are_not():
+    """Only the recorded hard break survives; stray spaces do not become one."""
+    source = "From: A  \nTo: B\nPlease attend the meeting  \nnext Monday."
+    layout = {"source": source, "paragraphs": [2], "hardBreaks": [0], "headings": []}
+    assert render_layout(source, layout) == \
+        "From: A  \nTo: B\n\nPlease attend the meeting\nnext Monday."
+
+
+def test_a_heading_spanning_two_source_rows_stays_one_heading():
+    """A heading split across rows is joined and hides its inner break."""
+    source = "▶\n解析\n横线处应填入副词。"
+    layout = {"source": source, "paragraphs": [0, 1, 2], "hardBreaks": [],
+              "headings": [{"line": 0, "endLine": 1, "level": 4}]}
+    assert render_layout(source, layout) == "#### ▶ 解析\n\n横线处应填入副词。"
+
+
 def test_the_frontend_and_this_generator_join_a_heading_the_same_way():
     # The frontend removes a single space between two Han characters.
     assert join_han_space("概 要") == "概要"

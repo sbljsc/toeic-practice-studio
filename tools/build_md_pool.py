@@ -32,7 +32,10 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 DEFAULT_POOL = REPO / "content" / "question-pool"
-DEFAULT_LAYOUTS = REPO / "apps" / "web" / "src" / "domain" / "textLayouts.ts"
+# The layout table is the generator's input, not part of the application.
+# It stays out of the web bundle so the shipped page does not carry a
+# multi-megabyte index that the Markdown bank has already applied.
+DEFAULT_LAYOUTS = REPO / "tools" / "bank-source" / "textLayouts.json.ts"
 
 SECTION_ORIGINAL = "## 原文"
 SECTION_OPTIONS = "## 选项"

@@ -6,8 +6,9 @@ import { pathToFileURL } from 'node:url';
 import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { transformWithOxc } from 'vite';
-import { materialImageUrl, parseMaterialInline, parseMaterialMarkdown, verifiedMaterialTranscript } from './materialMarkdown.ts';
-import { materialTranscripts } from './materialTranscripts.ts';
+import { materialImageUrl, parseMaterialInline, parseMaterialMarkdown } from './materialMarkdown.ts';
+import { existsSync, readdirSync } from 'node:fs';
+import path from 'node:path';
 
 // Exercise the real TSX component without adding a runner/dependency or loading CSS in Node.
 const componentUrl = new URL('../ui/MaterialContent.tsx', import.meta.url);
@@ -244,43 +245,57 @@ test('only local registered asset endpoints load; image OCR is not repeated', ()
   assert.doesNotMatch(fallback, /<img|fallback/); assert.match(fallback, /题目图片暂不可用/);
 });
 
-test('frozen image snapshots render only source-verified transcripts without duplicate pixels or OCR', () => {
-  const id = 'img-083265820a6445614cd8';
+test('a bank image keeps its picture and shows the written description folded away', () => {
+  // The description now comes from the group's own Markdown, so the picture
+  // is shown and the text stays available without repeating it.
+  const id = 'img-c67bb29bdaa15551d828';
   const html = renderToStaticMarkup(createElement(MaterialContent, { materials: [
-    { kind: 'image', asset_id: id, url: `/api/assets/${id}`, text: 'unverified replacement OCR' },
+    { kind: 'image', asset_id: id, url: `/api/assets/${id}`, text: 'N ↑\nW ← → E\nS ↓' },
   ] }));
-  assert.match(html, /<table>/); assert.match(html, /<strong>4<\/strong>/);
-  assert.doesNotMatch(html, /<img|unverified replacement OCR/);
-  assert.equal(verifiedMaterialTranscript({ asset_id: '__proto__', text: 'x' }), undefined);
-  assert.equal(verifiedMaterialTranscript({ asset_id: 'img-1e23073638bcd5ea1aa8', text: 'food OCR' }), undefined);
+  assert.match(html, new RegExp(`src="/api/assets/${id}"`));
+  assert.match(html, /<details/);
+  assert.match(html, /N ↑/);
+  assert.doesNotMatch(html, /<img[^>]*>\s*<p>N ↑/);
 });
 
-test('frozen Part 6 preserves each actual displayed number and refuses mismatched source templates', () => {
-  const [id, entry] = Object.entries(materialTranscripts).find(([, value]) => value.sourceText)!;
-  let n = 60;
-  const frozen = entry.sourceText!.replace(/\{\{qid:[^}]+\}\}/g, () => `(${++n})`);
-  const output = verifiedMaterialTranscript({ asset_id: id, text: frozen })!;
-  assert.ok(output); assert.doesNotMatch(output, /\{\{qid:/);
-  for (const label of ['(61)', '(62)', '(63)', '(64)']) assert.ok(output.includes(label));
-  const html = renderToStaticMarkup(createElement(MaterialContent, { materials: [{ kind: 'image', asset_id: id, url: `/api/assets/${id}`, text: frozen }] }));
-  assert.doesNotMatch(html, /<img|\{\{qid:/);
-  for (const label of ['(61)', '(62)', '(63)', '(64)']) assert.ok(html.includes(label));
-  assert.equal(verifiedMaterialTranscript({ asset_id: id, text: frozen + 'UNVERIFIED' }), undefined);
-  assert.equal(verifiedMaterialTranscript({ asset_id: id }), undefined);
-  assert.equal(verifiedMaterialTranscript({ asset_id: id, text: entry.sourceText }), entry.markdown);
-});
-
-test('the complete verified map renders every table with source rows and checkmarks intact', () => {
-  assert.equal(Object.keys(materialTranscripts).length, 80);
-  for (const [id, value] of Object.entries(materialTranscripts)) {
-    const blocks = parseMaterialMarkdown(value.markdown);
-    const html = renderToStaticMarkup(createElement(MaterialContent, { materials: [{ kind: 'text', text: value.markdown }] }));
-    assert.doesNotMatch(html, /<(?:script|iframe|a|img)\b/i, id);
-    assert.equal((html.match(/<td\b/g) ?? []).length, blocks.reduce((sum, block) => sum + (block.kind === 'table' ? block.rows.length * block.header.length : 0), 0), id);
+test('every image the bank serves keeps a description that parses on its own', () => {
+  const parts = path.resolve(import.meta.dirname, '../../../../content/question-pool/parts');
+  const folders = readdirSync(parts, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name);
+  let withDescription = 0;
+  let images = 0;
+  for (const folder of folders) {
+    for (const name of readdirSync(path.join(parts, folder))) {
+      if (!name.endsWith('.md')) continue;
+      const file = path.join(parts, folder, name);
+      if (!existsSync(file)) continue;
+      const text = readFileSync(file, 'utf8');
+      const start = text.indexOf('## 原文');
+      if (start < 0) continue;
+      const rest = text.slice(start + 4);
+      const end = rest.indexOf('## 选项');
+      const section = end < 0 ? rest : rest.slice(0, end);
+      for (const match of section.matchAll(/!\[([^\]]*)\]\(\/api\/assets\/(img-[0-9a-f]{20})\)/g)) {
+        images += 1;
+        const after = section.slice(match.index + match[0].length);
+        const marker = after.indexOf('###### 图片文字');
+        if (marker < 0) continue;
+        const lines: string[] = [];
+        for (const line of after.slice(marker + '###### 图片文字'.length).split('\n')) {
+          if (line.startsWith('#')) break;
+          lines.push(line);
+        }
+        const description = lines.join('\n').trim();
+        assert.ok(description, `${name} shows a picture with an empty description`);
+        const blocks = parseMaterialMarkdown(description, 'prose');
+        assert.ok(blocks.length > 0, `${name} description parses to nothing`);
+        withDescription += 1;
+      }
+    }
   }
-  const food = parseMaterialMarkdown(materialTranscripts['img-a0e025170c8126cc3b74'].markdown)[0];
-  assert.equal(food.kind, 'table');
-  if (food.kind === 'table') assert.deepEqual(food.rows, [['Taste','√','','',''],['Variety','','','√',''],['Price','√','','','']]);
+  assert.ok(images > 0, 'the bank still serves pictures');
+  assert.ok(withDescription > 0, 'the bank still describes its pictures');
 });
 
 test('multi-line list details stay attached to the relevant original receipt choice', () => {

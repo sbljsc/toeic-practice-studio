@@ -1,6 +1,6 @@
 import { createElement, type ReactNode } from 'react';
 import type { GroupMaterial } from '../domain/types';
-import { materialImageUrl, parseMaterialInline, parseMaterialMarkdown, reflowSoftLines, verifiedMaterialTranscript, type MaterialFlow } from '../domain/materialMarkdown';
+import { materialImageUrl, parseMaterialInline, parseMaterialMarkdown, reflowSoftLines, type MaterialFlow } from '../domain/materialMarkdown';
 import { repairLegacyMaterial, type DisplayNumbers } from '../domain/legacyMaterialRepair';
 import './MaterialContent.css';
 
@@ -39,8 +39,7 @@ export function MarkdownText({ text, className = '', flow = 'document' }: { text
 export function MaterialContent({ materials, className = '', questionNumbers }: { materials: GroupMaterial[]; className?: string; questionNumbers?: DisplayNumbers }) {
   return <div className={`material-content ${className}`.trim()}>
     {materials.map((material, index) => {
-      const transcript = material.kind === 'image' ? verifiedMaterialTranscript(material) : undefined;
-      if (material.kind === 'image' && transcript === undefined) {
+      if (material.kind === 'image') {
         const src = materialImageUrl(material.url);
         // The picture carries the material - a map, a chart or a floor
         // plan - and its written description repeats the same content in
@@ -63,7 +62,7 @@ export function MaterialContent({ materials, className = '', questionNumbers }: 
         }
         return <p key={index}>{material.alt || '题目图片暂不可用'}</p>;
       }
-      return <MarkdownText key={index} className="material-content__text" text={repairLegacyMaterial(transcript ?? material.text ?? '', questionNumbers)} />;
+      return <MarkdownText key={index} className="material-content__text" text={repairLegacyMaterial(material.text ?? '', questionNumbers)} />;
     })}
   </div>;
 }

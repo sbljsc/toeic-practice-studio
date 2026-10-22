@@ -198,20 +198,28 @@ Part 6 材料的空位在 md 中写作 `{{blank:N}}`，N 是**该 passage 内的
 
 ## 6. 与旧格式的关系
 
-`content/question-pool/pool.json` 与 `apps/web/src/domain/textLayouts.ts`、
-`apps/web/src/domain/materialTranscripts.ts` 是 v1 的产物。v2 用 md 取代它们：
+`content/question-pool/pool.json` 与排版索引、图片转录表是 v1 的产物。
+v2 用 md 取代它们：
 
 - `pool.json` → `parts/part-N/*.md`
-- `textLayouts.ts`（2.3 MB 的全文索引）→ 直接内联进 md 的 `## 原文`
-- `materialTranscripts.ts`（图片转录）→ 内联进 md
+- 排版索引（2.9 MB 的全文索引，原 `apps/web/src/domain/textLayouts.ts`）→
+  直接内联进 md 的 `## 原文`；索引本身**移到 `tools/bank-source/textLayouts.json.ts`**，
+  只作为生成器的输入，不再随网页发布
+- 图片转录表（原 `apps/web/src/domain/materialTranscripts.ts`）→ 内联进 md 的
+  `###### 图片文字` 段；该表与当前题库的图片资产**无交集**，已停用并移到
+  `tools/bank-source/` 作为历史留存
 - `manifest.json` 保留，资产登记与 sha256 校验不变
 
 `manifest.json` 的 `schema_version` 改为 `3` 时，后端按 md 题库加载；
 `pool.json` 仍然保留，作为生成器的输入和往返比对的基准。
 
+**前端不再携带这两张表。** 排版已在生成阶段固化进 md，
+`parseMaterialMarkdown` 不再查表；图片文字说明由 md 直接提供。
+因此网页产物从约 2.8 MB 降到约 380 KB，且渲染结果逐字节不变。
+
 ## 7. 生成与校验
 
-- `tools/build_md_pool.py` 从 `pool.json` 与 `textLayouts.ts` 生成 md 树。
+- `tools/build_md_pool.py` 从 `pool.json` 与 `tools/bank-source/textLayouts.json.ts` 生成 md 树。
   它不修改任何题目内容、答案、选项、题组成员、录音或字幕。
 - `tools/test_build_md_pool.py` 与 `tests/api/test_md_pool.py` 覆盖格式、
   往返一致性和失败场景。

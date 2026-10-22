@@ -6,7 +6,7 @@
 
 **2000 道题 · 1030 个完整题组 · Part 1–7 · 听力 45 分钟 / 阅读 75 分钟 / 完整 120 分钟**
 
-> **Windows 10/11 x64 用户：** [下载 Windows 便携版 v0.2.0](https://github.com/sbljsc/toeic-practice-studio/releases/tag/v0.2.0)。请使用 Release 中的 `TOEIC-Practice-Studio-0.2.0-windows-x64.zip` 资产，不要下载 GitHub 自动生成的 “Source code” ZIP。
+> **Windows 10/11 x64 用户：** [下载 Windows 便携版 v0.3.0](https://github.com/sbljsc/toeic-practice-studio/releases/tag/v0.3.0)。请使用 Release 中的 `TOEIC-Practice-Studio-0.3.0-windows-x64.zip` 资产，不要下载 GitHub 自动生成的 “Source code” ZIP。
 
 > 本项目仅提供受限的个人非商业学习许可。仓库中的第三方练习内容未附带再分发授权证明；免费、非营利和公开可下载均不能替代内容授权。请先阅读[使用条款](LICENSE.md)、[内容权利说明](CONTENT-NOTICE.md)与[完整声明](#完整声明)。
 
@@ -58,7 +58,7 @@ TOEIC Practice Studio 面向本机、单人学习场景。题库以单题、完�
 
 ### 方式一：Windows x64 便携版（推荐）
 
-1. 打开 [GitHub Releases v0.2.0](https://github.com/sbljsc/toeic-practice-studio/releases/tag/v0.2.0)，下载资产 `TOEIC-Practice-Studio-0.2.0-windows-x64.zip`。不要用 “Source code” 压缩包代替发行资产。
+1. 打开 [GitHub Releases v0.3.0](https://github.com/sbljsc/toeic-practice-studio/releases/tag/v0.3.0)，下载资产 `TOEIC-Practice-Studio-0.3.0-windows-x64.zip`。不要用 “Source code” 压缩包代替发行资产。
 2. 将 ZIP **完整解压**到一个可写的普通文件夹，再进入固定的顶层目录 `TOEIC-Practice-Studio`。不要直接在压缩包预览窗口里运行，也不要只复制 `Start.cmd`。
 3. 双击解压目录中的 `Start.cmd`。启动窗口会保持打开，默认浏览器应自动打开 [http://127.0.0.1:8765](http://127.0.0.1:8765)。
 4. 使用期间保留启动窗口。结束时回到该窗口按 `Ctrl+C`；关闭启动窗口也会结束服务。
@@ -186,7 +186,7 @@ Part 7 保留单篇、双篇、三篇材料结构。专项可输入目标题数�
 
 | 问题 | 说明 |
 | --- | --- |
-| 便携版提示缺少 Python、Node.js、环境或网页构建 | 便携包已包含运行所需的组装内容；该提示通常表示使用了源码 ZIP、没有完整解压或文件不完整，并不是要求另装运行时。不要为消除此提示安装 Python 或 Node.js；重新下载 Release 中的 `TOEIC-Practice-Studio-0.2.0-windows-x64.zip`，完整解压后双击 `Start.cmd` |
+| 便携版提示缺少 Python、Node.js、环境或网页构建 | 便携包已包含运行所需的组装内容；该提示通常表示使用了源码 ZIP、没有完整解压或文件不完整，并不是要求另装运行时。不要为消除此提示安装 Python 或 Node.js；重新下载 Release 中的 `TOEIC-Practice-Studio-0.3.0-windows-x64.zip`，完整解压后双击 `Start.cmd` |
 | 源码方式提示缺少环境或网页构建 | 检查 Python 3.12+ / Node.js 24+，运行 `Setup.cmd`；详细错误见启动窗口 |
 | 默认端口被占用 | 使用 `Start.cmd --port 8766` |
 | 浏览器没有自动打开 | 保留启动窗口，先查看其中是否已显示监听地址，再手动打开 `http://127.0.0.1:8765` |
@@ -211,7 +211,7 @@ Windows 便携包以 Windows 10/11 x64 为范围，实际 Release 资产仍需�
 | [使用条款](LICENSE.md) | 自有代码的个人非商业许可范围 |
 | [内容权利说明](CONTENT-NOTICE.md) | 第三方练习内容的权利、授权现状与处理渠道 |
 | [软件依赖声明](THIRD-PARTY-NOTICES.txt) | 第三方软件版权和许可证 |
-| [GitHub Releases v0.2.0](https://github.com/sbljsc/toeic-practice-studio/releases/tag/v0.2.0) | Windows x64 便携版下载与发行说明 |
+| [GitHub Releases v0.3.0](https://github.com/sbljsc/toeic-practice-studio/releases/tag/v0.3.0) | Windows x64 便携版下载与发行说明 |
 
 ```text
 apps/web/              React + TypeScript 网页

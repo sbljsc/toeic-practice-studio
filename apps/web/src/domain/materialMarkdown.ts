@@ -1,7 +1,3 @@
-import { materialTranscripts } from './materialTranscripts.ts';
-import { textLayouts } from './textLayouts.ts';
-import { applyTextLayout } from './textLayout.ts';
-
 /** Deliberately small Markdown grammar: no HTML, links, code or embedded media. */
 export type MaterialBlock =
   | { kind: 'paragraph'; text: string }
@@ -149,8 +145,6 @@ function documentParagraphs(lines: string[], flow: MaterialFlow): string[] {
 }
 
 export function parseMaterialMarkdown(source: string, flow: MaterialFlow = 'document'): MaterialBlock[] {
-  const verified = flow === 'document' ? applyTextLayout(source, textLayouts) : undefined;
-  if (verified !== undefined) { source = verified; flow = 'prose'; }
   const lines = sourceBullets(source.replace(/\r\n?/g, '\n'))
     .replace(/([（(])\s*\n\s*([A-D])\s*\n\s*([）)])/g, '$1$2$3')
     .replace(/^[▶→➤]\s*\n\s*解析\s*$/gm, match => match.replace(/\s+/g, ' '))
@@ -242,25 +236,4 @@ export function parseMaterialInline(source: string, depth = 0): MaterialInline[]
 /** Only the application's registered, same-origin media endpoint can load pixels. */
 export function materialImageUrl(url: string | undefined): string | undefined {
   return url && /^\/api\/assets\/[a-zA-Z0-9_-]+$/.test(url) ? url : undefined;
-}
-
-/** Only reviewed asset IDs gain text. Match the entire frozen source template
- * before reusing its displayed Part 6 numbers; never infer labels from order. */
-export function verifiedMaterialTranscript(material: { asset_id?: string; text?: string }): string | undefined {
-  const id = material.asset_id;
-  if (!id || !Object.hasOwn(materialTranscripts, id)) return undefined;
-  const verified = materialTranscripts[id];
-  if (!verified.sourceText) return verified.markdown;
-  if (!material.text) return undefined;
-  const tokens: string[] = [];
-  const escape = (text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const pattern = verified.sourceText.split(/(\{\{qid:[^}]+\}\})/).map(piece => {
-    if (!piece.startsWith('{{qid:')) return escape(piece);
-    tokens.push(piece);
-    return `(${escape(piece)}|\\([1-9][0-9]*\\))`;
-  }).join('');
-  const match = new RegExp('^' + pattern + '$').exec(material.text);
-  if (!match) return undefined;
-  const labels = new Map(tokens.map((token, index) => [token, match[index + 1]]));
-  return verified.markdown.replace(/\{\{qid:[^}]+\}\}/g, token => labels.get(token) ?? token);
 }

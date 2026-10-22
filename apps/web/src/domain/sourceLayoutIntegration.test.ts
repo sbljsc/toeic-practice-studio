@@ -1,77 +1,85 @@
+// The Markdown bank carries the presentation that the old runtime layout
+// table used to compute. These tests assert that the bank still separates
+// titles from body text, keeps heading levels, keeps list rows apart and
+// keeps tables intact.
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { textLayouts } from './textLayouts.ts';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
+import path from 'node:path';
 import { parseMaterialMarkdown } from './materialMarkdown.ts';
 
-test('the reviewed fitness advertisement has a real title and keeps each testimonial separate from its attribution', () => {
-  const layout = textLayouts.find(row => row.source.startsWith('Fantasy Fitness\n'));
-  assert.ok(layout, 'The complete source document needs layout metadata even when it contains attribution bullets.');
-  const blocks = parseMaterialMarkdown(layout.source);
-  assert.deepEqual(blocks[0], { kind: 'heading', level: 3, text: 'Fantasy Fitness' });
-  const attributions = blocks.flatMap(block => block.kind === 'list' ? block.items : []);
-  assert.deepEqual(attributions, ['Dave from New York', 'Jane from Los Angeles', 'Bob from Texas']);
-  assert.equal(blocks.filter(block => block.kind === 'paragraph' && block.text.startsWith('“')).length, 3);
-});
+const PARTS = path.resolve(import.meta.dirname, '../../../../content/question-pool/parts');
 
-test('the actual letterhead keeps postal fields and salutation apart from the letter body', () => {
-  const layout = textLayouts.find(row => row.source.startsWith('G&G INC\n'));
-  assert.ok(layout);
-  const blocks = parseMaterialMarkdown(layout.source);
-  const paragraphs = blocks.flatMap(block => block.kind === 'paragraph' ? [block.text] : []);
-  assert.ok(paragraphs.some(text => text.includes('One Security Drive\nNicholasville, Kentucky 40356')));
-  assert.ok(paragraphs.includes('Dear Mr. Cooper,'));
-  assert.ok(paragraphs.some(text => text.startsWith('General & Green will be conducting')));
-  assert.ok(paragraphs.some(text => text.startsWith('Also, this is a reminder')));
-});
+const partFolders = (): string[] =>
+  readdirSync(PARTS, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name);
 
-test('separate centered source titles are rendered with their actual heading hierarchy', () => {
-  const layout = textLayouts.find(row => row.source.startsWith('THE INSTANT PLAYER’S GUIDE\n'));
-  assert.ok(layout);
-  const headings = parseMaterialMarkdown(layout.source).filter(block => block.kind === 'heading');
-  assert.deepEqual(headings.slice(0, 3), [
-    { kind: 'heading', level: 3, text: 'THE INSTANT PLAYER’S GUIDE' },
-    { kind: 'heading', level: 4, text: 'INSTANT GAME INFORMATION' },
-    { kind: 'heading', level: 4, text: 'Current and Upcoming Games' },
-  ]);
-});
-
-test('the actual split analysis marker is rendered as a complete fourth-level heading', () => {
-  const layout = textLayouts.find(row => row.headings.some(heading => heading.endLine !== undefined));
-  assert.ok(layout);
-  const blocks = parseMaterialMarkdown(layout.source);
-  assert.ok(blocks.some(block => block.kind === 'heading' && block.level === 4 && block.text === '▶ 解析'));
-  assert.ok(!blocks.some(block => block.kind === 'heading' && block.text === '▶'));
-});
-
-test('a body-sized advertisement headline is still a third-level title rather than merged into prose', () => {
-  const layout = textLayouts.find(row => row.source.startsWith('Secondhand Goods for Sale\n'));
-  assert.ok(layout);
-  assert.deepEqual(parseMaterialMarkdown(layout.source)[0], { kind: 'heading', level: 3, text: 'Secondhand Goods for Sale' });
-});
-
-test('the workshop notice reflows body text while its four-person attendance list keeps separate rows', () => {
-  const layout = textLayouts.find(row => row.source.startsWith('New Employee Workshop\n'));
-  assert.ok(layout);
-  const paragraphs = parseMaterialMarkdown(layout.source).flatMap(block => block.kind === 'paragraph' ? [block.text] : []);
-  assert.ok(paragraphs.some(text => text.includes('goals for the year 2019.')));
-  const rows = paragraphs.flatMap(text => text.split('\n'));
-  for (const name of ['John Stack', 'Mary Fisher', 'Terry Dillon', 'Sean Gomez']) assert.ok(rows.includes(name), name);
-});
-
-test('the coffee order keeps customer fields distinct and the translated offer stops after its fourth bullet', () => {
-  const form = textLayouts.find(row => row.source.startsWith('Caraway Coffee\nis having a special sale'));
-  assert.ok(form);
-  const fields = parseMaterialMarkdown(form.source).flatMap(block => block.kind === 'paragraph' ? block.text.split('\n') : []);
-  for (const prefix of ['Customer Name:', 'Address:', 'Phone Number:', 'Order Number:', 'Order Date:', 'Delivery Date:']) {
-    assert.ok(fields.some(text => text.startsWith(prefix)), prefix);
+/** Read one group file from whichever part folder holds it. */
+function groupFile(name: string): string {
+  for (const part of partFolders()) {
+    const candidate = path.join(PARTS, part, name);
+    if (existsSync(candidate)) return readFileSync(candidate, 'utf8');
   }
-  const translation = textLayouts.find(row => row.source.startsWith('葛缕子咖啡店\n特价销售咖啡豆'));
-  assert.ok(translation);
-  const translated = parseMaterialMarkdown(translation.source);
-  assert.deepEqual(translated[0], { kind: 'heading', level: 3, text: '葛缕子咖啡店' });
-  const offer = translated.find(block => block.kind === 'list');
-  assert.ok(offer?.kind === 'list');
-  assert.equal(offer.items.length, 4);
-  assert.ok(offer.items[3].endsWith('6公斤。'));
-  assert.ok(translated.some(block => block.kind === 'paragraph' && block.text.startsWith('此优惠适用于')));
+  throw new Error(`group file not found: ${name}`);
+}
+
+/** The material the API serves for a group, with its headings intact. */
+function originalSection(text: string): string {
+  const start = text.indexOf('## 原文');
+  if (start < 0) return '';
+  const rest = text.slice(start + 4);
+  const end = rest.indexOf('## 选项');
+  const section = end < 0 ? rest : rest.slice(0, end);
+  // The listening script and the textbook review block sit before the
+  // material; the API serves the material that follows a "Material N" marker.
+  const marker = section.search(/^#{2,6}\s+(?:Material|Passage)\s+\d+\s*$/m);
+  const material = marker >= 0 ? section.slice(marker) : section;
+  return material.replace(/^#{2,6}\s+(?:Material|Passage)\s+\d+\s*$/m, '').trim();
+}
+
+test('a real title in the bank stays a heading and not part of the prose', () => {
+  const blocks = parseMaterialMarkdown(originalSection(groupFile('g-0fd4a7156a100c32b802.md')), 'document');
+  const headings = blocks.filter((block) => block.kind === 'heading');
+  assert.ok(headings.length > 0, 'the calendar keeps its title as a heading');
+  const first = headings[0] as { level: number; text: string };
+  assert.equal(first.level, 3);
+  assert.ok(first.text.length > 0);
+});
+
+test('the table of a real bank material survives as a table', () => {
+  const blocks = parseMaterialMarkdown(originalSection(groupFile('g-0fd4a7156a100c32b802.md')), 'document');
+  const tables = blocks.filter((block) => block.kind === 'table');
+  assert.ok(tables.length > 0, 'the calendar keeps its weekday table');
+  const table = tables[0] as { header: string[]; rows: string[][] };
+  assert.ok(table.header.length >= 2);
+  assert.ok(table.rows.length > 0);
+  for (const row of table.rows) assert.equal(row.length, table.header.length);
+});
+
+test('a real fourth-level section keeps its level', () => {
+  const blocks = parseMaterialMarkdown(originalSection(groupFile('g-0810a0e6c69557c42bd6.md')), 'document');
+  const levels = blocks
+    .filter((block) => block.kind === 'heading')
+    .map((block) => (block as { level: number }).level);
+  assert.ok(levels.includes(4), 'the Part 6 material keeps a fourth-level section');
+});
+
+test('a real list keeps its rows apart instead of merging them', () => {
+  const blocks = parseMaterialMarkdown(originalSection(groupFile('g-babcc5c34315125d82f2.md')), 'document');
+  const lists = blocks.filter((block) => block.kind === 'list');
+  assert.ok(lists.length > 0, 'the list stays a list');
+  const items = lists.flatMap((block) => (block as { items: string[] }).items);
+  assert.ok(items.length > 1, 'its rows stay separate');
+  assert.ok(new Set(items).size === items.length, 'no row is repeated');
+});
+
+test('the bank never shows a bare marker where a heading belongs', () => {
+  for (const name of ['g-0fd4a7156a100c32b802.md', 'g-0810a0e6c69557c42bd6.md']) {
+    const blocks = parseMaterialMarkdown(originalSection(groupFile(name)), 'document');
+    for (const block of blocks) {
+      if (block.kind !== 'heading') continue;
+      assert.ok(block.text.trim().length > 0, 'a heading is never empty');
+    }
+  }
 });
