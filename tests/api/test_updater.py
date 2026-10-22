@@ -226,9 +226,20 @@ def test_ending_a_process_works_on_windows(client):
 
 
 def test_the_service_can_be_asked_to_stop(client):
-    """The shutdown route closes the database and reports that it stopped."""
-    response = client.post("/api/update/shutdown", json={}, headers={
-        "X-Tab-ID": "tab-update", "Origin": "http://testserver"})
+    """The shutdown route closes the database and reports that it stopped.
+
+    The route ends the process, so it is called with the ending turned
+    off; otherwise the test runner would go down with it.
+    """
+    from toeic_practice.routers import update as update_router
+
+    original = update_router._stop_process
+    update_router._stop_process = lambda: None
+    try:
+        response = client.post("/api/update/shutdown", json={}, headers={
+            "X-Tab-ID": "tab-update", "Origin": "http://testserver"})
+    finally:
+        update_router._stop_process = original
     assert response.status_code == 200
     assert response.json() == {"stopping": True}
 
@@ -274,14 +285,14 @@ def test_the_update_waits_for_the_port_the_server_really_uses():
     A program started on another port would otherwise never release the
     one the helper was watching, and the update would never happen.
     """
-    from toeic_practice import launcher
+    from toeic_practice import runtime_state
     from toeic_practice import update_service as service
 
-    launcher.RUNNING_PORT = 8799
+    runtime_state.RUNNING_PORT = 8799
     try:
         assert service.running_port() == 8799
     finally:
-        launcher.RUNNING_PORT = 0
+        runtime_state.RUNNING_PORT = 0
 
 
 def test_the_api_and_the_launcher_share_the_running_port():
@@ -325,6 +336,7 @@ def test_the_old_runtime_is_moved_aside_and_cleaned_later(tmp_path):
     assert (program / ".data" / "practice.sqlite3").read_bytes() == b"LEARNER DATA"
     assert (program / "content" / "bank.txt").read_text(encoding="utf-8") == "new bank"
 
+    # The old folders are set aside and then removed.
     removed = updater.clean_aside_folders(program)
-    assert "runtime.old" in removed
-    assert not (program / "runtime.old").exists()
+    assert not list(program.glob("*.old"))
+    assert removed
