@@ -16,6 +16,7 @@ import type {
   ReportQuestion,
   ReviewCause,
   ReviewWord,
+  VocabReference,
 } from '../../domain/types';
 import { Banner, ErrorBlock, Loading, Stat, Tag } from '../components';
 import { erratumNote } from '../attempt/erratum';
@@ -25,6 +26,7 @@ import { MarkdownText } from '../MaterialContent';
 import { UnscoredDrafts } from './UnscoredDrafts';
 import { pendingInterruptionCount } from '../attempt/interruptionDelivery';
 import { reviewEligibility } from './reviewEligibility';
+import { needsSenseFill, referenceFor as lookupReferenceFor, senseFromReference } from './wordSenseFill';
 import { ReportRequestGate } from './reportState';
 import { ActivityStatistics } from '../ActivityStatistics';
 import { WorkspaceViewToggle, type WorkspaceView } from '../WorkspaceViewToggle';
@@ -351,6 +353,8 @@ function ErrorReview({
   const [words, setWords] = useState<ReviewWord[]>(question.review?.words ?? []);
   const [candidates, setCandidates] = useState<Candidate[]>([]);
   const [freeform, setFreeform] = useState('');
+  // The open word list's entry for a word the learner typed by hand.
+  const [lookupReference, setLookupReference] = useState<VocabReference | null>(null);
   const [sense, setSense] = useState('');
   const [modality, setModality] = useState<'meaning' | 'listening'>('meaning');
   const [saving, setSaving] = useState(false);
@@ -382,6 +386,22 @@ function ErrorReview({
         : [...prev, { term: clean, sense, modality, causal: true }],
     );
     setFreeform('');
+    // A hand-typed word is not among the candidates, so ask the word list
+    // for its meaning and let the row offer to fill it.
+    if (!candidates.some((item) => item.term.toLowerCase() === clean.toLowerCase())) {
+      api
+        .vocabReference(clean)
+        .then((response) => setLookupReference(response.exact))
+        .catch(() => setLookupReference(null));
+    }
+  };
+
+  /** Copy the open word list's gloss into the word's sense field. */
+  const fillSense = (term: string) => {
+    const entry = referenceFor(term);
+    const definition = senseFromReference(entry);
+    if (!definition) return;
+    updateWord(term, { sense: definition });
   };
 
   const removeWord = (term: string) => {
@@ -390,6 +410,11 @@ function ErrorReview({
 
   const updateWord = (term: string, patch: Partial<ReviewWord>) => {
     setWords((prev) => prev.map((item) => (item.term === term ? { ...item, ...patch } : item)));
+  };
+
+  /** The open word list's entry for a term, when it knows the word. */
+  const referenceFor = (term: string): VocabReference | null => {
+    return lookupReferenceFor(term, candidates, lookupReference);
   };
 
   const save = async () => {
@@ -538,6 +563,17 @@ function ErrorReview({
                     onChange={(event) => updateWord(word.term, { sense: event.target.value })}
                     data-testid={`word-sense-${question.id}-${word.term}`}
                   />
+                  {needsSenseFill(word.sense, referenceFor(word.term)) ? (
+                    <button
+                      type="button"
+                      className="link-btn word-fill-sense"
+                      onClick={() => fillSense(word.term)}
+                      title={senseFromReference(referenceFor(word.term))}
+                      data-testid={`word-fill-sense-${question.id}-${word.term}`}
+                    >
+                      补上释义
+                    </button>
+                  ) : null}
                   <select
                     className="word-modality"
                     value={word.modality}

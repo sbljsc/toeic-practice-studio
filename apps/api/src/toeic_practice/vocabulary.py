@@ -40,6 +40,14 @@ class VocabularyService:
         from .vocab_reference import reference_entry
         return reference_entry(self.reference, term)
 
+    def _reference_sense(self, term: str) -> str:
+        """A short gloss for a word, taken from the open word list."""
+        entry = self._reference_for(term)
+        if entry is None:
+            return ""
+        definition = entry.get("definition_simplified") or entry.get("definition") or ""
+        return definition.strip()
+
     def _threshold(self, conn) -> int:
         row = conn.execute("SELECT value FROM settings WHERE key='vocabulary_threshold'").fetchone()
         return int(row["value"]) if row else 3
@@ -109,6 +117,10 @@ class VocabularyService:
             if modality not in ("meaning", "listening"):
                 raise bad_request("词汇模态无效。", "bad_modality")
             sense = str(word.get("sense", ""))
+            # A word the learner confirmed but did not gloss gets its meaning
+            # from the open word list, so the evidence is readable later.
+            if not sense.strip():
+                sense = self._reference_sense(term)
             state = conn.execute(
                 "SELECT cycle FROM vocab_state WHERE term=? AND sense=? AND modality=?",
                 (term, sense, modality),

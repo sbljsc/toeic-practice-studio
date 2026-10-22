@@ -2023,6 +2023,11 @@ button {
   max-width: 320px;
 }
 
+.word-fill-sense {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
 .word-sense {
   flex: 1;
   color: var(--muted);

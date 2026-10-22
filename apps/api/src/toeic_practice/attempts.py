@@ -606,7 +606,8 @@ class AttemptService:
         with self.store.transaction() as conn:
             record = self._load_record(conn, attempt_id)
             self._close_if_expired(conn, record)
-            VocabularyService(self.store, self.clock, self.library).put_review(conn, record, qid, body)
+            VocabularyService(self.store, self.clock, self.library,
+                              self.reference).put_review(conn, record, qid, body)
             return self._enrich_report(record)
 
     def candidates(self, attempt_id: str, qid: str) -> dict:
