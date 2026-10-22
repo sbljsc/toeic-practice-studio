@@ -282,3 +282,21 @@ def test_the_update_waits_for_the_port_the_server_really_uses():
         assert service.running_port() == 8799
     finally:
         launcher.RUNNING_PORT = 0
+
+
+def test_the_api_and_the_launcher_share_the_running_port():
+    """The launcher runs as __main__, the API imports it by name.
+
+    Those are two module objects, so anything the launcher records has to
+    be kept somewhere both of them can read.
+    """
+    from toeic_practice import runtime_state
+    from toeic_practice import update_service
+
+    runtime_state.set_running(object(), 8799)
+    try:
+        assert runtime_state.RUNNING_PORT == 8799
+        assert update_service.running_port() == 8799
+    finally:
+        runtime_state.RUNNING_PORT = 0
+        runtime_state.RUNNING_SERVER = None

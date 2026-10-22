@@ -42,9 +42,9 @@ def running_port() -> int:
     The launcher may have been given a different port, so the number the
     server really uses is asked for rather than assumed.
     """
-    from . import launcher
-    if launcher.RUNNING_PORT:
-        return launcher.RUNNING_PORT
+    from . import runtime_state
+    if runtime_state.RUNNING_PORT:
+        return runtime_state.RUNNING_PORT
     try:
         return int(os.environ.get("TOEIC_PORT", "8765"))
     except ValueError:

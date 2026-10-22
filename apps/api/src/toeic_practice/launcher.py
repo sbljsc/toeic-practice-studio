@@ -7,10 +7,9 @@ import webbrowser
 
 import uvicorn
 
-# The running server, so a request can ask it to stop.
-RUNNING_SERVER = None
-# The port it listens on, so an update can wait for the right one.
-RUNNING_PORT = 0
+from . import runtime_state
+
+
 
 
 class BrowserOpeningServer(uvicorn.Server):
@@ -37,10 +36,8 @@ def main() -> int:
         host="127.0.0.1",
         port=arguments.port,
     )
-    global RUNNING_SERVER, RUNNING_PORT
     server = BrowserOpeningServer(config, open_browser=not arguments.no_browser)
-    RUNNING_SERVER = server
-    RUNNING_PORT = arguments.port
+    runtime_state.set_running(server, arguments.port)
     server.run()
     return 0 if server.started else 1
 
@@ -51,7 +48,7 @@ def request_stop() -> bool:
     Uvicorn stops when its ``should_exit`` flag is set, which closes the
     socket and lets the program files be replaced.
     """
-    server = RUNNING_SERVER
+    server = runtime_state.RUNNING_SERVER
     if server is None:
         return False
     server.should_exit = True

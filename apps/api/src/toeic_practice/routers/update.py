@@ -60,10 +60,12 @@ def _stop_process() -> None:
     import os
     import time
 
-    from .. import launcher
-    launcher.request_stop()
+    from .. import runtime_state
+    server = runtime_state.RUNNING_SERVER
+    if server is not None:
+        server.should_exit = True
     for _ in range(40):
-        if launcher.RUNNING_SERVER is None or not launcher.RUNNING_SERVER.started:
+        if server is None or not server.started:
             break
         time.sleep(0.25)
     os._exit(0)
