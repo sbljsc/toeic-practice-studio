@@ -3,6 +3,7 @@
 Tests inject ManualClock, a TEMP library and a TEMP database through this
 factory; the module-level `main.app` uses production defaults.
 """
+from contextlib import asynccontextmanager
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException, Request
@@ -59,15 +60,16 @@ def create_app(*, clock=None, store=None, library=None, backup_root=None,
                         Path(backup_root) if backup_root else backup_dir(),
                         reference)
 
-    app = FastAPI(title="TOEIC Practice Local API", version="1.0.0")
-    app.state.services = services
-    app.state.allow_test_host = allow_test_host
-
-    @app.on_event("startup")
-    def _check_for_updates() -> None:
+    @asynccontextmanager
+    async def lifespan(_app: FastAPI):
         # A release is fetched while the program is idle, so the badge is
         # ready by the time the learner looks at it.
         services.updates.start_idle_check()
+        yield
+
+    app = FastAPI(title="TOEIC Practice Local API", version="1.0.0", lifespan=lifespan)
+    app.state.services = services
+    app.state.allow_test_host = allow_test_host
 
     @app.exception_handler(ApiError)
     async def api_error_handler(request: Request, exc: ApiError) -> JSONResponse:
