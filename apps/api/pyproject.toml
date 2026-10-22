@@ -1,6 +1,6 @@
 [project]
 name = "toeic-practice-api"
-version = "0.1.0"
+version = "0.2.0"
 description = "Local-only practice API for TOEIC Practice Studio"
 requires-python = ">=3.12"
 dependencies = [

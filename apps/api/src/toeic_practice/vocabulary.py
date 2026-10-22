@@ -27,10 +27,18 @@ def extract_candidates(text: str) -> list:
 
 
 class VocabularyService:
-    def __init__(self, store, clock, library=None) -> None:
+    def __init__(self, store, clock, library=None, reference=None) -> None:
         self.store = store
         self.clock = clock
         self.library = library
+        self.reference = reference
+
+    def _reference_for(self, term: str) -> dict | None:
+        """The reference entry for a word, when the reference is available."""
+        if self.reference is None:
+            return None
+        from .vocab_reference import reference_entry
+        return reference_entry(self.reference, term)
 
     def _threshold(self, conn) -> int:
         row = conn.execute("SELECT value FROM settings WHERE key='vocabulary_threshold'").fetchone()
@@ -173,6 +181,7 @@ class VocabularyService:
                     "lifetime_question_count": len(lifetime_questions),
                     "threshold": threshold,
                     "manual_required": manual_required,
+                    "reference": self._reference_for(term),
                     "evidence": [
                         {"attempt_id": e["attempt_id"], "question_id": e["question_id"],
                          "exam_id": e["exam_id"],

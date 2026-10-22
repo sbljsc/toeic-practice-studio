@@ -2,7 +2,7 @@
 from fastapi import APIRouter, Request
 from pydantic import BaseModel
 
-from ..errors import bad_request
+from ..errors import bad_request, unavailable
 from ..security import validate_write_request
 
 router = APIRouter(prefix="/api", tags=["vocabulary"])
@@ -16,6 +16,26 @@ def services(request: Request):
 def vocabulary(request: Request) -> dict:
     svc = services(request)
     return svc.vocabulary.list_entries(current_library_version=svc.library.library_version())
+
+
+@router.get("/vocabulary/reference")
+def vocabulary_reference(request: Request, q: str = "", limit: int = 20) -> dict:
+    """Look up reference material for one word, or search for words."""
+    svc = services(request)
+    reference = svc.vocabulary.reference
+    if reference is None or not reference.available:
+        raise unavailable("词汇参考数据不可用。", "reference_unavailable")
+    query = (q or "").strip()
+    if not query:
+        raise bad_request("请输入要查询的单词。", "missing_query")
+    limit = max(1, min(int(limit), 50))
+    from ..vocab_reference import reference_entry
+    exact = reference_entry(reference, query)
+    if exact is not None and len(query.split()) == 1:
+        return {"query": query, "exact": exact, "matches": [], "source": reference.source}
+    matches = [reference_entry(reference, entry['word'])
+               for entry in reference.search(query, limit)]
+    return {"query": query, "exact": None, "matches": matches, "source": reference.source}
 
 
 class VocabularyPatch(BaseModel):

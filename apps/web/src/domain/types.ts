@@ -452,12 +452,45 @@ export interface VocabEntry {
   lifetime_question_count: number;
   threshold: number;
   manual_required: boolean;
+  reference: VocabReference | null;
   evidence: VocabEvidence[];
 }
 
 export interface VocabularyResponse {
   threshold: number;
   entries: VocabEntry[];
+}
+
+export interface VocabExample {
+  en: string;
+  zh: string;
+  zh_simplified: string;
+}
+
+export interface VocabReference {
+  word: string;
+  definition: string;
+  definition_simplified: string;
+  star: number;
+  category: string;
+  parts_of_speech: string[];
+  examples: VocabExample[];
+  attribution: string;
+  source_url: string;
+  license: string;
+}
+
+export interface VocabReferenceResponse {
+  query: string;
+  exact: VocabReference | null;
+  matches: VocabReference[];
+  source: {
+    name: string;
+    url: string;
+    license: string;
+    license_url: string;
+    attribution: string;
+  };
 }
 
 export interface SettingsResponse {

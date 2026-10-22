@@ -13,11 +13,12 @@ from fastapi.staticfiles import StaticFiles
 from .attempts import AttemptService
 from .backups import BackupService
 from .clock import Clock
-from .config import WEB_DIST, backup_dir, database_url, library_dir
+from .config import PROJECT_ROOT, WEB_DIST, backup_dir, database_url, library_dir
 from .errors import ApiError, render_error
 from .library import Library
 from .store import Store
 from .vocabulary import VocabularyService
+from .vocab_reference import load_vocab_reference
 from .routers import attempts as attempts_router
 from .routers import backups as backups_router
 from .routers import catalog as catalog_router
@@ -27,17 +28,19 @@ from .routers import vocabulary as vocabulary_router
 
 
 class Services:
-    def __init__(self, store: Store, library: Library, clock, backup_root: Path) -> None:
+    def __init__(self, store: Store, library: Library, clock, backup_root: Path,
+                 reference=None) -> None:
         self.store = store
         self.library = library
         self.clock = clock
         self.attempts = AttemptService(store, library, clock)
-        self.vocabulary = VocabularyService(store, clock, library)
+        self.vocabulary = VocabularyService(store, clock, library, reference)
         self.backups = BackupService(store, library, clock, backup_root)
 
 
 def create_app(*, clock=None, store=None, library=None, backup_root=None,
-               serve_web: bool = True, allow_test_host: bool = False) -> FastAPI:
+               serve_web: bool = True, allow_test_host: bool = False,
+               reference=None) -> FastAPI:
     clock = clock or Clock()
     if store is None:
         from sqlalchemy.engine import make_url
@@ -47,8 +50,11 @@ def create_app(*, clock=None, store=None, library=None, backup_root=None,
     if library is None:
         library = Library(library_dir())
     library.load()
+    if reference is None:
+        reference = load_vocab_reference(PROJECT_ROOT)
     services = Services(store, library, clock,
-                        Path(backup_root) if backup_root else backup_dir())
+                        Path(backup_root) if backup_root else backup_dir(),
+                        reference)
 
     app = FastAPI(title="TOEIC Practice Local API", version="1.0.0")
     app.state.services = services

@@ -1,10 +1,11 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { api, ApiError } from '../../domain/http';
 import { VOCAB_STATUS_LABEL } from '../../domain/format';
-import type { VocabEntry, VocabStatus } from '../../domain/types';
+import type { VocabEntry, VocabReference, VocabStatus } from '../../domain/types';
 import { Banner, EmptyBlock, ErrorBlock, Loading, Tag } from '../components';
 import { navigate } from '../router';
 import { MarkdownText, MarkdownInline } from '../MaterialContent';
+import { lookupQuery, orderLookup, referenceCredit } from './vocabLookup';
 
 type StatusFilter = 'all' | VocabStatus;
 
@@ -15,6 +16,13 @@ export function VocabScreen() {
   const [error, setError] = useState<string | null>(null);
   const [filter, setFilter] = useState<StatusFilter>('all');
   const [busyId, setBusyId] = useState<string | null>(null);
+  const [lookup, setLookup] = useState('');
+  const [lookupResult, setLookupResult] = useState<{
+    exact: VocabReference | null;
+    matches: VocabReference[];
+  } | null>(null);
+  const [lookupBusy, setLookupBusy] = useState(false);
+  const [lookupError, setLookupError] = useState<string | null>(null);
 
   const load = useCallback(() => {
     setLoading(true);
@@ -60,6 +68,26 @@ export function VocabScreen() {
     return map;
   }, [entries]);
 
+  const runLookup = async (term: string) => {
+    const query = lookupQuery(term);
+    if (!query) {
+      setLookupResult(null);
+      setLookupError(null);
+      return;
+    }
+    setLookupBusy(true);
+    setLookupError(null);
+    try {
+      const response = await api.vocabReference(query);
+      setLookupResult(orderLookup({ exact: response.exact, matches: response.matches }));
+    } catch (cause) {
+      setLookupError(cause instanceof ApiError ? cause.message : '查询参考失败。');
+      setLookupResult(null);
+    } finally {
+      setLookupBusy(false);
+    }
+  };
+
   return (
     <div className="page page-vocab" data-testid="vocab-screen">
       <header className="page-head">
@@ -75,6 +103,54 @@ export function VocabScreen() {
       <Banner tone="info" title="怎么算重复">
         同一道题练多次也只算一次；同一个材料里反复出错会单独标出。之后把词标记为已掌握，不会改动以前的成绩。
       </Banner>
+
+      <section className="vocab-lookup" data-testid="vocab-lookup">
+        <h2 className="vocab-lookup-title">查词</h2>
+        <p className="vocab-lookup-hint">
+          输入英文词，查看中文释义、词性与例句。例句出自 CC BY 4.0 的托业词汇库。
+        </p>
+        <div className="vocab-lookup-row">
+          <input
+            type="search"
+            className="vocab-lookup-input"
+            placeholder="例如 invoice / schedule / invoice"
+            value={lookup}
+            onChange={(event) => setLookup(event.target.value)}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter') void runLookup(lookup);
+            }}
+            data-testid="vocab-lookup-input"
+          />
+          <button
+            type="button"
+            className="btn btn-secondary"
+            disabled={lookupBusy || !lookup.trim()}
+            onClick={() => void runLookup(lookup)}
+            data-testid="vocab-lookup-submit"
+          >
+            查询
+          </button>
+        </div>
+        {lookupError ? <p className="vocab-lookup-error">{lookupError}</p> : null}
+        {lookupBusy ? <p className="vocab-lookup-hint">正在查询…</p> : null}
+        {lookupResult && !lookupBusy ? (
+          <div className="vocab-lookup-results" data-testid="vocab-lookup-results">
+            {lookupResult.exact ? <ReferenceCard reference={lookupResult.exact} /> : null}
+            {lookupResult.matches.length > 0 ? (
+              <ul className="vocab-lookup-list">
+                {lookupResult.matches.map((match) => (
+                  <li key={match.word}>
+                    <ReferenceCard reference={match} compact />
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+            {!lookupResult.exact && lookupResult.matches.length === 0 ? (
+              <p className="vocab-lookup-hint">词汇库里没有这个词。</p>
+            ) : null}
+          </div>
+        ) : null}
+      </section>
 
       <div className="filter-row" role="group" aria-label="生词状态筛选">
         {(
@@ -119,6 +195,7 @@ export function VocabScreen() {
                 {entry.manual_required ? <Tag tone="warn">手动必背</Tag> : null}
               </div>
               {entry.sense ? <MarkdownText className="vocab-sense" text={entry.sense} flow="prose" /> : <p className="vocab-sense muted">未填写词义/用法</p>}
+              {entry.reference ? <ReferenceCard reference={entry.reference} compact /> : null}
               <p className="vocab-counts">
                 不同题目 {entry.question_count}/{entry.threshold} · 材料 {entry.material_count} · 历史复发{' '}
                 {entry.lifetime_question_count}
@@ -189,4 +266,48 @@ export function VocabScreen() {
 function StatusChip({ status }: { status: VocabStatus }) {
   const tone = status === 'must_learn' ? 'bad' : status === 'concentrated' ? 'warn' : status === 'mastered' ? 'good' : 'neutral';
   return <Tag tone={tone}>{VOCAB_STATUS_LABEL[status]}</Tag>;
+}
+
+function ReferenceCard({ reference, compact = false }: { reference: VocabReference; compact?: boolean }) {
+  const definition = reference.definition_simplified || reference.definition;
+  return (
+    <div className="vocab-reference" data-testid={`vocab-reference-${reference.word}`}>
+      <div className="vocab-reference-head">
+        <strong className="vocab-reference-word">{reference.word}</strong>
+        {reference.parts_of_speech.length > 0 ? (
+          <span className="vocab-reference-pos">{reference.parts_of_speech.join(' / ')}</span>
+        ) : null}
+        {reference.star > 0 ? (
+          <span className="vocab-reference-star" title={`重要度 ${reference.star}/5`}>
+            {'★'.repeat(reference.star)}
+          </span>
+        ) : null}
+        {reference.category ? <span className="vocab-reference-category">{reference.category}</span> : null}
+      </div>
+      {definition ? <p className="vocab-reference-definition">{definition}</p> : null}
+      {!compact && reference.examples.length > 0 ? (
+        <ul className="vocab-reference-examples">
+          {reference.examples.map((example, index) => (
+            <li key={`${example.en}-${index}`}>
+              <span className="vocab-reference-en">{example.en}</span>
+              <span className="vocab-reference-zh">{example.zh_simplified || example.zh}</span>
+            </li>
+          ))}
+        </ul>
+      ) : null}
+      {reference.license ? (
+        <p className="vocab-reference-attribution">
+          {referenceCredit(reference)}
+          {reference.source_url ? (
+            <>
+              {' '}
+              <a href={reference.source_url} target="_blank" rel="noreferrer noopener">
+                {reference.source_url}
+              </a>
+            </>
+          ) : null}
+        </p>
+      ) : null}
+    </div>
+  );
 }

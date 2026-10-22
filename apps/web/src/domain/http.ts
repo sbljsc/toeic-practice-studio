@@ -19,6 +19,7 @@ import type {
   SettingsResponse,
   StatisticsResponse,
   VocabularyResponse,
+  VocabReferenceResponse,
 } from './types';
 
 export class ApiError extends Error {
@@ -179,6 +180,10 @@ export const api = {
     ),
 
   vocabulary: () => request<VocabularyResponse>('/vocabulary'),
+  vocabReference: (query: string, limit = 20) =>
+    request<VocabReferenceResponse>(
+      `/vocabulary/reference?q=${encodeURIComponent(query)}&limit=${limit}`,
+    ),
   patchVocab: (id: string, payload: { mastered?: boolean; manual_required?: boolean }) =>
     request<VocabularyResponse>(`/vocabulary/${encodeURIComponent(id)}`, {
       method: 'PATCH',

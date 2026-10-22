@@ -21,3 +21,25 @@
 
 维护者不会把来源不明的题目导入本仓库。本文档不构成对任何具体题目的授权，
 也不改变上述权利归属。
+
+## 词汇参考数据：CC BY 4.0
+
+生词本「查词」功能与生词条目附带的释义、词性、星级与双语例句，来自下列
+开放许可数据集：
+
+> **完整 TOEIC 單字庫 (English–Traditional Chinese)**
+> Copyright by the dataset authors.
+> Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+> 来源：<https://huggingface.co/datasets/LEE-WHITE/toeic-vocab-tw>
+>
+> **修改说明**：只保留有释义或例句的词条（原始 9615 条中保留 6509 条）；
+> 每个词条最多保留 2 个例句；除原文外另提供简体中文释义与例句；
+> 按英文小写词建立索引，便于本应用查询。
+
+CC BY 4.0 允许复制、改编与再分发（包括商业用途），条件是保留署名、
+给出许可链接并说明是否作了修改。本项目已按该要求署名。
+
+本节的例外**仅覆盖该词汇参考文件**（`content/vocabulary/reference.json`
+及其构建脚本），**不覆盖**本仓库的题目、文章、解释、译文、图片与录音，
+也不改变它们各自的权利归属。本仓库的自有程序代码继续适用
+[使用条款](LICENSE.md)。

@@ -2047,6 +2047,142 @@ button {
   color: var(--warn);
 }
 
+.vocab-lookup {
+  margin-top: 16px;
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.vocab-lookup-title {
+  margin: 0;
+  font-size: 16px;
+}
+
+.vocab-lookup-hint {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.vocab-lookup-error {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: var(--bad);
+}
+
+.vocab-lookup-row {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.vocab-lookup-input {
+  flex: 1;
+  min-width: 220px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: var(--ink);
+  background: var(--surface-sunken);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.vocab-lookup-input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.vocab-lookup-results {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vocab-lookup-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vocab-reference {
+  margin-top: 8px;
+  padding: 10px 12px;
+  background: var(--surface-sunken);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.vocab-lookup-results .vocab-reference {
+  margin-top: 0;
+}
+
+.vocab-reference-head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.vocab-reference-word {
+  font-size: 15px;
+}
+
+.vocab-reference-pos,
+.vocab-reference-category {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.vocab-reference-star {
+  font-size: 12px;
+  color: var(--warn);
+  letter-spacing: 1px;
+}
+
+.vocab-reference-definition {
+  margin: 6px 0 0;
+  font-size: 14px;
+}
+
+.vocab-reference-examples {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.vocab-reference-examples li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.vocab-reference-en {
+  font-size: 13px;
+}
+
+.vocab-reference-zh {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.vocab-reference-attribution {
+  margin: 8px 0 0;
+  font-size: 11px;
+  color: var(--muted);
+  word-break: break-word;
+}
+
 .vocab-evidence-list {
   margin-top: 8px;
   font-size: 13px;

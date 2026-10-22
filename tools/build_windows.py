@@ -91,6 +91,13 @@ def collect_payload(root):
     if actual != expected:
         raise ValueError('missing or unregistered content file')
     files += [checked_file(root, 'content/question-pool/' + name) for name in sorted(expected)]
+    # The vocabulary reference is an openly licensed lookup that the
+    # vocabulary book reads at runtime.
+    vocabulary = root / 'content' / 'vocabulary'
+    if vocabulary.is_dir():
+        for path in sorted(vocabulary.rglob('*')):
+            if path.is_file():
+                files.append(checked_file(root, path.relative_to(root).as_posix()))
     return sorted(set(files))
 
 
@@ -273,6 +280,11 @@ def build(root, version, output_dir, allow_dirty=False):
         'pool_sha256': sha256(stage / 'content/question-pool/pool.json'),
         'dependencies': distributions,
     }
+    # The vocabulary reference is a separate payload with its own licence.
+    reference = stage / 'content' / 'vocabulary' / 'reference.json'
+    if reference.is_file():
+        info['vocabulary_reference_sha256'] = sha256(reference)
+        info['vocabulary_reference_license'] = 'CC BY 4.0'
     (stage / 'build-info.json').write_text(json.dumps(info, indent=2) + '\n', encoding='utf-8')
     with (stage / 'THIRD-PARTY-NOTICES.txt').open('a', encoding='utf-8') as notices:
         notices.write('\n\nBUNDLED CPYTHON RUNTIME\nPython ' + settings['version'] +
