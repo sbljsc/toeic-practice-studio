@@ -300,3 +300,31 @@ def test_the_api_and_the_launcher_share_the_running_port():
     finally:
         runtime_state.RUNNING_PORT = 0
         runtime_state.RUNNING_SERVER = None
+
+
+def test_the_old_runtime_is_moved_aside_and_cleaned_later(tmp_path):
+    """The helper runs from the runtime folder, so it cannot delete it.
+
+    The old folder is renamed and removed once the program has started
+    again, which is what makes an update possible at all on Windows.
+    """
+    from toeic_practice import updater
+
+    program = tmp_path / "program"
+    (program / "runtime").mkdir(parents=True)
+    (program / "runtime" / "python.exe").write_bytes(b"interpreter")
+    (program / "Start.cmd").write_text("@echo off", encoding="utf-8")
+    (program / ".data").mkdir()
+    (program / ".data" / "practice.sqlite3").write_bytes(b"LEARNER DATA")
+
+    archive = _make_release(tmp_path, "0.5.0")
+    updater.install_staged(program, archive)
+
+    # The new runtime is in place, and the old one is set aside.
+    assert (program / "runtime" / "python.exe").is_file()
+    assert (program / ".data" / "practice.sqlite3").read_bytes() == b"LEARNER DATA"
+    assert (program / "content" / "bank.txt").read_text(encoding="utf-8") == "new bank"
+
+    removed = updater.clean_aside_folders(program)
+    assert "runtime.old" in removed
+    assert not (program / "runtime.old").exists()

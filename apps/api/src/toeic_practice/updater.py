@@ -233,10 +233,21 @@ def install_staged(root: Path, archive: Path) -> dict:
             if not source.exists():
                 continue
             target = root / name
-            if target.is_dir():
-                shutil.rmtree(target, ignore_errors=True)
-            elif target.exists():
-                target.unlink(missing_ok=True)
+            # The old folder is moved aside rather than deleted, because the
+            # helper itself runs from inside the runtime folder and cannot
+            # remove files it is using. Whatever is left over is removed
+            # once the program has started again.
+            if target.exists():
+                aside = target.with_name(target.name + ".old")
+                if aside.exists():
+                    shutil.rmtree(aside, ignore_errors=True)
+                try:
+                    target.rename(aside)
+                except OSError:
+                    if target.is_dir():
+                        shutil.rmtree(target, ignore_errors=True)
+                    else:
+                        target.unlink(missing_ok=True)
             if source.is_dir():
                 shutil.copytree(source, target)
             else:
@@ -257,3 +268,24 @@ def start_after_update(root: Path, port: int = 8765) -> None:
         env={**os.environ, "PYTHONPATH": str(root / "apps" / "api" / "src")},
         creationflags=getattr(subprocess, "CREATE_NEW_PROCESS_GROUP", 0),
     )
+
+def clean_aside_folders(root: Path) -> list[str]:
+    """Remove the folders an update moved aside.
+
+    The old runtime could not be deleted while the helper was running from
+    it, so it was renamed instead. Once the program has started again the
+    leftovers are removed.
+    """
+    removed: list[str] = []
+    root = Path(root).resolve()
+    for item in list(root.glob("*.old")):
+        try:
+            if item.is_dir():
+                shutil.rmtree(item, ignore_errors=True)
+            else:
+                item.unlink(missing_ok=True)
+            if not item.exists():
+                removed.append(item.name)
+        except OSError:
+            pass
+    return removed
