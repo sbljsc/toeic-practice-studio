@@ -93,12 +93,22 @@ class UpdateService:
             self._set(phase="error", checked=True,
                       error=plan.get("error") or "无法检查更新")
             return self.snapshot()
-        keep = self.snapshot()
         self._set(**{**plan, "phase": "available" if plan["update_available"] else "current"})
-        if keep.get("phase") == "ready" and plan.get("update_available"):
-            # A finished download is still valid.
-            self._set(phase="ready")
+        # A package that was already downloaded is still good, even after the
+        # page was reloaded and the in-memory state was lost.
+        if plan["update_available"]:
+            staged = self._staged_archive(plan["latest_version"])
+            if staged is not None:
+                self._set(phase="ready", archive=str(staged))
         return self.snapshot()
+
+    def _staged_archive(self, version: str) -> Path | None:
+        """The downloaded package for a version, when it is still there."""
+        if not version:
+            return None
+        archive = (self.root / updater.DATA_DIR / "update" /
+                   f"TOEIC-Practice-Studio-{version}-windows-x64.zip")
+        return archive if archive.is_file() else None
 
     # ---------- downloading ----------
 
@@ -143,6 +153,21 @@ class UpdateService:
         work.mkdir(parents=True, exist_ok=True)
         archive = work / f"TOEIC-Practice-Studio-{plan['latest_version']}-windows-x64.zip"
         checksum = work / "checksum.txt"
+        if archive.is_file():
+            # A package from an earlier session is reused once it checks out.
+            try:
+                updater.download(assets["checksum"], checksum)
+                expected = updater.read_checksum(
+                    checksum.read_text(encoding="utf-8", errors="replace"))
+                if expected and updater.file_sha256(archive) == expected:
+                    self._set(**plan, phase="ready", archive=str(archive),
+                              sha256=expected,
+                              downloaded_bytes=archive.stat().st_size,
+                              total_bytes=archive.stat().st_size)
+                    return
+            except OSError:
+                pass
+            archive.unlink(missing_ok=True)
         try:
             total = updater.remote_size(assets["archive"])
             self._set(**plan, phase="downloading", total_bytes=total,

@@ -179,3 +179,36 @@ def test_installing_a_package_that_is_not_there_is_refused(client):
         "X-Tab-ID": "tab-update", "Origin": "http://testserver"})
     assert response.status_code == 503
     assert response.json()["code"] == "update_install_failed"
+
+
+def test_a_downloaded_package_survives_a_reload(tmp_path, monkeypatch):
+    """A package that was already fetched is reused, not fetched again.
+
+    The page can be reloaded at any time, which loses the in-memory state.
+    The package on disk must still be recognised, otherwise the learner is
+    told to download it a second time.
+    """
+    from toeic_practice import update_service as service
+
+    reference = service.UpdateService()
+    work = tmp_path / ".data" / "update"
+    work.mkdir(parents=True)
+    archive = work / "TOEIC-Practice-Studio-0.5.0-windows-x64.zip"
+    archive.write_bytes(b"already downloaded")
+
+    monkeypatch.setattr(service, "program_root", lambda: tmp_path)
+    monkeypatch.setattr(service, "is_portable", lambda: True)
+    monkeypatch.setattr(service, "current_version", lambda: "0.4.0")
+    monkeypatch.setattr(service.updater, "plan_update", lambda root, current: {
+        "current_version": current,
+        "latest_version": "0.5.0",
+        "latest_tag": "v0.5.0",
+        "update_available": True,
+        "checked": True,
+        "error": None,
+    })
+
+    fresh = service.UpdateService()
+    state = fresh.check()
+    assert state["phase"] == "ready"
+    assert state["archive"] == str(archive)
