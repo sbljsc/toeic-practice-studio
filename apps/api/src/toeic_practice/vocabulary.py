@@ -59,7 +59,12 @@ class VocabularyService:
                 for m in g.get("materials", []):
                     if m.get("text"):
                         text += " " + m["text"]
-        return {"candidates": extract_candidates(text)}
+        candidates = extract_candidates(text)
+        # Show the meaning of a candidate right where the learner picks it,
+        # so confirming a word does not need a second page.
+        for candidate in candidates:
+            candidate["reference"] = self._reference_for(candidate["term"])
+        return {"candidates": candidates}
 
     def put_review(self, conn, record: dict, qid: str, body: dict) -> dict:
         if record["status"] not in ("submitted", "expired"):

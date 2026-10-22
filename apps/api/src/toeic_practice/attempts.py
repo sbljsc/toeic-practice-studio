@@ -20,10 +20,11 @@ from .store import Store, dumps, loads
 
 
 class AttemptService:
-    def __init__(self, store: Store, library: Library, clock) -> None:
+    def __init__(self, store: Store, library: Library, clock, reference=None) -> None:
         self.store = store
         self.library = library
         self.clock = clock
+        self.reference = reference
 
     def create(self, request: dict) -> dict:
         with self.store.exclusive():
@@ -613,7 +614,8 @@ class AttemptService:
         with self.store.transaction() as conn:
             record = self._load_record(conn, attempt_id)
             self._close_if_expired(conn, record)
-            return VocabularyService(self.store, self.clock).candidates(record, qid)
+            return VocabularyService(self.store, self.clock, self.library,
+                                     self.reference).candidates(record, qid)
 
     # ---------- mutations ----------
 

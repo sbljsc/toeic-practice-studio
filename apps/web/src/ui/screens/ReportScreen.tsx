@@ -463,6 +463,37 @@ function ErrorReview({
                   </button>
                 ))}
               </div>
+              {candidates.some((candidate) => candidate.reference) ? (
+                <ul className="candidate-glosses" data-testid={`candidate-glosses-${question.id}`}>
+                  {candidates
+                    .filter((candidate) => candidate.reference)
+                    .slice(0, 20)
+                    .map((candidate) => (
+                      <li key={candidate.term} className="candidate-gloss">
+                        <div className="candidate-gloss-head">
+                          <strong className="candidate-gloss-word">{candidate.term}</strong>
+                          {candidate.reference?.parts_of_speech.length ? (
+                            <span className="candidate-gloss-pos">
+                              {candidate.reference.parts_of_speech.join(' / ')}
+                            </span>
+                          ) : null}
+                        </div>
+                        <p className="candidate-gloss-definition">
+                          {candidate.reference?.definition_simplified || candidate.reference?.definition}
+                        </p>
+                        {candidate.reference?.examples.length ? (
+                          <p className="candidate-gloss-example">
+                            <span className="candidate-gloss-en">{candidate.reference.examples[0].en}</span>
+                            <span className="candidate-gloss-zh">
+                              {candidate.reference.examples[0].zh_simplified ||
+                                candidate.reference.examples[0].zh}
+                            </span>
+                          </p>
+                        ) : null}
+                      </li>
+                    ))}
+                </ul>
+              ) : null}
             </div>
           ) : null}
           <div className="freeform-row">
@@ -486,9 +517,18 @@ function ErrorReview({
           </div>
           {words.length > 0 ? (
             <ul className="word-list">
-              {words.map((word) => (
+              {words.map((word) => {
+                const reference = candidates.find(
+                  (candidate) => candidate.term.toLowerCase() === word.term.toLowerCase(),
+                )?.reference;
+                return (
                 <li key={word.term}>
                   <span className="word-term">{word.term}</span>
+                  {reference ? (
+                    <span className="word-term-gloss" data-testid={`word-gloss-${question.id}-${word.term}`}>
+                      {reference.definition_simplified || reference.definition}
+                    </span>
+                  ) : null}
                   <input
                     className="word-sense-input"
                     type="text"
@@ -513,7 +553,8 @@ function ErrorReview({
                     撤回
                   </button>
                 </li>
-              ))}
+                );
+              })}
             </ul>
           ) : null}
         </div>

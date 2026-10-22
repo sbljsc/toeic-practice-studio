@@ -33,7 +33,7 @@ class Services:
         self.store = store
         self.library = library
         self.clock = clock
-        self.attempts = AttemptService(store, library, clock)
+        self.attempts = AttemptService(store, library, clock, reference)
         self.vocabulary = VocabularyService(store, clock, library, reference)
         self.backups = BackupService(store, library, clock, backup_root)
 

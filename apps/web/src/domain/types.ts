@@ -423,6 +423,7 @@ export interface Candidate {
   term: string;
   context: string;
   count: number;
+  reference: VocabReference | null;
 }
 
 export interface CandidatesResponse {
