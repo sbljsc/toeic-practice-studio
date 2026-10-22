@@ -40,14 +40,32 @@ def main() -> int:
     server = BrowserOpeningServer(config, open_browser=not arguments.no_browser)
     runtime_state.set_running(server, arguments.port)
     server.run()
-    # The old folders are removed once the program is running again; until
-    # then the helper that replaced them still holds the runtime open.
-    try:
-        from .updater import clean_aside_folders
-        clean_aside_folders(Path.cwd())
-    except Exception:  # noqa: BLE001 - leftovers are harmless
-        pass
+    # The old folders are removed once the helper that replaced them has
+    # let go of the runtime, which is a moment after the program starts.
+    _remove_leftovers_later()
     return 0 if server.started else 1
+
+
+def _remove_leftovers_later() -> None:
+    """Remove the folders an update moved aside, a moment after start.
+
+    The helper is still holding the old runtime when the new program
+    begins, so the leftovers are removed once it has had time to finish.
+    """
+    import threading
+    import time
+
+    def worker() -> None:
+        from .updater import clean_aside_folders
+        for _ in range(60):
+            time.sleep(1.0)
+            try:
+                if clean_aside_folders(Path.cwd()):
+                    return
+            except Exception:  # noqa: BLE001 - leftovers are harmless
+                return
+
+    threading.Thread(target=worker, daemon=True).start()
 
 
 def request_stop() -> bool:
