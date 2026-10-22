@@ -39,12 +39,14 @@ def main() -> int:
     )
     server = BrowserOpeningServer(config, open_browser=not arguments.no_browser)
     runtime_state.set_running(server, arguments.port)
+    server.run()
+    # The old folders are removed once the program is running again; until
+    # then the helper that replaced them still holds the runtime open.
     try:
         from .updater import clean_aside_folders
         clean_aside_folders(Path.cwd())
     except Exception:  # noqa: BLE001 - leftovers are harmless
         pass
-    server.run()
     return 0 if server.started else 1
 
 
