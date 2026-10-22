@@ -266,3 +266,19 @@ def test_the_helper_has_every_module_it_uses():
     missing = sorted(name for name in used - imported - assigned
                      if not hasattr(builtins, name))
     assert not missing, f"update_apply uses names it does not import: {missing}"
+
+
+def test_the_update_waits_for_the_port_the_server_really_uses():
+    """The helper must watch the port the program runs on, not the default.
+
+    A program started on another port would otherwise never release the
+    one the helper was watching, and the update would never happen.
+    """
+    from toeic_practice import launcher
+    from toeic_practice import update_service as service
+
+    launcher.RUNNING_PORT = 8799
+    try:
+        assert service.running_port() == 8799
+    finally:
+        launcher.RUNNING_PORT = 0

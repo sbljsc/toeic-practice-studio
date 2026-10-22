@@ -36,6 +36,21 @@ def current_version() -> str:
     return ""
 
 
+def running_port() -> int:
+    """The port this program actually listens on.
+
+    The launcher may have been given a different port, so the number the
+    server really uses is asked for rather than assumed.
+    """
+    from . import launcher
+    if launcher.RUNNING_PORT:
+        return launcher.RUNNING_PORT
+    try:
+        return int(os.environ.get("TOEIC_PORT", "8765"))
+    except ValueError:
+        return 8765
+
+
 def is_portable() -> bool:
     """Only a portable package can replace itself."""
     root = program_root()
@@ -225,7 +240,7 @@ class UpdateService:
         subprocess.Popen(
             [str(python), "-B", "-X", "utf8", "-m", "toeic_practice.update_apply",
              "--root", str(self.root), "--archive", str(path),
-             "--port", str(os.environ.get("TOEIC_PORT", "8765")),
+             "--port", str(running_port()),
              "--pid", str(os.getpid()),
              "--log", str(log)],
             cwd=str(self.root),
