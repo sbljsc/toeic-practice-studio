@@ -231,3 +231,38 @@ def test_the_service_can_be_asked_to_stop(client):
         "X-Tab-ID": "tab-update", "Origin": "http://testserver"})
     assert response.status_code == 200
     assert response.json() == {"stopping": True}
+
+
+def test_the_helper_has_every_module_it_uses():
+    """A missing import only shows up when the helper runs, which is late.
+
+    The helper is the one piece that runs while the program is being
+    replaced, so a name it forgot would only appear as a failed update.
+    """
+    import ast
+    import builtins
+    from pathlib import Path
+
+    from toeic_practice import update_apply
+
+    source = Path(update_apply.__file__).read_text(encoding="utf-8")
+    tree = ast.parse(source)
+    imported = set()
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Import):
+            for alias in node.names:
+                imported.add(alias.asname or alias.name.split(".")[0])
+        elif isinstance(node, ast.ImportFrom):
+            for alias in node.names:
+                imported.add(alias.asname or alias.name)
+    # Only module-level names are imported; a local variable is not a
+    # missing import.
+    assigned = set()
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Name) and isinstance(node.ctx, ast.Store):
+            assigned.add(node.id)
+    used = {node.value.id for node in ast.walk(tree)
+            if isinstance(node, ast.Attribute) and isinstance(node.value, ast.Name)}
+    missing = sorted(name for name in used - imported - assigned
+                     if not hasattr(builtins, name))
+    assert not missing, f"update_apply uses names it does not import: {missing}"
