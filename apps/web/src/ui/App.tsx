@@ -11,6 +11,7 @@ import { WrongScreen } from './screens/WrongScreen';
 import { VocabScreen } from './screens/VocabScreen';
 import { SettingsScreen } from './screens/SettingsScreen';
 import { PoolScreen } from './screens/PoolScreen';
+import { UpdateIndicator } from './UpdateBadge';
 
 interface SummaryRow {
   id: string;
@@ -97,6 +98,7 @@ function App() {
           <span aria-hidden="true" className="local-dot" />
           本机运行 · 无需账户
         </span>
+        <UpdateIndicator />
       </header>
 
       <div className={inWorkspace ? 'workspace-host' : 'page-host'}>

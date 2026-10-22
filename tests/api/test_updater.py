@@ -136,12 +136,33 @@ def test_the_update_status_endpoint_answers(client):
     assert body["portable"] is False
 
 
-def test_staging_an_update_needs_a_portable_install(client):
-    """A source checkout refuses to download a release for itself."""
-    response = client.post("/api/update/stage", json={}, headers={
+def test_a_source_checkout_says_it_cannot_update_itself(client):
+    """A source checkout cannot replace itself, and says so."""
+    response = client.post("/api/update/check", json={}, headers={
         "X-Tab-ID": "tab-update", "Origin": "http://testserver"})
-    assert response.status_code == 503
-    assert response.json()["code"] == "update_stage_failed"
+    assert response.status_code == 200
+    body = response.json()
+    assert body["portable"] is False
+    assert body["phase"] == "unsupported"
+    assert body["error"]
+
+
+def test_a_source_checkout_refuses_to_download_a_release(client):
+    """A source checkout does not fetch a release for itself."""
+    response = client.post("/api/update/download", json={}, headers={
+        "X-Tab-ID": "tab-update", "Origin": "http://testserver"})
+    assert response.status_code == 200
+    body = response.json()
+    assert body["phase"] == "unsupported"
+    assert body["archive"] is None
+
+
+def test_the_status_carries_the_progress_of_a_running_download(client):
+    """The page reads the phase and the byte counts to draw the badge."""
+    body = client.get("/api/update/status").json()
+    assert body["phase"] in ("idle", "unsupported")
+    assert "downloaded_bytes" in body
+    assert "total_bytes" in body
 
 
 def test_installing_without_an_archive_is_refused(client):

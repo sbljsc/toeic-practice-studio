@@ -198,7 +198,9 @@ export const api = {
     }),
   statistics: () => request<StatisticsResponse>('/statistics'),
   updateStatus: () => request<UpdateStatus>('/update/status'),
-  stageUpdate: () => request<UpdateStatus>('/update/stage', { method: 'POST', body: body({}) }),
+  checkUpdate: () => request<UpdateStatus>('/update/check', { method: 'POST', body: body({}) }),
+  startUpdateDownload: () =>
+    request<UpdateStatus>('/update/download', { method: 'POST', body: body({}) }),
   installUpdate: (archive: string) =>
     request<{ scheduled: boolean; log: string }>('/update/install', {
       method: 'POST',

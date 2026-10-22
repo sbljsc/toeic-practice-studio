@@ -91,12 +91,34 @@ def release_assets(version) -> dict:
     }
 
 
-def download(url: str, target: Path, timeout: int = 900) -> None:
+def remote_size(url: str, timeout: int = TIMEOUT) -> int:
+    """How large a download is, so the page can show a progress bar."""
+    request = urllib.request.Request(url, method="HEAD",
+                                     headers={"User-Agent": USER_AGENT})
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            length = response.headers.get("Content-Length", "0")
+            return int(length) if length.isdigit() else 0
+    except (urllib.error.URLError, OSError, ValueError):
+        return 0
+
+
+def download(url: str, target: Path, timeout: int = 900, progress=None) -> None:
     """Fetch a file to a path, following redirects."""
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(request, timeout=timeout) as response:
+        done = 0
         with target.open("wb") as output:
-            shutil.copyfileobj(response, output, length=1024 * 1024)
+            while True:
+                block = response.read(1024 * 256)
+                if not block:
+                    break
+                output.write(block)
+                done += len(block)
+                if progress:
+                    progress(done)
+        if progress:
+            progress(done)
 
 
 def file_sha256(path: Path) -> str:

@@ -1,9 +1,20 @@
-"""The update service: check, stage, and hand the install to a helper."""
+"""The update service: check, download in the background, then install.
+
+The download is large, so it runs in the background and the page polls for
+its progress. The state is kept in memory because the program is one
+process; when the program stops, the state goes with it, which is what
+we want: a download that was interrupted is simply started again.
+
+The learner's data is never part of an update.
+"""
 from __future__ import annotations
 
+import json
 import os
 import subprocess
 import sys
+import threading
+import time
 from pathlib import Path
 
 from . import updater
@@ -19,7 +30,6 @@ def current_version() -> str:
     info = program_root() / "build-info.json"
     if info.is_file():
         try:
-            import json
             return str(json.loads(info.read_text(encoding="utf-8")).get("version", ""))
         except (OSError, ValueError):
             pass
@@ -37,34 +47,128 @@ class UpdateService:
 
     def __init__(self) -> None:
         self.root = program_root()
+        self._lock = threading.Lock()
+        self._state: dict = {
+            "current_version": current_version(),
+            "latest_version": None,
+            "latest_tag": None,
+            "update_available": False,
+            "checked": False,
+            "portable": is_portable(),
+            "error": None,
+            "phase": "idle",
+            "downloaded_bytes": 0,
+            "total_bytes": 0,
+            "archive": None,
+            "sha256": None,
+        }
+        self._worker: threading.Thread | None = None
 
-    def status(self) -> dict:
-        """What is available, without downloading anything."""
-        current = current_version()
-        if not is_portable():
-            return {
-                "current_version": current,
-                "latest_version": None,
-                "update_available": False,
-                "checked": False,
-                "portable": False,
-                "error": "源码方式运行，请从仓库获取新版本。",
-            }
-        plan = updater.plan_update(self.root, current)
-        return {**plan, "portable": True}
+    # ---------- state ----------
 
-    def stage(self) -> dict:
-        """Download and verify the newer release."""
+    def snapshot(self) -> dict:
+        """What the page needs to show, without touching the network."""
+        with self._lock:
+            return dict(self._state)
+
+    def _set(self, **changes) -> None:
+        with self._lock:
+            self._state.update(changes)
+
+    # ---------- checking ----------
+
+    def check(self) -> dict:
+        """Look for a newer release."""
         if not is_portable():
-            raise OSError("源码方式运行无法自动更新。")
-        current = current_version()
+            self._set(phase="unsupported", checked=True,
+                      error="源码方式运行，请从仓库获取新版本。")
+            return self.snapshot()
+        self._set(phase="checking", error=None)
+        try:
+            plan = updater.plan_update(self.root, current_version())
+        except OSError as error:
+            self._set(phase="error", checked=True, error=str(error))
+            return self.snapshot()
+        if not plan.get("checked"):
+            self._set(phase="error", checked=True,
+                      error=plan.get("error") or "无法检查更新")
+            return self.snapshot()
+        keep = self.snapshot()
+        self._set(**{**plan, "phase": "available" if plan["update_available"] else "current"})
+        if keep.get("phase") == "ready" and plan.get("update_available"):
+            # A finished download is still valid.
+            self._set(phase="ready")
+        return self.snapshot()
+
+    # ---------- downloading ----------
+
+    def start_download(self) -> dict:
+        """Begin the download in the background."""
+        with self._lock:
+            if self._state["phase"] in ("downloading", "ready"):
+                return dict(self._state)
+        if not is_portable():
+            self._set(phase="unsupported", error="源码方式运行无法自动更新。")
+            return self.snapshot()
+        with self._lock:
+            if self._worker and self._worker.is_alive():
+                return dict(self._state)
+            self._worker = threading.Thread(target=self._download, daemon=True)
+            self._worker.start()
+        # Give the worker a moment so the page sees a phase right away.
+        for _ in range(20):
+            if self.snapshot()["phase"] != "idle":
+                break
+            time.sleep(0.05)
+        return self.snapshot()
+
+    def _download(self) -> None:
+        """Do the download and the check, in the background."""
+        self._set(phase="checking", error=None, downloaded_bytes=0, total_bytes=0)
+        try:
+            plan = updater.plan_update(self.root, current_version())
+        except OSError as error:
+            self._set(phase="error", checked=True, error=str(error))
+            return
+        if not plan.get("checked"):
+            self._set(phase="error", checked=True,
+                      error=plan.get("error") or "无法检查更新")
+            return
+        if not plan.get("update_available"):
+            self._set(**{**plan, "phase": "current"})
+            return
+        version = updater.parse_version(plan["latest_version"])
+        assets = updater.release_assets(version)
         work = self.root / updater.DATA_DIR / "update"
         work.mkdir(parents=True, exist_ok=True)
-        log = work / "progress.txt"
-        return updater.stage_update(self.root, current, progress=lambda m: log.write_text(m, encoding="utf-8"))
+        archive = work / f"TOEIC-Practice-Studio-{plan['latest_version']}-windows-x64.zip"
+        checksum = work / "checksum.txt"
+        try:
+            total = updater.remote_size(assets["archive"])
+            self._set(**plan, phase="downloading", total_bytes=total,
+                      downloaded_bytes=0, archive=None)
+            updater.download(assets["archive"], archive,
+                             progress=lambda done: self._set(downloaded_bytes=done))
+            updater.download(assets["checksum"], checksum)
+            expected = updater.read_checksum(
+                checksum.read_text(encoding="utf-8", errors="replace"))
+            if not expected:
+                raise OSError("校验文件无法识别")
+            actual = updater.file_sha256(archive)
+            if actual != expected:
+                archive.unlink(missing_ok=True)
+                raise OSError("下载内容与校验不符，已删除")
+        except OSError as error:
+            self._set(phase="error", error=str(error))
+            return
+        self._set(**plan, phase="ready", archive=str(archive), sha256=actual,
+                  downloaded_bytes=archive.stat().st_size,
+                  total_bytes=archive.stat().st_size)
+
+    # ---------- installing ----------
 
     def install(self, archive: str) -> dict:
-        """Hand the staged release to a helper that runs after we stop."""
+        """Hand the downloaded release to a helper that runs after we stop."""
         path = Path(archive)
         if not path.is_file():
             raise OSError("更新包不存在，请重新下载。")
@@ -85,4 +189,5 @@ class UpdateService:
             env=environment,
             creationflags=getattr(subprocess, "CREATE_NEW_PROCESS_GROUP", 0),
         )
+        self._set(phase="installing")
         return {"scheduled": True, "log": str(log)}

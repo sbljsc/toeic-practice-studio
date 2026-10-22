@@ -1,8 +1,5 @@
-"""The update endpoints: check, download, then install."""
+"""The update endpoints: check, download in the background, then install."""
 from __future__ import annotations
-
-import os
-from pathlib import Path
 
 from fastapi import APIRouter, Request
 from pydantic import BaseModel
@@ -19,22 +16,25 @@ def services(request: Request):
 
 @router.get("/status")
 def status(request: Request) -> dict:
-    """What release is available, without downloading anything."""
-    return services(request).updates.status()
+    """What the page needs to show: the current phase and the progress."""
+    return services(request).updates.snapshot()
 
 
-class StageBody(BaseModel):
-    pass
+@router.post("/check")
+def check(request: Request) -> dict:
+    """Look for a newer release."""
+    validate_write_request(request)
+    return services(request).updates.check()
 
 
-@router.post("/stage")
-def stage(body: StageBody, request: Request) -> dict:
-    """Download the newer release and check its digest."""
+@router.post("/download")
+def download(request: Request) -> dict:
+    """Start the download in the background."""
     validate_write_request(request)
     try:
-        return services(request).updates.stage()
+        return services(request).updates.start_download()
     except OSError as error:
-        raise unavailable(str(error), "update_stage_failed") from error
+        raise unavailable(str(error), "update_download_failed") from error
 
 
 class InstallBody(BaseModel):

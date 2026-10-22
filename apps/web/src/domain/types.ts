@@ -506,9 +506,10 @@ export interface UpdateStatus {
   checked: boolean;
   portable: boolean;
   error: string | null;
-  staged?: boolean;
+  phase?: string;
+  downloaded_bytes?: number;
+  total_bytes?: number;
   archive?: string;
-  bytes?: number;
   sha256?: string;
 }
 

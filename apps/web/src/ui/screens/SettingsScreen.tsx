@@ -23,9 +23,6 @@ export function SettingsScreen() {
     portable: false,
     error: null,
   });
-  const [stagedArchive, setStagedArchive] = useState<string | null>(null);
-  const [stagedBytes, setStagedBytes] = useState(0);
-  const [pendingInstall, setPendingInstall] = useState(false);
   // In-page confirmation: a native window.confirm blocks the whole page and
   // cannot be driven or recovered by browser tooling.
   const [pendingRestore, setPendingRestore] = useState<BackupMeta | null>(null);
@@ -53,41 +50,9 @@ export function SettingsScreen() {
     setNotice(null);
     setError(null);
     try {
-      setUpdate(await api.updateStatus());
+      setUpdate(await api.checkUpdate());
     } catch (cause) {
       setError(cause instanceof ApiError ? cause.message : '检查更新失败。');
-    } finally {
-      setBusy(null);
-    }
-  };
-
-  const downloadUpdate = async () => {
-    setBusy('update');
-    setNotice(null);
-    setError(null);
-    try {
-      const staged = await api.stageUpdate();
-      setStagedArchive(staged.archive ?? null);
-      setStagedBytes(staged.bytes ?? 0);
-      setUpdate((previous) => ({ ...previous, ...staged }));
-      setNotice('更新包已下载并通过校验。');
-    } catch (cause) {
-      setError(cause instanceof ApiError ? cause.message : '下载更新失败。');
-    } finally {
-      setBusy(null);
-    }
-  };
-
-  const installUpdate = async () => {
-    if (!stagedArchive) return;
-    setBusy('install');
-    setError(null);
-    try {
-      await api.installUpdate(stagedArchive);
-      setNotice('正在停止服务并安装更新，完成后会自动重新启动。');
-      setPendingInstall(false);
-    } catch (cause) {
-      setError(cause instanceof ApiError ? cause.message : '安装更新失败。');
     } finally {
       setBusy(null);
     }
@@ -189,48 +154,25 @@ export function SettingsScreen() {
           <section className="settings-block" aria-labelledby="update-title">
             <h2 id="update-title">检查更新</h2>
             <p className="settings-hint">
-              便携版可从 GitHub 官方发行页获取新版本。你的学习数据保存在程序目录的
-              <code>.data</code> 中，更新不会改动它。
+              便携版可从 GitHub 官方发行页获取新版本。页面右上角会显示
+              「可更新」，并在后台下载；下载完成后变成「待重启」，点它即可确认重启安装。
+              你的学习数据保存在程序目录的 <code>.data</code> 中，更新不会改动它。
             </p>
             {update.error ? <p className="settings-hint">{update.error}</p> : null}
-            {update.checked && !update.update_available && update.latest_version ? (
+            {update.phase === 'current' && update.latest_version ? (
               <p className="settings-hint" data-testid="update-current">
                 已是最新版本（{update.current_version || '未知'}）。
               </p>
             ) : null}
-            {update.update_available ? (
-              <>
-                <p data-testid="update-available">
-                  发现新版本 {update.latest_version}（当前 {update.current_version || '未知'}）。
-                </p>
-                <div className="update-actions">
-                  <button
-                    type="button"
-                    className="btn btn-primary"
-                    disabled={busy === 'update'}
-                    onClick={() => void downloadUpdate()}
-                    data-testid="update-download"
-                  >
-                    {busy === 'update' ? '下载中…' : '下载更新'}
-                  </button>
-                  {stagedArchive ? (
-                    <button
-                      type="button"
-                      className="btn btn-secondary"
-                      disabled={busy === 'install' || pendingInstall}
-                      onClick={() => setPendingInstall(true)}
-                      data-testid="update-install"
-                    >
-                      安装并重启
-                    </button>
-                  ) : null}
-                </div>
-                {stagedArchive ? (
-                  <p className="settings-hint" data-testid="update-staged">
-                    更新包已下载并通过校验（{formatBytes(stagedBytes)}）。
-                  </p>
-                ) : null}
-              </>
+            {update.phase === 'downloading' ? (
+              <p className="settings-hint" data-testid="update-downloading">
+                正在后台下载 {update.latest_version}…
+              </p>
+            ) : null}
+            {update.phase === 'ready' ? (
+              <p className="settings-hint" data-testid="update-ready">
+                新版本 {update.latest_version} 已下载并通过校验，点右上角「待重启」即可安装。
+              </p>
             ) : null}
             <button
               type="button"
@@ -242,7 +184,6 @@ export function SettingsScreen() {
               {busy === 'check' ? '检查中…' : '检查更新'}
             </button>
           </section>
-
           <section className="settings-block" aria-labelledby="backup-title">
             <h2 id="backup-title">备份与恢复</h2>
             <p className="settings-hint">
@@ -346,50 +287,6 @@ export function SettingsScreen() {
         </div>
       ) : null}
 
-      {pendingInstall ? (
-        <div className="dialog-backdrop" onClick={() => setPendingInstall(false)}>
-          <div
-            className="confirm-dialog"
-            role="alertdialog"
-            aria-modal="true"
-            aria-labelledby="update-dialog-title"
-            aria-describedby="update-dialog-body"
-            data-testid="update-dialog"
-            onClick={(event) => event.stopPropagation()}
-          >
-            <h2 id="update-dialog-title">确认安装更新？</h2>
-            <div id="update-dialog-body">
-              <p>
-                将安装版本 {update.latest_version}。服务会先停止，
-                替换程序文件后再自动重新启动，这个页面会断开一次。
-              </p>
-              <p className="confirm-warn">
-                你的学习数据（程序目录中的 <code>.data</code>）不会被改动。
-                如果更新失败，原来的程序文件仍然可用。
-              </p>
-            </div>
-            <div className="confirm-actions">
-              <button
-                type="button"
-                className="btn btn-secondary"
-                onClick={() => setPendingInstall(false)}
-                data-testid="update-cancel"
-              >
-                取消
-              </button>
-              <button
-                type="button"
-                className="btn btn-primary"
-                disabled={busy !== null}
-                onClick={() => void installUpdate()}
-                data-testid="update-confirm"
-              >
-                {busy === 'install' ? '安装中…' : '确认安装'}
-              </button>
-            </div>
-          </div>
-        </div>
-      ) : null}
     </div>
   );
 }
